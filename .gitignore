@@ -1,2 +1,5 @@
 .DS_Store
 .claude/
+node_modules/
+studio/node_modules/
+studio/.sanity/
