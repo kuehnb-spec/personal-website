@@ -1,0 +1,320 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Brant Kuehn - Coming Soon!</title>
+    <style>
+        /* Classic Geocities vibes */
+        body {
+            background-color: #000080;
+            background-image: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" width="100" height="100"><rect fill="%23000080" width="100" height="100"/><circle fill="%23FFFF00" cx="10" cy="10" r="1"/><circle fill="%23FFFFFF" cx="50" cy="30" r="1"/><circle fill="%23FFFF00" cx="80" cy="60" r="1"/><circle fill="%23FFFFFF" cx="30" cy="80" r="1"/><circle fill="%23FFFF00" cx="70" cy="90" r="1"/><circle fill="%23FFFFFF" cx="90" cy="20" r="1"/><circle fill="%23FFFF00" cx="20" cy="50" r="1"/></svg>');
+            font-family: 'Comic Sans MS', 'Chalkboard SE', cursive;
+            color: #00FF00;
+            text-align: center;
+            margin: 0;
+            padding: 20px;
+            min-height: 100vh;
+            overflow-x: hidden;
+        }
+
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+        }
+
+        h1 {
+            font-size: 3em;
+            color: #FF00FF;
+            text-shadow: 3px 3px #FFFF00, -1px -1px #00FFFF;
+            animation: rainbow 3s infinite;
+            margin-bottom: 0;
+        }
+
+        @keyframes rainbow {
+            0% { color: #FF0000; }
+            16% { color: #FF8000; }
+            33% { color: #FFFF00; }
+            50% { color: #00FF00; }
+            66% { color: #0080FF; }
+            83% { color: #8000FF; }
+            100% { color: #FF0000; }
+        }
+
+        .welcome-text {
+            font-size: 1.5em;
+            color: #FFFF00;
+            margin: 20px 0;
+        }
+
+        .under-construction {
+            display: inline-block;
+            padding: 10px 30px;
+            background: linear-gradient(45deg, #FFD700, #000000, #FFD700, #000000);
+            background-size: 30px 30px;
+            border: 4px solid #FF0000;
+            color: #FF0000;
+            font-weight: bold;
+            font-size: 1.2em;
+            animation: blink 1s infinite;
+        }
+
+        @keyframes blink {
+            0%, 50% { opacity: 1; }
+            51%, 100% { opacity: 0.5; }
+        }
+
+        .marquee-container {
+            background: #FF0000;
+            color: #FFFF00;
+            padding: 10px;
+            margin: 30px 0;
+            border: 3px dashed #00FF00;
+        }
+
+        .marquee {
+            animation: marquee 10s linear infinite;
+            white-space: nowrap;
+        }
+
+        @keyframes marquee {
+            0% { transform: translateX(100%); }
+            100% { transform: translateX(-100%); }
+        }
+
+        .guestbook-btn {
+            background: linear-gradient(to bottom, #C0C0C0, #808080);
+            border: 3px outset #C0C0C0;
+            padding: 10px 20px;
+            font-family: 'Comic Sans MS', cursive;
+            font-size: 1em;
+            color: #000080;
+            cursor: pointer;
+            margin: 10px;
+        }
+
+        .guestbook-btn:active {
+            border-style: inset;
+        }
+
+        .counter {
+            background: #000000;
+            color: #00FF00;
+            font-family: 'Courier New', monospace;
+            padding: 5px 15px;
+            border: 2px inset #808080;
+            display: inline-block;
+            margin: 20px 0;
+        }
+
+        .gif-row {
+            margin: 20px 0;
+        }
+
+        .dancing-baby {
+            font-size: 2em;
+            animation: dance 0.5s infinite alternate;
+            display: inline-block;
+        }
+
+        @keyframes dance {
+            0% { transform: rotate(-10deg) translateY(0); }
+            100% { transform: rotate(10deg) translateY(-10px); }
+        }
+
+        .fire {
+            font-size: 1.5em;
+            animation: flicker 0.2s infinite alternate;
+            display: inline-block;
+        }
+
+        @keyframes flicker {
+            0% { opacity: 1; transform: scale(1); }
+            100% { opacity: 0.8; transform: scale(1.1); }
+        }
+
+        .email-link {
+            color: #00FFFF;
+            font-size: 1.2em;
+        }
+
+        .email-link:hover {
+            color: #FF00FF;
+        }
+
+        hr {
+            border: none;
+            height: 3px;
+            background: linear-gradient(to right, #FF0000, #FF8000, #FFFF00, #00FF00, #0080FF, #8000FF);
+            margin: 30px 0;
+        }
+
+        .webrings {
+            background: #C0C0C0;
+            padding: 15px;
+            border: 3px ridge #808080;
+            margin: 20px auto;
+            max-width: 400px;
+            color: #000080;
+        }
+
+        .best-viewed {
+            font-size: 0.9em;
+            color: #C0C0C0;
+            margin-top: 30px;
+        }
+
+        .netscape-logo {
+            font-size: 1.5em;
+        }
+
+        .spinning {
+            display: inline-block;
+            animation: spin 2s linear infinite;
+        }
+
+        @keyframes spin {
+            from { transform: rotate(0deg); }
+            to { transform: rotate(360deg); }
+        }
+
+        .table-border {
+            border: 5px ridge #C0C0C0;
+            background: rgba(0, 0, 0, 0.5);
+            padding: 20px;
+            margin: 20px auto;
+        }
+
+        .photo-frame {
+            border: 8px ridge #C0C0C0;
+            padding: 10px;
+            background: linear-gradient(135deg, #FFD700, #FFA500);
+            display: inline-block;
+            margin: 20px auto;
+            box-shadow: 5px 5px 15px rgba(0,0,0,0.5);
+            transform: rotate(-2deg);
+            transition: transform 0.3s;
+        }
+
+        .photo-frame:hover {
+            transform: rotate(2deg) scale(1.02);
+        }
+
+        .photo-frame img {
+            max-width: 100%;
+            width: 400px;
+            height: auto;
+            border: 3px solid #000080;
+            display: block;
+        }
+
+        .photo-caption {
+            background: #000080;
+            color: #FFFF00;
+            padding: 8px;
+            font-size: 0.9em;
+            margin-top: 5px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="gif-row">
+            <span class="fire">&#128293;</span>
+            <span class="fire">&#128293;</span>
+            <span class="fire">&#128293;</span>
+            <span class="spinning">&#127775;</span>
+            <span class="fire">&#128293;</span>
+            <span class="fire">&#128293;</span>
+            <span class="fire">&#128293;</span>
+        </div>
+
+        <h1>&#127775; BRANT KUEHN &#127775;</h1>
+
+        <p class="welcome-text">Welcome to my corner of the Information Superhighway!</p>
+
+        <div class="under-construction">
+            &#128679; UNDER CONSTRUCTION &#128679;
+        </div>
+
+        <div class="marquee-container">
+            <div class="marquee">
+                &#11088; COMING SOON &#11088; Something AWESOME is being built here! &#11088; Check back later! &#11088; You won't want to miss it! &#11088;
+            </div>
+        </div>
+
+        <hr>
+
+        <div class="table-border">
+            <p style="color: #FFFF00; font-size: 1.3em;">&#128187; This site is currently being renovated! &#128187;</p>
+            <p style="color: #00FFFF;">
+                Exciting things are coming to brantkuehn.com!<br>
+                Stay tuned for the grand opening!
+            </p>
+
+            <div class="photo-frame">
+                <img src="Pics and Video/IMG_0474.jpeg" alt="Fall bike ride on the trail bridge">
+                <div class="photo-caption">&#127809; Fall Adventures on the Trail! &#128690;</div>
+            </div>
+
+            <div class="gif-row">
+                <span class="dancing-baby">&#128378;</span>
+                <span class="dancing-baby">&#128378;</span>
+                <span class="dancing-baby">&#128378;</span>
+            </div>
+        </div>
+
+        <hr>
+
+        <div class="counter">
+            Visitor #: <span id="counter">000042</span>
+        </div>
+
+        <br><br>
+
+        <button class="guestbook-btn" onclick="alert('Guestbook coming soon! Thanks for visiting!')">
+            &#128214; Sign My Guestbook!
+        </button>
+
+        <button class="guestbook-btn" onclick="alert('Email feature coming soon!')">
+            &#128231; Email Me!
+        </button>
+
+        <hr>
+
+        <div class="webrings">
+            <strong>&#127760; Web Rings &#127760;</strong><br>
+            <small>[ &lt;&lt; Prev | Random | Next &gt;&gt; ]</small><br>
+            <em>Cool Personal Pages Ring</em>
+        </div>
+
+        <p class="best-viewed">
+            <span class="netscape-logo">&#127760;</span>
+            Best viewed in Netscape Navigator 4.0 at 800x600<br>
+            <small>Made with &#10084;&#65039; and lots of &lt;blink&gt; tags</small>
+        </p>
+
+        <div class="gif-row">
+            <span class="spinning">&#127775;</span>
+            <span class="fire">&#128293;</span>
+            <span class="spinning">&#11088;</span>
+            <span class="fire">&#128293;</span>
+            <span class="spinning">&#127775;</span>
+        </div>
+
+        <p style="color: #808080; font-size: 0.8em;">
+            &copy; 2025 Brant Kuehn. All rights reserved.<br>
+            Last updated: <script>document.write(new Date().toLocaleDateString())</script>
+        </p>
+    </div>
+
+    <script>
+        // Fake visitor counter that increments
+        let count = 42;
+        setInterval(() => {
+            count++;
+            document.getElementById('counter').textContent = count.toString().padStart(6, '0');
+        }, 30000);
+    </script>
+</body>
+</html>
