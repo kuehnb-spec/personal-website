@@ -1171,7 +1171,11 @@
         // Helper to build Sanity image URLs
         function sanityImageUrl(ref, width = 800) {
             if (!ref) return '';
-            const [, id, dimensions, format] = ref.split('-');
+            // ref format: image-{id}-{width}x{height}-{format}
+            const parts = ref.split('-');
+            const id = parts.slice(1, -2).join('-');
+            const dimensions = parts[parts.length - 2];
+            const format = parts[parts.length - 1];
             return `https://cdn.sanity.io/images/${SANITY_PROJECT_ID}/${SANITY_DATASET}/${id}-${dimensions}.${format}?w=${width}&auto=format`;
         }
 
