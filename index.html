@@ -1177,8 +1177,8 @@
 
         // Fetch photos from Sanity
         async function loadPhotos() {
-            const query = encodeURIComponent('*[_type == "photo"] | order(_createdAt desc)[0...10] { title, caption, "imageRef": image.asset._ref }');
-            const url = `https://${SANITY_PROJECT_ID}.api.sanity.io/v2024-01-01/data/query/${SANITY_DATASET}?query=${query}`;
+            const query = '*[_type == "photo"] | order(_createdAt desc)[0...10] { title, caption, "imageRef": image.asset._ref }';
+            const url = `https://${SANITY_PROJECT_ID}.api.sanity.io/v2024-01-01/data/query/${SANITY_DATASET}?query=${encodeURIComponent(query)}`;
 
             try {
                 const response = await fetch(url);
