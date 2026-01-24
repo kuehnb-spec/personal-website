@@ -1,0 +1,363 @@
+{
+    "formatVersion": "1.0",
+    "metadata": {
+        "id": "symphony-quest",
+        "title": "The Lost Symphony",
+        "author": "Adventure Stories",
+        "coverEmoji": "🎵",
+        "description": "{{BOTH_NAMES}} enter a magical concert hall where they meet great composers and discover the secrets of music.",
+        "ageRange": "8-10",
+        "estimatedMinutes": 18,
+        "themes": ["music", "creativity", "history", "emotions"],
+        "contentNotes": [],
+        "startNode": "start"
+    },
+    "nodes": {
+        "start": {
+            "id": "start",
+            "summary": "Kids find a mysterious door in a concert hall that leads to living music",
+            "text": "The old concert hall smells like velvet and history. {{PLAYER1_NAME}} and {{PLAYER2_NAME}} are here for a backstage tour with the youth orchestra, but somehow they've gotten separated from the group.\n\n'I think we went the wrong way,' {{PLAYER2_NAME}} says, looking at a long corridor they don't recognize.\n\nAt the end of the corridor is a door that seems to glow faintly. Musical notes—actual glowing notes—drift from underneath it.\n\n{{PLAYER1_NAME}} pushes the door open.\n\nInside is a room that can't exist—it's much bigger than the building itself. Grand pianos float in midair. Violins play themselves. And strangest of all, music is visible here—ribbons of color flowing through the air, each melody a different hue.\n\n'Welcome to the Symphony Eternal,' says a voice. A woman in an elegant 18th-century gown glides toward them. 'I am the Muse of Music. You've found the place where great compositions live forever. Would you like to meet their creators?'",
+            "emoji": "🚪",
+            "choices": [
+                {
+                    "text": "Meet the classical composers",
+                    "nextNodeId": "classical-wing"
+                },
+                {
+                    "text": "Ask about how music works",
+                    "nextNodeId": "music-basics"
+                },
+                {
+                    "text": "Follow the most beautiful melody",
+                    "nextNodeId": "follow-melody"
+                }
+            ]
+        },
+        "music-basics": {
+            "id": "music-basics",
+            "summary": "The Muse explains the basic elements of music",
+            "text": "'What makes music... music?' {{PLAYER1_NAME}} asks.\n\nThe Muse smiles and waves her hand. The colored ribbons of melody swirl around them.\n\n'Music has four essential elements. First: melody—the tune, the part you hum.' A golden ribbon flows past, and they hear a familiar song. 'It's a sequence of notes that tells a story.\n\n'Second: rhythm—the heartbeat of music.' A drum appears, and {{PLAYER2_NAME}} feels their foot tapping automatically. 'Fast or slow, steady or syncopated, rhythm makes us want to move.\n\n'Third: harmony—notes played together.' She plays a chord on a nearby piano—three notes at once that blend beautifully. 'Harmony adds depth, emotion, richness.\n\n'Fourth: timbre—the color of sound.' She plays the same note on piano, then violin, then flute. 'Same pitch, but each sounds completely different. That unique voice is timbre.'\n\n{{PLAYER1_NAME}} watches the colors pulse with each element. 'Music is like... a language?'\n\n'The only language that needs no translation. Every human culture has music. It speaks directly to the soul.'",
+            "emoji": "🎼",
+            "choices": [
+                {
+                    "text": "Meet the classical composers",
+                    "nextNodeId": "classical-wing"
+                },
+                {
+                    "text": "Learn about how music affects emotions",
+                    "nextNodeId": "music-emotions"
+                }
+            ]
+        },
+        "follow-melody": {
+            "id": "follow-melody",
+            "summary": "They follow a hauntingly beautiful melody to its source",
+            "text": "One melody calls to {{PLAYER2_NAME}}—a silver ribbon of sound, achingly beautiful and sad. They follow it through floating instruments and swirling colors.\n\nThe ribbon leads to a young man sitting at a piano, eyes closed, playing with incredible feeling. His clothes are old-fashioned, his hair wild. He doesn't seem to hear them approach.\n\n'That's Beethoven,' the Muse whispers. 'He couldn't hear anything by the end of his life—he was completely deaf. Yet he wrote some of the most powerful music in history.'\n\n'Deaf?' {{PLAYER1_NAME}} is stunned. 'But how?'\n\n'He heard the music in his mind. When his ears failed, his inner hearing became stronger. He felt the vibrations, understood the mathematics of harmony, trusted his training and imagination.'\n\nBeethoven finishes and opens his eyes. They're deep and intense. 'You heard it?' he asks, his voice oddly flat—the voice of someone who can't hear himself speak.\n\n{{PLAYER2_NAME}} nods, tears unexpectedly forming. 'It was beautiful. So sad but so... hopeful?'\n\n'My Moonlight Sonata. Sadness and hope—yes, that is life. That is music.'",
+            "emoji": "🌙",
+            "choices": [
+                {
+                    "text": "Ask Beethoven about composing while deaf",
+                    "nextNodeId": "beethoven-deaf"
+                },
+                {
+                    "text": "Ask about expressing emotions through music",
+                    "nextNodeId": "beethoven-emotions"
+                },
+                {
+                    "text": "Visit other composers",
+                    "nextNodeId": "classical-wing"
+                }
+            ]
+        },
+        "classical-wing": {
+            "id": "classical-wing",
+            "summary": "They enter a grand hall where famous composers work and teach",
+            "text": "The Classical Wing is a grand hall filled with composers from across centuries. Each sits at their own station—piano, writing desk, or instrument—creating music that flows visibly through the air.\n\n'These are some of history's greatest musical minds,' the Muse says. 'Each changed how humans experience sound.'\n\n{{PLAYER1_NAME}} recognizes some names on golden plaques: BACH, MOZART, BEETHOVEN, CHOPIN, TCHAIKOVSKY.\n\nA man in a powdered wig looks up from a complex musical score. 'Visitors! How delightful! I am Johann Sebastian Bach. I wrote music for the glory of God and the instruction of the soul.'\n\nNearby, a younger man in colorful clothing plays a playful melody. 'And I am Mozart! I wrote because music poured out of me like water from a fountain. I couldn't stop if I tried!'\n\nA serious-looking man nods curtly from the corner. 'Beethoven. I wrote because I had something to say.'\n\n{{PLAYER2_NAME}} feels overwhelmed by so much genius in one room. 'Can we... talk to them?'",
+            "emoji": "🏛️",
+            "choices": [
+                {
+                    "text": "Spend time with Bach learning about musical structure",
+                    "nextNodeId": "bach-structure"
+                },
+                {
+                    "text": "Spend time with Mozart learning about natural talent",
+                    "nextNodeId": "mozart-genius"
+                },
+                {
+                    "text": "Spend time with Beethoven learning about expressing emotions",
+                    "nextNodeId": "beethoven-emotions"
+                }
+            ]
+        },
+        "bach-structure": {
+            "id": "bach-structure",
+            "summary": "Bach teaches them about the mathematical architecture of music",
+            "text": "Bach beckons them to his desk, covered with sheets of complex musical notation. 'Music is mathematics made audible,' he says. 'Listen.'\n\nHe plays a melody on a nearby harpsichord. Then he plays it again, but higher. Then again, with the second version overlapping the first. Then a third voice joins, weaving between the others.\n\n'This is fugue—multiple melodies intertwining according to strict rules. Like a conversation where everyone speaks at once, yet somehow it all makes sense.'\n\n{{PLAYER1_NAME}} watches the colored ribbons braid together. 'It looks like math!'\n\n'It is! Music follows patterns. Intervals between notes can be measured. Rhythms divide time precisely. The octave—why does the eighth note sound like a higher version of the first? Because its frequency is exactly double. Physics and poetry combined!'\n\nHe shows them a score. 'My music has been called cold, mathematical. But look closer—every rule I follow, I follow to create beauty. Structure is not the enemy of emotion. It is the framework that holds emotion, like a vase holds flowers.'",
+            "emoji": "🔢",
+            "choices": [
+                {
+                    "text": "Ask Bach about practice and discipline",
+                    "nextNodeId": "bach-practice"
+                },
+                {
+                    "text": "Visit Mozart",
+                    "nextNodeId": "mozart-genius"
+                },
+                {
+                    "text": "Visit Beethoven",
+                    "nextNodeId": "beethoven-emotions"
+                }
+            ]
+        },
+        "bach-practice": {
+            "id": "bach-practice",
+            "summary": "Bach explains that genius comes from discipline and hard work",
+            "text": "'Were you always this good?' {{PLAYER2_NAME}} asks.\n\nBach laughs heartily. 'I had to work very hard. I walked 250 miles once, just to hear a famous organist play. I copied music by candlelight to study it. I practiced until my fingers bled.'\n\n'But you're a genius!'\n\n'Genius is patience. I wrote one piece of music every week for church services—for years. Thousands of pieces. Most people only know a few of them now. But every one taught me something. Every one made the next one better.'\n\nHe plays a simple melody, then shows how he would vary it, improve it, transform it into something complex and beautiful.\n\n'Do not wait for inspiration. Work. Inspiration finds those who are already working. If I had waited to feel inspired before composing, I would have written nothing. Instead, I sat down every day, put pen to paper, and trusted that the music would come. And it did.'\n\n{{PLAYER1_NAME}} thinks about practicing piano at home, how boring it sometimes felt. Maybe there's more to it than just playing through pieces.",
+            "emoji": "📝",
+            "choices": [
+                {
+                    "text": "Visit Mozart",
+                    "nextNodeId": "mozart-genius"
+                },
+                {
+                    "text": "Visit Beethoven",
+                    "nextNodeId": "beethoven-emotions"
+                },
+                {
+                    "text": "Explore other parts of the Symphony Eternal",
+                    "nextNodeId": "explore-more"
+                }
+            ]
+        },
+        "mozart-genius": {
+            "id": "mozart-genius",
+            "summary": "Mozart shares his effortless genius and playful approach",
+            "text": "Mozart is playing a complicated piece while simultaneously having a conversation, occasionally pausing to write notes on a staff, all while humming a completely different tune.\n\n'How do you do that?' {{PLAYER1_NAME}} asks, amazed.\n\n'Do what?' Mozart looks genuinely confused. 'Oh, the multiple things? I cannot help it! Music is always playing in my head. Multiple pieces at once, sometimes. When I was four, I picked out tunes on the harpsichord. By five, I was composing. By six, I was performing for emperors.'\n\n'So you were born a genius?'\n\nMozart's playful expression grows thoughtful. 'I was born with an ear for music, yes. But I also practiced constantly. My father taught me from before I could walk. What looks like effortless talent is thousands of hours of work that started so young I don't remember not doing it.'\n\nHe plays a joyful melody. 'But I'll tell you a secret: I never felt like work. Music is play for me. The luckiest thing is not being talented—it's loving something enough to want to do it forever.'",
+            "emoji": "🎹",
+            "choices": [
+                {
+                    "text": "Ask Mozart about creativity",
+                    "nextNodeId": "mozart-creativity"
+                },
+                {
+                    "text": "Visit Beethoven",
+                    "nextNodeId": "beethoven-emotions"
+                },
+                {
+                    "text": "Visit Bach",
+                    "nextNodeId": "bach-structure"
+                }
+            ]
+        },
+        "mozart-creativity": {
+            "id": "mozart-creativity",
+            "summary": "Mozart explains how ideas come and how to capture them",
+            "text": "'Where do your ideas come from?' {{PLAYER2_NAME}} asks.\n\nMozart tilts his head. 'Everywhere! A bird singing. Raindrops on a window. The rhythm of a horse's hooves. A pretty girl's laugh. Life is full of music—you just have to listen.'\n\nHe demonstrates, tapping out a rhythm on the table. 'That's the heartbeat of this room—can you hear it? Now add a melody...' He hums. 'Now imagine strings here, a flute there...'\n\n'But how do you remember it all?'\n\n'I don't always!' Mozart laughs. 'Ideas come and go like butterflies. The trick is to catch them quickly.' He shows them a small notebook covered in scribbled notes. 'I write everything down. The good ideas, the bad ones—you can't always tell which is which until later.'\n\n{{PLAYER1_NAME}} notices some crossed-out measures. 'Even you make mistakes?'\n\n'Constantly! But here's the secret: mistakes are just ideas that haven't found their right place yet. Something that doesn't work in one piece might be perfect in another. Never throw anything away.'",
+            "emoji": "💡",
+            "choices": [
+                {
+                    "text": "Visit Beethoven",
+                    "nextNodeId": "beethoven-emotions"
+                },
+                {
+                    "text": "Explore other parts of the Symphony Eternal",
+                    "nextNodeId": "explore-more"
+                }
+            ]
+        },
+        "beethoven-emotions": {
+            "id": "beethoven-emotions",
+            "summary": "Beethoven teaches about expressing deep feelings through music",
+            "text": "Beethoven's corner is intense. His piano is surrounded by crumpled paper—discarded attempts at perfection. When he plays, the colored ribbons of music are darker, more dramatic than the others.\n\n'Music must strike fire from the heart,' he says, his voice passionate. 'It is not enough to be pretty. It must mean something. It must make you feel.'\n\nHe plays a thunderous passage—{{BOTH_NAMES}} feel it in their chests. Then soft, tender notes that bring tears to their eyes.\n\n'How do you do that?' {{PLAYER1_NAME}} whispers.\n\n'I do not just play notes. I become the emotion. When I write joy, I feel joy. When I write sorrow, I am drowning in sorrow. The music is true because I am true when I write it.'\n\n{{PLAYER2_NAME}} notices something. 'But you can't hear it anymore?'\n\n'I feel it.' Beethoven places his hand on the piano's soundboard. 'The vibrations tell me what I need to know. And inside my head, the music plays perfectly. Deafness took away sound, but it could not take away music. Music lives deeper than ears.'",
+            "emoji": "❤️",
+            "choices": [
+                {
+                    "text": "Ask more about composing while deaf",
+                    "nextNodeId": "beethoven-deaf"
+                },
+                {
+                    "text": "Ask about his famous Ninth Symphony",
+                    "nextNodeId": "ninth-symphony"
+                },
+                {
+                    "text": "Explore other parts of the Symphony Eternal",
+                    "nextNodeId": "explore-more"
+                }
+            ]
+        },
+        "beethoven-deaf": {
+            "id": "beethoven-deaf",
+            "summary": "Beethoven shares how he overcame deafness through determination",
+            "text": "'When I first realized I was going deaf,' Beethoven says quietly, 'I wanted to die. Music was everything to me. How could I live without hearing it?'\n\n{{BOTH_NAMES}} listen, transfixed.\n\n'I wrote a letter saying goodbye, planning to end my life. But then I thought: I have so much music still inside me. The Ninth Symphony wasn't written yet. The late quartets. So much left to say.'\n\nHe plays a hopeful melody. 'I chose to live for my art. I could not hear birds or voices or applause, but I could still create. The music in my mind grew even richer because there was nothing to distract from it.'\n\n{{PLAYER1_NAME}} asks, 'How did you conduct your symphonies without hearing?'\n\n'Very poorly at first!' Beethoven almost smiles. 'I watched the musicians, felt the rhythm, trusted what I had written. At the premiere of my Ninth Symphony, when it ended, I didn't hear the audience cheering. A singer had to turn me around to see them on their feet, weeping with joy. I had given them something true. That mattered more than hearing it myself.'",
+            "emoji": "🦻",
+            "choices": [
+                {
+                    "text": "Ask about the Ninth Symphony",
+                    "nextNodeId": "ninth-symphony"
+                },
+                {
+                    "text": "Explore other parts of the Symphony Eternal",
+                    "nextNodeId": "explore-more"
+                }
+            ]
+        },
+        "ninth-symphony": {
+            "id": "ninth-symphony",
+            "summary": "They experience Beethoven's Ode to Joy as a visual and auditory wonder",
+            "text": "'Would you like to hear my Ninth?' Beethoven asks. Before they can answer, the space around them transforms.\n\nThey're in a vast concert hall. An orchestra materializes—not playing, waiting. Beethoven raises his arms.\n\nThe music begins. Dark, mysterious. The colored ribbons start as deep purple, almost black. Then themes emerge, develop, clash. For forty minutes, {{BOTH_NAMES}} experience music as they never have before—seeing it, feeling it, understanding how each section builds on the last.\n\nAnd then—the final movement. A human voice sings out the famous 'Ode to Joy' melody. More voices join. The ribbons burst into brilliant gold and white. The message is unmistakable: after struggle, after darkness, after pain—joy. Universal, unstoppable joy.\n\nWhen it ends, {{PLAYER2_NAME}} is crying openly. {{PLAYER1_NAME}} feels like {{PLAYER1_HE_SHE}}'s been through a journey.\n\n'That melody,' Beethoven says softly, 'was in my head for twenty years before I used it. I knew it was special. I was saving it for the right moment. The moment when humanity needed to hear that joy is possible even in the darkest times.'",
+            "emoji": "🎺",
+            "choices": [
+                {
+                    "text": "Explore other parts of the Symphony Eternal",
+                    "nextNodeId": "explore-more"
+                },
+                {
+                    "text": "Ask the Muse about returning home",
+                    "nextNodeId": "prepare-return"
+                }
+            ]
+        },
+        "explore-more": {
+            "id": "explore-more",
+            "summary": "They discover more musical worlds within the Symphony Eternal",
+            "text": "The Muse appears beside them. 'You've spent time with the classical masters. But music has many voices. Would you like to explore further?'\n\nShe gestures, and doorways appear, each pulsing with different colored light and different sounds.\n\n'The Jazz Room—where improvisation rules and every performance is unique.'\n\n'The World Music Garden—where you'll hear drums from Africa, sitars from India, steel pans from Trinidad, instruments you've never imagined.'\n\n'The Modern Studio—where composers experiment with electronic sounds, sampling, and music that doesn't follow any old rules.'\n\n{{PLAYER1_NAME}} hears blues piano drifting from one door, something that sounds like rainfall mixed with bells from another.\n\n'So many kinds of music,' {{PLAYER2_NAME}} murmurs. 'Are some better than others?'\n\n'Different, not better,' the Muse says firmly. 'Classical is conversation across centuries. Jazz is spontaneous emotion. Traditional music carries cultural memory. Pop speaks to its moment. Each serves humanity in its own way.'",
+            "emoji": "🚪",
+            "choices": [
+                {
+                    "text": "Visit the Jazz Room",
+                    "nextNodeId": "jazz-room"
+                },
+                {
+                    "text": "Visit the World Music Garden",
+                    "nextNodeId": "world-music"
+                },
+                {
+                    "text": "Ask the Muse about the power of music",
+                    "nextNodeId": "music-power"
+                }
+            ]
+        },
+        "jazz-room": {
+            "id": "jazz-room",
+            "summary": "They experience improvisation and the spontaneous creation of jazz",
+            "text": "The Jazz Room is smoky and intimate. Musicians sit in a circle, passing melodies back and forth like a conversation.\n\nA man with a trumpet looks up. 'Hey there, young cats! I'm Louis. Pull up a chair.'\n\n{{BOTH_NAMES}} sit and watch. A piano plays a melody. The trumpet picks it up, changes it, adds ornaments. A saxophone responds with something completely different but somehow related. A drummer keeps everything grounded while adding flourishes.\n\n'This is improvisation,' Louis explains between phrases. 'We're making it up as we go. No two performances are ever the same.'\n\n'But how do you know what to play?' {{PLAYER1_NAME}} asks.\n\n'We know the rules so well, we can break them. We know the chord progressions, the song structure. Inside that framework, we're free. It's like having a conversation—you don't memorize what to say, but you follow the flow.'\n\n{{PLAYER2_NAME}} hears how each musician listens to the others, responding, supporting, challenging. 'It's like they're reading each other's minds!'\n\n'Better than that—we're listening. Really listening. That's the heart of jazz: paying attention to this moment, right now.'",
+            "emoji": "🎷",
+            "choices": [
+                {
+                    "text": "Try improvising something simple",
+                    "nextNodeId": "try-improvising"
+                },
+                {
+                    "text": "Visit the World Music Garden",
+                    "nextNodeId": "world-music"
+                },
+                {
+                    "text": "Return to the classical masters",
+                    "nextNodeId": "classical-wing"
+                }
+            ]
+        },
+        "try-improvising": {
+            "id": "try-improvising",
+            "summary": "They try their hand at improvising and learn to trust themselves",
+            "text": "Louis hands {{PLAYER1_NAME}} a small xylophone. 'Nothing fancy. Just listen to what we're playing and add something. Anything.'\n\nThe band starts a slow blues. {{PLAYER1_NAME}}'s hands shake. What if {{PLAYER1_HE_SHE}} plays something wrong?\n\n'There's no wrong,' Louis says gently, sensing the fear. 'There's only interesting and less interesting. And even less interesting is part of the journey to interesting.'\n\n{{PLAYER1_NAME}} tentatively taps a few notes. They sound... okay? The drummer gives an encouraging nod. {{PLAYER1_NAME}} tries a little pattern. The piano plays something underneath that makes it sound better.\n\n'You're listening!' Louis grins. 'That's the secret. Don't think so hard. Feel the music. Let it tell you where to go.'\n\n{{PLAYER2_NAME}} tries next. At first just tapping along with the rhythm. Then a little melody emerges—simple but real. The band supports it, makes it sound like part of the whole.\n\n'That's yours,' Louis says. 'Something that never existed before. You just made music. Nobody can take that away from you.'",
+            "emoji": "🎵",
+            "choices": [
+                {
+                    "text": "Visit the World Music Garden",
+                    "nextNodeId": "world-music"
+                },
+                {
+                    "text": "Ask the Muse about returning home",
+                    "nextNodeId": "prepare-return"
+                }
+            ]
+        },
+        "world-music": {
+            "id": "world-music",
+            "summary": "They discover how every culture has unique musical traditions",
+            "text": "The World Music Garden is like stepping into every country at once. Beneath a baobab tree, African drummers play complex polyrhythms. Near a pagoda, a Chinese erhu sings. By a campfire, a didgeridoo drones while Aboriginal voices tell ancient stories.\n\n'Every culture creates music,' the Muse says. 'But every culture creates different music. Listen to how they approach melody, rhythm, harmony—all different, all beautiful.'\n\n{{PLAYER1_NAME}} is drawn to the African drums. There seem to be ten different rhythms happening at once, but somehow they all fit together.\n\n'In West African drumming,' an older man explains, 'each rhythm is simple alone. But together, they create something none can make by themselves. Like a community—we each contribute our part.'\n\n{{PLAYER2_NAME}} listens to an Indian musician play ragas—melodies that express specific times of day and emotions. 'This raga is for evening,' the musician says. 'It brings peace after the struggles of the day.'\n\nThe Muse smiles. 'Human beings are diverse, but our need for music is universal. Different languages, same yearning to express what words cannot.'",
+            "emoji": "🌍",
+            "choices": [
+                {
+                    "text": "Learn about rhythm from African drummers",
+                    "nextNodeId": "african-drums"
+                },
+                {
+                    "text": "Ask the Muse about the power of music",
+                    "nextNodeId": "music-power"
+                },
+                {
+                    "text": "Ask about returning home",
+                    "nextNodeId": "prepare-return"
+                }
+            ]
+        },
+        "african-drums": {
+            "id": "african-drums",
+            "summary": "Master drummers teach about polyrhythm and community",
+            "text": "The drum master invites {{BOTH_NAMES}} to sit. 'In my village, drums are not instruments. They are voices. They call people to gather, announce births and deaths, speak to ancestors, make work feel lighter.'\n\nHe gives each of them a small drum. 'Feel the skin. An animal gave this so we could make music. We honor that gift by playing with full hearts.'\n\nHe shows them a simple pattern: one-two, one-two. They follow. Then he adds a second pattern that weaves between theirs. Then a third person joins with something different. Soon there are five rhythms happening at once.\n\n'Each alone is simple,' the master says. 'Together, magic. This is why we play in groups. Music teaches us that we need each other. Your contribution matters—miss your beat and everyone feels it. Stay true and you hold us all together.'\n\n{{PLAYER1_NAME}} focuses, keeping the pattern steady. It's harder than it looks. But when it all clicks, when everyone is perfectly in sync... it feels like flying.\n\n'This is called entrainment,' the Muse explains. 'Rhythms aligning. Heartbeats sync too. Music literally brings people together.'",
+            "emoji": "🥁",
+            "choices": [
+                {
+                    "text": "Ask the Muse about the power of music",
+                    "nextNodeId": "music-power"
+                },
+                {
+                    "text": "Ask about returning home",
+                    "nextNodeId": "prepare-return"
+                }
+            ]
+        },
+        "music-emotions": {
+            "id": "music-emotions",
+            "summary": "The Muse explains how music directly affects our feelings and bodies",
+            "text": "'Why does music make us feel things?' {{PLAYER2_NAME}} asks the Muse.\n\n'Your brain is wired for music,' she explains. 'Scientists have found that music activates almost every area of the brain at once—more than any other activity. It triggers memories, emotions, even physical responses.'\n\nShe demonstrates. A minor key plays—sadness washes over them. Switch to major—instant relief, even happiness. Fast tempo—excitement. Slow—calm.\n\n'But why?' {{PLAYER1_NAME}} persists.\n\n'We don't fully know. Perhaps music mimics the sounds of human emotion—the rhythm of an excited heartbeat, the pitch of a voice rising in fear, the resolution of tension when danger passes. Perhaps it's older than language, a way our ancestors communicated before words.'\n\nShe plays a lullaby. Both children feel drowsy. 'Music affects heart rate, breathing, hormone levels. A surgeon uses calming music to relax patients. An athlete uses energizing music to prepare for competition. Stores use music to affect shopping behavior!'\n\n{{PLAYER2_NAME}} laughs. 'Music is like a superpower!'\n\n'It is. Use it wisely.'",
+            "emoji": "🧠",
+            "choices": [
+                {
+                    "text": "Visit the classical composers",
+                    "nextNodeId": "classical-wing"
+                },
+                {
+                    "text": "Ask about the universal power of music",
+                    "nextNodeId": "music-power"
+                }
+            ]
+        },
+        "music-power": {
+            "id": "music-power",
+            "summary": "The Muse reveals how music has changed history and healed wounds",
+            "text": "'Music is more than entertainment,' the Muse says seriously. 'It has changed the course of history.'\n\nShe shows them images: slave spirituals that gave hope and communicated escape routes. Protest songs that fueled civil rights movements. National anthems that united people. War drums that coordinated armies. Lullabies that soothed babies for a hundred thousand years.\n\n'Music heals too. Stroke patients who can't speak can sometimes sing. People with dementia remember songs from their youth when they remember nothing else. Veterans with trauma find peace through drumming circles.'\n\n{{PLAYER1_NAME}} thinks about all the times music helped {{PLAYER1_HIM_HER}}—sad songs when sad, happy songs to celebrate, calming music when anxious.\n\n'Why is it so powerful?' {{PLAYER2_NAME}} asks.\n\n'Because it bypasses logic and speaks directly to feeling. You can argue with words. You can't argue with a melody that makes your heart swell. Music tells us we're not alone in our emotions—someone else felt this too, and turned it into something beautiful. That's profoundly comforting.'",
+            "emoji": "💪",
+            "choices": [
+                {
+                    "text": "Ask about returning home",
+                    "nextNodeId": "prepare-return"
+                }
+            ]
+        },
+        "prepare-return": {
+            "id": "prepare-return",
+            "summary": "The Muse prepares them to leave with a final gift",
+            "text": "The Muse gathers them at the center of the Symphony Eternal. The composers they've met gather around—Bach, Mozart, Beethoven, Louis and the jazz band, the drummers from the World Music Garden.\n\n'You've learned much,' the Muse says. 'Music is mathematics and emotion. Discipline and freedom. Individual and community. Ancient and always new.'\n\nShe hands them each a small tuning fork. 'These will always produce a perfect A note—440 vibrations per second. The same A heard by every musician in every concert hall in the world. It's a universal reference point, like true north for navigators.'\n\n'Why are you giving us these?' {{PLAYER1_NAME}} asks.\n\n'To remind you. Music is everywhere. In birdsong and raindrops. In your heartbeat and breathing. In the rhythm of walking and the melody of speech. You don't need to be a professional musician to have music in your life. You just need to listen.'\n\nBeethoven steps forward. 'And when life is hard—and it will be hard—music will be there. It was there for me in my darkest moments. Let it be there for you.'",
+            "emoji": "🎁",
+            "choices": [
+                {
+                    "text": "Say goodbye and return home",
+                    "nextNodeId": "ending-musical"
+                }
+            ]
+        },
+        "ending-musical": {
+            "id": "ending-musical",
+            "summary": "GOOD ENDING: They return home with a deeper love and understanding of music",
+            "text": "The Symphony Eternal dissolves in a cascade of notes and colors. {{BOTH_NAMES}} find themselves back in the concert hall corridor, the door behind them now perfectly ordinary.\n\nIn their hands, the tuning forks hum faintly—proof it all really happened.\n\n'There you are!' A tour guide hurries toward them. 'The orchestra is about to rehearse. Come quickly—you can watch from the wings!'\n\nThey slip into the backstage area just as the conductor raises his baton. The first notes of Beethoven's Fifth Symphony fill the hall—those famous four notes, da-da-da-DUM, that Beethoven said represented fate knocking at the door.\n\n{{PLAYER1_NAME}} and {{PLAYER2_NAME}} see the music now differently than ever before. They understand the structure Bach taught them, the spontaneity Mozart embodied, the raw emotion Beethoven poured into every note. They hear echoes of African rhythms in the percussion, traces of ancient songs in the melodies.\n\nMusic is not just sound. It's human beings reaching across time and space to say: I felt this. You feel it too. We are connected.\n\nAnd {{BOTH_NAMES}} are part of that connection now—forever.",
+            "emoji": "🎼",
+            "isEnding": true,
+            "endingType": "good",
+            "endingTitle": "Harmony Found",
+            "endingText": "THE END\n\nYou explored the Symphony Eternal and learned about music's power to express emotions, connect people, and transform lives. Remember: music is everywhere, for everyone. All you have to do is listen.\n\n\"Music expresses that which cannot be said and on which it is impossible to be silent.\" — Victor Hugo"
+        }
+    }
+}

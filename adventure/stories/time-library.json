@@ -1,0 +1,511 @@
+{
+  "id": "time-library",
+  "title": "The Time Library",
+  "author": "Adventure Stories",
+  "coverEmoji": "📚",
+  "description": "{{BOTH_NAMES}} discover a magical library where books are doorways to the past. Which era will they explore?",
+  "ageRange": "8-10",
+  "estimatedMinutes": 25,
+  "themes": ["literature", "history", "adventure", "learning"],
+  "startNode": "start",
+  "nodes": {
+    "start": {
+      "id": "start",
+      "text": "Rain drums against the windows as {{PLAYER1_NAME}} and {{PLAYER2_NAME}} duck into the old library to stay dry. They've passed this building a hundred times but never gone inside. The sign above the door reads 'Tempus Bibliotheca'—though neither of them knows what that means.\n\nInside, the library is impossibly large. Shelves stretch up toward a ceiling lost in shadows. Spiral staircases wind between levels like DNA helices. And the smell—old paper and leather and something else, something like lightning before a storm.\n\n'May I help you?' A woman appears from between the shelves. She has silver hair and eyes that seem to hold centuries of secrets. 'Ah. First-time visitors. How delightful. I am the Librarian.'\n\n'This place is amazing,' {{PLAYER2_NAME}} breathes. 'How many books are there?'\n\n'Every book ever written,' the Librarian says with a mysterious smile. 'And some that haven't been written yet. You see, this is not an ordinary library. Here, books are not just stories to read. They are doorways to walk through. Would you like me to show you?'",
+      "emoji": "📖",
+      "choices": [
+        {
+          "text": "\"Yes! Show us!\"",
+          "nextNodeId": "library-tour"
+        },
+        {
+          "text": "\"What do you mean, doorways?\"",
+          "nextNodeId": "explain-doorways"
+        },
+        {
+          "text": "\"This seems strange. We should go.\"",
+          "nextNodeId": "hesitate"
+        }
+      ]
+    },
+    "library-tour": {
+      "id": "library-tour",
+      "text": "The Librarian leads them deeper into the library, past sections labeled in languages they don't recognize. Ancient scrolls sit beside leather-bound tomes beside glowing tablets that seem to be made of pure light.\n\n'Every book contains a world,' the Librarian explains. 'When you read, you travel there in your mind. But in this library, the travel is... more literal. Open the right book with the right intention, and you step into its pages.'\n\nShe stops at a crossroads where four grand corridors meet. Each is marked with a different symbol:\n\nA quill and scroll—'Classical Antiquity,' the Librarian says. 'Greece and Rome, the birth of democracy and philosophy.'\n\nA knight's helmet—'Medieval Times. Castles, crusades, and the long struggle toward the Renaissance.'\n\nA ship's wheel—'Age of Exploration. When brave sailors discovered that the world was bigger than anyone imagined.'\n\nA lightbulb—'The Modern Era. Revolutions in science, thought, and freedom.'\n\n'Choose your path,' the Librarian says. 'But choose wisely. In these pages, history is not merely read. It is lived.'",
+      "emoji": "🚪",
+      "choices": [
+        {
+          "text": "Classical Antiquity (Greece and Rome)",
+          "nextNodeId": "ancient-wing"
+        },
+        {
+          "text": "Medieval Times (castles and knights)",
+          "nextNodeId": "medieval-wing"
+        },
+        {
+          "text": "Age of Exploration (ships and discovery)",
+          "nextNodeId": "exploration-wing"
+        }
+      ]
+    },
+    "explain-doorways": {
+      "id": "explain-doorways",
+      "text": "'Doorways?' the Librarian repeats, her eyes twinkling. 'Let me demonstrate.'\n\nShe pulls a book from a nearby shelf. The cover shows a painting of the sea, with dolphins leaping through waves. She opens it, and {{BOTH_NAMES}} gasp—the pages aren't showing words. They're showing movement. Waves actually rolling, dolphins actually swimming, spray that looks almost wet.\n\n'This is The Odyssey, written by the poet Homer nearly three thousand years ago. It tells of the hero Odysseus and his ten-year journey home from the Trojan War. If I opened this book fully and stepped through...'\n\nShe demonstrates, placing her foot on the book's edge. It passes through the page as though into water. {{PLAYER1_NAME}} and {{PLAYER2_NAME}} stare in amazement.\n\nThe Librarian pulls her foot back. 'I would find myself aboard Odysseus's ship, tasting the salt air, hearing the creak of the oars. The great works of literature are not merely stories. They are preserved moments of human experience. And this library lets you live them.'\n\nShe shelves the book. 'Would you like to explore? There are many eras waiting to be visited.'",
+      "emoji": "✨",
+      "choices": [
+        {
+          "text": "\"Take us to the different eras!\"",
+          "nextNodeId": "library-tour"
+        }
+      ]
+    },
+    "hesitate": {
+      "id": "hesitate",
+      "text": "{{PLAYER1_NAME}} takes a step toward the door. 'This is weird. Libraries don't work like this.'\n\nThe Librarian smiles gently. 'You're right to be cautious. The world is full of things that seem impossible until you experience them. Electricity. Airplanes. The internet. Once, people thought the Earth was flat and the sun revolved around us.'\n\nShe gestures at the towering shelves. 'Every book here represents someone who asked questions, who wondered, who dared to imagine. The people who wrote these stories—Homer, Shakespeare, Mary Shelley, Langston Hughes—they all took risks. They put strange ideas on paper and changed the world.'\n\n{{PLAYER2_NAME}} pauses. 'So this library is about... taking chances? Exploring the unknown?'\n\n'Every great adventure begins with a moment of uncertainty,' the Librarian says. 'You can leave now and always wonder what you missed. Or you can stay, explore, and discover something extraordinary. The choice, as always, is yours.'\n\nThe rain is still falling outside. The library is warm and dry and full of secrets.",
+      "emoji": "🤔",
+      "choices": [
+        {
+          "text": "Stay and explore",
+          "nextNodeId": "library-tour"
+        },
+        {
+          "text": "Ask more questions first",
+          "nextNodeId": "explain-doorways"
+        }
+      ]
+    },
+    "ancient-wing": {
+      "id": "ancient-wing",
+      "text": "{{BOTH_NAMES}} walk down the corridor marked with the quill and scroll. The air grows warmer, and they can almost smell olive oil and Mediterranean sea breeze.\n\n'The ancient Greeks and Romans,' the Librarian's voice follows them, though she hasn't moved from the crossroads, 'invented democracy, philosophy, theater, and much of mathematics. They asked the questions we still wrestle with today: What is justice? What is beauty? How should we live?'\n\nThe corridor opens into a circular chamber. On pedestals around the room sit three magnificent books, each glowing faintly:\n\nA massive scroll labeled 'THE ILIAD AND THE ODYSSEY by Homer' shows scenes of heroes, gods, and monsters.\n\nA leather tome titled 'AESOP'S FABLES' shows talking animals frozen mid-conversation.\n\nA worn book called 'THE REPUBLIC by Plato' shows a grand city with impossible architecture.\n\n'Three doors to the ancient world,' the Librarian's voice echoes. 'The Iliad shows the glory and tragedy of war. Aesop teaches wisdom through simple stories. And Plato imagines the perfect society. Which calls to you?'",
+      "emoji": "🏛️",
+      "choices": [
+        {
+          "text": "The Odyssey (Homer's epic adventure)",
+          "nextNodeId": "odyssey-adventure"
+        },
+        {
+          "text": "Aesop's Fables (wise animal stories)",
+          "nextNodeId": "aesop-adventure"
+        },
+        {
+          "text": "The Republic (Plato's philosophy)",
+          "nextNodeId": "plato-adventure"
+        }
+      ]
+    },
+    "medieval-wing": {
+      "id": "medieval-wing",
+      "text": "The corridor of the knight's helmet is lit by torches that flicker in brackets on the stone walls. Tapestries hang between the bookshelves, showing scenes of castles, dragons, and noble deeds.\n\n'The Middle Ages,' the Librarian's voice accompanies them. 'Often called the Dark Ages, though that name is unfair. Yes, there was war and plague. But there was also art, music, poetry, and the slow building of the world we know today. The great cathedrals were built in these centuries. Universities were founded. Ideas from around the world traveled the Silk Road.'\n\nThe corridor ends in a great hall with vaulted ceilings. Three books rest on wooden stands:\n\nA illuminated manuscript titled 'THE CANTERBURY TALES by Chaucer' shows colorful pilgrims on horseback.\n\nA heroic volume called 'LE MORTE D'ARTHUR' depicts knights, a round table, and a sword in a stone.\n\nA mysterious book labeled 'THE ARABIAN NIGHTS' shows genies, flying carpets, and impossible palaces.\n\n'Each book offers a different window into the medieval world,' the Librarian's voice says. 'Which story draws you?'",
+      "emoji": "⚔️",
+      "choices": [
+        {
+          "text": "Le Morte d'Arthur (King Arthur's knights)",
+          "nextNodeId": "arthur-adventure"
+        },
+        {
+          "text": "The Arabian Nights (tales of wonder)",
+          "nextNodeId": "arabian-adventure"
+        }
+      ]
+    },
+    "exploration-wing": {
+      "id": "exploration-wing",
+      "text": "The corridor of the ship's wheel smells of salt and adventure. Maps cover the walls—some familiar, some showing continents in strange positions or sea monsters in the corners.\n\n'The Age of Exploration,' the Librarian says. 'When humans finally understood that Earth was not the center of the universe, and that there was so much more to discover. It was a time of both wonder and tragedy—great discoveries, but also colonialism and conquest.'\n\nThe corridor opens onto what looks like a ship's deck. Three books hang from the rigging like navigational charts:\n\nA journal titled 'AROUND THE WORLD IN 80 DAYS by Jules Verne' shows a hot air balloon soaring over exotic lands.\n\nA weathered log book called 'ROBINSON CRUSOE by Daniel Defoe' depicts a lone figure on a tropical island.\n\nA mysterious tome labeled 'TWENTY THOUSAND LEAGUES UNDER THE SEA by Jules Verne' shows a massive submarine and giant squid.\n\n'Three journeys to the edges of the known world,' the Librarian says. 'By land, by sea, or beneath the waves—where will you go?'",
+      "emoji": "🧭",
+      "choices": [
+        {
+          "text": "Around the World in 80 Days (global adventure)",
+          "nextNodeId": "eighty-days-adventure"
+        },
+        {
+          "text": "Twenty Thousand Leagues (underwater discovery)",
+          "nextNodeId": "nautilus-adventure"
+        }
+      ]
+    },
+    "odyssey-adventure": {
+      "id": "odyssey-adventure",
+      "text": "{{PLAYER1_NAME}} opens Homer's scroll, and the world transforms. They're standing on the deck of a wooden ship, surrounded by Greek warriors. The sun beats down. Waves slap against the hull. And at the prow stands a man with clever eyes and a commanding presence.\n\n'Odysseus,' {{PLAYER2_NAME}} whispers.\n\nThe hero turns. 'Ah, young travelers. You have the look of those blessed by Athena—curious and brave. We sail for Ithaca, my home, though the gods seem determined to make the journey difficult.'\n\nA sailor points to the horizon. 'Captain! The island!'\n\nAhead, a rocky island rises from the sea. Smoke curls from its peak. 'The island of the Cyclops,' Odysseus says grimly. 'One-eyed giants who care nothing for the laws of hospitality. We must stop for supplies, but we must be careful.'\n\nHe looks at {{BOTH_NAMES}}. 'Will you help us? I have a plan, but it will require courage and cleverness in equal measure. The question is: do we risk the direct approach, or do we use our wits?'",
+      "emoji": "⚓",
+      "choices": [
+        {
+          "text": "\"Let's be clever and trick the Cyclops\"",
+          "nextNodeId": "odyssey-clever"
+        },
+        {
+          "text": "\"Tell us more about the Cyclops first\"",
+          "nextNodeId": "odyssey-learn"
+        }
+      ]
+    },
+    "odyssey-clever": {
+      "id": "odyssey-clever",
+      "text": "'Excellent,' Odysseus grins. 'My kind of warriors. Listen well.'\n\nHe explains his plan as they approach the island. When they enter the giant's cave, Odysseus introduces himself as 'Nobody'—a trick that will prove crucial later.\n\nThe Cyclops Polyphemus is terrifying—tall as a tree, with one enormous eye. He traps them in his cave and eats two of the sailors. {{PLAYER1_NAME}} nearly screams, but {{PLAYER2_NAME}} squeezes {{PLAYER1_HIS_HER}} hand.\n\n'Stay calm,' Odysseus whispers. 'The plan will work.'\n\nThat night, they offer the giant wine until he falls asleep. Then, with a sharpened stake, they blind his single eye. Polyphemus roars and calls for help: 'Nobody has hurt me! Nobody is attacking me!'\n\nThe other Cyclopes, hearing this, think he's gone mad and don't come.\n\n'You see?' Odysseus says as they escape. 'Cleverness defeats strength. The mind is the greatest weapon.' He recites an old proverb: 'The fox knows many things, but the hedgehog knows one big thing. Be the fox.'\n\nThe lesson stays with {{BOTH_NAMES}} as the ship sails on.",
+      "emoji": "🦊",
+      "choices": [
+        {
+          "text": "Continue the journey with Odysseus",
+          "nextNodeId": "odyssey-continue"
+        }
+      ]
+    },
+    "odyssey-learn": {
+      "id": "odyssey-learn",
+      "text": "'A wise question,' Odysseus nods approvingly. 'Know your enemy before you face them. The Cyclopes are giants—each stands taller than the mast of this ship. They have one eye in the center of their foreheads and strength that could crush a man like a grape.'\n\nHe gazes at the island. 'But they are also proud and foolish. They believe themselves invincible because of their size. They have no ships, no cities, no laws. Each lives alone in his cave with his sheep.'\n\n'So they're strong but not smart?' {{PLAYER1_NAME}} asks.\n\n'Exactly.' Odysseus smiles. 'There is a lesson here, young friends. In the world, you will meet many kinds of power. Brute strength. Wealth. Authority. But the greatest power is wisdom—the ability to think, to plan, to see what others miss. The warrior who cannot think is just a beast. The thinker who cannot act is just a dreamer. But together, thought and action can overcome any obstacle.'\n\n{{PLAYER2_NAME}} nods slowly. 'So we outthink the Cyclops?'\n\n'Now you understand,' Odysseus says. 'Let me tell you my plan...'",
+      "emoji": "🧠",
+      "choices": [
+        {
+          "text": "Listen to the plan and help trick the Cyclops",
+          "nextNodeId": "odyssey-clever"
+        }
+      ]
+    },
+    "odyssey-continue": {
+      "id": "odyssey-continue",
+      "text": "The journey continues. {{BOTH_NAMES}} witness wonders—the bag of winds from Aeolus, the witch Circe who turns men to pigs, the haunting song of the Sirens that Odysseus hears while tied to the mast.\n\nBut through every challenge, the lesson remains the same: cunning triumphs over force. Odysseus doesn't defeat his enemies with muscles. He defeats them with his mind.\n\n'Why do you fight so hard to get home?' {{PLAYER2_NAME}} asks one night, as stars wheel overhead.\n\nOdysseus looks toward the horizon. 'Because home is not just a place. It is the people who love you and whom you love. My wife Penelope. My son Telemachus. I have been away twenty years. Wars and monsters have tried to stop me. But nothing can defeat the pull of love.'\n\nHe points to a constellation. 'The ancient poet once wrote: There is nothing worse for mortal beings than wandering. We are made to belong somewhere, to someone. Remember that, young travelers. Adventures are wonderful—but they mean nothing without people to share them with.'\n\nThe book begins to glow. It's time to return to the library.",
+      "emoji": "🌟",
+      "choices": [
+        {
+          "text": "Return to the library",
+          "nextNodeId": "return-from-book"
+        }
+      ]
+    },
+    "aesop-adventure": {
+      "id": "aesop-adventure",
+      "text": "{{PLAYER1_NAME}} opens Aesop's book, and the world transforms into a sun-dappled forest glade. Animals are gathered in a circle—lions, foxes, rabbits, tortoises—and they're all talking.\n\n'Welcome, young ones!' calls a voice. An old man sits on a stump nearby, with kind eyes and a worn traveling cloak. 'I am Aesop. Once I was a slave in ancient Greece, but I earned my freedom through my stories. Would you like to hear one?'\n\nBefore they can answer, a commotion breaks out among the animals. A fox is arguing with a crow. 'She stole my cheese!' the crow caws. 'He tricked me!' the fox protests.\n\n'Ah,' Aesop chuckles. 'A familiar dispute. Let me tell you what happened, and you can judge who was right.'\n\nHe explains: the crow found a piece of cheese and flew to a branch to eat it. The fox, wanting the cheese, flattered the crow extravagantly—'What beautiful feathers! What a graceful bird! I bet you have the most beautiful voice too!' The crow, puffed up with pride, opened her mouth to sing... and dropped the cheese, which the fox snatched.\n\n'Now,' Aesop says, 'who is at fault?'",
+      "emoji": "🦊",
+      "choices": [
+        {
+          "text": "\"The fox, for being dishonest\"",
+          "nextNodeId": "aesop-fox-fault"
+        },
+        {
+          "text": "\"The crow, for being foolish\"",
+          "nextNodeId": "aesop-crow-fault"
+        },
+        {
+          "text": "\"Both of them\"",
+          "nextNodeId": "aesop-both-fault"
+        }
+      ]
+    },
+    "aesop-fox-fault": {
+      "id": "aesop-fox-fault",
+      "text": "Aesop nods thoughtfully. 'An interesting answer. Yes, the fox was dishonest. He said things he did not believe to manipulate the crow. In this, he was wrong.'\n\nThe fox hangs his head slightly.\n\n'But consider,' Aesop continues. 'If someone tries to trick you, must they always succeed? The fox was clever, yes—but the crow had a choice. She could have ignored the flattery. She could have thought: Why is this fox suddenly so interested in my singing? What does he want?\n\n'The world will always have foxes—people who try to manipulate others through flattery, through lies, through deception. You cannot control them. But you CAN control yourself. You can learn to recognize flattery for what it is. You can ask yourself: Is this person telling me what I want to hear, or what is true?'\n\nHe picks up a stick and draws in the dirt. 'My fables have a simple message: be wise. The tortoise beats the hare through persistence. The ant prepares while the grasshopper plays. The boy who cried wolf learns that lies have consequences. Simple stories, but true ones.'",
+      "emoji": "📜",
+      "choices": [
+        {
+          "text": "Ask to hear another fable",
+          "nextNodeId": "aesop-another"
+        },
+        {
+          "text": "Thank Aesop and return to the library",
+          "nextNodeId": "return-from-book"
+        }
+      ]
+    },
+    "aesop-crow-fault": {
+      "id": "aesop-crow-fault",
+      "text": "'You think the crow was at fault?' Aesop asks. 'Tell me why.'\n\n{{PLAYER2_NAME}} considers. 'Because she should have known the fox was lying. Why would a fox care about a crow's singing? She was vain and got tricked because of it.'\n\n'Excellent reasoning!' Aesop claps his hands. 'This is indeed the lesson I intended. We cannot control what others do, but we can control our own reactions. The crow's vanity—her desire to be admired—made her vulnerable. If she had been humble, the flattery would not have worked.'\n\nThe crow ruffles her feathers, embarrassed but listening.\n\n'There is a saying,' Aesop continues. 'Pride comes before a fall. When we think too highly of ourselves, we stop being careful. We believe we deserve praise, and so we accept it without question. But true confidence does not need constant validation. A truly great singer does not need a fox to tell her she sings well—she knows it herself.'\n\nHe smiles at the animals. 'My fables are simple, but their truths apply to everyone—animals and humans alike.'",
+      "emoji": "🪶",
+      "choices": [
+        {
+          "text": "Ask to hear another fable",
+          "nextNodeId": "aesop-another"
+        },
+        {
+          "text": "Thank Aesop and return to the library",
+          "nextNodeId": "return-from-book"
+        }
+      ]
+    },
+    "aesop-both-fault": {
+      "id": "aesop-both-fault",
+      "text": "Aesop breaks into a wide smile. 'Ah! You have the makings of a philosopher! Yes—both share responsibility.'\n\nHe turns to the animals. 'The fox was wrong to deceive. The crow was foolish to believe. Most situations in life are like this—complicated, with multiple perspectives. The easy answer is rarely the complete answer.'\n\nHe stands and walks among the animals. 'I was a slave once. Some said it was my fault for being weak. Others blamed my masters for being cruel. The truth? The system was wrong, but I also had to find my own way to freedom. I did that through stories—showing people truths they could not otherwise see.'\n\n{{PLAYER1_NAME}} thinks about this. 'So stories can change things?'\n\n'Stories change everything,' Aesop says. 'The human mind thinks in stories. We understand the world through narrative. A fact can be ignored, but a story stays with you. That is why I tell fables about animals—because animals make us laugh, and laughter opens our hearts to truth.'\n\nThe animals nod in agreement—even the fox and the crow.",
+      "emoji": "💡",
+      "choices": [
+        {
+          "text": "Ask to hear another fable",
+          "nextNodeId": "aesop-another"
+        },
+        {
+          "text": "Thank Aesop and return to the library",
+          "nextNodeId": "return-from-book"
+        }
+      ]
+    },
+    "aesop-another": {
+      "id": "aesop-another",
+      "text": "'Another fable? Of course!' Aesop settles back onto his stump. 'Let me tell you of the lion and the mouse.\n\n'A great lion caught a tiny mouse and was about to eat it. The mouse begged: Please let me go! Someday I might be able to help you! The lion laughed—how could a tiny mouse ever help the king of beasts?—but he let the mouse go anyway, out of amusement.\n\n'Time passed. The lion was caught in a hunter's net, trapped and helpless. But the little mouse heard his roars and came running. With her tiny teeth, she gnawed through the ropes and set the lion free.'\n\nAesop looks at {{BOTH_NAMES}}. 'The moral? No act of kindness, however small, is ever wasted. And never underestimate someone because they seem weak or unimportant. The smallest person can make the biggest difference.'\n\nThe animals murmur in agreement. Even the lion in the group bows his head to the little mouse sitting nearby.\n\n'Remember this,' Aesop says. 'Be kind. Be humble. And never stop listening to stories—they are the greatest teachers.'",
+      "emoji": "🦁",
+      "choices": [
+        {
+          "text": "Thank Aesop and return to the library",
+          "nextNodeId": "return-from-book"
+        }
+      ]
+    },
+    "plato-adventure": {
+      "id": "plato-adventure",
+      "text": "{{PLAYER1_NAME}} opens Plato's book and finds themselves in a grand academy. Marble columns surround a courtyard where young students sit at the feet of an older man in philosopher's robes.\n\n'Welcome to the Academy,' the man says. 'I am Plato, student of Socrates. We are discussing a question: What is justice?'\n\n'Justice is when people follow the rules,' one student suggests.\n\n'But what if the rules are wrong?' Plato counters. 'Were the rules just when they sentenced my teacher Socrates to death for asking questions?'\n\nHe notices {{BOTH_NAMES}}. 'Ah, new students! Come, sit. Perhaps fresh minds will help us see clearly.'\n\n{{PLAYER2_NAME}} sits nervously. 'We're just kids. We don't know anything about justice.'\n\nPlato smiles. 'Then you are wise already. Socrates taught that wisdom begins with knowing what you do not know. The foolish think they have all the answers. The wise understand they are still learning. Now—what do YOU think justice means?'",
+      "emoji": "🏛️",
+      "choices": [
+        {
+          "text": "\"Justice is treating everyone fairly\"",
+          "nextNodeId": "plato-fairness"
+        },
+        {
+          "text": "\"Justice is when good people are rewarded and bad people are punished\"",
+          "nextNodeId": "plato-reward"
+        },
+        {
+          "text": "\"We don't know—please teach us\"",
+          "nextNodeId": "plato-teach"
+        }
+      ]
+    },
+    "plato-fairness": {
+      "id": "plato-fairness",
+      "text": "'Fairness,' Plato repeats. 'A good beginning. But let me ask: is it fair to give the same medicine to a healthy person and a sick person?'\n\n{{PLAYER1_NAME}} thinks. 'No... the sick person needs it more.'\n\n'Exactly! So fairness is not always sameness. Sometimes justice means giving people what they need, which may be different from what others need.' Plato draws a circle in the sand. 'Imagine a society where everyone has a role based on their abilities. Some are thinkers, some are warriors, some are craftspeople. Is it fair that they do different work?'\n\n'Maybe,' {{PLAYER2_NAME}} says slowly, 'if everyone gets to do what they're good at?'\n\n'You have touched on something important,' Plato says. 'Justice in a society is like harmony in music. Different notes play different parts, but together they create something beautiful. The flute does not complain that it cannot boom like a drum. The drum does not wish to trill like a flute. Each fulfills its nature.'\n\nHe gazes up at the clouds. 'True justice, I believe, is when every person develops their potential and contributes to the whole. Not sameness—but harmony.'",
+      "emoji": "⚖️",
+      "choices": [
+        {
+          "text": "Ask about Plato's ideal society",
+          "nextNodeId": "plato-republic"
+        },
+        {
+          "text": "Thank Plato and return to the library",
+          "nextNodeId": "return-from-book"
+        }
+      ]
+    },
+    "plato-reward": {
+      "id": "plato-reward",
+      "text": "'Reward for the good, punishment for the bad,' Plato muses. 'But tell me—who decides what is good and what is bad?'\n\n{{PLAYER2_NAME}} hesitates. 'Um... everyone knows the difference?'\n\n'Do they?' Plato raises an eyebrow. 'In Sparta, they trained children to steal—cleverly—and punished them only if they got caught. They called this good education. In Athens, we call it a crime. Who is right?'\n\nThe students murmur among themselves.\n\n'This is why philosophy matters,' Plato continues. 'We cannot simply accept what our society tells us is good. We must examine it. We must ask: Is this truly good? Or is it merely what I was taught? My teacher Socrates spent his life asking such questions. They killed him for it—but his questions live on.'\n\n{{PLAYER1_NAME}} feels a chill. 'They killed him for asking questions?'\n\n'For making people think,' Plato says softly. 'There will always be those who fear thought, who prefer obedience to questioning. But remember: it is better to be a human being dissatisfied than a pig satisfied. Better to be Socrates dissatisfied than a fool satisfied.'",
+      "emoji": "🤔",
+      "choices": [
+        {
+          "text": "Ask about Plato's ideal society",
+          "nextNodeId": "plato-republic"
+        },
+        {
+          "text": "Thank Plato and return to the library",
+          "nextNodeId": "return-from-book"
+        }
+      ]
+    },
+    "plato-teach": {
+      "id": "plato-teach",
+      "text": "Plato's eyes light up. 'The perfect answer! You have shown humility—the first step to wisdom.'\n\nHe settles into his teaching posture. 'Let me tell you a story. Imagine prisoners chained in a cave since birth. They face a wall and cannot turn around. Behind them, a fire burns, and between the fire and the prisoners, puppeteers hold up objects that cast shadows on the wall.'\n\nHe mimes the shadows. 'The prisoners have seen nothing but shadows their whole lives. They think the shadows ARE reality. They give the shadows names. They think they understand the world.'\n\n'But the shadows aren't real,' {{PLAYER1_NAME}} says.\n\n'Exactly! Now imagine one prisoner is freed. He turns and sees the fire, the puppeteers, the real objects. He is confused—blinded at first. Then he is taken outside the cave and sees the sun, the sky, the true world. His whole understanding changes.'\n\nPlato spreads his hands. 'We are all prisoners in the cave. The shadows are the opinions, assumptions, and beliefs we accept without questioning. Philosophy is the journey out of the cave—toward truth, toward light, toward understanding what is really real.'",
+      "emoji": "🔥",
+      "choices": [
+        {
+          "text": "Ask about Plato's ideal society",
+          "nextNodeId": "plato-republic"
+        },
+        {
+          "text": "Thank Plato and return to the library",
+          "nextNodeId": "return-from-book"
+        }
+      ]
+    },
+    "plato-republic": {
+      "id": "plato-republic",
+      "text": "'My ideal society?' Plato strokes his beard. 'In my book The Republic, I imagine a city ruled by philosopher-kings—wise leaders who love truth more than power or wealth. They are educated not just in fighting or making money, but in mathematics, music, dialectic—the art of reasoned debate.'\n\n'Could that work?' {{PLAYER2_NAME}} asks.\n\n'Perhaps not exactly as I described,' Plato admits. 'But the principle stands: leaders should be wise, not merely powerful. They should serve the people, not themselves. They should understand justice, beauty, and goodness—not just strategy and strength.'\n\nHe looks at the young students around him. 'This is why I built this Academy. I cannot create a perfect city, but I can educate minds. Every student who leaves here thinking more clearly, questioning more deeply, acting more justly—that is how the world changes. Not through revolutions, but through education. One mind at a time.'\n\nThe book begins to glow softly. {{BOTH_NAMES}} feel the pull of the library.\n\n'Remember,' Plato says, 'the unexamined life is not worth living. Keep asking questions. Keep seeking truth. That is the highest calling.'",
+      "emoji": "👑",
+      "choices": [
+        {
+          "text": "Return to the library",
+          "nextNodeId": "return-from-book"
+        }
+      ]
+    },
+    "arthur-adventure": {
+      "id": "arthur-adventure",
+      "text": "The world transforms into a great hall lit by torches. A massive round table dominates the room, and seated around it are knights in gleaming armor. At one seat, a sword embedded in a stone sits waiting.\n\n'Who approaches the court of Camelot?' demands a strong voice. A tall knight rises—Sir Lancelot, the bravest of them all.\n\n'Peace, Lancelot,' says another voice. A man with a golden crown and kind eyes stands. 'These are visitors from far away. I am Arthur, King of the Britons.'\n\n{{PLAYER1_NAME}} stares at the sword in the stone. 'Is that... Excalibur?'\n\n'No,' Arthur smiles. 'Excalibur was the sword given to me by the Lady of the Lake. This is the sword I pulled from the stone as a boy—the sword that proved I was meant to be king. Any who doubt their worth may try to pull it.'\n\n{{PLAYER2_NAME}} looks nervous. 'We could try?'\n\n'The sword reveals the heart's truth,' Arthur says. 'It cannot be fooled by strength or trickery. Only one who is pure of intention can move it. Would you like to try?'",
+      "emoji": "⚔️",
+      "choices": [
+        {
+          "text": "Try to pull the sword",
+          "nextNodeId": "arthur-pull"
+        },
+        {
+          "text": "Ask Arthur about being a good king",
+          "nextNodeId": "arthur-kingship"
+        }
+      ]
+    },
+    "arthur-pull": {
+      "id": "arthur-pull",
+      "text": "{{PLAYER1_NAME}} approaches the sword nervously. The knights watch in silence. {{PLAYER1_HE_SHE_CAP}} wraps {{PLAYER1_HIS_HER}} hands around the hilt and pulls.\n\nThe sword moves—just slightly. A gasp runs through the hall.\n\nThen {{PLAYER2_NAME}} steps forward and adds {{PLAYER2_HIS_HER}} hands to the hilt. Together, they pull, and the sword slides free with a ring of metal.\n\nThe knights erupt in astonishment. Arthur laughs with delight. 'Together! You see? Neither alone could move it—but together, you succeeded!'\n\n{{BOTH_NAMES}} stare at the gleaming blade in their shared grip.\n\n'This is the lesson of Camelot,' Arthur says, growing serious. 'I built the Round Table so that no knight sits higher than another. We are equals—different in skills, but united in purpose. Alone, I am just a man. But together with my knights, we can protect the realm.'\n\nHe takes the sword gently and returns it to the stone. 'Remember this, young travelers. The greatest strength is not in one person, but in many people working as one. Find your Round Table. Build your fellowship. Together, you can move mountains.'",
+      "emoji": "🗡️",
+      "choices": [
+        {
+          "text": "Ask about being a good king",
+          "nextNodeId": "arthur-kingship"
+        },
+        {
+          "text": "Thank Arthur and return to the library",
+          "nextNodeId": "return-from-book"
+        }
+      ]
+    },
+    "arthur-kingship": {
+      "id": "arthur-kingship",
+      "text": "'What makes a good king?' Arthur repeats {{PLAYER2_NAME}}'s question. He walks to a window and gazes out at his kingdom.\n\n'When I was a boy, I learned from a wizard named Merlin. He taught me many things, but the most important was this: might does not make right. Right makes might.'\n\n'What does that mean?' {{PLAYER1_NAME}} asks.\n\n'It means that power alone does not justify its use. Just because you CAN do something does not mean you SHOULD. A king who rules through fear is not truly strong—he is weak, for his power depends on others' terror. A king who rules through love and justice is truly strong, for his people follow him willingly.'\n\nHe turns back to them. 'Merlin transformed me into different animals to teach me this. As a fish, I learned about freedom. As an ant, I learned about pointless war. As a bird, I learned about boundaries and territory. Each form showed me a different truth about power and responsibility.'\n\nArthur places a hand on his heart. 'True power is service. The king serves the kingdom—not the other way around. Remember this, whatever you become: leadership is not about being served. It is about serving others.'",
+      "emoji": "👑",
+      "choices": [
+        {
+          "text": "Try to pull the sword together",
+          "nextNodeId": "arthur-pull"
+        },
+        {
+          "text": "Thank Arthur and return to the library",
+          "nextNodeId": "return-from-book"
+        }
+      ]
+    },
+    "arabian-adventure": {
+      "id": "arabian-adventure",
+      "text": "{{BOTH_NAMES}} find themselves in a palace of impossible beauty—marble floors, silk curtains, fountains singing in moonlit gardens. A young woman in royal robes sits before a stern-looking sultan.\n\n'You dare tell me stories?' the sultan growls. 'I should have your head!'\n\nBut the woman is calm. 'Great Sultan, I only ask for one night. If my story does not please you, you may do as you wish.'\n\n'That is Scheherazade,' a servant whispers to {{BOTH_NAMES}}. 'The cleverest woman in the kingdom. The sultan has grown cruel and vowed to execute a new bride every morning. Scheherazade volunteered to marry him—but she has a plan.'\n\n'What plan?' {{PLAYER1_NAME}} whispers back.\n\n'Watch.'\n\nScheherazade begins a tale—of Aladdin and a magical lamp. Her voice weaves pictures in the air. Even the angry sultan leans forward, entranced. But just as Aladdin finds the lamp, she stops.\n\n'Dawn approaches,' she says. 'I must end here—unless you wish to hear what happens next?'\n\nThe sultan, desperate to know, spares her life for another night. And another. And another—for a thousand and one nights.",
+      "emoji": "🌙",
+      "choices": [
+        {
+          "text": "Ask Scheherazade about the power of stories",
+          "nextNodeId": "scheherazade-stories"
+        },
+        {
+          "text": "Listen to one of her tales",
+          "nextNodeId": "scheherazade-tale"
+        }
+      ]
+    },
+    "scheherazade-stories": {
+      "id": "scheherazade-stories",
+      "text": "During a break in the storytelling, {{BOTH_NAMES}} approach Scheherazade. She smiles warmly at them.\n\n'How do stories have so much power?' {{PLAYER2_NAME}} asks.\n\n'Because stories are how humans understand the world,' she says. 'Facts tell us what happened. Stories tell us what it means. When I tell the sultan about Aladdin, I am really teaching him about humility, about love, about the dangers of greed. He learns without knowing he is learning.'\n\nShe picks up a handful of rose petals. 'My stories saved my life—but more importantly, they are saving the sultan's soul. Each night, he hears about heroes who are kind, about villains who are punished, about wisdom and folly and love. Slowly, slowly, his heart is changing.'\n\n'So stories can change people?' {{PLAYER1_NAME}} asks.\n\n'Stories ARE change,' Scheherazade says. 'Every person you meet is a story—a beginning, a middle, and someday an end. Every day is a page. What story will you write with your life? That is the greatest tale of all.'",
+      "emoji": "📖",
+      "choices": [
+        {
+          "text": "Listen to one of her tales",
+          "nextNodeId": "scheherazade-tale"
+        },
+        {
+          "text": "Thank her and return to the library",
+          "nextNodeId": "return-from-book"
+        }
+      ]
+    },
+    "scheherazade-tale": {
+      "id": "scheherazade-tale",
+      "text": "Scheherazade beckons them to sit. 'Let me tell you of Sinbad the Sailor—a merchant who went on seven voyages and discovered that the world is stranger and more wonderful than anyone imagined.'\n\nHer voice carries them away—to islands where diamonds grow like flowers, to valleys full of serpents, to birds so large they carry elephants in their talons. Sinbad faces every danger with courage and cleverness, and though he loses everything multiple times, he always rebuilds.\n\n'Why does Sinbad keep sailing?' {{PLAYER2_NAME}} asks when she pauses. 'After all those dangers, why not stay home?'\n\nScheherazade smiles. 'Because the human spirit hungers for discovery. Comfort is pleasant, but it does not help us grow. Every time Sinbad returned wealthy, he grew restless. He had learned a truth: what you gain is not as valuable as what you become.'\n\nShe looks out at the moonlit garden. 'The treasures Sinbad collected were lost and found many times. But the wisdom he gained? The courage he developed? The friends he made? Those stayed with him forever. The journey itself is the treasure.'\n\nThe book begins to glow. Time is drawing short.",
+      "emoji": "⛵",
+      "choices": [
+        {
+          "text": "Return to the library",
+          "nextNodeId": "return-from-book"
+        }
+      ]
+    },
+    "eighty-days-adventure": {
+      "id": "eighty-days-adventure",
+      "text": "The world transforms into a London gentlemen's club in 1872. A precise-looking man with excellent posture is making a bet with several skeptical colleagues.\n\n'Twenty thousand pounds says I can travel around the entire world in eighty days,' he declares calmly.\n\n'Impossible!' the others cry.\n\n'That is Phileas Fogg,' whispers his servant Passepartout to {{BOTH_NAMES}}. 'The most punctual man in England. He has planned every detail of our journey—steamships, trains, elephants. We leave in ten minutes!'\n\nFogg notices them. 'Ah, young travelers. Would you care to join us? I warn you—we must be precisely on schedule. The world is large, but with proper planning, it can be conquered.'\n\nSoon they're off—racing across continents. India, Hong Kong, Japan, America—every delay threatens disaster. But Fogg remains calm.\n\n'How are you not worried?' {{PLAYER1_NAME}} asks as they board a ship just before it departs.\n\n'Worry solves nothing,' Fogg says. 'I plan. I adapt. I act. The world throws obstacles in our path—the secret is to remain flexible while keeping the goal in sight.'",
+      "emoji": "🎩",
+      "choices": [
+        {
+          "text": "Continue the journey and learn from Fogg",
+          "nextNodeId": "fogg-lesson"
+        }
+      ]
+    },
+    "fogg-lesson": {
+      "id": "fogg-lesson",
+      "text": "The journey is full of wonders. In India, they rescue a princess from a cruel fate. In Hong Kong, they lose Passepartout but find him again. In America, they cross a dangerous bridge just before it collapses.\n\n'How do you stay so calm?' {{PLAYER2_NAME}} asks during a quiet moment on a Pacific steamship.\n\nFogg considers. 'I spent years studying schedules, maps, timetables. Knowledge reduces fear. When you understand how the world works, it becomes less frightening.'\n\nHe gazes at the horizon. 'But I have learned something else on this journey. Before, I lived by the clock—every minute accounted for. I thought precision was everything. Now I see that flexibility matters too. The best plans leave room for the unexpected.'\n\nHe smiles—a rare sight. 'And I have learned that the journey matters more than the destination. I set out to win a bet. But I have gained friends, saved a life, and seen wonders I never imagined. Even if I lose, I have won.'\n\nThe book glows. As they return to the library, {{PLAYER1_NAME}} remembers Fogg's final words: 'Plan carefully. Adapt quickly. And never forget why you started the journey in the first place.'",
+      "emoji": "🌏",
+      "choices": [
+        {
+          "text": "Return to the library",
+          "nextNodeId": "return-from-book"
+        }
+      ]
+    },
+    "nautilus-adventure": {
+      "id": "nautilus-adventure",
+      "text": "The world transforms into an underwater realm of unimaginable beauty. {{BOTH_NAMES}} stand in an elegant room with a huge porthole showing fish and coral and waving kelp.\n\n'Welcome aboard the Nautilus,' says a commanding voice. A tall man with piercing eyes and a magnificent beard approaches. 'I am Captain Nemo. You are now twenty thousand leagues under the sea.'\n\n'How is this possible?' {{PLAYER2_NAME}} gasps. 'It's 1866!'\n\n'Science makes possible what imagination dreams,' Nemo says. 'This submarine is powered by electricity drawn from the sea itself. We are self-sufficient—we eat what the ocean provides, we breathe air extracted from water. The surface world knows nothing of us.'\n\n{{PLAYER1_NAME}} presses against the porthole. A giant squid glides past. 'Why do you live down here?'\n\nNemo's expression darkens. 'Because the world above is full of war, injustice, and cruelty. Here, I am free. Here, I harm no one and no one harms me. The sea does not judge by nation or race. The sea belongs to everyone.'",
+      "emoji": "🐙",
+      "choices": [
+        {
+          "text": "Ask about the wonders of the ocean",
+          "nextNodeId": "nemo-ocean"
+        },
+        {
+          "text": "Ask why Nemo left the surface world",
+          "nextNodeId": "nemo-past"
+        }
+      ]
+    },
+    "nemo-ocean": {
+      "id": "nemo-ocean",
+      "text": "Captain Nemo leads them through the Nautilus—past a library of 12,000 books, past a museum filled with treasures from shipwrecks, past a greenhouse of underwater plants.\n\n'The ocean covers seventy percent of our planet,' he explains. 'It contains more life, more mysteries, more resources than all the land combined. And yet humans ignore it, pollute it, fear it.'\n\nThrough the porthole, they watch a whale pass majestically by. 'Every creature here has its place. The smallest plankton feeds the fish, the fish feed the seals, the seals feed the orcas. A perfect balance, maintained for millions of years—until humans began to disturb it.'\n\n'What can we do?' {{PLAYER1_NAME}} asks.\n\n'Learn,' Nemo says firmly. 'Understand. Respect. The ocean does not need humanity. Humanity needs the ocean. It gives us air to breathe, food to eat, weather and climate. Yet we treat it as a garbage dump, a resource to exploit without thought.'\n\nHe places a hand on the porthole. 'I withdrew from the surface in anger. Perhaps that was wrong. Perhaps the answer is not to flee, but to teach. To show people the wonder they are destroying.'",
+      "emoji": "🐋",
+      "choices": [
+        {
+          "text": "Ask why Nemo left the surface world",
+          "nextNodeId": "nemo-past"
+        },
+        {
+          "text": "Thank Nemo and return to the library",
+          "nextNodeId": "return-from-book"
+        }
+      ]
+    },
+    "nemo-past": {
+      "id": "nemo-past",
+      "text": "Captain Nemo is silent for a long moment. When he speaks, his voice is heavy.\n\n'I was not always a man of the sea. Once, I had a family. A country. A name. All were taken from me by war—by men who valued conquest over compassion, power over justice.'\n\nHe gazes into the dark water. 'I built the Nautilus to escape. To live by my own laws, answerable to no nation. Down here, I found peace—but also loneliness. Freedom without connection is its own kind of prison.'\n\n{{PLAYER2_NAME}} asks gently, 'Do you regret leaving?'\n\n'Some days.' Nemo sighs. 'Anger drove me here—and anger, I have learned, is a fire that burns the one who carries it. The surface world is imperfect. But so am I. Perhaps running away was not the answer.'\n\nHe looks at them with sudden intensity. 'You are young. You still have choices. When the world disappoints you—and it will—do not retreat into bitterness. Stay engaged. Fight for what is right. It is harder than hiding, but it is the only way things change.'\n\nThe book glows, signaling the end of the journey.",
+      "emoji": "💔",
+      "choices": [
+        {
+          "text": "Return to the library",
+          "nextNodeId": "return-from-book"
+        }
+      ]
+    },
+    "return-from-book": {
+      "id": "return-from-book",
+      "text": "The world shimmers and reforms. {{BOTH_NAMES}} find themselves back in the library, the book they entered now closed and resting on its pedestal.\n\nThe Librarian appears beside them. 'You've returned. And I see you carry something with you—not in your pockets, but in your minds.'\n\n{{PLAYER1_NAME}} touches {{PLAYER1_HIS_HER}} forehead. 'It's like... I can still feel the story. The people, the places, the lessons.'\n\n'That is the magic of books,' the Librarian says. 'Long after you close the cover, they live on inside you. Every story you read becomes part of who you are. The courage of Odysseus, the wisdom of Scheherazade, the curiosity of Captain Nemo—these are not just characters. They are possibilities. Ways of being that you can choose to embody.'\n\nShe gestures to the endless shelves. 'There are millions more stories waiting. But I sense your time here is nearly done—for today. The real world calls you back.'\n\n{{PLAYER2_NAME}} looks at the corridors stretching into infinity. 'Can we come back?'\n\n'Anyone who loves stories can find this place. Just open a book with an open heart.'",
+      "emoji": "📚",
+      "choices": [
+        {
+          "text": "Explore one more corridor before leaving",
+          "nextNodeId": "library-tour"
+        },
+        {
+          "text": "Ask the Librarian one final question",
+          "nextNodeId": "final-question"
+        },
+        {
+          "text": "Leave the library",
+          "nextNodeId": "ending"
+        }
+      ]
+    },
+    "final-question": {
+      "id": "final-question",
+      "text": "'Before we go,' {{PLAYER1_NAME}} says, 'why? Why does this library exist? Who created it?'\n\nThe Librarian smiles mysteriously. 'Every reader who has ever loved a book helps create this place. Every imagination that has ever traveled to other worlds through words adds to its shelves. The Time Library exists because humanity dreams—because we refuse to be confined to a single life, a single era, a single perspective.'\n\nShe walks them toward the exit. 'You have traveled today with ancient heroes, medieval storytellers, Victorian explorers. But here is the secret: you do not need this library to travel. Every book is a doorway. Every library is a time machine. Every story ever told is waiting for someone to listen.'\n\nShe places a hand on each of their shoulders. 'You are citizens of all times and all places—because you are readers. The stories you carry will shape who you become. Choose them wisely. Read widely. And never, ever stop wondering.'\n\nThe door appears before them, ordinary wood somehow containing all the magic they've experienced.",
+      "emoji": "✨",
+      "choices": [
+        {
+          "text": "Step through the door",
+          "nextNodeId": "ending"
+        }
+      ]
+    },
+    "ending": {
+      "id": "ending",
+      "text": "{{BOTH_NAMES}} step through the library door and find themselves back on the rainy street. The old building stands behind them, but when they turn to look, the sign no longer says 'Tempus Bibliotheca.' It just says 'Public Library.'\n\n'Was it real?' {{PLAYER2_NAME}} wonders.\n\n'I don't know,' {{PLAYER1_NAME}} admits. 'But I remember everything. The cave of the Cyclops. The fox and the crow. The Round Table. Captain Nemo's submarine...'\n\nThey walk home through streets that seem different now—richer, fuller, connected to centuries of stories and the people who told them. A bookshop window displays classics they recognize. A poster advertises a play by Shakespeare. The world is full of stories waiting to be discovered.\n\n'I want to read more,' {{PLAYER2_NAME}} says suddenly. 'Everything. All of it.'\n\n{{PLAYER1_NAME}} grins. 'Me too. Every book is a doorway, remember?'\n\nThe rain is letting up. The sun breaks through the clouds. And somewhere, in a library that exists outside of time, new stories are waiting for readers brave enough to find them.",
+      "emoji": "🌈",
+      "isEnding": true,
+      "endingType": "good",
+      "endingText": "THE END\n\nYou discovered the Time Library and traveled through stories from across history. Remember: every book is a doorway to another world. Keep reading, keep exploring, and never stop wondering.\n\n\"A reader lives a thousand lives before he dies. The man who never reads lives only one.\" — George R.R. Martin"
+    }
+  }
+}

@@ -1,0 +1,411 @@
+{
+  "formatVersion": "1.0",
+  "metadata": {
+    "id": "inventor-workshop",
+    "title": "The Inventor's Workshop",
+    "subtitle": "A Journey Through Scientific Discovery",
+    "author": "Adventure Stories",
+    "createdAt": "2025-01-23T12:00:00Z",
+    "updatedAt": "2025-01-23T12:00:00Z",
+    "ageRange": "8-10",
+    "estimatedMinutes": 20,
+    "themes": ["invention", "science", "curiosity", "problem-solving"],
+    "educationalTopics": ["Scientific method", "Famous inventors", "Physics basics", "Engineering principles"],
+    "coverDescription": "A magical workshop filled with gears, lightbulbs, flying machines, and blueprints, with sparks of electricity and steam rising from various inventions"
+  },
+  "storyBible": {
+    "setting": "A magical museum where famous inventors' workshops come to life and their inventions can be experienced firsthand",
+    "tone": "Wonder-filled and curious, celebrating the joy of discovery and the creative process of invention",
+    "mainCharacters": "Two young visitors who discover they have a talent for invention and problem-solving",
+    "educationalFocus": "Scientific principles, famous inventors, the engineering design process, and how curiosity leads to discovery"
+  },
+  "startNode": "museum-discovery",
+  "nodes": {
+    "museum-discovery": {
+      "id": "museum-discovery",
+      "text": "The Museum of Magnificent Inventions looks ordinary from outside - just an old brick building on a quiet street. But when {{BOTH_NAMES}} step through the front door, everything changes.\n\nThe lobby stretches impossibly high, filled with floating light bulbs, spinning gears the size of cars, and models of flying machines that actually fly in lazy circles overhead.\n\n\"Welcome, young inventors!\" A hologram of an elderly man with wild white hair flickers to life. It's Albert Einstein! \"I am the museum's guide. Today, we have a problem only curious minds can solve.\"\n\nHe points to a massive machine in the center of the room, dark and still. \"The Inspiration Engine has stopped working. Without it, new ideas cannot flow into the world. Will you help restart it?\"\n\n*Fun Fact: Albert Einstein developed the theory of relativity, which changed how we understand time, space, and gravity!*",
+      "choices": [
+        {
+          "text": "\"Yes! How do we fix it?\"",
+          "nextNodeId": "accept-quest"
+        },
+        {
+          "text": "\"What exactly is the Inspiration Engine?\"",
+          "nextNodeId": "learn-about-engine"
+        },
+        {
+          "text": "Look around the museum first",
+          "nextNodeId": "explore-museum"
+        }
+      ]
+    },
+    "learn-about-engine": {
+      "id": "learn-about-engine",
+      "text": "Einstein's hologram smiles. \"Excellent question! A good scientist always seeks to understand before acting.\"\n\n\"The Inspiration Engine was built by combining the genius of history's greatest inventors. It runs on three types of energy: the Spark of Curiosity, the Flow of Persistence, and the Light of Imagination.\"\n\n\"When all three energies combine, the engine sends inspiration out into the world. Every time someone has a great idea - from a new recipe to a rocket design - a bit of that energy comes from here!\"\n\nHe looks worried. \"But the three energy sources have become disconnected. You must visit three workshops and restore each one.\"\n\n*The Scientific Method: Scientists always start by asking questions and trying to understand the problem before solving it!*",
+      "choices": [
+        {
+          "text": "\"We'll help! Where do we start?\"",
+          "nextNodeId": "accept-quest"
+        }
+      ]
+    },
+    "explore-museum": {
+      "id": "explore-museum",
+      "text": "You wander through the museum's ground floor. Display cases show incredible inventions throughout history:\n\n- The wheel, from 3500 BCE - one of humanity's first great inventions\n- Gutenberg's printing press, which made books available to everyone\n- The Wright Brothers' airplane designs\n- Alexander Graham Bell's first telephone\n- Modern inventions: smartphones, 3D printers, electric cars\n\n{{PLAYER2_NAME}} notices something. \"Look! All these inventions solved problems. The wheel made moving heavy things easier. The printing press made sharing knowledge faster.\"\n\n{{PLAYER1_NAME}} adds, \"And they all started with someone asking 'What if?'\"\n\nEinstein's hologram appears beside you. \"You understand! That's exactly why we need the Inspiration Engine working again.\"\n\n*Invention Pattern: Almost every invention in history started with someone noticing a problem and wondering if there was a better way!*",
+      "choices": [
+        {
+          "text": "Agree to help fix the Inspiration Engine",
+          "nextNodeId": "accept-quest"
+        }
+      ]
+    },
+    "accept-quest": {
+      "id": "accept-quest",
+      "text": "\"Wonderful!\" Einstein beams. \"You must visit three workshops. Each contains a challenge that will restore one type of energy.\"\n\nThree doors appear, each glowing with different colors:\n\n**The Blue Door** - Edison's Electric Workshop (The Spark of Curiosity)\n**The Green Door** - Da Vinci's Design Studio (The Light of Imagination)  \n**The Orange Door** - The Wright Brothers' Hangar (The Flow of Persistence)\n\n\"Complete all three, and the Inspiration Engine will roar back to life!\"\n\nEinstein hands you each a small notebook. \"An inventor's most important tool - for recording observations and ideas. Now, where would you like to begin?\"\n\n*Inventor's Notebook: Many famous inventors kept detailed notebooks. Leonardo da Vinci's notebooks contain over 7,000 pages of ideas and drawings!*",
+      "choices": [
+        {
+          "text": "Enter Edison's Electric Workshop (Blue Door)",
+          "nextNodeId": "edison-workshop"
+        },
+        {
+          "text": "Enter Da Vinci's Design Studio (Green Door)",
+          "nextNodeId": "davinci-studio"
+        },
+        {
+          "text": "Enter the Wright Brothers' Hangar (Orange Door)",
+          "nextNodeId": "wright-hangar"
+        }
+      ]
+    },
+    "edison-workshop": {
+      "id": "edison-workshop",
+      "text": "The Blue Door opens into a workshop filled with electrical equipment. Wires run everywhere, connecting batteries, switches, and hundreds of light bulbs. Most are dark, but a few flicker weakly.\n\nA hologram of Thomas Edison appears, wearing a vest and looking determined. \"Welcome! I'm Thomas Edison, and I invented the practical light bulb - though it took over 1,000 attempts to get it right!\"\n\nHe gestures to a workbench covered in materials. \"The Spark of Curiosity has gone out because no one's been asking questions here. To restore it, you must complete a circuit that lights up the Curiosity Bulb.\"\n\nThe materials include: copper wire, a battery, a switch, and the special blue Curiosity Bulb.\n\n*Edison Facts: Edison held 1,093 patents! He also invented the phonograph (first device to record sound) and improved the motion picture camera.*",
+      "choices": [
+        {
+          "text": "Ask Edison how electricity works",
+          "nextNodeId": "learn-electricity"
+        },
+        {
+          "text": "Try connecting the materials right away",
+          "nextNodeId": "circuit-attempt"
+        }
+      ]
+    },
+    "learn-electricity": {
+      "id": "learn-electricity",
+      "text": "Edison nods approvingly. \"Curiosity! That's exactly the right approach.\"\n\n\"Electricity is like water flowing through pipes. The battery is like a pump that pushes electrons - tiny particles - through the wire. The electrons flow in a loop called a circuit.\"\n\nHe draws a simple diagram. \"For a circuit to work, it must be complete - a full loop from the battery, through the wire and bulb, and back to the battery. If there's any break, the electrons can't flow.\"\n\n\"The switch is like a gate. When it's open, the circuit is broken. When it's closed, electrons can flow and the bulb lights up!\"\n\n{{PLAYER1_NAME}} looks at the materials with new understanding. \"So we need to connect everything in a complete loop!\"\n\n*Circuit Basics: A circuit needs: a power source (battery), a path (wire), and something to power (like a bulb). All parts must connect in a loop!*",
+      "choices": [
+        {
+          "text": "Build the circuit with this knowledge",
+          "nextNodeId": "circuit-success"
+        },
+        {
+          "text": "Ask what happens if we add more batteries",
+          "nextNodeId": "learn-more-electricity"
+        }
+      ]
+    },
+    "circuit-attempt": {
+      "id": "circuit-attempt",
+      "text": "You connect the wire to the battery and the bulb, but nothing happens. The bulb stays dark.\n\n\"Hmm,\" Edison says, not discouraged at all. \"Every failed attempt teaches us something. What do you think went wrong?\"\n\n{{PLAYER2_NAME}} looks at the setup. \"Maybe... the electricity has nowhere to go? It's not a complete loop.\"\n\n\"Exactly!\" Edison claps. \"Electricity needs a complete circuit - a path that goes out from the battery and back to it. Let me explain how it works...\"\n\n*Learning from Failure: Edison famously said, 'I have not failed. I've just found 10,000 ways that won't work.' Scientists learn from every attempt!*",
+      "choices": [
+        {
+          "text": "Learn how circuits work",
+          "nextNodeId": "learn-electricity"
+        }
+      ]
+    },
+    "learn-more-electricity": {
+      "id": "learn-more-electricity",
+      "text": "\"Excellent question!\" Edison's eyes light up. \"More batteries in a row - we call that 'in series' - means more power. The bulb would glow brighter!\"\n\n\"But be careful - too much power can burn out the bulb. It's about finding the right balance.\"\n\nHe shows you a display of different circuits. \"You can also wire batteries side by side - 'in parallel' - which makes them last longer without adding more power.\"\n\n\"Electricity is all about controlling the flow of electrons. That's why we invented switches, fuses, and resistors - all ways to control that flow safely.\"\n\n{{PLAYER2_NAME}} writes notes eagerly. \"This is how everything electrical works - from phones to cars?\"\n\n\"The same basic principles,\" Edison confirms. \"Just more complex circuits!\"\n\n*Series vs Parallel: Batteries in series add their power together. Batteries in parallel last longer but give the same power.*",
+      "choices": [
+        {
+          "text": "Build the circuit now",
+          "nextNodeId": "circuit-success"
+        }
+      ]
+    },
+    "circuit-success": {
+      "id": "circuit-success",
+      "text": "Carefully, you connect the copper wire from the battery's positive end to the switch, then to the Curiosity Bulb, and back to the battery's negative end. A complete loop!\n\n{{PLAYER1_NAME}} flips the switch closed, and... the blue Curiosity Bulb blazes to life! But this isn't ordinary light - it swirls with questions, equations, and wondering thoughts.\n\n\"You've restored the Spark of Curiosity!\" Edison cheers. \"By asking questions and learning before acting, you've proven that curiosity is the first step of invention.\"\n\nThe blue energy flows out of the workshop toward the Inspiration Engine in the main hall. One down, two to go!\n\nEdison tips his hat. \"Remember: always ask 'why' and 'how.' Curiosity is the spark that starts every great invention.\"\n\n*Key Lesson: The scientific method starts with curiosity - asking questions about how things work!*",
+      "choices": [
+        {
+          "text": "Go to Da Vinci's Design Studio",
+          "nextNodeId": "davinci-studio"
+        },
+        {
+          "text": "Go to the Wright Brothers' Hangar",
+          "nextNodeId": "wright-hangar"
+        }
+      ]
+    },
+    "davinci-studio": {
+      "id": "davinci-studio",
+      "text": "The Green Door opens into a Renaissance artist's studio. Canvases cover the walls - some showing beautiful paintings, others filled with technical drawings of machines.\n\nA hologram of Leonardo da Vinci appears, dressed in Renaissance clothing with a long beard. \"Benvenuto! Welcome! I am Leonardo - painter, sculptor, architect, engineer, and scientist. I believe art and science are one!\"\n\nThe room is filled with half-built inventions: a wooden helicopter, a mechanical knight, designs for a tank, and diving equipment.\n\n\"The Light of Imagination has dimmed because no one has been dreaming here. To restore it, you must complete one of my designs that I never finished building.\"\n\nHe shows you three unfinished inventions.\n\n*Da Vinci's Genius: Leonardo designed flying machines, submarines, and robots 500 years before they were actually built! He was centuries ahead of his time.*",
+      "choices": [
+        {
+          "text": "Work on the Flying Machine (ornithopter)",
+          "nextNodeId": "flying-machine"
+        },
+        {
+          "text": "Work on the Mechanical Knight (robot)",
+          "nextNodeId": "robot-knight"
+        },
+        {
+          "text": "Ask Leonardo about his design process",
+          "nextNodeId": "design-process"
+        }
+      ]
+    },
+    "design-process": {
+      "id": "design-process",
+      "text": "\"Ah, you want to understand how to think like an inventor!\" Leonardo is delighted. \"First, I observe nature. Watch how birds fly, how water flows, how animals move. Nature has already solved many problems!\"\n\n\"Then I sketch. Hundreds of drawings. I draw what I see, then I draw what I imagine could be. Even 'impossible' ideas!\"\n\nHe flips through his famous notebooks, showing incredible drawings. \"See? Here I studied how birds' wings work. Then I designed a flying machine based on what I learned.\"\n\n\"Never be afraid to imagine the impossible,\" he adds. \"Today's impossible is tomorrow's reality. I drew submarines and helicopters that people thought were crazy - now they exist!\"\n\n*Biomimicry: Many inventions copy nature! Velcro was inspired by burrs, bullet trains by kingfisher beaks, and airplane wings by bird wings.*",
+      "choices": [
+        {
+          "text": "Try building the Flying Machine",
+          "nextNodeId": "flying-machine"
+        },
+        {
+          "text": "Try building the Mechanical Knight",
+          "nextNodeId": "robot-knight"
+        }
+      ]
+    },
+    "flying-machine": {
+      "id": "flying-machine",
+      "text": "Leonardo leads you to a large wooden frame with fabric wings. \"My ornithopter! Designed to fly like a bird, with wings that flap.\"\n\nThe problem is clear - the mechanism that should make the wings flap is incomplete.\n\n\"I studied birds for years,\" Leonardo explains. \"Their wings don't just go up and down - they twist and change shape. But I couldn't build gears precise enough to copy that motion.\"\n\nLooking at the mechanism, you see it needs a way to convert circular motion (turning a crank) into flapping motion (up and down).\n\n{{PLAYER2_NAME}} spots some different-shaped gears on the workbench. \"What about using cams - those oval-shaped gears?\"\n\n*Engineering Challenge: Converting one type of motion to another is a fundamental engineering problem. Cams, cranks, and linkages all do this!*",
+      "choices": [
+        {
+          "text": "Try using the cam gears",
+          "nextNodeId": "flying-success"
+        },
+        {
+          "text": "Study how birds actually fly first",
+          "nextNodeId": "bird-study"
+        }
+      ]
+    },
+    "bird-study": {
+      "id": "bird-study",
+      "text": "Leonardo beams. \"Yes! Always study your subject first!\"\n\nHe shows you detailed drawings of bird wings in motion, taken from different angles. \"See how the wing rotates as it flaps? It pushes air down and back, creating lift and forward motion.\"\n\nYou notice the wing doesn't just move up and down in a straight line - it follows a curved path. \"So we need gears that create curved motion, not straight!\"\n\n\"Exactly! That's why circular gears alone won't work. You need cams - oval or egg-shaped gears that create irregular motion.\"\n\n{{PLAYER1_NAME}} picks up an egg-shaped cam. \"If this spins, anything touching it will move in a curved path, not a circle!\"\n\n*Learning from Nature: Studying birds led to understanding lift, which eventually made real airplanes possible.*",
+      "choices": [
+        {
+          "text": "Install the cam mechanism",
+          "nextNodeId": "flying-success"
+        }
+      ]
+    },
+    "flying-success": {
+      "id": "flying-success",
+      "text": "You install the cam gears into the mechanism. When you turn the main crank, the cams convert the spinning motion into the complex flapping pattern of bird wings!\n\nThe fabric wings begin to move, not just up and down, but with the twisting, natural motion of real bird flight. The ornithopter lifts off the ground and hovers!\n\n\"Magnifico!\" Leonardo claps with joy. \"You've done what I couldn't - made my dream fly!\"\n\nGreen light pours from the flying machine - the Light of Imagination! It swirls with creative ideas, artistic visions, and innovative designs.\n\n\"Remember,\" Leonardo says as the energy flows to the Inspiration Engine, \"imagination is seeing what doesn't exist yet and believing it could. Never stop dreaming impossible dreams!\"\n\n*Design Thinking: Great inventors combine observation, imagination, and experimentation to create new things!*",
+      "choices": [
+        {
+          "text": "Go to Edison's Workshop (if not done)",
+          "nextNodeId": "edison-workshop"
+        },
+        {
+          "text": "Go to the Wright Brothers' Hangar",
+          "nextNodeId": "wright-hangar"
+        },
+        {
+          "text": "Return to main hall (if both others done)",
+          "nextNodeId": "final-challenge"
+        }
+      ]
+    },
+    "robot-knight": {
+      "id": "robot-knight",
+      "text": "Leonardo shows you a suit of armor connected to wheels, pulleys, and cables. \"My mechanical knight! One of the first robots ever designed.\"\n\n\"It should be able to sit, stand, raise its arms, and lift its visor - all powered by a system of weights and pulleys. But I can't figure out how to make all the movements coordinate properly.\"\n\nYou examine the mechanism. Ropes connect to different parts of the knight, all leading to a central drum that should control them.\n\n\"The problem,\" Leonardo explains, \"is sequence. The knight needs to do movements in order - stand up, THEN raise arms - not all at once.\"\n\n{{PLAYER1_NAME}} thinks about it. \"What if we use different length ropes? Some would pull tight before others!\"\n\n*Early Robotics: Da Vinci's mechanical knight is considered one of the first robot designs. Modern robots still use similar principles!*",
+      "choices": [
+        {
+          "text": "Try the different rope lengths idea",
+          "nextNodeId": "robot-success"
+        },
+        {
+          "text": "Ask Leonardo about how programming works",
+          "nextNodeId": "early-programming"
+        }
+      ]
+    },
+    "early-programming": {
+      "id": "early-programming",
+      "text": "\"Programming?\" Leonardo tilts his head. \"Ah, you mean telling a machine what to do in what order!\"\n\n\"In my time, we program machines with physical things - cams of different shapes, drums with pegs, or ropes of different lengths. As the main mechanism turns, different parts activate at different times.\"\n\nHe shows you a music box as an example. \"See the cylinder with tiny bumps? Each bump plucks a note at a specific time. It's like sheet music made physical!\"\n\n\"For my knight, we need the same idea - a way to activate movements in sequence, controlled by one turning drum.\"\n\n{{PLAYER2_NAME}} understands. \"So if we put the ropes at different positions on the drum, they'll pull at different times as it turns!\"\n\n*Early Computing: Music boxes, looms, and mechanical calculators all used physical 'programs' - patterns that controlled their operation!*",
+      "choices": [
+        {
+          "text": "Arrange the ropes on the drum",
+          "nextNodeId": "robot-success"
+        }
+      ]
+    },
+    "robot-success": {
+      "id": "robot-success",
+      "text": "You carefully arrange the ropes on the central drum at different positions and lengths. When you turn the crank, the mechanical knight comes to life!\n\nFirst, it stands from its seated position. Then, as the drum continues turning, it raises its arms. Finally, its visor lifts, revealing a smiling face inside.\n\n\"It works!\" {{PLAYER2_NAME}} cheers. \"We programmed a robot from 500 years ago!\"\n\nGreen light pours from the mechanical knight - the Light of Imagination! It contains dreams of the future, visions of what could be, and the courage to create new things.\n\n\"You've understood something important,\" Leonardo says. \"Imagination isn't just dreaming - it's figuring out HOW to make dreams real. That's the true art of invention.\"\n\n*Key Lesson: Imagination plus engineering equals invention. Dreams become real through careful design and problem-solving!*",
+      "choices": [
+        {
+          "text": "Go to Edison's Workshop (if not done)",
+          "nextNodeId": "edison-workshop"
+        },
+        {
+          "text": "Go to the Wright Brothers' Hangar",
+          "nextNodeId": "wright-hangar"
+        },
+        {
+          "text": "Return to main hall (if both others done)",
+          "nextNodeId": "final-challenge"
+        }
+      ]
+    },
+    "wright-hangar": {
+      "id": "wright-hangar",
+      "text": "The Orange Door opens into a large wooden hangar. Early aircraft hang from the ceiling, and sandy ground suggests a beach. Workbenches are covered with wing designs and wind tunnel models.\n\nTwo holograms appear - Orville and Wilbur Wright, the brothers who achieved the first powered airplane flight in 1903.\n\n\"Welcome to Kitty Hawk!\" Orville says. \"Well, a recreation of it. I'm Orville, and this is my brother Wilbur.\"\n\nWilbur continues, \"The Flow of Persistence has stopped because no one's been failing here lately.\"\n\n\"Wait,\" {{PLAYER1_NAME}} says, confused. \"Failing is bad, isn't it?\"\n\nThe brothers laugh. \"Not at all! We crashed hundreds of times before we flew. Each crash taught us something. Persistence means trying again after failure.\"\n\n*The Wright Brothers: Before their famous flight, they built and crashed numerous gliders. They learned from every failure!*",
+      "choices": [
+        {
+          "text": "\"How did you finally succeed?\"",
+          "nextNodeId": "wright-story"
+        },
+        {
+          "text": "\"What's the challenge here?\"",
+          "nextNodeId": "flight-challenge"
+        }
+      ]
+    },
+    "wright-story": {
+      "id": "wright-story",
+      "text": "\"Everyone thought flying was impossible,\" Wilbur explains. \"But we knew birds could do it, so it had to be possible somehow.\"\n\n\"We started with gliders - unpowered aircraft,\" Orville adds. \"We crashed. A lot. But each crash taught us something about lift, control, and balance.\"\n\n\"The biggest breakthrough was 'wing warping.' We realized birds don't just flap - they twist their wings to turn and balance. We copied that.\"\n\nWilbur shows a wing model that can twist. \"Other inventors tried to make stable aircraft. We made one that the pilot could actively control. That was the key!\"\n\n\"On December 17, 1903, after years of crashes and improvements, we flew for 12 seconds. Twelve seconds that changed the world!\"\n\n*Controlled Flight: The Wrights' key innovation was 'three-axis control' - the ability to roll, pitch, and yaw. All aircraft still use this principle!*",
+      "choices": [
+        {
+          "text": "\"What's our challenge?\"",
+          "nextNodeId": "flight-challenge"
+        }
+      ]
+    },
+    "flight-challenge": {
+      "id": "flight-challenge",
+      "text": "\"To restore the Flow of Persistence,\" Orville explains, \"you must get this glider to fly successfully across the hangar.\"\n\nHe gestures to a small wooden glider on a launch rail. \"It will probably crash the first few times. Maybe many times. Your job is to figure out why it crashes and fix it.\"\n\nWilbur hands you tools and spare materials. \"We have extra wing material, weights, and adjustable parts. You can modify the glider between attempts.\"\n\n\"Remember,\" Orville adds, \"there's no shame in crashing. The only shame is not learning from it.\"\n\nThe glider sits ready for launch. It has wings, a tail, and a simple body. Something about its design looks a little off...\n\n*Flight Principles: An aircraft needs lift (wings), control (tail surfaces), and balance (proper weight distribution) to fly well.*",
+      "choices": [
+        {
+          "text": "Launch the glider as-is to see what happens",
+          "nextNodeId": "first-crash"
+        },
+        {
+          "text": "Examine the glider carefully before launching",
+          "nextNodeId": "examine-glider"
+        }
+      ]
+    },
+    "examine-glider": {
+      "id": "examine-glider",
+      "text": "You look over the glider carefully. {{PLAYER2_NAME}} notices something: \"The wings are exactly the same on top and bottom - flat surfaces. But birds' wings are curved on top!\"\n\n\"That's called an airfoil shape,\" Wilbur confirms. \"Good observation! But let's see what happens with the flat wings anyway. You might be surprised.\"\n\n{{PLAYER1_NAME}} notices something else: \"The weight seems concentrated in the back. Shouldn't it be more balanced?\"\n\n\"Another good catch! Write down your observations. Then launch it and see what your predictions tell you.\"\n\n*Scientific Method: Make observations, form a hypothesis (prediction), test it, and learn from the results!*",
+      "choices": [
+        {
+          "text": "Launch the glider and test your predictions",
+          "nextNodeId": "first-crash"
+        }
+      ]
+    },
+    "first-crash": {
+      "id": "first-crash",
+      "text": "You launch the glider. It shoots forward, immediately tilts nose-up, stalls, and crashes into the ground.\n\n\"Crash one!\" Orville says cheerfully. \"Now - what happened and why?\"\n\n{{PLAYER1_NAME}} thinks about it. \"The nose went up too much. Maybe it's tail-heavy?\"\n\n{{PLAYER2_NAME}} adds, \"And it didn't have enough lift to recover. The flat wings!\"\n\n\"Excellent analysis,\" Wilbur nods. \"You've identified TWO problems from ONE crash. That's efficient learning!\"\n\nYou have materials to fix one problem at a time, so you can see the effect of each change.\n\n*Iterative Design: Good engineers change one thing at a time so they can see exactly what each change does.*",
+      "choices": [
+        {
+          "text": "Fix the weight balance first (move weight forward)",
+          "nextNodeId": "balance-fix"
+        },
+        {
+          "text": "Fix the wing shape first (add curve to top)",
+          "nextNodeId": "wing-fix"
+        }
+      ]
+    },
+    "balance-fix": {
+      "id": "balance-fix",
+      "text": "You add a small weight to the nose of the glider, shifting its center of gravity forward.\n\nLaunch two! The glider flies straighter this time, but still doesn't get much lift. It glides briefly, then sinks to the ground.\n\n\"Better!\" Orville notes. \"It's stable now, but still needs more lift. What's next?\"\n\n\"The wings,\" you both say. \"We need curved wings - airfoils!\"\n\nYou carefully curve the top surface of each wing, creating a shape like a bird's wing - flat on the bottom, curved on top.\n\n*Center of Gravity: Where the weight is centered affects how an aircraft balances. Nose-heavy planes dive; tail-heavy planes stall.*",
+      "choices": [
+        {
+          "text": "Launch with the improved wings",
+          "nextNodeId": "successful-flight"
+        }
+      ]
+    },
+    "wing-fix": {
+      "id": "wing-fix",
+      "text": "You curve the top surface of each wing, creating an airfoil shape - the same shape birds' wings have.\n\nLaunch two! The glider has more lift now... but the tail-heavy balance makes it loop backward and crash!\n\n\"More lift actually made the balance problem worse,\" Wilbur explains. \"The extra lift at the back pushed the nose up even more.\"\n\n\"So we need to fix the balance too,\" {{PLAYER2_NAME}} realizes.\n\nYou add weight to the nose, shifting the balance point forward.\n\n*Lift: An airfoil shape creates lift because air moves faster over the curved top than the flat bottom, creating lower pressure above the wing.*",
+      "choices": [
+        {
+          "text": "Launch with both improvements",
+          "nextNodeId": "successful-flight"
+        }
+      ]
+    },
+    "successful-flight": {
+      "id": "successful-flight",
+      "text": "Launch three! The glider soars across the entire hangar, flying smooth and level! It gently touches down at the far end.\n\n\"YES!\" you both cheer. {{PLAYER1_NAME}} and {{PLAYER2_NAME}} high-five.\n\nOrange light bursts from the glider - the Flow of Persistence! It contains determination, resilience, and the power to keep trying.\n\n\"You did it!\" Orville applauds. \"You crashed, analyzed, improved, and succeeded. That's exactly how we achieved flight.\"\n\nWilbur adds, \"Remember: failure isn't the opposite of success - it's part of success. Every great invention came after hundreds of failures.\"\n\nThe orange energy flows toward the Inspiration Engine.\n\n*Key Lesson: Persistence and learning from failure are essential to invention. Don't give up - get better!*",
+      "choices": [
+        {
+          "text": "Go to Edison's Workshop (if not done)",
+          "nextNodeId": "edison-workshop"
+        },
+        {
+          "text": "Go to Da Vinci's Studio (if not done)",
+          "nextNodeId": "davinci-studio"
+        },
+        {
+          "text": "Return to main hall (if both others done)",
+          "nextNodeId": "final-challenge"
+        }
+      ]
+    },
+    "final-challenge": {
+      "id": "final-challenge",
+      "text": "With all three energy sources restored - Curiosity, Imagination, and Persistence - you return to the main hall. The Inspiration Engine glows with blue, green, and orange light!\n\nBut something's wrong. The energies are flowing into the engine, but it's not starting.\n\nEinstein appears, looking puzzled. \"Interesting! The energies are present, but they need to be combined properly. The final step requires... an inventor.\"\n\nHe looks at you both. \"You've proven you have curiosity, imagination, and persistence. Now, you must complete the engine yourself. Look at its design - what do you think is missing?\"\n\nThe engine has three input channels (glowing with each color) but they don't connect to anything central.\n\n*Engineering Design: Complex machines often need different systems to work together. Integration is key!*",
+      "choices": [
+        {
+          "text": "Look for a way to combine the three energies",
+          "nextNodeId": "energy-combination"
+        },
+        {
+          "text": "Ask Einstein for a hint",
+          "nextNodeId": "einstein-hint"
+        }
+      ]
+    },
+    "einstein-hint": {
+      "id": "einstein-hint",
+      "text": "Einstein smiles. \"I'll share one of my own discoveries. Energy and matter are related - that's my famous E=mc². Different forms of energy can transform into each other.\"\n\n\"These three energies - Curiosity, Imagination, Persistence - are like the primary colors. Mixed properly, they create something greater.\"\n\n\"What device combines different inputs into a single output?\"\n\n{{PLAYER2_NAME}} thinks about what you've learned. \"In Edison's workshop, circuits combined to make light. In Da Vinci's studio, gears combined different motions.\"\n\n{{PLAYER1_NAME}} sees it now. \"We need something that mixes the energies together - like a funnel or a... a lens!\"\n\n*Energy Transformation: Energy constantly changes forms - light to heat, motion to electricity, chemical to mechanical.*",
+      "choices": [
+        {
+          "text": "Look for a combining mechanism",
+          "nextNodeId": "energy-combination"
+        }
+      ]
+    },
+    "energy-combination": {
+      "id": "energy-combination",
+      "text": "Looking at the engine more carefully, you notice a central chamber with a crystal inside. The three energy channels point toward it, but the crystal is misaligned!\n\n\"Of course!\" {{PLAYER1_NAME}} realizes. \"The crystal is supposed to focus all three energies into one beam, but it's turned wrong.\"\n\nYou both work together, using what you've learned:\n- CURIOSITY to figure out the right angle\n- IMAGINATION to envision how the energies should combine\n- PERSISTENCE when your first adjustment doesn't work perfectly\n\nOn the third try, the crystal clicks into place. Blue, green, and orange light converge...\n\n*Teamwork: The best inventions often come from people working together, combining different skills and perspectives!*",
+      "choices": [
+        {
+          "text": "Watch as the Inspiration Engine activates",
+          "nextNodeId": "engine-success"
+        }
+      ]
+    },
+    "engine-success": {
+      "id": "engine-success",
+      "text": "The Inspiration Engine ROARS to life! The combined energies create brilliant white light that pulses outward in waves, passing through walls, flying into the sky, spreading across the world.\n\nEinstein, Edison, Leonardo, and the Wright Brothers all appear as holograms, applauding.\n\n\"You've done it!\" Einstein exclaims. \"The Inspiration Engine runs again. Somewhere right now, a child is having an idea for a new invention. A scientist is solving a problem. An artist is imagining something beautiful.\"\n\nEdison adds, \"And it's because of you - because you asked questions...\"\n\n\"...dreamed of possibilities...\" Leonardo continues.\n\n\"...and didn't give up,\" the Wright Brothers finish.\n\nThe inventors bow. \"{{BOTH_NAMES}}, you are true inventors now. Go forth and create!\"\n\n*The Inventor's Spirit: Curiosity + Imagination + Persistence = Innovation. You have everything you need to invent!*",
+      "choices": [
+        {
+          "text": "Accept the title of Inventors",
+          "nextNodeId": "good-ending"
+        }
+      ]
+    },
+    "good-ending": {
+      "id": "good-ending",
+      "text": "As you leave the museum, you notice the world seems brighter somehow. Your inventor's notebooks are full of ideas, sketches, and lessons learned.\n\n\"I've got an idea,\" {{PLAYER1_NAME}} says. \"What if we built...\"\n\n\"...a tree house that runs on solar power?\" {{PLAYER2_NAME}} finishes.\n\nYou both laugh. The Inspiration Engine has already started working on you!\n\nEinstein's voice echoes one last time: \"Remember - every expert was once a beginner. Every invention started as a 'what if?' Never stop being curious. Never stop imagining. Never stop trying.\"\n\nThe future is full of inventions waiting to be discovered... and maybe some of them will be yours!",
+      "text2": "THE END\n\nCongratulations, {{BOTH_NAMES}}! You restored the Inspiration Engine by mastering the three pillars of invention:\n\n- **CURIOSITY** - Always ask questions and seek to understand\n- **IMAGINATION** - Dream of what could be, even if it seems impossible\n- **PERSISTENCE** - Learn from failures and keep improving\n\nRemember: the next great invention could come from YOU!\n\n*What will you create?*",
+      "isEnding": true,
+      "endingType": "good",
+      "endingTitle": "Master Inventors"
+    }
+  }
+}

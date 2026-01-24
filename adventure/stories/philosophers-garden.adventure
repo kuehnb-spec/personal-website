@@ -1,0 +1,463 @@
+{
+    "formatVersion": "1.0",
+    "metadata": {
+        "id": "philosophers-garden",
+        "title": "The Philosopher's Garden",
+        "author": "Adventure Stories",
+        "coverEmoji": "🌿",
+        "description": "{{BOTH_NAMES}} discover a mysterious garden where ancient thinkers share their wisdom. What truths will they uncover?",
+        "ageRange": "8-10",
+        "estimatedMinutes": 20,
+        "themes": ["philosophy", "wisdom", "ethics", "friendship"],
+        "contentNotes": [],
+        "startNode": "start"
+    },
+    "nodes": {
+        "start": {
+            "id": "start",
+            "summary": "Kids find a mysterious iron gate to 'The Garden of Questions'",
+            "text": "On a misty Saturday morning, {{PLAYER1_NAME}} and {{PLAYER2_NAME}} take a shortcut through the old part of town. Between two crumbling brick buildings, they notice something that wasn't there before—an iron gate covered in flowering vines, standing slightly open.\n\nBeyond the gate lies a garden unlike any they've ever seen. Stone pathways wind between ancient olive trees. Marble statues stand among beds of strange, luminous flowers. The air smells of honey and old books.\n\nA wooden sign hangs from the gate. It reads: 'The Garden of Questions. Enter only if you seek to understand.'\n\n{{PLAYER1_NAME}} feels a tingle of excitement. {{PLAYER2_NAME}} peers through the gate, eyes wide with wonder. This place feels old—older than the buildings around it, older perhaps than the city itself.",
+            "emoji": "🚪",
+            "choices": [
+                {
+                    "text": "Push open the gate and enter",
+                    "nextNodeId": "enter-garden"
+                },
+                {
+                    "text": "Call out to see if anyone is there",
+                    "nextNodeId": "call-out"
+                },
+                {
+                    "text": "Look for another way to investigate",
+                    "nextNodeId": "investigate-outside"
+                }
+            ]
+        },
+        "enter-garden": {
+            "id": "enter-garden",
+            "summary": "A talking owl named Sophia explains this timeless place houses great thinkers",
+            "text": "The gate swings open with barely a whisper. As {{BOTH_NAMES}} step onto the stone path, the noise of the city fades away completely. Here, there is only birdsong, the rustle of leaves, and the distant sound of water.\n\nThe path splits in three directions. To the left, they see a grove of olive trees where an old man in a simple robe sits on a bench, deep in thought. To the right, a crystal-clear stream flows past a woman who seems to be having a conversation with someone invisible. Straight ahead, a grand pavilion rises, its columns carved with symbols and equations.\n\n'Welcome, young seekers,' says a voice. They turn to find no one there—just a small owl perched on a sundial. 'This garden exists outside of time. Here, the great thinkers of history come to rest and reflect. You may speak with them, if you approach with open minds and honest questions.'\n\nThe owl blinks slowly. 'But choose your path wisely. Each thinker offers different wisdom, and you cannot meet them all today.'",
+            "emoji": "🦉",
+            "choices": [
+                {
+                    "text": "Go to the olive grove (the thoughtful old man)",
+                    "nextNodeId": "meet-socrates"
+                },
+                {
+                    "text": "Go to the stream (the woman having a conversation)",
+                    "nextNodeId": "meet-hypatia"
+                },
+                {
+                    "text": "Go to the pavilion (the grand building)",
+                    "nextNodeId": "meet-confucius"
+                }
+            ]
+        },
+        "call-out": {
+            "id": "call-out",
+            "summary": "Sophia the owl introduces herself as the keeper of the garden",
+            "text": "'Hello?' {{PLAYER1_NAME}} calls through the gate. 'Is anyone there?'\n\nFor a moment, nothing happens. Then a small owl glides down from somewhere above and lands on the gatepost. It regards them with large, golden eyes that seem far too wise for a bird.\n\n'Curious ones,' the owl says—and yes, it actually speaks! 'You call out before entering. That shows wisdom already. Many rush in without thinking, without asking. But you pause. You question.'\n\n{{PLAYER2_NAME}} stumbles backward in surprise. 'Did that owl just—'\n\n'Speak? Yes,' the owl says. 'I am the keeper of this garden. My name is Sophia, which means wisdom in the old tongue. This is the Garden of Questions, a place where great thinkers from throughout history come to rest and reflect. It exists outside of time, between moments, in the space where ideas live.'\n\nThe owl ruffles its feathers. 'You have asked the first question by calling out. Will you enter and ask more? Or will you turn away from what you do not understand?'",
+            "emoji": "🦉",
+            "choices": [
+                {
+                    "text": "Enter the garden with Sophia",
+                    "nextNodeId": "enter-garden"
+                },
+                {
+                    "text": "Ask Sophia more about this place first",
+                    "nextNodeId": "ask-sophia"
+                }
+            ]
+        },
+        "investigate-outside": {
+            "id": "investigate-outside",
+            "summary": "They find philosophical quotes carved into the wall",
+            "text": "{{PLAYER1_NAME}} walks along the wall beside the gate, looking for another way to see inside. The wall is covered in thick ivy, but between the leaves, {{PLAYER1_HE_SHE}} notices something strange—words carved into the ancient stones.\n\n'Look at this,' {{PLAYER1_NAME}} whispers. {{PLAYER2_NAME}} comes closer to read:\n\n'THE UNEXAMINED LIFE IS NOT WORTH LIVING.'\n\nFurther along, another carving: 'I THINK, THEREFORE I AM.'\n\nAnd another: 'THE ONLY TRUE WISDOM IS KNOWING YOU KNOW NOTHING.'\n\n{{PLAYER2_NAME}} traces the letters with {{PLAYER2_HIS_HER}} finger. 'These are quotes. From philosophers, I think. We learned about some of them in school.'\n\nAs they read the inscriptions, something remarkable happens. The ivy on the wall begins to glow softly, and the gate swings open on its own, as if the garden itself has decided they are worthy visitors.\n\n'I think it wants us to come in,' {{PLAYER1_NAME}} says.",
+            "emoji": "📜",
+            "choices": [
+                {
+                    "text": "Accept the invitation and enter",
+                    "nextNodeId": "enter-garden"
+                },
+                {
+                    "text": "Read more inscriptions first",
+                    "nextNodeId": "read-more-inscriptions"
+                }
+            ]
+        },
+        "ask-sophia": {
+            "id": "ask-sophia",
+            "summary": "Sophia explains that ideas exist outside time and thinkers leave echoes here",
+            "text": "'What is this place, really?' {{PLAYER2_NAME}} asks. 'How can a garden exist outside of time?'\n\nSophia the owl tilts her head. 'Excellent questions. You see, ideas do not belong to any single moment. The thought that fire is hot—that was true a million years ago, it is true now, and it will be true a million years from now. Ideas exist outside of time.'\n\nThe owl hops along the gatepost. 'This garden is a place where ideas live. And because the great thinkers devoted their lives to ideas, echoes of them remain here. They are not ghosts exactly—more like... living thoughts. Memories that can still teach.'\n\n{{PLAYER1_NAME}} considers this. 'So we could talk to philosophers who lived thousands of years ago?'\n\n'If you approach with genuine curiosity and respect,' Sophia says. 'They love nothing more than honest questions. The ancient philosopher Socrates once said that wisdom begins in wonder. Show wonder, and they will share their wisdom.'\n\nThe gate swings open wider, as if urging them forward.",
+            "emoji": "💭",
+            "choices": [
+                {
+                    "text": "Enter the garden now",
+                    "nextNodeId": "enter-garden"
+                }
+            ]
+        },
+        "read-more-inscriptions": {
+            "id": "read-more-inscriptions",
+            "summary": "More quotes reveal philosophy is about how to live and be good",
+            "text": "{{BOTH_NAMES}} continue along the wall, finding more and more carved quotes:\n\n'HAPPINESS DEPENDS UPON OURSELVES.' — Aristotle\n\n'HE WHO HAS A WHY TO LIVE CAN BEAR ALMOST ANY HOW.' — Nietzsche\n\n'THE MIND IS EVERYTHING. WHAT YOU THINK, YOU BECOME.' — Buddha\n\n'INJUSTICE ANYWHERE IS A THREAT TO JUSTICE EVERYWHERE.' — Martin Luther King Jr.\n\n{{PLAYER1_NAME}} pauses at this last one. 'These aren't just old sayings. They're about how to live. How to be a good person.'\n\n'Philosophy means love of wisdom,' {{PLAYER2_NAME}} remembers from class. 'I guess these philosophers spent their lives trying to figure out what matters most.'\n\nThe glowing ivy pulses gently, as if agreeing with them. The open gate seems to beckon more insistently now.\n\n'I think we've been invited,' {{PLAYER1_NAME}} says. 'And it would be rude not to accept.'",
+            "emoji": "✨",
+            "choices": [
+                {
+                    "text": "Enter the garden",
+                    "nextNodeId": "enter-garden"
+                }
+            ]
+        },
+        "meet-socrates": {
+            "id": "meet-socrates",
+            "summary": "They meet Socrates who asks them what it means to live a good life",
+            "text": "{{BOTH_NAMES}} follow the path to the olive grove. The old man looks up as they approach. He has a weathered face, kind eyes, and bare feet. He wears a simple robe that has seen better days.\n\n'Ah, visitors!' he says warmly. 'Come, sit with me. I am Socrates of Athens. I was a stonemason once, but I found that shaping minds was more interesting than shaping marble.'\n\nThey sit on the bench beside him. Dappled sunlight falls through the olive leaves.\n\n'Tell me,' Socrates says, 'what do you believe it means to live a good life?'\n\n{{PLAYER1_NAME}} thinks hard. 'Being kind to people? Having friends?'\n\n'Being successful?' {{PLAYER2_NAME}} adds uncertainly.\n\nSocrates smiles. 'Good answers. But I wonder—why is kindness good? Why do friends matter? What does success really mean?' He leans forward. 'You see, I don't believe I am wise. But I try to understand by asking questions. Most people think they know things without ever examining why they believe them. I think the most important thing is to keep questioning.'",
+            "emoji": "🫒",
+            "choices": [
+                {
+                    "text": "Ask Socrates about truth",
+                    "nextNodeId": "socrates-truth"
+                },
+                {
+                    "text": "Ask Socrates about courage",
+                    "nextNodeId": "socrates-courage"
+                },
+                {
+                    "text": "Thank him and visit someone else",
+                    "nextNodeId": "return-to-paths"
+                }
+            ]
+        },
+        "meet-hypatia": {
+            "id": "meet-hypatia",
+            "summary": "They meet Hypatia, a mathematician/philosopher who believes numbers reveal reality",
+            "text": "The path leads to a beautiful stream with crystal-clear water. Beside it sits a woman with dark curly hair, dressed in the robes of an ancient scholar. She holds a small brass instrument that looks like a complex compass.\n\n'Welcome, young minds,' she says, smiling. 'I am Hypatia of Alexandria. I was a mathematician, astronomer, and philosopher—though in my time, we did not see these as separate things. Knowledge was simply knowledge.'\n\n'Who were you talking to before?' {{PLAYER2_NAME}} asks. 'We saw you from far away.'\n\nHypatia laughs. 'I was debating with myself, actually. Working through a problem about the motion of the planets. Sometimes the best way to think clearly is to argue both sides of a question out loud.'\n\nShe gestures to the stream. 'See this water? It flows from the springs of mathematics, where numbers tell the story of reality itself. The ancient philosopher Pythagoras believed that everything in the universe could be understood through numbers—music, the stars, even human behavior. I have spent my life trying to prove him right.'",
+            "emoji": "🔭",
+            "choices": [
+                {
+                    "text": "Ask about mathematics and the universe",
+                    "nextNodeId": "hypatia-math"
+                },
+                {
+                    "text": "Ask about being a woman philosopher",
+                    "nextNodeId": "hypatia-courage"
+                },
+                {
+                    "text": "Thank her and visit someone else",
+                    "nextNodeId": "return-to-paths"
+                }
+            ]
+        },
+        "meet-confucius": {
+            "id": "meet-confucius",
+            "summary": "They meet Confucius practicing calligraphy and teaching about ren (benevolence)",
+            "text": "The grand pavilion is even more impressive up close. Its columns are carved with symbols that seem to shimmer and change. Inside, an elderly man in flowing silk robes sits at a low table, practicing calligraphy with graceful brush strokes.\n\n'Please, enter,' he says without looking up. 'I am Kong Qiu, though many call me Confucius. I have been expecting visitors with questions.'\n\n'You knew we were coming?' {{PLAYER1_NAME}} asks.\n\n'The garden told me.' He sets down his brush and faces them with a gentle smile. 'In my life, I was a teacher. I believed that society becomes better when individuals become better—when each person cultivates virtue within themselves. It begins with respect: for your parents, for your teachers, for knowledge itself.'\n\nHe gestures to the characters he has been painting. 'This symbol means ren—usually translated as benevolence or humaneness. It is the highest virtue. It means treating others with genuine care and compassion. If everyone practiced ren, there would be no need for laws or punishments. People would naturally do what is right.'",
+            "emoji": "📿",
+            "choices": [
+                {
+                    "text": "Ask about treating others well",
+                    "nextNodeId": "confucius-golden-rule"
+                },
+                {
+                    "text": "Ask about becoming a better person",
+                    "nextNodeId": "confucius-self-improvement"
+                },
+                {
+                    "text": "Thank him and visit someone else",
+                    "nextNodeId": "return-to-paths"
+                }
+            ]
+        },
+        "socrates-truth": {
+            "id": "socrates-truth",
+            "summary": "Socrates teaches about questioning beliefs and seeking evidence for truth",
+            "text": "'How do we know what's true?' {{PLAYER1_NAME}} asks. 'People believe different things. Who's right?'\n\nSocrates nods approvingly. 'A magnificent question! You see, many people believe things simply because others told them to. They never stop to ask: How do I know this? What is my evidence? Could I be wrong?'\n\nHe picks up an olive from the ground. 'Is this olive real? Most would say yes, obviously. But how do you know you're not dreaming right now? How do you know your senses can be trusted?'\n\n{{PLAYER2_NAME}} frowns. 'That's confusing.'\n\n'Good! Confusion is the beginning of wisdom,' Socrates chuckles. 'Here is what I learned: be humble about what you claim to know. Question everything—even your own beliefs. Seek evidence. Listen to those who disagree with you. And always, always be willing to change your mind when you discover you were wrong. That is not weakness. That is the greatest strength.'\n\nHe hands them each an olive. 'Keep these. When you eat them, remember: the search for truth is more valuable than claiming to have found it.'",
+            "emoji": "🫒",
+            "choices": [
+                {
+                    "text": "Ask Socrates about courage",
+                    "nextNodeId": "socrates-courage"
+                },
+                {
+                    "text": "Thank him and visit someone else",
+                    "nextNodeId": "return-to-paths"
+                },
+                {
+                    "text": "Ask Socrates a final question before leaving the garden",
+                    "nextNodeId": "socrates-final"
+                }
+            ]
+        },
+        "socrates-courage": {
+            "id": "socrates-courage",
+            "summary": "Socrates shares how he chose death over abandoning his questioning",
+            "text": "'What is courage?' {{PLAYER2_NAME}} asks. 'We learned you were very brave.'\n\nSocrates sighs thoughtfully. 'Brave? I was a soldier once, yes. But standing in battle—that is the easy kind of courage. The harder kind is standing up for what you believe when everyone around you says you are wrong.'\n\nHis eyes grow distant. 'I spent my life asking questions that made powerful people uncomfortable. They told me to stop. I refused. They put me on trial. They said I was corrupting the youth—but all I did was teach them to think for themselves. In the end, they sentenced me to death.'\n\n{{PLAYER1_NAME}} gasps. 'That's terrible!'\n\n'Is it?' Socrates asks gently. 'They offered to let me go if I promised to stop teaching. But I believed that examining life, questioning everything, seeking truth—this was worth dying for. A life without reflection, without curiosity, without the courage to ask hard questions... that did not seem like much of a life at all.'\n\nHe smiles peacefully. 'True courage is being afraid and doing the right thing anyway. Remember that.'",
+            "emoji": "⚔️",
+            "choices": [
+                {
+                    "text": "Ask Socrates about truth",
+                    "nextNodeId": "socrates-truth"
+                },
+                {
+                    "text": "Thank him and visit someone else",
+                    "nextNodeId": "return-to-paths"
+                },
+                {
+                    "text": "Ask Socrates a final question before leaving the garden",
+                    "nextNodeId": "socrates-final"
+                }
+            ]
+        },
+        "socrates-final": {
+            "id": "socrates-final",
+            "summary": "Socrates gives final advice: know yourself, keep questioning, be kind",
+            "text": "'One last question,' {{PLAYER1_NAME}} says. 'What advice would you give us for our lives?'\n\nSocrates stands slowly and places a hand on each of their shoulders. 'Know yourself. That was the advice inscribed on the ancient temple of Apollo, and I spent my whole life trying to follow it. Understand your own mind—your fears, your desires, your assumptions. Question why you believe what you believe.'\n\nHe walks them back toward the main path. 'Never stop asking questions, even when the answers are uncomfortable. Be kind, because everyone you meet is fighting a battle you cannot see. And remember: the wisest people are not those who know the most, but those who understand how much they do not know.'\n\nThe olive trees rustle in a wind that seems to whisper ancient secrets. 'Go now. The garden has more to show you—or perhaps it is time for you to return to your own world, carrying these ideas with you.'",
+            "emoji": "🌟",
+            "choices": [
+                {
+                    "text": "Return to the paths to visit another philosopher",
+                    "nextNodeId": "return-to-paths"
+                },
+                {
+                    "text": "It's time to leave the garden",
+                    "nextNodeId": "prepare-to-leave"
+                }
+            ]
+        },
+        "hypatia-math": {
+            "id": "hypatia-math",
+            "summary": "Hypatia demonstrates how pi and geometry reveal the language of reality",
+            "text": "'How can numbers explain the universe?' {{PLAYER1_NAME}} asks.\n\nHypatia's eyes light up. 'Oh, what a wonderful question! Look—' She traces patterns in the air, and somehow golden light follows her finger, drawing geometric shapes. 'A circle. The most perfect shape. It has no beginning and no end. And here is its magical property: no matter how big or small a circle is, if you divide its circumference by its diameter, you always get the same number. We call it pi.'\n\nShe draws more shapes. 'Triangles, squares, spirals—they all follow rules. The same rules that govern how planets orbit the sun, how light travels, how music creates harmony. Mathematics is not something humans invented. It is something we discovered. It was always there, waiting for us to find it.'\n\n{{PLAYER2_NAME}} watches the glowing shapes in amazement. 'So math is like... a secret language of reality?'\n\n'Exactly!' Hypatia claps her hands. 'The philosopher Galileo, who came after me, said that the universe is written in the language of mathematics. Learn that language, and you can read the mind of creation itself.'",
+            "emoji": "📐",
+            "choices": [
+                {
+                    "text": "Ask about being a woman philosopher",
+                    "nextNodeId": "hypatia-courage"
+                },
+                {
+                    "text": "Thank her and visit someone else",
+                    "nextNodeId": "return-to-paths"
+                },
+                {
+                    "text": "Ask Hypatia a final question before leaving the garden",
+                    "nextNodeId": "hypatia-final"
+                }
+            ]
+        },
+        "hypatia-courage": {
+            "id": "hypatia-courage",
+            "summary": "Hypatia shares how she was killed but ideas cannot be destroyed",
+            "text": "'Was it hard being a woman philosopher?' {{PLAYER2_NAME}} asks. 'In your time, I mean?'\n\nHypatia's expression grows thoughtful. 'It was... unusual. Most people believed women could not understand complex ideas. They were wrong, of course. The mind has no gender. A good argument is a good argument, whether spoken by a man or a woman, a king or a slave.'\n\nShe gazes at the flowing stream. 'I was lucky. My father was a mathematician who taught me everything he knew. He saw my curiosity and fed it instead of smothering it. In Alexandria, I became head of the great Platonist school. Scholars came from all over the world to learn from me.'\n\n'What happened to you?' {{PLAYER1_NAME}} asks quietly.\n\n'I was killed,' Hypatia says simply. 'By people who feared what I represented—a woman who valued reason over blind belief. But here is what I learned: ideas cannot be killed. They may kill the thinker, but the thoughts live on. Truth is more powerful than those who try to silence it.'\n\nShe smiles gently. 'Never let anyone tell you what you cannot learn or become. Your mind is your own.'",
+            "emoji": "🔥",
+            "choices": [
+                {
+                    "text": "Ask about mathematics and the universe",
+                    "nextNodeId": "hypatia-math"
+                },
+                {
+                    "text": "Thank her and visit someone else",
+                    "nextNodeId": "return-to-paths"
+                },
+                {
+                    "text": "Ask Hypatia a final question before leaving the garden",
+                    "nextNodeId": "hypatia-final"
+                }
+            ]
+        },
+        "hypatia-final": {
+            "id": "hypatia-final",
+            "summary": "Hypatia gives three lessons: think for yourself, knowledge is for all, keep wonder",
+            "text": "'What should we remember from meeting you?' {{PLAYER2_NAME}} asks.\n\nHypatia rises gracefully. 'Three things. First: never accept an idea just because someone in authority tells you it is true. Test it. Examine it. Think for yourself. Even my own teachings—question them!\n\n'Second: knowledge belongs to everyone. Not just to the rich, not just to men, not just to people who look or think a certain way. If anyone tries to keep you from learning, that tells you more about them than about you.\n\n'Third: wonder is precious. Never lose your sense of amazement at the universe. Every equation, every star, every living creature is a miracle waiting to be understood.'\n\nShe hands them a small brass disc inscribed with geometric patterns. 'An astrolabe—a tool for reading the stars. Keep it as a reminder that the universe is vast and full of mysteries, and you have the power to understand them.'",
+            "emoji": "⭐",
+            "choices": [
+                {
+                    "text": "Return to the paths to visit another philosopher",
+                    "nextNodeId": "return-to-paths"
+                },
+                {
+                    "text": "It's time to leave the garden",
+                    "nextNodeId": "prepare-to-leave"
+                }
+            ]
+        },
+        "confucius-golden-rule": {
+            "id": "confucius-golden-rule",
+            "summary": "Confucius teaches the Golden Rule: do not do to others what you wouldn't want",
+            "text": "'How do we know how to treat other people?' {{PLAYER1_NAME}} asks.\n\nConfucius smiles warmly. 'I was once asked to summarize all my teachings in one phrase. I said: Do not do to others what you would not want done to yourself. Some call this the Silver Rule, or the Golden Rule.'\n\nHe stands and walks to a window overlooking a peaceful garden. 'Imagine someone cuts in front of you in a line. How do you feel? Annoyed? Disrespected? Now you know exactly why you should not cut in front of others. Your own feelings teach you how to treat people.'\n\n{{PLAYER2_NAME}} thinks about this. 'So we just imagine being in someone else's place?'\n\n'Exactly. We call this shu—reciprocity, or empathy. Before any action, ask yourself: How would I feel if someone did this to me? Would I want to be lied to? Then do not lie. Would I want to be ignored when I am sad? Then comfort those who are sad. Your heart already knows what is right. You must only learn to listen to it.'",
+            "emoji": "💛",
+            "choices": [
+                {
+                    "text": "Ask about becoming a better person",
+                    "nextNodeId": "confucius-self-improvement"
+                },
+                {
+                    "text": "Thank him and visit someone else",
+                    "nextNodeId": "return-to-paths"
+                },
+                {
+                    "text": "Ask Confucius a final question before leaving the garden",
+                    "nextNodeId": "confucius-final"
+                }
+            ]
+        },
+        "confucius-self-improvement": {
+            "id": "confucius-self-improvement",
+            "summary": "Confucius teaches self-improvement through desire, good examples, and daily practice",
+            "text": "'How do we become better people?' {{PLAYER2_NAME}} asks.\n\nConfucius returns to his calligraphy brush. 'Ah, the most important question of all. Let me tell you: becoming good is like learning to paint. No one picks up a brush and immediately creates a masterpiece. It takes practice. Every single day.'\n\nHe demonstrates a brush stroke with perfect control. 'First, you must want to improve. Many people are satisfied with who they are, even when they know they could be kinder, braver, more honest. The desire to grow is the first step.'\n\nAnother stroke. 'Second, find good teachers and examples. Learn from those who embody the virtues you admire. Read about great people. Watch how kind people behave and imitate them.'\n\nA final stroke completes a character. 'Third, practice constantly. Every moment is a chance to be a little better than you were before. Did you get angry? Ask yourself why. Did you help someone? Notice how good that felt. Pay attention to your own behavior as if you were your own teacher.'\n\nHe shows them the completed character. 'This means learning. It never ends.'",
+            "emoji": "📚",
+            "choices": [
+                {
+                    "text": "Ask about treating others well",
+                    "nextNodeId": "confucius-golden-rule"
+                },
+                {
+                    "text": "Thank him and visit someone else",
+                    "nextNodeId": "return-to-paths"
+                },
+                {
+                    "text": "Ask Confucius a final question before leaving the garden",
+                    "nextNodeId": "confucius-final"
+                }
+            ]
+        },
+        "confucius-final": {
+            "id": "confucius-final",
+            "summary": "Confucius teaches that character is destiny and gives them the Analects",
+            "text": "'Is there one thing above all else we should remember?' {{PLAYER1_NAME}} asks.\n\nConfucius sets down his brush and looks at them both with deep kindness. 'If I could give you only one teaching, it would be this: your character is your destiny.\n\n'Wealth can be lost. Fame fades. Beauty withers. But the kind of person you choose to be—that stays with you forever. And more than that, it shapes everything else in your life. Kind people attract kindness. Honest people earn trust. Curious people find knowledge.'\n\nHe walks them to the pavilion entrance. 'You cannot control what happens to you. But you can always control how you respond. You can choose patience over anger, courage over fear, wisdom over ignorance. These choices, made again and again, create who you are.'\n\nHe presses a small scroll into their hands. 'The Analects—my conversations with my students. Read them someday, when you are ready. And remember: even the longest journey of self-improvement begins with a single step. Take that step today.'",
+            "emoji": "🎋",
+            "choices": [
+                {
+                    "text": "Return to the paths to visit another philosopher",
+                    "nextNodeId": "return-to-paths"
+                },
+                {
+                    "text": "It's time to leave the garden",
+                    "nextNodeId": "prepare-to-leave"
+                }
+            ]
+        },
+        "return-to-paths": {
+            "id": "return-to-paths",
+            "summary": "Sophia reveals a fourth path to Martin Luther King Jr. on a hill",
+            "text": "{{BOTH_NAMES}} return to where the three paths meet. Sophia the owl is waiting on a nearby branch.\n\n'Learning well?' she asks. 'The garden has many teachers, but time grows short. The way between worlds cannot stay open forever. You may visit one more thinker, or you may choose to leave now and carry what you've learned back to your own world.'\n\nThe three paths still beckon: the olive grove, the stream, and the pavilion. But now {{PLAYER1_NAME}} notices a fourth path they hadn't seen before—a winding trail that leads up a small hill to where a single figure sits in meditation.\n\n'Who is that?' {{PLAYER2_NAME}} asks.\n\n'That is someone who came after the others,' Sophia says. 'A more recent thinker, but no less wise. He spent his life fighting for justice and equality. His name was Martin Luther King Jr.'",
+            "emoji": "🦉",
+            "choices": [
+                {
+                    "text": "Visit Socrates in the olive grove",
+                    "nextNodeId": "meet-socrates"
+                },
+                {
+                    "text": "Visit Hypatia by the stream",
+                    "nextNodeId": "meet-hypatia"
+                },
+                {
+                    "text": "Visit Confucius in the pavilion",
+                    "nextNodeId": "meet-confucius"
+                },
+                {
+                    "text": "Visit the figure on the hill",
+                    "nextNodeId": "meet-mlk"
+                }
+            ]
+        },
+        "meet-mlk": {
+            "id": "meet-mlk",
+            "summary": "They meet MLK who explains philosophy is about doing, not just thinking",
+            "text": "The path winds up the gentle hill. At the top, a man sits peacefully on a stone bench, gazing out over the garden. He wears a simple dark suit. When he sees them, his face breaks into a warm smile.\n\n'Come, sit with me,' he says, patting the bench. 'I'm Martin. I was a minister and a leader in the movement for civil rights in America. I believed that all people—regardless of their skin color—deserve to be treated with equal dignity and respect.'\n\n{{PLAYER1_NAME}} sits beside him. 'We've learned about you in school. You gave the I Have a Dream speech.'\n\n'I did,' Martin says. 'I dreamed of a world where children would be judged not by the color of their skin, but by the content of their character. Where former slaves and former slave owners could sit down together as equals. Where justice would flow like water and righteousness like a mighty stream.'\n\nHe looks at the garden below. 'The ancient philosophers taught about virtue and truth. I tried to put those ideas into action—to make the world more fair, more kind, more just. Philosophy is not just about thinking. It is about doing.'",
+            "emoji": "✊",
+            "choices": [
+                {
+                    "text": "Ask about fighting injustice peacefully",
+                    "nextNodeId": "mlk-nonviolence"
+                },
+                {
+                    "text": "Ask about having courage when afraid",
+                    "nextNodeId": "mlk-courage"
+                }
+            ]
+        },
+        "mlk-nonviolence": {
+            "id": "mlk-nonviolence",
+            "summary": "MLK explains nonviolent resistance and gives them a small stone",
+            "text": "'How did you fight injustice without violence?' {{PLAYER2_NAME}} asks.\n\nMartin's eyes grow thoughtful. 'It was not easy. Many people wanted to fight back with fists and weapons. I understood their anger. But I believed that violence only creates more violence. Hatred cannot drive out hatred—only love can do that.'\n\nHe picks up a small stone and holds it. 'We used nonviolent resistance. We refused to obey unjust laws, but we accepted the punishment peacefully. We marched. We sat at lunch counters where we were not allowed. We let the world see how we were treated—the hatred, the beatings, the arrests—and we responded with dignity and love.'\n\n'Weren't you scared?' {{PLAYER1_NAME}} asks.\n\n'Every day,' Martin admits. 'My house was bombed. I was arrested. I received death threats constantly. But I learned that courage is not the absence of fear—it is deciding that something else is more important than fear. Justice was more important. Equality was more important. The future we were building for children like you was more important.'\n\nHe places the stone in {{PLAYER2_NAME}}'s hand. 'Keep this. Remember that even small acts of peaceful resistance can move mountains over time.'",
+            "emoji": "🕊️",
+            "choices": [
+                {
+                    "text": "Ask about having courage when afraid",
+                    "nextNodeId": "mlk-courage"
+                },
+                {
+                    "text": "Thank him and prepare to leave",
+                    "nextNodeId": "mlk-final"
+                }
+            ]
+        },
+        "mlk-courage": {
+            "id": "mlk-courage",
+            "summary": "MLK shares his kitchen table moment of faith and finding inner strength",
+            "text": "'How do you stay brave when you're scared?' {{PLAYER1_NAME}} asks.\n\nMartin is quiet for a moment. 'I will tell you a secret. The night my house was bombed, with my wife and baby daughter inside, I wanted to give up. I sat at my kitchen table, terrified, and I prayed. I said I could not go on. It was too hard. Too dangerous.'\n\nHis voice grows soft. 'And in that moment, I felt something. A presence. A voice—not in my ears, but in my heart—that said: Stand up for justice. Stand up for truth. I am with you.\n\n'From that moment on, I was never the same. I still felt fear, but I also felt something stronger: faith. Faith that what I was doing was right. Faith that love would triumph over hate. Faith that even if I did not live to see the dream fulfilled, it would come true someday.'\n\nHe looks at both of them. 'You will face moments when doing the right thing is frightening. When standing up for someone means risking something for yourself. In those moments, remember: you are not alone. Every person who ever fought for goodness stands with you. And the arc of history is long, but it bends toward justice.'",
+            "emoji": "💪",
+            "choices": [
+                {
+                    "text": "Ask about fighting injustice peacefully",
+                    "nextNodeId": "mlk-nonviolence"
+                },
+                {
+                    "text": "Thank him and prepare to leave",
+                    "nextNodeId": "mlk-final"
+                }
+            ]
+        },
+        "mlk-final": {
+            "id": "mlk-final",
+            "summary": "MLK tells them to transform wisdom into action: speak up, help, act bravely",
+            "text": "'What should we do with everything we've learned here?' {{PLAYER2_NAME}} asks.\n\nMartin stands and faces them both. 'Do not keep wisdom locked inside your heads. Let it flow through your hands, your words, your actions. When you see someone being treated unfairly—speak up. When you have the chance to help someone—take it. When you feel afraid to do the right thing—do it anyway.'\n\nHe walks them toward the path back down the hill. 'The philosophers in this garden spent their lives seeking truth. But truth is not just something to know—it is something to live. Every day, in every choice, you decide what kind of person you will be. Choose kindness. Choose courage. Choose justice.'\n\nFrom the hill, they can see the whole garden spread below them—the olive grove, the stream, the pavilion, and the gate through which they entered.\n\n'The way home awaits you,' Martin says. 'Go now. Carry the light of wisdom into the world. And remember: the dream of a better world is not just for dreamers. It is for everyone brave enough to build it.'",
+            "emoji": "🌅",
+            "choices": [
+                {
+                    "text": "Return to the gate and leave the garden",
+                    "nextNodeId": "prepare-to-leave"
+                }
+            ]
+        },
+        "prepare-to-leave": {
+            "id": "prepare-to-leave",
+            "summary": "Sophia says the gate appears to those who seek wisdom with honest hearts",
+            "text": "{{BOTH_NAMES}} walk back along the stone paths toward the iron gate. The garden seems different now—smaller somehow, as if it is gently releasing them back to their own world.\n\nSophia the owl glides down to land on a nearby statue. 'You have listened well. The garden is pleased. Few visitors take the time to truly hear what the thinkers have to say.'\n\n'Will we be able to come back?' {{PLAYER1_NAME}} asks.\n\n'The gate appears to those who seek wisdom with honest hearts,' Sophia says. 'Whether you find it again... that depends on you. But remember: you do not need this garden to find wisdom. The philosophers live in books that you can read. Their ideas live in the minds of teachers, parents, friends. Wisdom surrounds you, if only you learn to recognize it.'\n\n{{PLAYER2_NAME}} looks back at the garden one last time. 'Thank you. For everything.'\n\nSophia blinks her golden eyes. 'Thank yourselves. You came seeking knowledge and you found it. That is the greatest power anyone can have.'",
+            "emoji": "🚪",
+            "choices": [
+                {
+                    "text": "Step through the gate together",
+                    "nextNodeId": "ending-together"
+                },
+                {
+                    "text": "Ask Sophia one final question",
+                    "nextNodeId": "final-sophia"
+                }
+            ]
+        },
+        "final-sophia": {
+            "id": "final-sophia",
+            "summary": "Sophia defines wisdom: humility, reason, heart, courage, and right action",
+            "text": "'Sophia,' {{PLAYER1_NAME}} says, 'what is wisdom, really? After everything we've heard today... what does it actually mean to be wise?'\n\nThe owl is quiet for a long moment. Then she speaks:\n\n'Wisdom is many things. It is knowing what you do not know—and being humble about it. It is using reason to seek truth, but also listening to your heart. It is treating others as you wish to be treated. It is having the courage to stand up for what is right, even when you are afraid.'\n\nShe spreads her wings. 'But most of all, wisdom is this: understanding that knowledge is not an end in itself. What good is knowing about kindness if you are not kind? What use is understanding justice if you do not fight for it? The wisest people are not those who think the most. They are those who transform their thinking into right action.'\n\nSophia takes flight, circling above them. 'Go now, young philosophers. The world needs people who think deeply and act bravely. Perhaps one day, you will have wisdom worth sharing in a garden of your own.'",
+            "emoji": "🦉",
+            "choices": [
+                {
+                    "text": "Step through the gate together",
+                    "nextNodeId": "ending-together"
+                }
+            ]
+        },
+        "ending-together": {
+            "id": "ending-together",
+            "summary": "GOOD ENDING: They return home with gifts and ideas that will stay forever",
+            "text": "{{BOTH_NAMES}} step through the iron gate together. There is a moment of disorientation—like waking from an incredibly vivid dream—and then they are standing in the alley between the old brick buildings.\n\nThe gate is gone. The wall where it stood is just a wall now, covered in ordinary ivy. But in {{PLAYER1_NAME}}'s pocket is an olive from Socrates. In {{PLAYER2_NAME}}'s hand is a small stone from Martin Luther King Jr. And in both their minds are ideas that will stay with them forever.\n\n'Did that really happen?' {{PLAYER2_NAME}} whispers.\n\n'I think so,' {{PLAYER1_NAME}} says. 'I think... ideas are real. Maybe more real than walls and gates.'\n\nThey walk home together through streets that look the same but somehow feel different. The world is full of questions to ask, truths to discover, and right things to do. And for the first time, {{BOTH_NAMES}} feel ready to face them.\n\nAfter all, wisdom is not a destination. It is a journey—and theirs has just begun.",
+            "emoji": "🌟",
+            "choices": [],
+            "isEnding": true,
+            "endingType": "good",
+            "endingText": "THE END\n\nYou discovered the Philosopher's Garden and learned from some of history's greatest thinkers. Remember their lessons: question everything, treat others with kindness, and have the courage to stand up for what's right.\n\n\"The unexamined life is not worth living.\" — Socrates"
+        }
+    }
+}

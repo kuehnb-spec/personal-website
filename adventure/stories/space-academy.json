@@ -1,0 +1,258 @@
+{
+    "id": "space-academy",
+    "title": "The Space Academy Mystery",
+    "description": "{{BOTH_NAMES}} join a space academy and discover an incredible secret about the stars.",
+    "coverEmoji": "🚀",
+    "theme": "space",
+    "estimatedMinutes": 15,
+    "startNode": "start",
+    "nodes": {
+        "start": {
+            "id": "start",
+            "text": "The Space Academy's holographic welcome sign shimmered in the morning light as {{PLAYER1_NAME}} and {{PLAYER2_NAME}} stepped through the entrance. They had been chosen from thousands of applicants to join the Junior Astronaut Program.\n\n\"Welcome, cadets!\" A friendly robot named CARL-7 rolled up to greet them. \"I'm your orientation guide. Today you'll learn about our solar system and beyond—but first, there's been an unusual discovery. Our deep-space telescope has detected something extraordinary near Jupiter.\"\n\nCARL-7's screen displayed a fuzzy image. \"We're not sure what it is yet. Professor Chen needs help investigating, or you could start with the standard orientation tour. What would you prefer?\"\n\nThe academy's motto was inscribed on the wall: 'Per aspera ad astra'—through hardships to the stars.",
+            "emoji": "🏛️",
+            "choices": [
+                {
+                    "text": "Help investigate the mysterious signal",
+                    "nextNodeId": "investigate-signal"
+                },
+                {
+                    "text": "Take the orientation tour first",
+                    "nextNodeId": "orientation-tour"
+                },
+                {
+                    "text": "Ask CARL-7 about the academy's motto",
+                    "nextNodeId": "ask-motto"
+                }
+            ]
+        },
+        "investigate-signal": {
+            "id": "investigate-signal",
+            "text": "Professor Chen's observatory was filled with screens showing data from across the solar system. The elderly scientist looked up with excitement as {{BOTH_NAMES}} entered.\n\n\"Ah, young minds! Perfect timing,\" she said, adjusting her glasses. \"Look at this signal pattern. It's coming from Jupiter's moon Europa, which has a liquid ocean beneath its icy surface. Scientists believe it might harbor life—and this signal is unlike anything natural we've seen.\"\n\nShe pulled up a comparison chart. \"See how regular the pulses are? Nature rarely creates such precise patterns. The signal repeats every 3.14159 seconds—that's pi! One of the most important numbers in mathematics.\"\n\n{{PLAYER2_NAME}}'s eyes widened. \"Pi? Like the number that goes on forever?\"\n\n\"Exactly!\" Professor Chen beamed. \"This could be evidence of intelligence. But we need more data. Would you like to operate the telescope to gather more information, or analyze the signal patterns we already have?\"",
+            "emoji": "🔭",
+            "choices": [
+                {
+                    "text": "Operate the telescope",
+                    "nextNodeId": "telescope-work"
+                },
+                {
+                    "text": "Analyze the signal patterns",
+                    "nextNodeId": "analyze-patterns"
+                }
+            ]
+        },
+        "orientation-tour": {
+            "id": "orientation-tour",
+            "text": "CARL-7 led them through the academy's magnificent halls. \"The universe is approximately 13.8 billion years old,\" the robot explained as they passed a timeline display. \"Our sun is a middle-aged star, about 4.6 billion years old. It's classified as a 'yellow dwarf,' though it actually appears white from space.\"\n\nThey stopped at a scale model of the solar system. {{PLAYER1_NAME}} was amazed at how far apart the planets were.\n\n\"If the Sun were the size of a basketball,\" CARL-7 continued, \"Earth would be a small pea about 26 meters away. And Pluto? Nearly a kilometer away! Space is mostly... space.\"\n\n{{PLAYER2_NAME}} noticed a restricted door at the end of the hall with a sign: 'Project Cosmos - Authorized Personnel Only.'\n\n\"What's behind that door?\" {{PLAYER2_HE_SHE}} asked.\n\nCARL-7's lights flickered briefly. \"That... is classified. But perhaps you've earned a peek. Or would you prefer to continue to the planetarium?\"",
+            "emoji": "🌍",
+            "choices": [
+                {
+                    "text": "Ask to see Project Cosmos",
+                    "nextNodeId": "project-cosmos"
+                },
+                {
+                    "text": "Continue to the planetarium",
+                    "nextNodeId": "planetarium"
+                }
+            ]
+        },
+        "ask-motto": {
+            "id": "ask-motto",
+            "text": "\"Ah, you noticed our motto!\" CARL-7's display showed a warm smile. \"'Per aspera ad astra' is Latin for 'through hardships to the stars.' It reminds us that great achievements require perseverance.\"\n\nThe robot projected images of famous moments in space history. \"When the Apollo 13 astronauts faced disaster in space, they didn't give up. They worked the problem, step by step, and made it home safely. When the Mars Curiosity rover landed, it had to survive 'seven minutes of terror' entering the atmosphere.\"\n\n{{PLAYER1_NAME}} thought about this. \"So failure is part of success?\"\n\n\"Precisely! The philosopher Seneca said, 'It is not because things are difficult that we do not dare; it is because we do not dare that things are difficult.' Every astronaut, every scientist, every explorer has faced setbacks. What matters is learning from them.\"\n\n{{PLAYER2_NAME}} felt inspired. This academy taught more than just science—it taught how to think.\n\n\"Now,\" CARL-7 said, \"shall we investigate that mysterious signal, or would you prefer the tour?\"",
+            "emoji": "✨",
+            "choices": [
+                {
+                    "text": "Investigate the mysterious signal",
+                    "nextNodeId": "investigate-signal"
+                },
+                {
+                    "text": "Take the orientation tour",
+                    "nextNodeId": "orientation-tour"
+                }
+            ]
+        },
+        "telescope-work": {
+            "id": "telescope-work",
+            "text": "Professor Chen guided {{PLAYER1_NAME}}'s hands to the telescope controls. \"The light we're seeing from Europa left it about 35 minutes ago. That's how long it takes light to travel from Jupiter to Earth—even though light moves at 299,792 kilometers per second, the fastest speed possible in our universe.\"\n\n{{PLAYER1_NAME}} carefully adjusted the focus. The image sharpened, and something remarkable appeared: the signal seemed to be coming from beneath Europa's icy surface.\n\n\"Of course!\" Professor Chen exclaimed. \"The ocean! Europa's ice shell is about 15-25 kilometers thick, but beneath it lies an ocean that might be 100 kilometers deep—that's more water than all of Earth's oceans combined!\"\n\n{{PLAYER2_NAME}} gasped. \"Something is sending signals from underwater?\"\n\n\"It appears so. This changes everything. We need to decide: should we attempt to send a response signal, or should we gather more evidence first? In science, we must be careful—the philosopher Karl Popper taught us that good science means trying to disprove our ideas, not just prove them.\"",
+            "emoji": "🌌",
+            "choices": [
+                {
+                    "text": "Send a response signal",
+                    "nextNodeId": "send-signal"
+                },
+                {
+                    "text": "Gather more evidence first",
+                    "nextNodeId": "gather-evidence"
+                }
+            ]
+        },
+        "analyze-patterns": {
+            "id": "analyze-patterns",
+            "text": "{{PLAYER2_NAME}} studied the signal data with fascination. The computer displayed waves of information, each pulse perfectly timed.\n\n\"Look at these numbers,\" {{PLAYER2_HE_SHE}} said excitedly. \"The signal encodes prime numbers: 2, 3, 5, 7, 11, 13...\"\n\nProfessor Chen nodded approvingly. \"Excellent observation! Prime numbers—numbers only divisible by 1 and themselves—are the same everywhere in the universe. No natural phenomenon produces primes in sequence like this. It's like a mathematical signature.\"\n\n{{PLAYER1_NAME}} had an idea. \"What if we looked for other patterns? Like the Fibonacci sequence—you know, where each number is the sum of the two before it?\"\n\n\"1, 1, 2, 3, 5, 8, 13...\" Professor Chen's eyes lit up. \"Let me check!\"\n\nThe computer analyzed the data and found it: hidden within the signal was indeed the Fibonacci sequence—a pattern found in seashells, flower petals, and galaxies.\n\n\"This is extraordinary,\" the professor whispered. \"Whoever—or whatever—sent this understands mathematics as deeply as we do. Perhaps the philosopher Galileo was right when he said, 'Mathematics is the language with which God has written the universe.'\"",
+            "emoji": "🔢",
+            "choices": [
+                {
+                    "text": "Try to decode more of the message",
+                    "nextNodeId": "decode-message"
+                },
+                {
+                    "text": "Report this discovery to the Academy Director",
+                    "nextNodeId": "report-discovery"
+                }
+            ]
+        },
+        "project-cosmos": {
+            "id": "project-cosmos",
+            "text": "CARL-7 scanned the area, then quietly opened the restricted door. Inside was the most incredible sight {{BOTH_NAMES}} had ever seen: a holographic map of the entire Milky Way galaxy, showing 400 billion stars spinning slowly in the darkness.\n\n\"This is Project Cosmos,\" CARL-7 whispered. \"Our attempt to map every known exoplanet—planets orbiting other stars. So far, we've confirmed over 5,000 exoplanets, but we believe there could be billions.\"\n\n{{PLAYER1_NAME}} reached out toward a cluster of green dots. \"What are those?\"\n\n\"Planets in the 'habitable zone'—the distance from a star where water can exist as liquid. We call it the Goldilocks Zone: not too hot, not too cold, but just right.\"\n\n{{PLAYER2_NAME}} found Earth on the map, a tiny pale blue dot. The philosopher Carl Sagan once described it: \"Everyone you love, everyone you know, everyone you ever heard of, every human being who ever was, lived out their lives on a mote of dust suspended in a sunbeam.\"\n\nSuddenly, an alarm blared. Director Okonkwo's voice came over the speakers: \"All cadets to the observatory! We're receiving a response to our deep-space transmission!\"",
+            "emoji": "🌟",
+            "choices": [
+                {
+                    "text": "Rush to the observatory",
+                    "nextNodeId": "observatory-rush"
+                }
+            ]
+        },
+        "planetarium": {
+            "id": "planetarium",
+            "text": "The planetarium dome came alive with thousands of stars. {{BOTH_NAMES}} lay back in their chairs as the universe unfolded above them.\n\n\"What you're seeing,\" CARL-7 narrated, \"is not just pretty lights. Each star is a sun, perhaps with its own planets, perhaps with its own life. The light from the nearest star beyond our sun, Proxima Centauri, takes 4.24 years to reach us. When you look at that star, you see it as it was over four years ago.\"\n\n{{PLAYER1_NAME}} found this mind-bending. \"So we're always looking into the past?\"\n\n\"Indeed! The further we look into space, the further back in time we see. The James Webb Space Telescope can see galaxies whose light has traveled for over 13 billion years. We're literally watching the universe's childhood.\"\n\nThe dome shifted to show a beautiful nebula—a cloud of gas where new stars were being born.\n\n\"The atoms in your body were forged inside ancient stars,\" CARL-7 continued. \"The iron in your blood, the calcium in your bones, the oxygen you breathe—all created in stellar explosions billions of years ago. As the astronomer Carl Sagan said, 'We are made of star stuff.'\"\n\n{{PLAYER2_NAME}} felt a profound sense of connection to the cosmos.\n\nSuddenly, Professor Chen burst through the door. \"Cadets! We need you in the observatory immediately!\"",
+            "emoji": "💫",
+            "choices": [
+                {
+                    "text": "Follow Professor Chen to the observatory",
+                    "nextNodeId": "observatory-rush"
+                }
+            ]
+        },
+        "send-signal": {
+            "id": "send-signal",
+            "text": "\"If they used mathematics to say hello, we should respond in kind,\" {{PLAYER1_NAME}} suggested.\n\nProfessor Chen agreed. They composed a signal using the sequence: the first 20 prime numbers, followed by the first 20 Fibonacci numbers, and ending with pi to 100 decimal places.\n\n\"We're essentially saying: 'We understand. We speak the same universal language,'\" the professor explained.\n\nThe signal was sent. The room fell silent. Even though they knew any response would take over an hour—35 minutes for the signal to reach Europa, and 35 minutes for a reply to return—everyone held their breath.\n\n{{PLAYER2_NAME}} used the time to think. \"Professor, why would intelligent life use math to communicate?\"\n\n\"Because math is the same everywhere,\" she replied. \"Two plus two equals four whether you're on Earth, Europa, or the other side of the galaxy. The philosopher Bertrand Russell called mathematics 'the chief source of belief in eternal and exact truth.' It's the one language that doesn't require translation.\"\n\nExactly 70 minutes later, the signal returned—but it had changed. The response included new numbers, seemingly random at first, until {{PLAYER1_NAME}} recognized them.\n\n\"Those are the coordinates! They're showing us where they are!\"",
+            "emoji": "📡",
+            "choices": [
+                {
+                    "text": "Analyze the coordinate response",
+                    "nextNodeId": "coordinates-discovery"
+                }
+            ]
+        },
+        "gather-evidence": {
+            "id": "gather-evidence",
+            "text": "\"The scientific method teaches us to question everything, even our hopes,\" {{PLAYER2_NAME}} said thoughtfully. \"We should make sure this isn't something natural before we get excited.\"\n\nProfessor Chen smiled proudly. \"That's exactly right. The philosopher David Hume warned us that 'extraordinary claims require extraordinary evidence.' Let's be thorough.\"\n\nOver the next few hours, they checked everything: Could the signal be from a satellite? A natural radiation source? An equipment malfunction? They compared it to known cosmic phenomena—pulsars, quasars, magnetars—but nothing matched.\n\n{{PLAYER1_NAME}} discovered something crucial: the signal contained mathematical constants beyond just pi. There was Euler's number (e ≈ 2.718), the golden ratio (φ ≈ 1.618), and even the fine-structure constant—a number so fundamental to physics that the physicist Richard Feynman called it \"one of the greatest damn mysteries of physics.\"\n\n\"No natural phenomenon could produce all these constants,\" Professor Chen concluded, her voice trembling. \"You've done it, cadets. You've provided the evidence we needed. This is the greatest scientific discovery in human history.\"",
+            "emoji": "🔬",
+            "choices": [
+                {
+                    "text": "Ask what happens next",
+                    "nextNodeId": "what-happens-next"
+                }
+            ]
+        },
+        "decode-message": {
+            "id": "decode-message",
+            "text": "{{BOTH_NAMES}} worked together, looking for more patterns in the signal. {{PLAYER2_NAME}} noticed something interesting: certain pulses seemed to form groups.\n\n\"What if it's not just numbers?\" {{PLAYER2_HE_SHE}} suggested. \"What if they're sending... pictures?\"\n\nThey arranged the data in a grid, like pixels on a screen. Slowly, an image emerged: a simple diagram showing two circles—one large with a dot in the center (a sun and planet), and one small beneath an arch (something beneath ice, looking up).\n\n\"They're showing us their world!\" {{PLAYER1_NAME}} exclaimed. \"They live under the ice, looking up at Jupiter in their sky!\"\n\nProfessor Chen was overwhelmed with emotion. \"In all my years... This is what we've dreamed of. The philosopher Aristotle believed there must be life among the stars—and after 2,400 years, we may have found it.\"\n\nBut there was something else in the image: a series of marks that looked like they could be... writing.\n\n\"They have language,\" {{PLAYER2_NAME}} whispered. \"They have thoughts, ideas, stories. They're not just intelligent—they're people. Like us.\"",
+            "emoji": "🖼️",
+            "choices": [
+                {
+                    "text": "Try to interpret their writing",
+                    "nextNodeId": "interpret-writing"
+                },
+                {
+                    "text": "Send back an image of Earth",
+                    "nextNodeId": "send-earth-image"
+                }
+            ]
+        },
+        "report-discovery": {
+            "id": "report-discovery",
+            "text": "Director Okonkwo listened intently as {{BOTH_NAMES}} presented their findings. The tall woman with silver hair had led dozens of space missions, but even she seemed shaken.\n\n\"You're certain about this?\" she asked.\n\n\"The mathematical evidence is undeniable,\" Professor Chen confirmed. \"These cadets showed exemplary scientific thinking—they questioned, they verified, they reasoned.\"\n\nThe director stood and looked out the window at the stars. \"The philosopher Immanuel Kant once wrote that two things filled him with awe: 'the starry heavens above and the moral law within.' Today, you've connected those two things. You've shown that the universe isn't empty—and you've done so with integrity and care.\"\n\nShe turned to {{BOTH_NAMES}}. \"This discovery will change humanity forever. We're no longer alone. But how we proceed matters as much as what we've found. We have a responsibility—what philosophers call stewardship—to handle this wisely.\"\n\n\"What do we do now?\" {{PLAYER1_NAME}} asked.\n\n\"Now,\" the director smiled, \"we make history. Together.\"",
+            "emoji": "📋",
+            "choices": [
+                {
+                    "text": "Ask to be part of the first contact team",
+                    "nextNodeId": "first-contact-team"
+                }
+            ]
+        },
+        "observatory-rush": {
+            "id": "observatory-rush",
+            "text": "{{BOTH_NAMES}} ran to the observatory, where a crowd had gathered. On the main screen, a new signal was being displayed—and it was clearly artificial.\n\n\"An hour ago, we sent a routine greeting signal toward Europa,\" Director Okonkwo explained. \"Mostly symbolic—we never expected a response. But we got one. And it's not random noise.\"\n\nThe signal showed a clear pattern: prime numbers, then a sequence that looked like binary code—the simplest computer language of ones and zeros.\n\nWhen decoded, the binary formed an image: a simple map of Europa with a point marked beneath the ice, and next to it, something that looked like... waves of water and a crude representation of a fish-like shape.\n\n\"They're showing us what they look like,\" Professor Chen gasped. \"They live in the water beneath the ice. They're aquatic beings!\"\n\n{{PLAYER2_NAME}} felt tears forming. Somewhere out there, in a dark ocean on a frozen moon, someone had looked up and wondered if they were alone—just like humans had done for thousands of years. And now they knew they weren't.\n\n\"What should our response be?\" the director asked the room.",
+            "emoji": "🎯",
+            "choices": [
+                {
+                    "text": "Send a message of peace and friendship",
+                    "nextNodeId": "peace-message"
+                },
+                {
+                    "text": "Send information about Earth and humanity",
+                    "nextNodeId": "earth-info"
+                },
+                {
+                    "text": "Ask the cadets what they think",
+                    "nextNodeId": "cadets-decide"
+                }
+            ]
+        },
+        "coordinates-discovery": {
+            "id": "coordinates-discovery",
+            "text": "The coordinates pointed to a specific location: not just Europa, but a precise spot in its subsurface ocean. Depth: 89.7 kilometers. Location: directly beneath a thin section of ice.\n\n\"They're telling us where to find them,\" Professor Chen said in wonder. \"And they've chosen a spot where the ice is thinnest—as if they want to make it easier for us to visit.\"\n\n{{PLAYER1_NAME}} felt the weight of this moment. \"They want to meet us.\"\n\nDirector Okonkwo had entered quietly. \"The question is: are we ready to meet them? The philosopher Emmanuel Levinas wrote about 'the face of the Other'—how meeting someone truly different challenges us to be our best selves. This is that moment for humanity.\"\n\n{{PLAYER2_NAME}} spoke up. \"If they're reaching out peacefully, using math because they knew we'd understand... then they've already shown us who they are. They're scientists, like us. Dreamers, like us.\"\n\nThe director nodded slowly. \"Then perhaps we should respond in kind—not just with information, but with hope. You've both shown wisdom beyond your years today. Would you help us compose humanity's response?\"",
+            "emoji": "📍",
+            "isEnding": true,
+            "endingType": "good",
+            "endingText": "{{BOTH_NAMES}} helped compose humanity's first official message to an alien intelligence—a message of curiosity, peace, and the universal language of mathematics. They had learned that the universe speaks in numbers and patterns, that patience and careful thinking lead to great discoveries, and that across the vast emptiness of space, the desire to connect with others shines like a beacon.\n\nYears later, as the first probe descended through Europa's ice, {{BOTH_NAMES}} watched from mission control. They had helped write the next chapter of humanity's story—a chapter that proved we were never truly alone.\n\nTHE END"
+        },
+        "what-happens-next": {
+            "id": "what-happens-next",
+            "text": "Professor Chen took {{BOTH_NAMES}} to the window, where they could see the night sky.\n\n\"What happens next is perhaps the most important scientific and philosophical question humanity has ever faced,\" she said. \"We've confirmed we're not alone. But what does that mean for us?\"\n\n{{PLAYER1_NAME}} thought carefully. \"It means... we're part of something bigger.\"\n\n\"The philosopher Baruch Spinoza believed that everything in the universe is connected—that we're all part of one great cosmic whole. Today, you've helped prove that our thread extends far beyond Earth.\"\n\n{{PLAYER2_NAME}} added, \"It also means we have to be responsible. If there's other life out there, we have to be good neighbors.\"\n\nProfessor Chen smiled. \"Exactly. The ancient Greek philosopher Socrates said, 'I am not an Athenian or a Greek, but a citizen of the world.' Now we must learn to be citizens of the universe.\"\n\nShe put her hands on their shoulders. \"You two have the rare gift of scientific curiosity paired with ethical wisdom. The future will need people like you.\"",
+            "emoji": "🌠",
+            "isEnding": true,
+            "endingType": "good",
+            "endingText": "{{BOTH_NAMES}} graduated from the Space Academy with highest honors. They had learned that true science isn't just about discovering facts—it's about asking the right questions and being humble enough to doubt your own conclusions. They had helped prove that the universe is vast, mysterious, and full of wonders waiting to be found.\n\nAnd every night, when they looked up at the stars, they knew that somewhere out there, someone was looking back.\n\nTHE END"
+        },
+        "interpret-writing": {
+            "id": "interpret-writing",
+            "text": "{{BOTH_NAMES}} studied the strange marks carefully. They weren't like any alphabet on Earth—they looked almost like waves frozen in place.\n\n\"Of course!\" {{PLAYER2_NAME}} exclaimed. \"They live underwater! Their writing might represent water movements, currents, ripples!\"\n\nWith this insight, patterns emerged. Certain wave-shapes repeated in sequences, like words. Professor Chen helped them catalog each symbol and its frequency.\n\n\"This is linguistics,\" she explained. \"The philosopher Ludwig Wittgenstein said, 'The limits of my language mean the limits of my world.' By learning their language, we expand our world to include theirs.\"\n\nAfter hours of work, they made a breakthrough: one repeating symbol appeared at the beginning and end of the message. Based on its position and frequency, it seemed to mean something like \"greeting\" or \"hello.\"\n\n\"They're saying hello,\" {{PLAYER1_NAME}} said softly. \"Across 600 million kilometers of space, through ice and vacuum and darkness... they just wanted to say hello.\"",
+            "emoji": "📝",
+            "isEnding": true,
+            "endingType": "good",
+            "endingText": "{{BOTH_NAMES}} became the first humans to begin understanding an alien language. They spent their lives building bridges between worlds—proving that communication, curiosity, and kindness are universal values that transcend species and planets.\n\nThey had learned the most important lesson: that intelligence, wherever it arises, seems to share certain traits—the desire to understand, to explore, and to connect with others. In the end, we are all children of the cosmos, trying to find our way home.\n\nTHE END"
+        },
+        "send-earth-image": {
+            "id": "send-earth-image",
+            "text": "{{PLAYER1_NAME}} had an idea. \"If they showed us their world, we should show them ours.\"\n\nThey worked together to create a simple image: Earth as a blue circle with green and brown land masses, orbiting a yellow sun. They added two small figures—humans—waving.\n\nBut {{PLAYER2_NAME}} wanted to add something more. \"We should show them what we care about—not just what we look like.\"\n\nSo they added more images: a parent holding a child. Friends laughing together. Someone helping another person stand up. A library full of books. An orchestra making music.\n\n\"These are universal,\" Professor Chen said approvingly. \"Love, friendship, knowledge, beauty. The philosopher Plato believed these were the highest forms of truth. You're telling them not just what we are, but what we aspire to be.\"\n\nThe transmission was sent. And though the response wouldn't come for over an hour, {{BOTH_NAMES}} felt something had already changed. They had introduced humanity to the cosmos—and they had chosen to lead with hope.",
+            "emoji": "🌍",
+            "isEnding": true,
+            "endingType": "good",
+            "endingText": "{{BOTH_NAMES}} never forgot the lesson they learned that day: that how we present ourselves to others—whether across a room or across the stars—shapes who we become. They had chosen to show the best of humanity, and in doing so, they had inspired humanity to live up to that image.\n\nThe beings of Europa, in time, responded with their own images of love, family, curiosity, and hope. Two worlds had found each other, and both were better for it.\n\nTHE END"
+        },
+        "peace-message": {
+            "id": "peace-message",
+            "text": "\"We should lead with peace,\" {{PLAYER1_NAME}} said firmly. \"They reached out with mathematics—the most peaceful language there is. We should match that.\"\n\nThe team crafted a message: the universal symbol of a circle (representing wholeness), followed by two smaller circles approaching each other (representing meeting), and finally, the two circles overlapping (representing connection and harmony).\n\n\"In many Earth cultures, the circle represents unity and peace,\" Director Okonkwo explained. \"We're hoping that symbolism might be universal.\"\n\n{{PLAYER2_NAME}} added a suggestion: \"What if we also sent music? The philosopher Friedrich Nietzsche said, 'Without music, life would be a mistake.' Maybe they have something like music too.\"\n\nThey converted a simple melody—a lullaby known in many Earth cultures—into mathematical wave patterns and included it in the transmission.\n\nThe response, when it came, was astonishing: the Europans had sent back their own repeating wave pattern. Different from Earth music, but unmistakably... a song.\n\n\"They sing,\" Professor Chen whispered, tears in her eyes. \"They sing.\"",
+            "emoji": "☮️",
+            "isEnding": true,
+            "endingType": "good",
+            "endingText": "{{BOTH_NAMES}} had helped establish the first peaceful contact between Earth and another intelligent species. They had proven that music, mathematics, and the desire for connection are cosmic universals that transcend biology and distance.\n\nIn the years that followed, an incredible exchange began: songs, stories, ideas flowing between worlds. {{BOTH_NAMES}} became ambassadors of peace—not just for their country, but for their entire species.\n\nThey had learned that peace isn't passive—it's a choice you make, over and over, to reach out instead of pull back, to listen instead of assume, to harmonize instead of dominate.\n\nTHE END"
+        },
+        "earth-info": {
+            "id": "earth-info",
+            "text": "\"They showed us who they are,\" {{PLAYER2_NAME}} reasoned. \"We should show them who we are. Honestly.\"\n\nThe team assembled a comprehensive message: Earth's location, basic human biology, our history, our achievements—and our mistakes.\n\n\"Should we really show them our wars?\" someone asked. \"Our pollution? Our failures?\"\n\nDirector Okonkwo nodded solemnly. \"The philosopher Confucius taught that 'Better a diamond with a flaw than a pebble without.' If we want genuine connection, we must be genuine ourselves. Our struggles are part of who we are—as are our efforts to overcome them.\"\n\n{{PLAYER1_NAME}} added, \"We should also show them how we're trying to do better. The environmental movements. The peace efforts. The science that's trying to save our planet.\"\n\nThe message became a portrait of a species still growing up—making mistakes, but learning. Falling down, but getting back up. Not perfect, but trying.\n\nWhen the Europans responded, their message was surprisingly similar: their own history of struggles, their own attempts to grow. Two imperfect peoples, reaching toward the stars—and finding each other.",
+            "emoji": "📖",
+            "isEnding": true,
+            "endingType": "good",
+            "endingText": "{{BOTH_NAMES}} learned that honesty, even when it's uncomfortable, builds the strongest bridges. By showing humanity's true face—flaws and all—they had earned the Europans' trust and begun a friendship based on mutual understanding rather than pretense.\n\nAs the years passed and communication deepened, both species found that their imperfections weren't weaknesses—they were common ground. They were both species who had made mistakes, who had hurt each other and their worlds, but who had also dreamed of something better.\n\nIn the end, that shared hope was the greatest discovery of all.\n\nTHE END"
+        },
+        "cadets-decide": {
+            "id": "cadets-decide",
+            "text": "Everyone turned to look at {{BOTH_NAMES}}. The weight of the moment pressed down on them.\n\n\"Why are you asking us?\" {{PLAYER2_NAME}} asked.\n\nDirector Okonkwo smiled. \"Because you represent something important—the next generation. The philosopher Edmund Burke said, 'Society is a partnership between those who are living, those who are dead, and those who are yet to be born.' This decision affects all of them. What do you think humanity should say?\"\n\n{{PLAYER1_NAME}} and {{PLAYER2_NAME}} looked at each other, then at the image on the screen—the crude but unmistakable drawing of a life form reaching up from beneath the ice.\n\n\"I think,\" {{PLAYER1_NAME}} said slowly, \"we should tell them what we've always wanted to hear. What every living thing wants to know.\"\n\n\"What's that?\" the director asked.\n\n{{PLAYER2_NAME}} answered: \"That they're not alone. That their existence matters. That somewhere in the universe, someone is glad they exist.\"\n\nThe room was silent. Then, quietly, people began to nod.\n\n\"Make it so,\" the director said.",
+            "emoji": "💭",
+            "isEnding": true,
+            "endingType": "good",
+            "endingText": "{{BOTH_NAMES}} helped compose the message: 'You are not alone. We are glad you exist. We hope to be friends.'\n\nSimple words, but they carried the weight of human longing across the void of space. The Europans' response, when it came, was equally simple: the same repeating symbol they had identified earlier as 'hello'—but now, clearly, meaning so much more.\n\nThey had learned the most important lesson of all: that at the heart of science, philosophy, and exploration lies a simple truth. Whether on Earth or Europa, at the bottom of an ocean or the top of a mountain, all conscious beings share the same fundamental wish—to know that they matter, and that they are not alone.\n\nTHE END"
+        },
+        "first-contact-team": {
+            "id": "first-contact-team",
+            "text": "\"We want to be part of whatever comes next,\" {{PLAYER1_NAME}} said. {{PLAYER2_NAME}} nodded firmly.\n\nDirector Okonkwo studied them for a long moment. \"You know this will change your lives forever. You'll carry this responsibility always.\"\n\n\"We understand,\" {{PLAYER2_NAME}} replied. \"But the philosopher Albert Camus said, 'The purpose of life is to be defeated by greater and greater things.' I can't imagine anything greater than this.\"\n\nThe director smiled. \"Camus also said that we must imagine Sisyphus happy—finding meaning in our struggles. Very well. Welcome to the First Contact Team.\"\n\nIn the weeks that followed, {{BOTH_NAMES}} helped design the protocols for interspecies communication. They advocated for patience over haste, understanding over assumption, and respect above all.\n\n\"Remember,\" Professor Chen told them during one late night of work, \"we're not just representing ourselves, or our country, or even our species. We're representing the idea that intelligence can be kind.\"",
+            "emoji": "🤝",
+            "isEnding": true,
+            "endingType": "good",
+            "endingText": "{{BOTH_NAMES}} spent their careers as humanity's youngest ambassadors to the cosmos. They brought to the First Contact Team not just scientific knowledge, but something equally important: the wisdom that true connection requires humility, patience, and an open heart.\n\nYears later, when the first exchange of physical objects occurred—a capsule sent to Europa, a container sent to Earth—both packages contained something similar: works of art, samples of music, and messages from children.\n\n{{BOTH_NAMES}} smiled when they realized what this meant. Across the cold vacuum of space, two species had discovered the same truth: that the future belongs to the young, and hope is the most universal language of all.\n\nTHE END"
+        }
+    }
+}

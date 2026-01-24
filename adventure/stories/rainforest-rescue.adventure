@@ -1,0 +1,337 @@
+{
+    "formatVersion": "1.0",
+    "metadata": {
+        "id": "rainforest-rescue",
+        "title": "Guardians of the Canopy",
+        "author": "Adventure Stories",
+        "coverEmoji": "🌴",
+        "description": "{{BOTH_NAMES}} journey into the Amazon rainforest to help a scientist protect endangered species and learn about ecology.",
+        "ageRange": "8-10",
+        "estimatedMinutes": 20,
+        "themes": ["ecology", "conservation", "animals", "environment"],
+        "contentNotes": [],
+        "startNode": "start"
+    },
+    "nodes": {
+        "start": {
+            "id": "start",
+            "summary": "Kids join a wildlife biologist deep in the Amazon rainforest",
+            "text": "The canoe glides through tea-colored water, deeper into the Amazon rainforest than {{PLAYER1_NAME}} and {{PLAYER2_NAME}} have ever imagined going. They won a conservation contest to help Dr. Luna Reyes, a wildlife biologist, with her research.\n\nThe jungle is alive with sound—bird calls, monkey howls, the buzz of countless insects. The air is thick and warm, smelling of flowers and rich earth.\n\n'Welcome to the lungs of the Earth,' Dr. Reyes says, steering around a fallen tree. 'This rainforest produces twenty percent of the world's oxygen. It's home to ten percent of all species on the planet. And it's in trouble.'\n\nShe points to a bare patch on the distant hillside—where trees have been cut down.\n\n'But we're here to fight for it. My research station is just ahead. Today, I need help with some important work. We have three missions to choose from.'",
+            "emoji": "🛶",
+            "choices": [
+                {
+                    "text": "Help track jaguars with camera traps",
+                    "nextNodeId": "jaguar-mission"
+                },
+                {
+                    "text": "Study poison dart frogs to understand their decline",
+                    "nextNodeId": "frog-mission"
+                },
+                {
+                    "text": "Survey the canopy layer with climbing gear",
+                    "nextNodeId": "canopy-mission"
+                }
+            ]
+        },
+        "jaguar-mission": {
+            "id": "jaguar-mission",
+            "summary": "They set out to check camera traps that photograph jaguars",
+            "text": "Dr. Reyes leads them down a narrow trail. 'Jaguars are the Amazon's top predator,' she explains. 'They're also incredibly shy. We rarely see them directly, so we use camera traps—motion-activated cameras that photograph animals as they pass.'\n\nThey reach the first camera, strapped to a tree near a muddy trail. Dr. Reyes checks the memory card and grins. 'Jackpot!'\n\nOn the camera's screen, a magnificent jaguar walks past, its spotted coat glowing in the flash. {{PLAYER1_NAME}} gasps.\n\n'That's Luna Junior,' Dr. Reyes says. 'I named her after myself. She's about four years old, has two cubs somewhere nearby. By photographing her regularly, I can track her territory, her health, and whether she's raising young.'\n\n'Why does that matter?' {{PLAYER2_NAME}} asks.\n\n'Jaguars are an umbrella species. Protect them, and you protect everything below them on the food chain. If jaguars are healthy, it means their prey is healthy, which means the plants their prey eats are healthy. One species tells us about thousands of others.'",
+            "emoji": "🐆",
+            "choices": [
+                {
+                    "text": "Learn about the jaguar's role in the ecosystem",
+                    "nextNodeId": "jaguar-ecosystem"
+                },
+                {
+                    "text": "Ask about threats to jaguars",
+                    "nextNodeId": "jaguar-threats"
+                },
+                {
+                    "text": "Set up a new camera trap",
+                    "nextNodeId": "camera-setup"
+                }
+            ]
+        },
+        "jaguar-ecosystem": {
+            "id": "jaguar-ecosystem",
+            "summary": "They learn how jaguars keep the entire ecosystem balanced",
+            "text": "Dr. Reyes draws a quick diagram in the mud. 'This is a food web. The sun feeds the plants. Plants feed insects and small animals. Those feed larger animals. At the very top—the apex predator—sits the jaguar.'\n\n'What happens without jaguars?' {{PLAYER1_NAME}} asks.\n\n'Everything changes. Their prey—peccaries, capybaras, deer—would multiply without control. They'd eat too much vegetation. The forest floor would be stripped bare. Seedlings wouldn't survive to become trees. Eventually, the whole forest structure collapses.'\n\nShe points to jaguar claw marks on a tree. 'Jaguars also spread seeds! They eat fruit along with their prey, and their droppings deposit seeds far from the parent tree. They're gardeners without knowing it.'\n\n{{PLAYER2_NAME}} looks at the scratch marks with new respect. 'So one animal does all that?'\n\n'In nature, everything is connected. Remove one piece and the whole system shifts. That's why conservation isn't about saving cute animals—it's about maintaining the web of life that supports everything, including us.'",
+            "emoji": "🕸️",
+            "choices": [
+                {
+                    "text": "Ask about threats to jaguars",
+                    "nextNodeId": "jaguar-threats"
+                },
+                {
+                    "text": "Set up a new camera trap",
+                    "nextNodeId": "camera-setup"
+                }
+            ]
+        },
+        "jaguar-threats": {
+            "id": "jaguar-threats",
+            "summary": "Dr. Reyes explains why jaguars are endangered",
+            "text": "'Jaguars once roamed from Argentina to Arizona,' Dr. Reyes says. 'Now they've lost nearly half their territory. Why? Three main reasons.'\n\nShe counts on her fingers. 'Habitat loss. Forests are cleared for cattle ranching and soy farms. Every year, an area the size of a football field is cleared every single minute in the Amazon.'\n\n{{BOTH_NAMES}} try to imagine that. It's staggering.\n\n'Second: conflict with humans. When forests shrink, jaguars sometimes kill cattle. Ranchers retaliate by killing jaguars. It's a tragedy—both sides lose.'\n\n'Third: illegal hunting. Jaguar teeth and skins are sold on the black market. Despite protection, poachers still operate.'\n\n{{PLAYER1_NAME}} feels anger rising. 'How do we stop it?'\n\n'Education helps—showing farmers that jaguars actually benefit the ecosystem. Protected corridors let jaguars move between forest fragments. And cameras like these prove jaguars exist in an area, which can help create new protected zones.'\n\nShe checks another camera. 'Every photo is evidence. Evidence leads to protection. Protection leads to survival.'",
+            "emoji": "⚠️",
+            "choices": [
+                {
+                    "text": "Set up a new camera trap",
+                    "nextNodeId": "camera-setup"
+                },
+                {
+                    "text": "Try another research mission",
+                    "nextNodeId": "choose-mission"
+                }
+            ]
+        },
+        "camera-setup": {
+            "id": "camera-setup",
+            "summary": "They help install a camera trap and find jaguar tracks",
+            "text": "Dr. Reyes hands {{PLAYER2_NAME}} a new camera. 'Your turn to set one up. Look for a game trail—a path animals use regularly.'\n\nThey search carefully. {{PLAYER1_NAME}} spots a narrow trail with fresh animal tracks leading to the river.\n\n'Perfect,' Dr. Reyes nods. 'Animals need water, so trails to rivers are always busy. Now, height matters—too high and we miss smaller animals, too low and we miss tall ones. About knee height usually works.'\n\n{{PLAYER2_NAME}} straps the camera to a tree, pointing across the trail. Dr. Reyes checks the angle. 'Good! Now set the sensitivity—not too high or every falling leaf triggers it, not too low or fast animals don't register.'\n\nAs they finish, {{PLAYER1_NAME}} notices something in the mud. 'Is that...?'\n\n'Jaguar tracks!' Dr. Reyes kneels excitedly. 'Fresh, too—maybe hours old. Luna Junior uses this trail.' She measures the print. 'These are front paws. Jaguars have the strongest bite of any big cat—they can crush a turtle shell. And this one walked right where you're standing.'\n\n{{BOTH_NAMES}} feel a thrill of connection to the invisible predator sharing their forest.",
+            "emoji": "📸",
+            "choices": [
+                {
+                    "text": "Try the frog mission",
+                    "nextNodeId": "frog-mission"
+                },
+                {
+                    "text": "Try the canopy mission",
+                    "nextNodeId": "canopy-mission"
+                },
+                {
+                    "text": "Learn more about conservation",
+                    "nextNodeId": "conservation-talk"
+                }
+            ]
+        },
+        "frog-mission": {
+            "id": "frog-mission",
+            "summary": "They search for colorful poison dart frogs",
+            "text": "Dr. Reyes leads them to a shaded stream bank. 'Poison dart frogs are bioindicators—their health tells us about the health of the entire ecosystem.'\n\n'Because they're sensitive?' {{PLAYER1_NAME}} guesses.\n\n'Exactly! Frogs absorb water and oxygen through their skin. Any pollution, temperature change, or habitat disruption affects them immediately. If frogs are thriving, the environment is healthy. If they're disappearing...'\n\nShe doesn't finish. She doesn't need to.\n\n{{PLAYER2_NAME}} spots a flash of brilliant blue. 'There!'\n\nA tiny frog, no bigger than a thumbnail, sits on a leaf. Its skin is electric blue with black spots—the most vivid color {{BOTH_NAMES}} have ever seen on a living thing.\n\n'Blue poison dart frog,' Dr. Reyes whispers, photographing it. 'That color isn't camouflage—it's a warning. It says: eat me and you'll regret it. The poison comes from the ants and mites they eat. In captivity, fed different food, they're not poisonous at all.'\n\n'The poison comes from their diet?' {{PLAYER1_NAME}} is amazed.\n\n'Everything is connected,' Dr. Reyes smiles.",
+            "emoji": "🐸",
+            "choices": [
+                {
+                    "text": "Learn about how frog poison helps medicine",
+                    "nextNodeId": "frog-medicine"
+                },
+                {
+                    "text": "Ask about the frog extinction crisis",
+                    "nextNodeId": "frog-crisis"
+                },
+                {
+                    "text": "Help count frog species in the area",
+                    "nextNodeId": "frog-survey"
+                }
+            ]
+        },
+        "frog-medicine": {
+            "id": "frog-medicine",
+            "summary": "They discover how frog toxins lead to medical breakthroughs",
+            "text": "'These tiny frogs have chemicals that could save millions of lives,' Dr. Reyes explains. 'One compound from poison dart frogs is being developed as a painkiller two hundred times more powerful than morphine, but not addictive.'\n\n{{PLAYER2_NAME}}'s eyes widen. 'From frog poison?'\n\n'Nature has been experimenting for billions of years. Every species contains unique chemical solutions to survival problems. We've found cancer treatments in rainforest plants, antibiotics in soil bacteria, blood pressure medicines in snake venom.'\n\nShe carefully examines the little blue frog. 'When a species goes extinct, we lose not just the animal but every potential discovery it might have given us. There could be a cure for a disease you don't even have yet, sitting in a frog that goes extinct before anyone studies it.'\n\n{{PLAYER1_NAME}} thinks about all the medicines in a pharmacy. 'How many come from nature?'\n\n'About half of all medicines are derived from natural compounds. And we've only studied a fraction of species. The rainforest is like a library of medical secrets—and we're burning it before we've read most of the books.'",
+            "emoji": "💊",
+            "choices": [
+                {
+                    "text": "Ask about the frog extinction crisis",
+                    "nextNodeId": "frog-crisis"
+                },
+                {
+                    "text": "Help count frog species in the area",
+                    "nextNodeId": "frog-survey"
+                }
+            ]
+        },
+        "frog-crisis": {
+            "id": "frog-crisis",
+            "summary": "They learn about the global amphibian extinction crisis",
+            "text": "Dr. Reyes's expression grows serious. 'Frogs are facing the worst extinction crisis of any animal group. Over two hundred species have already disappeared. Thousands more are threatened.'\n\n'What's killing them?' {{PLAYER1_NAME}} asks.\n\n'A deadly fungus called chytrid has spread across the world, probably transported by humans. It infects frog skin—and since frogs breathe and drink through their skin, infection is deadly.'\n\nShe shows them a photo of a frog with patchy, sickly skin. 'Entire species went extinct before we even knew what was happening. In some areas, ninety percent of frogs died within months.'\n\n'Can we stop it?'\n\n'We're trying. Some frogs have natural resistance—we're studying why. We've created captive breeding programs to keep endangered species alive. We treat infected areas with probiotics that fight the fungus.'\n\nShe gently photographs another frog. 'But the bigger issue is habitat. The fungus is worse when frogs are already stressed by pollution, climate change, and forest loss. Give them healthy homes and they're more likely to fight off disease.'",
+            "emoji": "🦠",
+            "choices": [
+                {
+                    "text": "Help count frog species in the area",
+                    "nextNodeId": "frog-survey"
+                },
+                {
+                    "text": "Try another research mission",
+                    "nextNodeId": "choose-mission"
+                }
+            ]
+        },
+        "frog-survey": {
+            "id": "frog-survey",
+            "summary": "They conduct a frog survey and find several species",
+            "text": "Dr. Reyes gives them each a notebook. 'We're going to do a survey—count every frog we can find in this one-hectare plot. This tells us about biodiversity.'\n\nFor the next hour, they search carefully. {{PLAYER1_NAME}} finds a tiny brown frog that looks like a dead leaf. {{PLAYER2_NAME}} spots a bright red one with blue legs. Dr. Reyes identifies a species by its call alone—a high-pitched whistle.\n\nFinal count: fourteen individual frogs representing seven different species.\n\n'That's actually pretty good for one hour,' Dr. Reyes says. 'Ten years ago, we'd find twice as many. But compared to some degraded areas where we find almost none, this forest is still healthy.'\n\n{{PLAYER1_NAME}} looks at the list of species names. 'Each of these evolved over millions of years?'\n\n'Millions upon millions. Each one is the result of countless generations adapting to this specific place. If they disappear, that evolutionary history is gone forever. It's like burning a book that took a million years to write—and there's no backup copy.'\n\n{{PLAYER2_NAME}} carefully records the last observation. Every frog counts.",
+            "emoji": "📋",
+            "choices": [
+                {
+                    "text": "Try the canopy mission",
+                    "nextNodeId": "canopy-mission"
+                },
+                {
+                    "text": "Try the jaguar mission",
+                    "nextNodeId": "jaguar-mission"
+                },
+                {
+                    "text": "Learn more about conservation",
+                    "nextNodeId": "conservation-talk"
+                }
+            ]
+        },
+        "canopy-mission": {
+            "id": "canopy-mission",
+            "summary": "They prepare to climb into the rainforest canopy",
+            "text": "Dr. Reyes helps them into harnesses. 'The canopy is the rooftop of the rainforest—between thirty and fifty meters above the forest floor. It's where most of the action happens. More species live up there than anywhere else in the forest, but it's so hard to reach that it's less studied than the surface of Mars.'\n\nA rope system leads up into the green cathedral above. {{PLAYER1_NAME}}'s heart pounds with excitement and nerves.\n\n'The canopy is a different world,' Dr. Reyes continues. 'Different temperature, different humidity, different species. Some animals up there never come down their entire lives. Some plants grow only on other plants, never touching soil.'\n\nThey begin the ascent. The first few meters are dark and damp. Then the light increases. Orchids appear, clinging to branches. Birds flash past.\n\nAt thirty meters, they emerge into blazing sunlight on a platform built around a massive tree. The view is staggering—an endless sea of green, broken only by occasional emergent trees rising even higher.\n\n'Welcome to the canopy,' Dr. Reyes says. 'Population: approximately ten million species.'",
+            "emoji": "🧗",
+            "choices": [
+                {
+                    "text": "Study the epiphytes (plants growing on plants)",
+                    "nextNodeId": "epiphytes"
+                },
+                {
+                    "text": "Look for canopy animals",
+                    "nextNodeId": "canopy-animals"
+                },
+                {
+                    "text": "Learn about the forest layers",
+                    "nextNodeId": "forest-layers"
+                }
+            ]
+        },
+        "epiphytes": {
+            "id": "epiphytes",
+            "summary": "They discover plants that live their entire lives on other plants",
+            "text": "'Look at these,' Dr. Reyes points to a cluster of orchids growing from a branch. 'Epiphytes—plants that grow on other plants. They're not parasites; they don't take nutrients from the tree. They just use it as a platform to reach the sunlight.'\n\n{{PLAYER2_NAME}} counts different species on one branch alone—orchids, bromeliads, ferns, moss. 'There must be dozens!'\n\n'Some trees host more than fifty species of epiphytes. And each epiphyte hosts its own community. See this bromeliad? Its leaves form a cup that holds water.'\n\nShe shows them—the bromeliad's center is indeed full of water, like a tiny pond.\n\n'Tadpoles grow in there! Insects lay eggs. Tree frogs raise their babies. One plant creates an entire ecosystem suspended forty meters in the air.'\n\n{{PLAYER1_NAME}} peers into another bromeliad and sees tiny creatures swimming. 'It's like... hotels for animals?'\n\n'Sky hotels, exactly. In the dry season, these little pools are the only water source for many canopy creatures. Remove the bromeliads and you lose everything that depends on them.'",
+            "emoji": "🌺",
+            "choices": [
+                {
+                    "text": "Look for canopy animals",
+                    "nextNodeId": "canopy-animals"
+                },
+                {
+                    "text": "Learn about the forest layers",
+                    "nextNodeId": "forest-layers"
+                }
+            ]
+        },
+        "canopy-animals": {
+            "id": "canopy-animals",
+            "summary": "They spot toucans, monkeys, and a sloth in the treetops",
+            "text": "Dr. Reyes hands them binoculars. 'Let's see what's home today.'\n\n{{PLAYER1_NAME}} spots a flash of color—a toucan, its enormous orange beak almost comically large, hopping between branches. 'There!'\n\n'Toco toucan. That beak isn't just for looks—it helps regulate their body temperature, like a built-in air conditioner. They also use it to reach fruit on branches too small to support their weight.'\n\n{{PLAYER2_NAME}} finds movement in a distant tree. 'Monkeys!'\n\n'Squirrel monkeys, traveling in a group. They move through the canopy highways—paths they know by heart. Generation after generation uses the same routes. If you cut down trees along their path, they can become stranded.'\n\nThen something catches {{PLAYER1_NAME}}'s eye in a nearby tree—a gray lump of fur hanging upside down.\n\n'Sloth!' Dr. Reyes grins. 'Three-toed. They move so slowly that algae grows in their fur—free camouflage! They only come down to the ground once a week to defecate. Their whole life happens in these branches.'\n\n{{BOTH_NAMES}} watch the sloth slowly reach for a leaf. In no hurry. Never in a hurry.",
+            "emoji": "🦜",
+            "choices": [
+                {
+                    "text": "Learn about the forest layers",
+                    "nextNodeId": "forest-layers"
+                },
+                {
+                    "text": "Learn more about conservation",
+                    "nextNodeId": "conservation-talk"
+                }
+            ]
+        },
+        "forest-layers": {
+            "id": "forest-layers",
+            "summary": "Dr. Reyes explains the distinct layers of rainforest life",
+            "text": "'The rainforest isn't one habitat—it's many, stacked on top of each other,' Dr. Reyes explains from their platform.\n\n'At the very top, emergent trees poke above the canopy like green skyscrapers. Eagles and macaws live there, with the best view and the strongest winds.\n\n'Below that, the canopy layer where we are now. This dense roof gets most of the sunlight and rain. Most forest species live here—it's like a city suspended in the sky.\n\n'Under that, the understory. Filtered light, young trees waiting for a gap in the canopy. Smaller birds, climbing snakes, lots of insects.\n\n'Finally, the forest floor. Dark, humid, decomposing leaves. Fungi, beetles, tapirs, jaguars.'\n\nShe points straight down. 'Each layer has different temperature, humidity, and light. Animals adapted to one layer might die in another. That's why when we build roads through the forest, even if we leave trees standing, we separate populations. Some canopy animals won't cross open ground.'\n\n{{PLAYER2_NAME}} looks down at the distant floor. 'So the forest is really multiple worlds stacked together?'\n\n'Exactly. And we're only beginning to understand most of them.'",
+            "emoji": "🌲",
+            "choices": [
+                {
+                    "text": "Learn more about conservation",
+                    "nextNodeId": "conservation-talk"
+                },
+                {
+                    "text": "Ask what happens when forests are cut",
+                    "nextNodeId": "deforestation"
+                }
+            ]
+        },
+        "choose-mission": {
+            "id": "choose-mission",
+            "summary": "They can choose another research mission or discuss conservation",
+            "text": "Dr. Reyes checks her watch. 'We've made good progress. Want to try another mission, or shall we talk about the bigger picture—why this all matters and what we can do about it?'\n\nThe forest hums around them. Somewhere a howler monkey calls, the sound echoing through the trees.\n\n{{PLAYER1_NAME}} feels different after hours in the jungle. The forest isn't just trees—it's a living system, incredibly complex, fragile, and irreplaceable.",
+            "emoji": "🤔",
+            "choices": [
+                {
+                    "text": "Help track jaguars",
+                    "nextNodeId": "jaguar-mission"
+                },
+                {
+                    "text": "Study poison dart frogs",
+                    "nextNodeId": "frog-mission"
+                },
+                {
+                    "text": "Survey the canopy",
+                    "nextNodeId": "canopy-mission"
+                },
+                {
+                    "text": "Talk about conservation and solutions",
+                    "nextNodeId": "conservation-talk"
+                }
+            ]
+        },
+        "conservation-talk": {
+            "id": "conservation-talk",
+            "summary": "Dr. Reyes explains what's being done to save rainforests",
+            "text": "As the sun lowers, casting golden light through the canopy, Dr. Reyes sits with them on a fallen log.\n\n'The problems seem huge,' she admits. 'Deforestation, climate change, extinction. It's easy to feel hopeless. But here's what keeps me going: solutions exist, and they're working.'\n\nShe counts on her fingers. 'Protected areas have doubled in the last thirty years. Indigenous communities—the best forest protectors—are gaining land rights. Technology lets us monitor deforestation from satellites in real-time.\n\n'Sustainable businesses prove forests are worth more alive than dead. Eco-tourism, sustainable harvesting, carbon credits—all show that conservation can be economically smart.\n\n'And young people like you are more environmentally aware than any generation before. You demand change. That matters.'\n\n{{PLAYER2_NAME}} asks, 'What can we actually do?'\n\n'Support organizations protecting habitat. Reduce your footprint—the products you buy affect forests here. Learn and share what you learn. Choose careers that help. Never underestimate the power of one person caring deeply.'",
+            "emoji": "💚",
+            "choices": [
+                {
+                    "text": "Ask what happens if we fail",
+                    "nextNodeId": "deforestation"
+                },
+                {
+                    "text": "Make a commitment to help",
+                    "nextNodeId": "make-commitment"
+                }
+            ]
+        },
+        "deforestation": {
+            "id": "deforestation",
+            "summary": "They learn the devastating consequences of losing rainforests",
+            "text": "'What happens if the rainforest is gone?' {{PLAYER1_NAME}} asks quietly.\n\nDr. Reyes is silent for a moment. 'Nothing good. The Amazon creates its own weather—half the rain falling here comes from the forest itself, recycling water through the trees. Remove enough trees and the remaining forest dries out. We could cross a tipping point where the forest can't sustain itself anymore. It would collapse into savanna.'\n\n{{PLAYER2_NAME}} feels cold despite the humid air.\n\n'All the carbon stored in these trees—billions of tons—would release into the atmosphere, accelerating climate change. Species would go extinct by the millions. Indigenous peoples would lose their homes. Medicines we never discovered would be lost forever.'\n\nShe looks at the forest around them. 'But here's the thing: it hasn't happened yet. We still have time. Every year we protect, every tree we save, every species we preserve gives us more chances. The future isn't written.'\n\n{{PLAYER1_NAME}} thinks about that. Not hopeless—just urgent.\n\n'We're in a race,' Dr. Reyes continues. 'A race to value this forest before it's too late. And I believe we can win.'",
+            "emoji": "🔥",
+            "choices": [
+                {
+                    "text": "Make a commitment to help",
+                    "nextNodeId": "make-commitment"
+                }
+            ]
+        },
+        "make-commitment": {
+            "id": "make-commitment",
+            "summary": "They promise to be guardians of the natural world",
+            "text": "Night falls softly on the research station. The forest transitions to a symphony of night sounds—frogs calling, insects chirping, the occasional owl.\n\nDr. Reyes brings them to a clearing where they can see the stars. 'I bring all my young researchers here. I have a tradition.'\n\nShe hands them each a small seed—from a Brazil nut tree, one of the giants of the forest.\n\n'This seed might become a tree that lives for five hundred years, supports thousands of species, provides food for countless animals and people. All that potential, in something that fits in your palm.'\n\n{{PLAYER1_NAME}} holds the seed carefully.\n\n'I ask everyone who visits to make a commitment. Not a big dramatic promise—just a small, real thing you'll do to help. It might be refusing plastic straws. It might be researching a conservation career. It might be teaching a friend about why forests matter. Whatever feels true for you.'\n\n{{BOTH_NAMES}} think about everything they've experienced—the jaguar tracks, the blue frog, the canopy world, the connections between every living thing.\n\nWhat will their commitment be?",
+            "emoji": "🌱",
+            "choices": [
+                {
+                    "text": "Commit to learning and teaching others about ecology",
+                    "nextNodeId": "ending-educator"
+                },
+                {
+                    "text": "Commit to making eco-friendly choices every day",
+                    "nextNodeId": "ending-everyday"
+                }
+            ]
+        },
+        "ending-educator": {
+            "id": "ending-educator",
+            "summary": "GOOD ENDING: They commit to spreading knowledge about rainforests",
+            "text": "'I promise to learn more about ecosystems and share what I learn with everyone I can,' {{PLAYER1_NAME}} says.\n\n'Me too,' {{PLAYER2_NAME}} adds. 'If people understood how amazing and important the rainforest is, they'd want to protect it. Most people just don't know.'\n\nDr. Reyes smiles warmly. 'Education is powerful. Every conservationist was once a child who learned something that made them care. Every law protecting wilderness was passed because enough people understood why it mattered. You could spark that understanding in someone who goes on to make a huge difference.'\n\nShe gives them each a small Brazil nut seed to keep. 'Plant these someday, somewhere appropriate. And plant seeds of knowledge wherever you go.'\n\nAs they canoe back to civilization in the morning light, the forest alive with bird calls, {{BOTH_NAMES}} see everything differently. Not just trees, but systems. Not just animals, but connections. Not just nature, but their responsibility.\n\nThe rainforest is counting on people like them. And they won't let it down.",
+            "emoji": "📚",
+            "isEnding": true,
+            "endingType": "good",
+            "endingTitle": "Forest Educators",
+            "endingText": "THE END\n\nYou explored the Amazon rainforest and learned about the incredible web of life that exists there. Remember: every species matters, every action helps, and sharing knowledge is one of the most powerful things you can do.\n\n\"In the end, we will conserve only what we love, we will love only what we understand, and we will understand only what we are taught.\" — Baba Dioum"
+        },
+        "ending-everyday": {
+            "id": "ending-everyday",
+            "summary": "GOOD ENDING: They commit to daily choices that protect the planet",
+            "text": "'I promise to think about how my choices affect the environment,' {{PLAYER2_NAME}} says. 'Every day. Even small things like what I buy, what I eat, what I throw away.'\n\n{{PLAYER1_NAME}} nods. 'Me too. The products we use—paper, food, clothes—they all come from somewhere. If demand for sustainable stuff goes up, companies will change. Our choices matter.'\n\nDr. Reyes beams. 'This is how systems change. Not just big dramatic acts, but millions of small choices adding up. Refusing products that destroy forests. Supporting companies that protect them. Using less, wasting less, caring more.'\n\nShe hands them each a Brazil nut seed. 'Plant these when you can. Let them remind you of today.'\n\nOn the journey home, {{BOTH_NAMES}} plan their new habits. Reusable water bottles. Checking where products come from. Eating less meat (cattle ranching drives deforestation). Talking to family about their choices.\n\nThe Amazon seems far away. But every action here echoes there.\n\nThey arrived as visitors. They leave as guardians—connected forever to a forest they'll never forget.",
+            "emoji": "🌍",
+            "isEnding": true,
+            "endingType": "good",
+            "endingTitle": "Everyday Guardians",
+            "endingText": "THE END\n\nYou explored the Amazon rainforest and made a commitment to protect it through your everyday choices. Remember: big change comes from small actions multiplied by millions of people. Every choice you make matters.\n\n\"The greatest threat to our planet is the belief that someone else will save it.\" — Robert Swan"
+        }
+    }
+}

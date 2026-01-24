@@ -1,0 +1,335 @@
+{
+    "formatVersion": "1.0",
+    "metadata": {
+        "id": "ancient-egypt",
+        "title": "Riddle of the Sphinx",
+        "author": "Adventure Stories",
+        "coverEmoji": "🏺",
+        "description": "{{BOTH_NAMES}} journey to ancient Egypt to uncover the secrets of pyramids, hieroglyphics, and the pharaohs.",
+        "ageRange": "8-10",
+        "estimatedMinutes": 20,
+        "themes": ["history", "archaeology", "Egypt", "ancient civilizations"],
+        "contentNotes": [],
+        "startNode": "start"
+    },
+    "nodes": {
+        "start": {
+            "id": "start",
+            "summary": "Kids find a scarab amulet at an archaeology dig that transports them",
+            "text": "The summer sun beats down on the excavation site in Egypt. {{PLAYER1_NAME}} and {{PLAYER2_NAME}} are here with their uncle Ahmed, an archaeologist who studies ancient Egypt.\n\n'Careful now,' Uncle Ahmed warns as they help brush sand from a newly discovered chamber. 'This tomb hasn't been opened in three thousand years.'\n\n{{PLAYER2_NAME}}'s brush uncovers something glinting in the sand—a golden scarab beetle amulet, its surface carved with hieroglyphics.\n\n'Extraordinary!' Uncle Ahmed breathes. 'Don't touch it yet, let me get my—'\n\nBut {{PLAYER1_NAME}} has already picked it up. The scarab feels warm, almost alive. Suddenly, the world spins. Sand swirls around them like a golden tornado.\n\nWhen it settles, they're standing in the same desert—but everything has changed. The excavation site is gone. In its place rises a massive stone structure, not quite finished, swarming with thousands of workers.\n\n'The Great Pyramid,' {{PLAYER2_NAME}} gasps. 'It's... it's being built!'",
+            "emoji": "🪲",
+            "choices": [
+                {
+                    "text": "Approach the pyramid construction",
+                    "nextNodeId": "pyramid-construction"
+                },
+                {
+                    "text": "Look for someone who can explain what's happening",
+                    "nextNodeId": "meet-imhotep"
+                },
+                {
+                    "text": "Examine the hieroglyphics on the scarab",
+                    "nextNodeId": "examine-scarab"
+                }
+            ]
+        },
+        "examine-scarab": {
+            "id": "examine-scarab",
+            "summary": "The scarab bears the name of Pharaoh Khufu and a riddle",
+            "text": "{{PLAYER1_NAME}} studies the scarab closely. The hieroglyphics are tiny but precise. Uncle Ahmed taught them some basics of reading ancient Egyptian writing.\n\n'This cartouche—the oval shape—that's a royal name,' {{PLAYER1_NAME}} says. 'I think it says... Khufu?'\n\n'Pharaoh Khufu!' {{PLAYER2_NAME}} remembers. 'He built the Great Pyramid of Giza!'\n\nBelow the name, more symbols: a sun disk, a bird, what looks like water ripples.\n\n'It's some kind of riddle,' {{PLAYER1_NAME}} realizes. 'The sun... crosses the sky each day... like a bird... over the waters of the Nile?'\n\nThe scarab pulses with warmth. More symbols appear, glowing faintly: 'THE SEEKER WHO UNDERSTANDS THE JOURNEY OF RA SHALL FIND THE PATH HOME.'\n\n{{PLAYER2_NAME}} looks at the massive pyramid rising in the distance. 'Ra was the sun god. The Egyptians believed he traveled across the sky each day. I think we need to learn about their beliefs to get home.'",
+            "emoji": "🔍",
+            "choices": [
+                {
+                    "text": "Approach the pyramid construction",
+                    "nextNodeId": "pyramid-construction"
+                },
+                {
+                    "text": "Look for someone who can teach about Ra",
+                    "nextNodeId": "meet-imhotep"
+                }
+            ]
+        },
+        "meet-imhotep": {
+            "id": "meet-imhotep",
+            "summary": "They meet a priest who mistakes them for divine messengers",
+            "text": "A man in white linen robes approaches them. His head is shaved, and he carries a staff topped with a golden sun disk. His eyes widen when he sees them.\n\n'Strange visitors! Your clothes... your manner... you are not from any land I know.' He studies them intently. 'I am Meru, priest of Ra at Heliopolis. The gods have sent you, have they not?'\n\n{{PLAYER2_NAME}} holds up the glowing scarab. 'We found this. It brought us here, but we don't know why.'\n\nMeru's expression shifts to wonder. 'The Scarab of Awakening! It was lost centuries ago. It is said to choose those destined to learn the wisdom of Egypt.' He bows his head. 'You are guests of the gods. I will teach you what you seek to know.'\n\nHe gestures toward the river, where boats glide past temples and gardens. 'What would you learn? The secrets of the pyramids? The mystery of the afterlife? The writing of the gods? I am at your service.'",
+            "emoji": "☀️",
+            "choices": [
+                {
+                    "text": "Learn about pyramid construction",
+                    "nextNodeId": "pyramid-secrets"
+                },
+                {
+                    "text": "Learn about Egyptian religion and the afterlife",
+                    "nextNodeId": "afterlife-beliefs"
+                },
+                {
+                    "text": "Learn to read hieroglyphics",
+                    "nextNodeId": "hieroglyphics-lesson"
+                }
+            ]
+        },
+        "pyramid-construction": {
+            "id": "pyramid-construction",
+            "summary": "They witness the incredible engineering of pyramid building",
+            "text": "Up close, the pyramid construction is even more impressive. Thousands of workers haul massive limestone blocks on wooden sledges. Others pour water on the sand to help the sledges glide.\n\nA foreman notices them staring. 'First time seeing the work, young ones? Pharaoh's tomb will stand for eternity!'\n\n'How do you move such huge stones?' {{PLAYER1_NAME}} asks.\n\n'Teamwork, ramps, and the blessing of the gods!' He points to a long ramp spiraling up the pyramid's side. 'Each block weighs as much as two elephants. Twenty men pull each sledge. We cut the stones at the quarry, float them down the Nile on boats, then drag them here.'\n\n{{PLAYER2_NAME}} does mental math. 'There must be millions of blocks!'\n\n'Two million, three hundred thousand,' the foreman says proudly. 'And every one placed precisely. The base is level within a finger's width across the entire foundation. The sides align perfectly with the four directions—north, south, east, west.'\n\n'How do you get them so precise without modern tools?'\n\n'The stars guide us. We sight the north star for direction. Water levels and plumb bobs ensure straightness. Knowledge is our tool.'",
+            "emoji": "🔺",
+            "choices": [
+                {
+                    "text": "Ask about the workers who build the pyramids",
+                    "nextNodeId": "pyramid-workers"
+                },
+                {
+                    "text": "Ask why they build pyramids for pharaohs",
+                    "nextNodeId": "pyramid-purpose"
+                },
+                {
+                    "text": "Look for the priest Meru to learn more",
+                    "nextNodeId": "meet-imhotep"
+                }
+            ]
+        },
+        "pyramid-workers": {
+            "id": "pyramid-workers",
+            "summary": "They learn that pyramid builders were skilled workers, not slaves",
+            "text": "'Are these workers... slaves?' {{PLAYER2_NAME}} asks hesitantly.\n\nThe foreman looks offended. 'Slaves? No! These are skilled craftsmen, the finest in Egypt. They choose to serve Pharaoh. In return, they receive food, beer, shelter, medical care, and the honor of building eternity.'\n\nHe leads them to a workers' village nearby. 'See? These are not hovels. The builders live well. They work in rotating teams—three months on, then home to their farms for harvest. Bakers make fresh bread daily. Doctors tend injuries. Scribes record every worker's contribution so their names live forever.'\n\n{{PLAYER1_NAME}} sees workers laughing, eating lunch in the shade, playing a game that looks like checkers. 'They seem... happy?'\n\n'Building Pharaoh's tomb is sacred work. When he ascends to join the gods, he will remember those who helped him. Their families will be honored for generations. This is not punishment—this is purpose.'\n\nAn old man nearby adds, 'My grandfather helped build Pharaoh Sneferu's pyramid. My grandson will tell his grandchildren about this one. We are part of something eternal.'",
+            "emoji": "👷",
+            "choices": [
+                {
+                    "text": "Ask why pyramids are so important",
+                    "nextNodeId": "pyramid-purpose"
+                },
+                {
+                    "text": "Learn about Egyptian religion",
+                    "nextNodeId": "afterlife-beliefs"
+                }
+            ]
+        },
+        "pyramid-purpose": {
+            "id": "pyramid-purpose",
+            "summary": "They learn pyramids are resurrection machines for the pharaoh",
+            "text": "Meru the priest finds them at the pyramid site. 'I see you are curious about the great tomb. Come, I will explain its true purpose.'\n\nHe leads them to a quiet spot overlooking the construction. 'The pyramid is not merely a grave. It is a machine—a machine for resurrection.'\n\n'Resurrection?' {{PLAYER1_NAME}} asks.\n\n'When Pharaoh dies, his body is preserved through mummification. His spirit—his Ka—remains near the body, but his soul—his Ba—must journey through the underworld. If he succeeds, he joins the sun god Ra, reborn each morning.'\n\nMeru points to the pyramid's sloping sides. 'See the angle? The pyramid is a ray of sunlight, solidified in stone. The chambers inside align with certain stars. When the Ba rises from the body, it travels up through the pyramid, following the starlight, joining the eternal sky.'\n\n{{PLAYER2_NAME}} stares at the massive structure with new understanding. 'It's not just a tomb. It's... a launch pad?'\n\n'In a manner of speaking,' Meru smiles. 'A bridge between earth and heaven.'",
+            "emoji": "⭐",
+            "choices": [
+                {
+                    "text": "Learn more about the afterlife",
+                    "nextNodeId": "afterlife-beliefs"
+                },
+                {
+                    "text": "Ask about mummification",
+                    "nextNodeId": "mummification"
+                },
+                {
+                    "text": "Learn to read hieroglyphics",
+                    "nextNodeId": "hieroglyphics-lesson"
+                }
+            ]
+        },
+        "pyramid-secrets": {
+            "id": "pyramid-secrets",
+            "summary": "Meru reveals the mathematical precision hidden in the pyramids",
+            "text": "Meru leads them to a chamber where architects pore over papyrus plans. 'The pyramids are built on sacred mathematics,' he explains. 'Numbers given to us by the god Thoth himself.'\n\nHe shows them calculations scratched on limestone. 'The height of the Great Pyramid, multiplied by one million, gives the distance from Earth to the Sun. The perimeter, divided by twice the height, gives a number we call the Circle Ratio—what you might call pi.'\n\n{{PLAYER1_NAME}}'s jaw drops. 'They knew about pi?'\n\n'We did not call it that. But we understood circles, spheres, the relationships between shapes. How else could we build so precisely?'\n\nHe traces more figures. 'The base is aligned to true north within one-fifteenth of a degree. We measured this using the stars. The Egyptians were astronomers long before we were builders.'\n\n{{PLAYER2_NAME}} realizes something. 'So the pyramids aren't just big. They're... smart. Packed with knowledge.'\n\n'The stones will crumble someday,' Meru says. 'But the mathematics within them? That is truly eternal.'",
+            "emoji": "📐",
+            "choices": [
+                {
+                    "text": "Learn about Egyptian religion",
+                    "nextNodeId": "afterlife-beliefs"
+                },
+                {
+                    "text": "Learn to read hieroglyphics",
+                    "nextNodeId": "hieroglyphics-lesson"
+                }
+            ]
+        },
+        "afterlife-beliefs": {
+            "id": "afterlife-beliefs",
+            "summary": "Meru explains the journey of the soul through the underworld",
+            "text": "Meru leads them to a temple, its walls covered with colorful paintings. 'The afterlife is not simple rest,' he explains. 'It is a journey—the most important journey of all.'\n\nHe points to painted scenes. 'When you die, your Ba—your soul—descends into the Duat, the underworld. There, you face trials and monsters. You must answer riddles from gatekeepers. You must recite spells from the Book of the Dead to protect yourself.'\n\n{{PLAYER1_NAME}} studies a painting of a jackal-headed figure. 'Who is that?'\n\n'Anubis, god of mummification. He guides souls to the Hall of Judgment, where your heart is weighed against the feather of Ma'at—truth and justice. If your heart is light—if you lived a good, honest life—you pass through to the Field of Reeds, paradise. But if your heart is heavy with evil...'\n\nHe points to a creature with a crocodile head, lion body, and hippo hindquarters. 'Ammit the Devourer eats your soul. You cease to exist. Forever.'\n\n{{PLAYER2_NAME}} shivers. 'So living a good life isn't just about now. It's about later too.'",
+            "emoji": "⚖️",
+            "choices": [
+                {
+                    "text": "Ask about mummification",
+                    "nextNodeId": "mummification"
+                },
+                {
+                    "text": "Learn about the gods of Egypt",
+                    "nextNodeId": "egyptian-gods"
+                },
+                {
+                    "text": "Learn to read hieroglyphics",
+                    "nextNodeId": "hieroglyphics-lesson"
+                }
+            ]
+        },
+        "mummification": {
+            "id": "mummification",
+            "summary": "They learn the complex 70-day process of preserving bodies",
+            "text": "'Why preserve the body?' {{PLAYER2_NAME}} asks. 'If the soul travels to paradise, why does the body matter?'\n\n'The Ka—your life force—stays with the body,' Meru explains. 'It needs a home to return to. Without a preserved body, the Ka becomes homeless, wandering, lost. The mummy anchors you to both worlds.'\n\nHe describes the process. 'Mummification takes seventy days. First, we remove the internal organs—the lungs, liver, stomach, and intestines. These are preserved in special jars. The heart stays in the body; you'll need it for judgment.'\n\n{{PLAYER1_NAME}} grimaces. 'What about the brain?'\n\n'Removed through the nose with special hooks. We didn't think the brain was important—to us, the heart was the seat of thought and feeling.'\n\nHe continues: 'The body is covered in natron salt for forty days to dry it out. Then it's wrapped in hundreds of yards of linen bandages, with protective amulets placed between the layers. Prayers are spoken at each step.'\n\n'That's a lot of work,' {{PLAYER2_NAME}} observes.\n\n'Eternity deserves careful preparation.'",
+            "emoji": "🏺",
+            "choices": [
+                {
+                    "text": "Learn about the gods of Egypt",
+                    "nextNodeId": "egyptian-gods"
+                },
+                {
+                    "text": "Learn to read hieroglyphics",
+                    "nextNodeId": "hieroglyphics-lesson"
+                },
+                {
+                    "text": "Ask about everyday life in Egypt",
+                    "nextNodeId": "daily-life"
+                }
+            ]
+        },
+        "egyptian-gods": {
+            "id": "egyptian-gods",
+            "summary": "Meru introduces the major Egyptian gods and their roles",
+            "text": "Meru leads them through a gallery of statues. 'Our gods are many, each with their own domain.'\n\n'Ra, the sun god, is king of all. Each day he sails across the sky in his solar boat, bringing light. Each night he journeys through the underworld, battling chaos, to be reborn at dawn. The cycle never ends.'\n\nHe points to others. 'Osiris, god of the dead and resurrection. He was killed by his jealous brother Set, but his wife Isis brought him back. He rules the underworld now, judging souls.'\n\n'Horus, the falcon-headed god, son of Osiris. He represents the living pharaoh. When a pharaoh dies, he becomes Osiris; when a new one rises, he becomes Horus.'\n\n'Thoth, the ibis-headed god of wisdom and writing. He invented hieroglyphics and keeps records of all knowledge.'\n\n{{PLAYER1_NAME}} notices something. 'They all have animal heads but human bodies. Why?'\n\n'Animals embody divine qualities. Falcons see far—like the vision of a king. Ibises wade through murky water finding food—like scholars finding truth. Jackals guard the dead. The gods are both like us and beyond us.'",
+            "emoji": "🦅",
+            "choices": [
+                {
+                    "text": "Learn to read hieroglyphics",
+                    "nextNodeId": "hieroglyphics-lesson"
+                },
+                {
+                    "text": "Ask about everyday life in Egypt",
+                    "nextNodeId": "daily-life"
+                },
+                {
+                    "text": "Visit the Sphinx",
+                    "nextNodeId": "visit-sphinx"
+                }
+            ]
+        },
+        "hieroglyphics-lesson": {
+            "id": "hieroglyphics-lesson",
+            "summary": "A scribe teaches them the basics of hieroglyphic writing",
+            "text": "Meru introduces them to a scribe named Khaemwaset. 'He has trained since age four in the House of Life. He can teach you our sacred writing.'\n\nKhaemwaset shows them a papyrus scroll covered in tiny pictures. 'Hieroglyphics are not mere pictures. They are sounds and ideas combined. This owl'—he points—'represents the sound M. This water ripple is N. This foot is B.'\n\n'So you spell things out phonetically?' {{PLAYER2_NAME}} asks.\n\n'Sometimes. But some symbols represent whole words or concepts. This eye is the Eye of Horus—protection and health. This ankh is life itself. Skilled readers know when to sound out and when to recognize.'\n\nHe hands them reed brushes and ink. 'Write your names. Sound them out, find the symbols.'\n\n{{PLAYER1_NAME}} slowly constructs {{PLAYER1_HIS_HER}} name, symbol by symbol. It's hard—there are over 700 hieroglyphic signs!\n\n'Only one in a hundred Egyptians can read,' Khaemwaset says. 'Scribes hold great power. We record history, law, religion, medicine. Without writing, knowledge dies with each generation. With it, wisdom lives forever.'",
+            "emoji": "📜",
+            "choices": [
+                {
+                    "text": "Ask about everyday life in Egypt",
+                    "nextNodeId": "daily-life"
+                },
+                {
+                    "text": "Visit the Sphinx",
+                    "nextNodeId": "visit-sphinx"
+                },
+                {
+                    "text": "Ask about the Rosetta Stone's future importance",
+                    "nextNodeId": "rosetta-future"
+                }
+            ]
+        },
+        "daily-life": {
+            "id": "daily-life",
+            "summary": "They explore what ordinary Egyptian life was like",
+            "text": "Meru takes them to the bustling streets of a nearby town. 'The pyramids are impressive, but daily life is where culture truly lives.'\n\nThey see bakers pulling bread from clay ovens. Weavers creating linen from flax. Children playing with toys—wooden animals, leather balls, carved game pieces. Women wearing beautiful beaded jewelry and kohl eyeliner.\n\n'Our lives center on the Nile,' Meru explains. 'Every year it floods, depositing rich soil for farming. We grow wheat, barley, vegetables, fruit. The river gives us fish, water for irrigation, and highways for travel.'\n\n{{PLAYER2_NAME}} watches a scribe recording grain shipments. 'What do people do for fun?'\n\n'Music, dancing, board games—Senet is very popular. Festivals for the gods happen throughout the year with feasting and celebrations. Hunting in the marshes. Swimming in the river—though one must watch for crocodiles!'\n\n{{PLAYER1_NAME}} sees children attending a school, reciting lessons. 'Education?'\n\n'For those who will become scribes, priests, or officials, yes. Reading and writing open doors to power and wealth. A scribe can rise from poverty to advising Pharaoh himself.'",
+            "emoji": "🏘️",
+            "choices": [
+                {
+                    "text": "Visit the Sphinx",
+                    "nextNodeId": "visit-sphinx"
+                },
+                {
+                    "text": "Ask about Egyptian inventions and discoveries",
+                    "nextNodeId": "egyptian-inventions"
+                }
+            ]
+        },
+        "rosetta-future": {
+            "id": "rosetta-future",
+            "summary": "They realize hieroglyphics will be lost for centuries",
+            "text": "{{PLAYER1_NAME}} thinks about something. 'In our time, people couldn't read hieroglyphics for over a thousand years. How did they figure it out?'\n\nKhaemwaset looks troubled. 'A thousand years of silence? How terrible. All this knowledge, lost?'\n\n'A stone was found,' {{PLAYER2_NAME}} remembers from school. 'The Rosetta Stone. It had the same message in hieroglyphics, another Egyptian script, and Greek. Since scholars could read Greek, they worked backward to crack the hieroglyphic code.'\n\n'A trilingual decree!' Khaemwaset nods approvingly. 'Clever. We make such documents—official announcements in multiple scripts so all can understand.'\n\n{{PLAYER1_NAME}} realizes the importance. 'So writing in multiple languages actually saved your whole writing system from being lost forever.'\n\n'This is why scribes matter,' Khaemwaset says solemnly. 'We are the bridge between ages. What we record today, scholars in the distant future will read. Every document is a message in a bottle, cast into the sea of time.'",
+            "emoji": "🪨",
+            "choices": [
+                {
+                    "text": "Visit the Sphinx",
+                    "nextNodeId": "visit-sphinx"
+                },
+                {
+                    "text": "Ask about Egyptian inventions",
+                    "nextNodeId": "egyptian-inventions"
+                }
+            ]
+        },
+        "egyptian-inventions": {
+            "id": "egyptian-inventions",
+            "summary": "They discover Egyptian innovations still used today",
+            "text": "Meru shows them various innovations. 'We Egyptians have contributed much to human knowledge.'\n\n'The calendar—our year has 365 days, divided into twelve months. We were the first to create this system. Before us, people tracked time only by the moon, which caused chaos for planning.'\n\n'Medicine—our doctors diagnose diseases, perform surgery, set broken bones. We know which plants heal fevers, infections, pain. Much of our knowledge we write down so future doctors can learn.'\n\n'Mathematics—not just for pyramids. We calculate land areas for farming, predict the Nile's flood levels, track grain storage. Our number system makes complex calculations possible.'\n\n{{PLAYER2_NAME}} is amazed. 'All this thousands of years ago?'\n\n'Paper too,' Meru adds, holding up papyrus. 'Made from reeds. Lightweight, portable, able to hold ink. Before papyrus, writing meant carving stone or pressing clay. How limiting!'\n\n{{PLAYER1_NAME}} looks at the scarab in {{PLAYER1_HIS_HER}} hand. 'So much of what we use today started here.'",
+            "emoji": "💡",
+            "choices": [
+                {
+                    "text": "Visit the Sphinx",
+                    "nextNodeId": "visit-sphinx"
+                },
+                {
+                    "text": "It's time to find a way home",
+                    "nextNodeId": "seek-return"
+                }
+            ]
+        },
+        "visit-sphinx": {
+            "id": "visit-sphinx",
+            "summary": "They approach the Sphinx, newly carved and painted",
+            "text": "The Great Sphinx is breathtaking—much more impressive than {{BOTH_NAMES}} expected. In this time, it's not weathered and sand-colored. It's freshly carved, painted in bright colors. Its face is vivid red, its headdress blue and gold.\n\n'The Guardian,' Meru says reverently. 'It has the body of a lion for strength and the face of Pharaoh for wisdom. It watches over the pyramid field, protecting it for eternity.'\n\n{{PLAYER2_NAME}} stares up at the massive face. 'It looks so... young.'\n\n'It was carved from a single limestone outcrop. Some say it was already shaped like a lion's body by nature; we simply revealed the rest. Like how truth is already present, waiting to be uncovered.'\n\n{{PLAYER1_NAME}} feels the scarab grow warm. 'Meru, the riddle on the scarab—about Ra's journey. I think I'm starting to understand. Ra travels from east to west, dies each night, and is reborn each morning. It's about cycles, isn't it? Death isn't the end; it's part of a cycle.'\n\nMeru smiles. 'You are beginning to think like an Egyptian.'",
+            "emoji": "🦁",
+            "choices": [
+                {
+                    "text": "Ask the Sphinx's riddle",
+                    "nextNodeId": "sphinx-riddle"
+                },
+                {
+                    "text": "Ask Meru about returning home",
+                    "nextNodeId": "seek-return"
+                }
+            ]
+        },
+        "sphinx-riddle": {
+            "id": "sphinx-riddle",
+            "summary": "The Sphinx speaks, posing a riddle about life's stages",
+            "text": "As they approach the Sphinx's paws, something impossible happens. The stone face moves. Ancient eyes open and regard them.\n\n'YOUNG TRAVELERS,' a voice like grinding stone echoes. 'YOU HAVE LEARNED MUCH. BUT KNOWLEDGE WITHOUT WISDOM IS SAND THAT SLIPS THROUGH FINGERS. ANSWER MY RIDDLE, AND YOUR PATH HOME WILL BE REVEALED.'\n\n{{BOTH_NAMES}} exchange nervous glances. Even Meru looks awed.\n\n'WHAT WALKS ON FOUR LEGS IN THE MORNING, TWO LEGS AT NOON, AND THREE LEGS IN THE EVENING?'\n\n{{PLAYER2_NAME}}'s brow furrows in thought. Morning... noon... evening... could it be a day?\n\n{{PLAYER1_NAME}} remembers something from mythology class. 'It's not about time of day literally. It's about stages of life! A baby crawls on four limbs. An adult walks on two legs. An elderly person uses a cane—three legs!'\n\n'THE ANSWER IS HUMAN,' {{PLAYER2_NAME}} says confidently.\n\nThe Sphinx's stone lips curve into the faintest smile. 'CORRECT. YOU UNDERSTAND THAT LIFE IS A JOURNEY WITH STAGES. SO TOO IS DEATH NOT AN END, BUT ANOTHER STAGE. YOU HAVE EARNED YOUR PASSAGE HOME.'",
+            "emoji": "❓",
+            "choices": [
+                {
+                    "text": "Thank the Sphinx and prepare to return home",
+                    "nextNodeId": "sphinx-blessing"
+                }
+            ]
+        },
+        "seek-return": {
+            "id": "seek-return",
+            "summary": "They ask Meru how to use the scarab to return home",
+            "text": "'How do we get back to our own time?' {{PLAYER1_NAME}} asks Meru.\n\n'The scarab brought you here to learn. Once you understand its lesson, it will take you back.' Meru examines the amulet thoughtfully. 'What have you discovered about our way of seeing the world?'\n\n{{PLAYER2_NAME}} thinks back over everything. 'That you saw death as part of a journey, not the end. That the sun's daily cycle was a symbol of rebirth. That preserving knowledge—through writing, through building, through mummies—was sacred because it defeated time.'\n\n'And what does that mean for you, in your time?'\n\n{{PLAYER1_NAME}} understands now. 'That what we create and learn can outlast us. That we're connected to everyone who came before and everyone who comes after. That knowledge passed down through generations is a kind of immortality.'\n\nMeru nods approvingly. 'The Sphinx guards not just tombs but wisdom. Perhaps it will confirm you are ready to return.'",
+            "emoji": "🔮",
+            "choices": [
+                {
+                    "text": "Go to the Sphinx",
+                    "nextNodeId": "sphinx-riddle"
+                }
+            ]
+        },
+        "sphinx-blessing": {
+            "id": "sphinx-blessing",
+            "summary": "The Sphinx blesses them and the scarab prepares to transport them",
+            "text": "The Sphinx's ancient eyes close slowly. 'CARRY WHAT YOU HAVE LEARNED. TELL OTHERS. KEEP THE WISDOM OF EGYPT ALIVE IN YOUR TIME. THE PAST IS NOT DEAD—IT LIVES IN THOSE WHO REMEMBER.'\n\nMeru bows deeply. 'You have been blessed, young ones. Few ever hear the Sphinx speak.'\n\nThe scarab in {{PLAYER1_NAME}}'s hand begins to glow intensely, warm but not burning. Colors swirl—the gold of sand, the blue of the Nile, the black of fertile soil.\n\n'Thank you, Meru,' {{PLAYER2_NAME}} says quickly. 'For everything you taught us.'\n\n'The knowledge was always yours to find,' Meru smiles. 'I only helped you see it. May Thoth bless your memories, may Ra light your path, and may Osiris grant you eternal life—not in death, but in the wisdom you share.'\n\nThe colors intensify. Sand swirls. The pyramid, the Sphinx, Meru himself fade into brilliant light.",
+            "emoji": "✨",
+            "choices": [
+                {
+                    "text": "Return to your own time",
+                    "nextNodeId": "ending-archaeologist"
+                }
+            ]
+        },
+        "ending-archaeologist": {
+            "id": "ending-archaeologist",
+            "summary": "GOOD ENDING: They return with new appreciation for ancient wisdom",
+            "text": "{{BOTH_NAMES}} open their eyes. They're back in the excavation site—the modern one. The sun is setting, casting the same golden light that once illuminated pyramids under construction.\n\nUncle Ahmed rushes over. 'There you are! I turned around and you'd wandered off. Find anything interesting?'\n\n{{PLAYER1_NAME}} looks at the scarab in {{PLAYER1_HIS_HER}} hand. It looks ordinary now—just an ancient artifact. But they know better.\n\n'We found... a lot,' {{PLAYER2_NAME}} says quietly.\n\nAs they walk back to camp, they see the ancient ruins differently. Not as old stones, but as messages from people who lived, loved, hoped, and dreamed just like them. The hieroglyphics aren't mysterious squiggles—they're voices reaching across millennia.\n\n'Uncle Ahmed,' {{PLAYER1_NAME}} asks, 'what's the most important thing archaeology teaches us?'\n\nHe considers the question. 'That we're part of a long story. Humans have been asking the same questions for thousands of years: What happens when we die? What gives life meaning? How do we make something that lasts? The Egyptians had their answers. We have ours. But the questions... the questions connect us all.'\n\n{{BOTH_NAMES}} smile. They understand now. The past isn't gone. It's just waiting to be remembered.",
+            "emoji": "🌅",
+            "isEnding": true,
+            "endingType": "good",
+            "endingTitle": "Keepers of Memory",
+            "endingText": "THE END\n\nYou traveled to ancient Egypt and learned about pyramids, mummies, hieroglyphics, and the Egyptian view of life and death. The past lives on in everyone who remembers it—including you!\n\n\"The past is never dead. It's not even past.\" — William Faulkner"
+        }
+    }
+}

@@ -1,0 +1,439 @@
+{
+    "formatVersion": "1.0",
+    "metadata": {
+        "id": "renaissance-workshop",
+        "title": "The Apprentice Artists",
+        "author": "Adventure Stories",
+        "coverEmoji": "🎨",
+        "description": "{{BOTH_NAMES}} travel back to Renaissance Italy to learn from master artists and discover the secrets of creating great art.",
+        "ageRange": "8-10",
+        "estimatedMinutes": 20,
+        "themes": ["art", "history", "creativity", "Renaissance"],
+        "contentNotes": [],
+        "startNode": "start"
+    },
+    "nodes": {
+        "start": {
+            "id": "start",
+            "summary": "Kids discover a magical paintbrush in a museum that transports them",
+            "text": "The museum is quiet after closing time. {{PLAYER1_NAME}} and {{PLAYER2_NAME}} are helping their aunt, a museum curator, organize a new exhibit on Renaissance art.\n\n'Be careful with that!' Aunt Sofia calls as {{PLAYER1_NAME}} picks up an old paintbrush from a dusty crate. The brush looks ancient—its wooden handle worn smooth, its bristles somehow still perfect.\n\nThe moment {{PLAYER2_NAME}} touches it too, the brush begins to glow. Colors swirl around them like a living painting—deep blues, vibrant reds, shimmering golds.\n\nWhen the colors fade, they're standing in a cobblestone street. The air smells of paint and woodsmoke. People in strange old-fashioned clothes hurry past.\n\n'Welcome to Florence,' says a voice. A young man with paint-stained hands grins at them. 'The year is 1504. I am Giuliano, apprentice to the great masters. That brush you hold—it belongs to the workshop of Leonardo da Vinci himself! Come, he will want to meet you.'",
+            "emoji": "🖌️",
+            "choices": [
+                {
+                    "text": "Follow Giuliano to Leonardo's workshop",
+                    "nextNodeId": "leonardo-workshop"
+                },
+                {
+                    "text": "Ask about the magical paintbrush first",
+                    "nextNodeId": "brush-history"
+                },
+                {
+                    "text": "Look around the Renaissance street",
+                    "nextNodeId": "florence-street"
+                }
+            ]
+        },
+        "brush-history": {
+            "id": "brush-history",
+            "summary": "Giuliano explains the brush absorbs genius and transports worthy seekers",
+            "text": "'This brush,' Giuliano says reverently, 'is no ordinary tool. It has been passed through the hands of the greatest artists in history. They say it absorbs a bit of their genius, their vision, their passion for beauty.'\n\nHe gently touches the bristles. 'And sometimes, it chooses people—brings them here to learn. You must have something special in you. A spark waiting to be kindled.'\n\n{{PLAYER2_NAME}} looks at the brush with new wonder. 'So it's magical?'\n\n'Magic? Perhaps. Or perhaps art itself is the magic—the ability to create something from nothing, to share what you see and feel with others across centuries. The brush simply... opens doors.'\n\n{{PLAYER1_NAME}} grips it tighter. 'Will it take us home?'\n\n'When your apprenticeship is complete,' Giuliano smiles mysteriously. 'Now come! The masters are waiting. Would you learn from Leonardo the inventor? Michelangelo the sculptor? Or perhaps Botticelli the painter of dreams?'",
+            "emoji": "✨",
+            "choices": [
+                {
+                    "text": "Go to Leonardo da Vinci's workshop",
+                    "nextNodeId": "leonardo-workshop"
+                },
+                {
+                    "text": "Visit Michelangelo's studio",
+                    "nextNodeId": "michelangelo-studio"
+                },
+                {
+                    "text": "Find Botticelli's painting room",
+                    "nextNodeId": "botticelli-studio"
+                }
+            ]
+        },
+        "florence-street": {
+            "id": "florence-street",
+            "summary": "They see Renaissance Florence alive with art, commerce, and ideas",
+            "text": "{{BOTH_NAMES}} take in the incredible scene. Florence in 1504 is alive with energy!\n\nArtists carry canvases through the streets. Merchants sell pigments in every color imaginable—ground lapis lazuli for brilliant blue, crushed beetles for deep red, gold leaf thin as a whisper. A sculptor chips at a block of white marble in an open workshop.\n\n'This is the Renaissance,' Giuliano says proudly. 'It means rebirth. For a thousand years, art stood still. Now, we're rediscovering what the ancient Greeks and Romans knew—and going beyond them.'\n\nHe points to a massive dome rising above the rooftops. 'Brunelleschi's dome. They said it was impossible to build, but he did it anyway. That's the spirit of our age: nothing is impossible if you have skill, knowledge, and courage.'\n\n{{PLAYER1_NAME}} sees people arguing passionately on a corner. 'What are they debating?'\n\n'Ideas! Art! Philosophy! In Florence, everyone cares about beauty and truth. Even the bankers and merchants are patrons of art. The Medici family funds half the artists in the city!'",
+            "emoji": "🏛️",
+            "choices": [
+                {
+                    "text": "Go to Leonardo da Vinci's workshop",
+                    "nextNodeId": "leonardo-workshop"
+                },
+                {
+                    "text": "Visit Michelangelo's studio",
+                    "nextNodeId": "michelangelo-studio"
+                },
+                {
+                    "text": "Find Botticelli's painting room",
+                    "nextNodeId": "botticelli-studio"
+                }
+            ]
+        },
+        "leonardo-workshop": {
+            "id": "leonardo-workshop",
+            "summary": "They meet Leonardo da Vinci surrounded by inventions and studies",
+            "text": "The workshop is chaos—beautiful chaos. Sketches cover every wall. A half-built flying machine hangs from the ceiling. Jars hold mysterious specimens. Mirrors, gears, and unfinished paintings compete for space.\n\nIn the center, a man with a long beard writes backward in a notebook while simultaneously sketching a human arm.\n\n'Maestro Leonardo,' Giuliano announces. 'Young visitors who seek to learn.'\n\nLeonardo looks up with curious, intense eyes. 'Ah! Fresh minds! Tell me—what do you see when you look at your hand?'\n\n{{PLAYER2_NAME}} looks at {{PLAYER2_HIS_HER}} hand. 'Um... fingers?'\n\n'Fingers, yes, but look deeper!' Leonardo leaps up and shows them his sketches. 'Bones, muscles, tendons, blood vessels! To draw a hand, you must understand how it works. Art is not just seeing—it is knowing. I dissect bodies to understand anatomy. I study birds to understand flight. I observe water to understand flow.'\n\nHe taps his forehead. 'An artist must be a scientist too. Curiosity is the mother of all art.'",
+            "emoji": "🔬",
+            "choices": [
+                {
+                    "text": "Ask about his famous paintings",
+                    "nextNodeId": "leonardo-paintings"
+                },
+                {
+                    "text": "Learn about his inventions",
+                    "nextNodeId": "leonardo-inventions"
+                },
+                {
+                    "text": "Ask to try drawing like he does",
+                    "nextNodeId": "leonardo-lesson"
+                }
+            ]
+        },
+        "michelangelo-studio": {
+            "id": "michelangelo-studio",
+            "summary": "They find Michelangelo covered in marble dust, working on David",
+            "text": "The sound of chiseling echoes through the studio. Marble dust fills the air like snow. And there, revealed through the white haze, is the most magnificent statue {{BOTH_NAMES}} have ever seen—seventeen feet of perfect human form.\n\nA muscular man covered head to toe in white dust pauses his work. His eyes are fierce, focused. This is Michelangelo Buonarroti.\n\n'What do you want?' he growls. 'Can't you see I'm busy?'\n\nGiuliano bows nervously. 'Maestro, these young ones seek to learn—'\n\n'Then they can learn by watching.' Michelangelo returns to his work, but his voice softens slightly. 'This is David. The Biblical hero who defeated a giant with nothing but a sling and a stone. I've been working on him for three years.'\n\n{{PLAYER1_NAME}} stares at the statue's face—determined, brave, afraid and courageous at once. 'How do you make stone look so... alive?'\n\nMichelangelo pauses. 'I don't create. I reveal. David was already in this marble. I just removed everything that wasn't him.'",
+            "emoji": "🗿",
+            "choices": [
+                {
+                    "text": "Ask what he means about revealing, not creating",
+                    "nextNodeId": "michelangelo-philosophy"
+                },
+                {
+                    "text": "Learn about sculpting technique",
+                    "nextNodeId": "sculpting-lesson"
+                },
+                {
+                    "text": "Ask about the Sistine Chapel ceiling",
+                    "nextNodeId": "sistine-chapel"
+                }
+            ]
+        },
+        "botticelli-studio": {
+            "id": "botticelli-studio",
+            "summary": "They enter Botticelli's dream-like world of mythological paintings",
+            "text": "Botticelli's studio feels like stepping into a dream. Soft light filters through gauze curtains. Paintings of gods and goddesses line the walls—graceful figures dancing through forests of flowers.\n\nThe artist himself is gentler than {{BOTH_NAMES}} expected—a quiet man with thoughtful eyes. He's working on a painting of a woman rising from the sea on a seashell.\n\n'The Birth of Venus,' he explains softly. 'Venus, goddess of love and beauty, born from the foam of the sea. It's a story from ancient mythology, but really, it's about something more—the way beauty enters the world, pure and perfect.'\n\n{{PLAYER2_NAME}} leans closer. 'Her hair looks so real... like it's actually blowing in the wind.'\n\n'That took years to learn,' Botticelli smiles. 'Flowing fabric, moving hair, graceful poses—these are the hardest things to capture. They require you to see motion, not just stillness. And color...' He holds up a shell filled with brilliant pink pigment. 'Color tells the emotional truth of a painting. What does this pink make you feel?'\n\n'Happy?' {{PLAYER1_NAME}} offers. 'Gentle?'\n\n'Exactly! Color speaks directly to the heart.'",
+            "emoji": "🐚",
+            "choices": [
+                {
+                    "text": "Learn about creating pigments and colors",
+                    "nextNodeId": "color-lesson"
+                },
+                {
+                    "text": "Ask about mythology in art",
+                    "nextNodeId": "mythology-art"
+                },
+                {
+                    "text": "Try painting graceful flowing lines",
+                    "nextNodeId": "botticelli-lesson"
+                }
+            ]
+        },
+        "leonardo-paintings": {
+            "id": "leonardo-paintings",
+            "summary": "Leonardo explains the secrets of the Mona Lisa's mysterious smile",
+            "text": "Leonardo leads them to an easel covered with a cloth. 'I have been working on this for years,' he says, revealing the painting. 'Most artists finish quickly. I cannot. I see more each time I look.'\n\nIt's a woman with dark hair and a mysterious expression—the Mona Lisa.\n\n'Why is she smiling like that?' {{PLAYER2_NAME}} asks. 'It looks like she knows a secret.'\n\n'Sfumato!' Leonardo exclaims. 'It means smoky in Italian. Instead of hard lines, I blend the edges—especially around the eyes and mouth. This creates ambiguity. Her expression seems to change depending on how you look at it.'\n\nHe demonstrates on a sketch, showing how soft blending creates mystery. 'Hard lines tell you exactly what to see. Soft edges let you see what you feel. The painting becomes a conversation between the art and the viewer.'\n\n{{PLAYER1_NAME}} looks closer. 'The background is weird too—the two sides don't match up.'\n\n'You have a sharp eye! I made the horizons uneven on purpose. It creates a subtle unease, a dreamlike quality. Every choice in a painting means something.'",
+            "emoji": "👩",
+            "choices": [
+                {
+                    "text": "Learn about his inventions",
+                    "nextNodeId": "leonardo-inventions"
+                },
+                {
+                    "text": "Try a painting lesson with Leonardo",
+                    "nextNodeId": "leonardo-lesson"
+                },
+                {
+                    "text": "Visit another master artist",
+                    "nextNodeId": "choose-next-master"
+                }
+            ]
+        },
+        "leonardo-inventions": {
+            "id": "leonardo-inventions",
+            "summary": "They see Leonardo's sketches for helicopters, tanks, and robots",
+            "text": "Leonardo's notebooks are mind-bending. {{BOTH_NAMES}} see sketches of machines that shouldn't exist in 1504—helicopters, tanks, submarines, robots!\n\n'These are... impossible,' {{PLAYER1_NAME}} breathes.\n\n'Nothing is impossible,' Leonardo says. 'Only things we haven't learned to build yet. I study birds to understand flight.' He shows sketches of wings, air currents, feathers examined in minute detail. 'Someday, humans will fly. I know it.'\n\nHe flips to another page—a mechanical knight, designed to sit up, wave its arms, and open its visor. 'This one I actually built! Gears and pulleys inside, like a clock, but shaped like a man.'\n\n{{PLAYER2_NAME}} points to the mirror writing. 'Why do you write backward?'\n\n'Habit,' Leonardo chuckles. 'I'm left-handed—writing this way is easier and doesn't smudge the ink. Also, it keeps my ideas private. But between you and me...' he winks, 'I just like puzzles.'\n\nHe grows serious. 'Art and science are not enemies. They are two ways of seeing the same world. Every artist should think like a scientist. Every scientist should see like an artist.'",
+            "emoji": "⚙️",
+            "choices": [
+                {
+                    "text": "Try a drawing lesson with Leonardo",
+                    "nextNodeId": "leonardo-lesson"
+                },
+                {
+                    "text": "Visit another master artist",
+                    "nextNodeId": "choose-next-master"
+                }
+            ]
+        },
+        "leonardo-lesson": {
+            "id": "leonardo-lesson",
+            "summary": "Leonardo teaches them to observe before drawing",
+            "text": "Leonardo hands them each charcoal and paper. 'Before you draw, you must observe. Most people look but do not see. They draw what they think a thing looks like, not what it actually looks like.'\n\nHe places an apple on the table. 'Draw this.'\n\n{{BOTH_NAMES}} sketch quickly—a simple apple shape.\n\n'Now look again,' Leonardo instructs. 'Where does the light hit? Where are the shadows? Is the color uniform? See that slight bruise? That stem's curve? The reflection on the skin?'\n\nThey look more carefully. The apple isn't just round—it has subtle bulges, dimples, variations in color. They try again, slower this time.\n\n'Better!' Leonardo nods. 'Now here is the secret: draw what you see, not what you know. Your brain says apple is red and round. Your eyes see something much more complex. Trust your eyes.'\n\n{{PLAYER1_NAME}}'s second drawing is remarkably better. 'It takes patience,' {{PLAYER1_HE_SHE}} realizes.\n\n'Art always takes patience. Genius is patience—patience to observe, patience to practice, patience to improve. There are no shortcuts.'",
+            "emoji": "✏️",
+            "choices": [
+                {
+                    "text": "Visit another master artist",
+                    "nextNodeId": "choose-next-master"
+                },
+                {
+                    "text": "Ask Leonardo one final question",
+                    "nextNodeId": "leonardo-final"
+                }
+            ]
+        },
+        "michelangelo-philosophy": {
+            "id": "michelangelo-philosophy",
+            "summary": "Michelangelo explains his vision of freeing art from raw stone",
+            "text": "Michelangelo sets down his chisel and faces them fully. 'Every block of stone has a statue inside it. The sculptor's task is to discover it and set it free.'\n\n{{PLAYER2_NAME}} frowns. 'But... you decide what to carve, right?'\n\n'Do I?' He gestures at the massive David. 'This marble block was rejected by two other sculptors. They couldn't see what was inside. But when I looked at it, I saw David—I felt David—straining to emerge. My job was simply to remove the stone that imprisoned him.'\n\nHe picks up a small chip of marble. 'When I carve, I'm not adding anything. I'm taking away. Each chip brings me closer to the truth already hidden in the stone. That's why mistakes are so costly—once you remove marble, you cannot put it back.'\n\n{{PLAYER1_NAME}} looks at the statue with new eyes. 'So you have to see the whole thing before you even start?'\n\n'In my mind, completely. Then begins the slow, careful work of making what I see visible to everyone else. That is art: making the invisible visible.'",
+            "emoji": "💭",
+            "choices": [
+                {
+                    "text": "Learn about sculpting technique",
+                    "nextNodeId": "sculpting-lesson"
+                },
+                {
+                    "text": "Ask about the Sistine Chapel ceiling",
+                    "nextNodeId": "sistine-chapel"
+                },
+                {
+                    "text": "Visit another master artist",
+                    "nextNodeId": "choose-next-master"
+                }
+            ]
+        },
+        "sculpting-lesson": {
+            "id": "sculpting-lesson",
+            "summary": "Michelangelo teaches them to feel the form within clay",
+            "text": "Michelangelo hands each of them a small block of soft clay. 'Marble is too precious for beginners. But clay will teach you the basics. Close your eyes and feel the shape you want to create.'\n\n{{BOTH_NAMES}} close their eyes, clay cool in their hands.\n\n'Sculpture is touch as much as sight,' Michelangelo continues. 'You must feel the curves, the planes, the tensions. A body is not just shapes—it has weight, balance, movement. David is not standing still; he is about to move. Can you feel that?'\n\n{{PLAYER1_NAME}} squeezes and shapes the clay, trying to find the form within. It's harder than it looks—the clay doesn't want to do what {{PLAYER1_HE_SHE}} imagines.\n\n'Frustrating, yes?' Michelangelo almost smiles. 'Good. The resistance teaches you. Every mistake is a lesson. I've been carving since I was a boy, and I still make mistakes. The difference is, I've learned to see them coming.'\n\n{{PLAYER2_NAME}} holds up a lumpy but recognizable bird shape. Michelangelo nods approvingly. 'There! You found something. That's the beginning.'",
+            "emoji": "🎭",
+            "choices": [
+                {
+                    "text": "Ask about the Sistine Chapel ceiling",
+                    "nextNodeId": "sistine-chapel"
+                },
+                {
+                    "text": "Visit another master artist",
+                    "nextNodeId": "choose-next-master"
+                }
+            ]
+        },
+        "sistine-chapel": {
+            "id": "sistine-chapel",
+            "summary": "Michelangelo describes painting the chapel ceiling while lying on scaffolding",
+            "text": "'The Pope wants me to paint the ceiling of the Sistine Chapel,' Michelangelo sighs. 'I told him I'm a sculptor, not a painter. He didn't care.'\n\n'The Sistine Chapel?' {{PLAYER1_NAME}} exclaims. They've seen pictures—the famous image of God reaching out to Adam.\n\n'You know of it?' Michelangelo looks surprised. 'It's not finished yet. I've been lying on scaffolding for years, painting above my head. The paint drips in my eyes. My neck aches constantly. But...'\n\nHis expression softens. 'When I look up at what I've created—the story of creation itself spreading across that ceiling—I feel something I cannot describe. It is the hardest thing I've ever done. And perhaps the greatest.'\n\nHe shows them sketches—muscular figures, swirling compositions, dramatic gestures. 'A ceiling cannot be seen all at once. So I designed it to unfold as you walk beneath it. Each panel leads to the next. The whole tells a story.'\n\n'It sounds painful,' {{PLAYER2_NAME}} says.\n\n'All great art requires suffering,' Michelangelo says quietly. 'Not because suffering is good, but because nothing worthwhile comes easily.'",
+            "emoji": "⛪",
+            "choices": [
+                {
+                    "text": "Ask Michelangelo one final question",
+                    "nextNodeId": "michelangelo-final"
+                },
+                {
+                    "text": "Visit another master artist",
+                    "nextNodeId": "choose-next-master"
+                }
+            ]
+        },
+        "color-lesson": {
+            "id": "color-lesson",
+            "summary": "Botticelli shows them how Renaissance artists made paint from nature",
+            "text": "Botticelli leads them to a table covered with mortars, pestles, shells, and jars filled with colorful substances.\n\n'Every color has a story,' he explains. 'This blue—ultramarine—is made from lapis lazuli stones brought from Afghanistan, across thousands of miles. It costs more than gold. That's why we use it for the most important parts: the Virgin Mary's robe, the sky of paradise.'\n\nHe shows them other pigments. 'Red from crushed beetles. Yellow from saffron flowers or toxic arsenic minerals. Green from copper, which turns your fingers blue. White from lead, which slowly poisons you.'\n\n{{PLAYER1_NAME}} looks concerned. 'Art is dangerous?'\n\n'Everything has a cost. But look—' He mixes egg yolk with a pigment, creating a smooth, glowing paint. 'Tempera. Egg binds the color and makes it glow. Oil is even better—it dries slowly, so you can blend and adjust. The medium changes everything.'\n\n{{PLAYER2_NAME}} tries mixing colors. Blue and yellow make green! But not the green {{PLAYER2_HE_SHE}} expected—mixing is more complex than it seems.",
+            "emoji": "🎨",
+            "choices": [
+                {
+                    "text": "Ask about mythology in art",
+                    "nextNodeId": "mythology-art"
+                },
+                {
+                    "text": "Try painting graceful lines",
+                    "nextNodeId": "botticelli-lesson"
+                },
+                {
+                    "text": "Visit another master artist",
+                    "nextNodeId": "choose-next-master"
+                }
+            ]
+        },
+        "mythology-art": {
+            "id": "mythology-art",
+            "summary": "Botticelli explains how myths tell deeper truths through beauty",
+            "text": "'Why do you paint gods and goddesses?' {{PLAYER2_NAME}} asks. 'Did people really believe in them?'\n\n'Not exactly,' Botticelli says thoughtfully. 'The ancient myths are stories—but stories that carry truth. Venus is not just a goddess; she is beauty itself. Mars is not just a god; he is the spirit of war. By painting them, I paint ideas that words cannot capture.'\n\nHe points to Primavera, his painting of spring. 'Look—the three Graces dancing. They represent beauty, charm, and joy. Zephyr the wind chases a nymph who transforms into Flora, goddess of flowers. It's about nature's renewal, the triumph of life over winter.'\n\n{{PLAYER1_NAME}} sees it now—the painting isn't just pretty figures. It's telling a story about change, growth, the eternal return of spring.\n\n'Myths are humanity's first attempts to understand the world,' Botticelli continues. 'The sun crossing the sky became Apollo's chariot. The seasons became Persephone's journey. Before science, we had stories. And those stories still have power.'",
+            "emoji": "🌸",
+            "choices": [
+                {
+                    "text": "Try painting with Botticelli",
+                    "nextNodeId": "botticelli-lesson"
+                },
+                {
+                    "text": "Visit another master artist",
+                    "nextNodeId": "choose-next-master"
+                }
+            ]
+        },
+        "botticelli-lesson": {
+            "id": "botticelli-lesson",
+            "summary": "Botticelli teaches them to paint flowing, graceful lines",
+            "text": "Botticelli sets up two small canvases. 'The secret to grace is the line. Watch.' His brush creates a single flowing curve—like a wave, like hair blowing, like a dancer's arm.\n\n'Don't stop and start. One continuous motion. Let the brush breathe.'\n\n{{BOTH_NAMES}} try. Their first attempts are shaky, hesitant. But Botticelli is patient.\n\n'Feel the movement in your whole arm, not just your fingers. Art comes from the body, not just the hand. When you dance, you don't think about each muscle—you feel the flow. Painting is the same.'\n\n{{PLAYER2_NAME}} relaxes, lets the brush move more freely. The line becomes smoother, more alive.\n\n'There! See how different it feels? Stiff lines show fear—fear of mistakes. Flowing lines show confidence, even if they're not perfect. Better to be bold and wrong than timid and right.'\n\n{{PLAYER1_NAME}} tries painting hair, each strand flowing into the next. It's not beautiful yet—but there's something there. A hint of movement. A whisper of grace.\n\n'Art takes time,' Botticelli smiles. 'But you've made a beginning.'",
+            "emoji": "〰️",
+            "choices": [
+                {
+                    "text": "Visit another master artist",
+                    "nextNodeId": "choose-next-master"
+                },
+                {
+                    "text": "Ask Botticelli one final question",
+                    "nextNodeId": "botticelli-final"
+                }
+            ]
+        },
+        "choose-next-master": {
+            "id": "choose-next-master",
+            "summary": "Giuliano offers to take them to another master artist",
+            "text": "Giuliano appears at the workshop door. 'Time passes quickly in the company of genius! Would you like to visit another master? Or perhaps you've learned enough for one journey?'\n\nThe magical paintbrush in {{PLAYER1_NAME}}'s pocket begins to warm slightly, as if reminding them it's still there.\n\n'You could speak with Leonardo about science and art,' Giuliano suggests. 'Or witness Michelangelo's power. Or experience Botticelli's dreams. Or...' he pauses, 'we could visit the Medici palace, where all the artists gather. You might find something unexpected there.'\n\nThe sun through the workshop window is beginning to turn golden. How long have they been here? Time seems to flow differently in Renaissance Florence.",
+            "emoji": "🚶",
+            "choices": [
+                {
+                    "text": "Visit Leonardo's workshop",
+                    "nextNodeId": "leonardo-workshop"
+                },
+                {
+                    "text": "Visit Michelangelo's studio",
+                    "nextNodeId": "michelangelo-studio"
+                },
+                {
+                    "text": "Visit Botticelli's studio",
+                    "nextNodeId": "botticelli-studio"
+                },
+                {
+                    "text": "Go to the Medici palace",
+                    "nextNodeId": "medici-palace"
+                }
+            ]
+        },
+        "medici-palace": {
+            "id": "medici-palace",
+            "summary": "At the Medici palace, they see how patrons support artists",
+            "text": "The Medici palace is overwhelming—marble floors, painted ceilings, sculptures in every niche. Guards in elegant uniforms eye them suspiciously until Giuliano produces a letter of introduction.\n\n'The Medici family has supported the arts for generations,' he explains as they walk through magnificent halls. 'Without their gold, most of these masterpieces would never exist. Art requires patrons—people who believe beauty is worth paying for.'\n\nThey enter a grand room where several artists have gathered, sketching, debating, laughing. {{PLAYER1_NAME}} spots Leonardo in one corner, arguing with an older man. Michelangelo broods in another, sketching furiously.\n\n'Even geniuses need support,' Giuliano says. 'Talent alone is not enough. You need materials, time, space, and someone who believes in your vision. The Medici gave that to hundreds of artists. That's why Florence leads the world in art.'\n\n{{PLAYER2_NAME}} watches the artists interacting. 'They're learning from each other too.'\n\n'Of course! No artist exists alone. We study each other's work, compete, collaborate. The community makes everyone better.'",
+            "emoji": "👑",
+            "choices": [
+                {
+                    "text": "Ask about becoming an artist",
+                    "nextNodeId": "becoming-artist"
+                },
+                {
+                    "text": "Listen to the artists debate",
+                    "nextNodeId": "artist-debate"
+                }
+            ]
+        },
+        "becoming-artist": {
+            "id": "becoming-artist",
+            "summary": "Giuliano explains the apprentice system—how young artists learn",
+            "text": "'How does someone become an artist?' {{PLAYER1_NAME}} asks Giuliano.\n\n'Apprenticeship,' he says. 'I began at age twelve in a master's workshop. For years, I did nothing but grind pigments, stretch canvases, clean brushes. Then I was allowed to paint backgrounds. Then minor figures. Someday—if I'm good enough—I'll have my own style, my own commissions.'\n\n'That sounds hard,' {{PLAYER2_NAME}} says.\n\n'Everything valuable is hard. But I learn by watching, by doing, by failing and trying again. Every great master was once a fumbling apprentice. Michelangelo ground pigments. Leonardo made mistakes. The difference is they never stopped learning.'\n\nHe looks at the masters around the room. 'Even now, Leonardo studies anatomy. Michelangelo practices poses. Botticelli experiments with colors. True artists never believe they've learned enough. The day you think you know everything is the day your art dies.'\n\n{{PLAYER1_NAME}} thinks about all the things they want to learn. Suddenly, a lifetime doesn't seem long enough.",
+            "emoji": "📖",
+            "choices": [
+                {
+                    "text": "Listen to the artists debate",
+                    "nextNodeId": "artist-debate"
+                },
+                {
+                    "text": "Ask about the future of art",
+                    "nextNodeId": "future-art"
+                }
+            ]
+        },
+        "artist-debate": {
+            "id": "artist-debate",
+            "summary": "Leonardo and Michelangelo argue whether painting or sculpture is the greater art",
+            "text": "Leonardo and Michelangelo are arguing loudly. {{BOTH_NAMES}} move closer to listen.\n\n'Painting is the superior art!' Leonardo declares. 'The painter captures light, color, atmosphere—the whole world in all its complexity. A painting can show a sunset, a storm, a dream!'\n\n'Nonsense!' Michelangelo snaps. 'Painting is illusion—tricks on a flat surface. Sculpture is real! You can walk around it, touch it. It exists in three dimensions, like life itself!'\n\n'But sculpture is limited to one material, one color,' Leonardo counters. 'A painted face can blush. A marble face is always white.'\n\n'A painted face is a lie! My David could stand in a room with a real man, and you'd have to touch them to know which is stone!'\n\nGiuliano whispers to the children, 'They've had this argument a hundred times. They actually respect each other enormously—this is how artists sharpen their ideas, through debate.'\n\n{{PLAYER2_NAME}} realizes something. 'They're both right, aren't they? Different arts do different things.'",
+            "emoji": "⚔️",
+            "choices": [
+                {
+                    "text": "Ask Leonardo about the debate",
+                    "nextNodeId": "leonardo-final"
+                },
+                {
+                    "text": "Ask Michelangelo about the debate",
+                    "nextNodeId": "michelangelo-final"
+                },
+                {
+                    "text": "Ask about the future of art",
+                    "nextNodeId": "future-art"
+                }
+            ]
+        },
+        "future-art": {
+            "id": "future-art",
+            "summary": "Giuliano asks what art is like in their time",
+            "text": "Walking through the palace gardens, Giuliano asks quietly, 'That magical brush—where did you truly come from? Your clothes are strange. Your speech is odd. Are you from... the future?'\n\n{{BOTH_NAMES}} exchange glances. Should they tell him?\n\n'Art exists in our time too,' {{PLAYER1_NAME}} says carefully. 'Very different art. We have... machines that capture images instantly. Moving pictures with sound. Art that anyone can create and share across the world in seconds.'\n\nGiuliano's eyes widen. 'Anyone can create?'\n\n'Anyone. You don't need rich patrons like the Medici. You can share your art with millions of people without leaving your home.'\n\n'That sounds like magic,' Giuliano breathes.\n\n'It does,' {{PLAYER2_NAME}} agrees. 'But the lessons we learned today—about observation, patience, practice, seeing what's truly there—those haven't changed. Good art still takes all those things.'\n\nGiuliano smiles. 'Then some things are eternal. Beauty. Effort. The drive to create. That gives me hope.'",
+            "emoji": "🔮",
+            "choices": [
+                {
+                    "text": "It's time to return home",
+                    "nextNodeId": "prepare-return"
+                }
+            ]
+        },
+        "leonardo-final": {
+            "id": "leonardo-final",
+            "summary": "Leonardo shares his philosophy: be curious about everything",
+            "text": "'What should we remember from all this?' {{PLAYER1_NAME}} asks Leonardo.\n\nThe master sets down his ever-present notebook. 'Be curious about everything. A blade of grass is as worthy of study as a king's portrait. The universe is endlessly fascinating—you could spend a thousand lifetimes exploring it and never run out of wonders.'\n\nHe taps his chest. 'Make things. Don't just think about making them—actually do it. Build, paint, sculpt, write, experiment. The world has too many people who talk about what they'll someday create. Be someone who actually creates.'\n\n'And failures?' {{PLAYER2_NAME}} asks. 'You must have failed sometimes.'\n\n'Constantly! Most of my inventions don't work. Most of my paintings remain unfinished. But every failure taught me something. Never fear failure—fear only not trying.'\n\nHe presses a small notebook into {{PLAYER1_NAME}}'s hands. 'Fill this with observations, ideas, questions. The habit of noticing—that is the foundation of all genius.'",
+            "emoji": "🌟",
+            "choices": [
+                {
+                    "text": "It's time to return home",
+                    "nextNodeId": "prepare-return"
+                }
+            ]
+        },
+        "michelangelo-final": {
+            "id": "michelangelo-final",
+            "summary": "Michelangelo shares his philosophy: pursue perfection, accept imperfection",
+            "text": "'What matters most in art?' {{PLAYER2_NAME}} asks Michelangelo.\n\nThe sculptor's fierce expression softens. 'Two things that seem to contradict each other. First: pursue perfection. Never settle for good enough. Push yourself beyond what you think possible. The gap between what you can imagine and what you can create—that gap is where growth happens.'\n\nHe looks at David's face. 'Second: accept that perfection is impossible. Even my David has flaws only I can see. Every artwork is a compromise between vision and reality. If you wait until something is perfect, you'll never finish anything.'\n\n{{PLAYER1_NAME}} frowns. 'How can you do both?'\n\n'You strive for the stars, knowing you'll land on the mountaintop. That's still higher than where you started. The point isn't reaching perfection—it's becoming better than you were. Every artwork should be better than the last. Every day should make you more skilled than yesterday.'\n\nHe picks up his chisel. 'Now leave me. David is waiting to emerge.'",
+            "emoji": "⭐",
+            "choices": [
+                {
+                    "text": "It's time to return home",
+                    "nextNodeId": "prepare-return"
+                }
+            ]
+        },
+        "botticelli-final": {
+            "id": "botticelli-final",
+            "summary": "Botticelli shares his philosophy: art is how we touch immortality",
+            "text": "'What is art for?' {{PLAYER1_NAME}} asks Botticelli.\n\nThe gentle painter considers the question. 'To make the beautiful visible. To capture moments that would otherwise vanish forever. When I paint Venus, I am preserving an idea of beauty that existed before me and will exist after I am dust.'\n\nHe gestures at his paintings. 'These images will outlive me. Perhaps by centuries. Someday, someone I'll never meet will look at my Venus and feel something—joy, longing, wonder. In that moment, I will still be speaking to them, across time.'\n\n{{PLAYER2_NAME}} feels the weight of that idea. 'Art is... immortality?'\n\n'As close as humans get. Our bodies fail, our names are forgotten, but our creations—if they're beautiful enough, true enough—they endure. That's why we suffer for art, work until our hands ache, strive beyond our abilities. We're not just making pictures. We're trying to touch eternity.'\n\nHe hands them each a small print of his Venus. 'Take this. Let it remind you that beauty is worth creating.'",
+            "emoji": "💫",
+            "choices": [
+                {
+                    "text": "It's time to return home",
+                    "nextNodeId": "prepare-return"
+                }
+            ]
+        },
+        "prepare-return": {
+            "id": "prepare-return",
+            "summary": "The magical brush glows, ready to take them home",
+            "text": "The paintbrush in {{PLAYER1_NAME}}'s pocket suddenly glows bright gold. Colors begin swirling around them again.\n\n'Your apprenticeship is complete!' Giuliano bows with a flourish. 'Remember what you've learned. Observe like Leonardo. Persist like Michelangelo. Dream like Botticelli. And create, always create!'\n\nThe colors spin faster—Renaissance Florence blurs and fades. The last thing they see is Giuliano waving, his paint-stained hands raised in farewell.\n\n'Will we ever come back?' {{PLAYER2_NAME}} calls.\n\n'The brush will know when you're ready to learn more!' Giuliano's voice echoes through the whirling colors. 'Until then—make art! The world needs beauty, and you have the spark!'",
+            "emoji": "🌀",
+            "choices": [
+                {
+                    "text": "Return home as young artists",
+                    "nextNodeId": "ending-artists"
+                }
+            ]
+        },
+        "ending-artists": {
+            "id": "ending-artists",
+            "summary": "GOOD ENDING: They return home forever changed, ready to create",
+            "text": "{{BOTH_NAMES}} stand in the museum again. The lights flicker on—their aunt is coming!\n\nThe paintbrush in {{PLAYER1_NAME}}'s hand looks ordinary now, just an old brush from a dusty crate. But they both know it's more. So much more.\n\n'There you are!' Aunt Sofia appears. 'Find anything interesting?'\n\n{{PLAYER2_NAME}} looks at the Renaissance paintings on the museum walls with new eyes. The subtle sfumato. The flowing lines. The painstaking observation. 'Everything,' {{PLAYER2_HE_SHE}} says. 'Everything is interesting.'\n\nThat night, {{PLAYER1_NAME}} starts sketching in Leonardo's notebook, really looking at things for the first time. {{PLAYER2_NAME}} mixes colors, trying to understand how they blend. It's hard. Nothing looks right yet.\n\nBut they remember: every master was once a beginner. Art takes patience, observation, practice, and courage. The only failure is not trying.\n\nThe Renaissance isn't just history. It's a way of seeing the world—with curiosity, with wonder, with the belief that beauty is worth creating.\n\nAnd now, {{BOTH_NAMES}} are part of that tradition too.",
+            "emoji": "🖼️",
+            "isEnding": true,
+            "endingType": "good",
+            "endingTitle": "Young Artists",
+            "endingText": "THE END\n\nYou traveled to Renaissance Florence and learned from the greatest artists in history. Remember their lessons: observe carefully, practice constantly, and never stop creating!\n\n\"Art is never finished, only abandoned.\" — Leonardo da Vinci"
+        }
+    }
+}

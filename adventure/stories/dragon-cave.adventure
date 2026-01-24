@@ -1,0 +1,607 @@
+{
+    "formatVersion": "1.0",
+    "metadata": {
+        "id": "dragon-cave",
+        "title": "The Dragon's Cave",
+        "author": "Adventure Stories",
+        "coverEmoji": "🐉",
+        "description": "{{BOTH_NAMES}} discover a mysterious cave with a friendly dragon inside!",
+        "ageRange": "8-10",
+        "estimatedMinutes": 10,
+        "themes": ["fantasy", "adventure", "friendship"],
+        "contentNotes": [],
+        "startNode": "start"
+    },
+    "nodes": {
+        "start": {
+            "id": "start",
+            "summary": "Kids discover a glowing cave behind a waterfall with dragon claw marks",
+            "text": "{{PLAYER1_NAME}} and {{PLAYER2_NAME}} were hiking through the Whispering Woods when they spotted something unusual—a cave entrance hidden behind a waterfall!\n\n\"Look at that!\" {{PLAYER1_NAME}} pointed excitedly. The cave mouth glowed with a soft, golden light from deep within.\n\n{{PLAYER2_NAME}} noticed something else: huge claw marks on the rocks near the entrance. \"Those look like... dragon claws,\" {{PLAYER2_HE_SHE}} whispered.",
+            "emoji": "🌲",
+            "choices": [
+                {
+                    "text": "Bravely enter the cave together",
+                    "nextNodeId": "enter-cave"
+                },
+                {
+                    "text": "Call out \"Hello?\" first",
+                    "nextNodeId": "call-out"
+                },
+                {
+                    "text": "Look for another way in",
+                    "nextNodeId": "look-around"
+                }
+            ]
+        },
+        "enter-cave": {
+            "id": "enter-cave",
+            "summary": "They enter through the waterfall and find sparkling crystals",
+            "text": "{{PLAYER1_NAME}} took {{PLAYER2_NAME}}'s hand and they stepped through the waterfall together. The cool mist felt refreshing!\n\nInside, the cave walls sparkled with thousands of crystals, each one catching the golden light and creating rainbow patterns everywhere.\n\n\"This is beautiful!\" {{PLAYER2_NAME}} gasped.\n\nAs they walked deeper, they heard a low rumbling sound—like a very large cat purring.",
+            "emoji": "✨",
+            "choices": [
+                {
+                    "text": "Follow the purring sound",
+                    "nextNodeId": "find-dragon"
+                },
+                {
+                    "text": "Explore the crystal formations first",
+                    "nextNodeId": "explore-crystals"
+                }
+            ]
+        },
+        "call-out": {
+            "id": "call-out",
+            "summary": "They call out and receive a friendly invitation from inside",
+            "text": "\"Hello? Is anyone there?\" {{PLAYER1_NAME}} called out, {{PLAYER1_HIS_HER}} voice echoing through the cave.\n\nFor a moment, nothing happened. Then a gentle voice replied from within:\n\n\"Oh my! Visitors! How wonderful! Please, please come in!\"\n\nThe voice sounded kind and excited—definitely not scary at all!",
+            "emoji": "👋",
+            "choices": [
+                {
+                    "text": "Accept the invitation and enter",
+                    "nextNodeId": "invited-in"
+                },
+                {
+                    "text": "Ask who's speaking first",
+                    "nextNodeId": "ask-who"
+                }
+            ]
+        },
+        "look-around": {
+            "id": "look-around",
+            "summary": "They find a window and spot a sleeping dragon with reading glasses",
+            "text": "{{PLAYER1_NAME}} and {{PLAYER2_NAME}} carefully explored around the waterfall. {{PLAYER2_NAME}} spotted a smaller opening higher up on the cliff.\n\n\"There's another entrance up there!\" {{PLAYER2_HE_SHE}} pointed.\n\nThey climbed up the rocky path and found a window-like opening that looked into the cave. Through it, they could see an amazing sight: a sleeping dragon curled around a pile of shiny objects, snoring peacefully. The dragon had beautiful purple scales and tiny reading glasses perched on its nose!",
+            "emoji": "🔍",
+            "choices": [
+                {
+                    "text": "Quietly watch the dragon sleep",
+                    "nextNodeId": "watch-dragon"
+                },
+                {
+                    "text": "Gently knock on the rock to wake it",
+                    "nextNodeId": "wake-dragon"
+                }
+            ]
+        },
+        "find-dragon": {
+            "id": "find-dragon",
+            "summary": "They meet Violet, a kind purple dragon who was napping",
+            "text": "{{BOTH_NAMES}} followed the purring sound deeper into the cave. They rounded a corner and found the source: a magnificent purple dragon, about the size of a small car, curled up on a bed of soft moss!\n\nThe dragon's eyes opened—they were kind eyes, the color of honey.\n\n\"Oh! Hello there, little ones,\" the dragon said softly. \"I'm Violet. I was just having my afternoon nap. What brings you to my home?\"",
+            "emoji": "🐉",
+            "choices": [
+                {
+                    "text": "Introduce yourselves politely",
+                    "nextNodeId": "introduce"
+                },
+                {
+                    "text": "Ask about the beautiful crystals",
+                    "nextNodeId": "ask-crystals"
+                },
+                {
+                    "text": "Ask if Violet is lonely living here",
+                    "nextNodeId": "ask-lonely"
+                }
+            ]
+        },
+        "explore-crystals": {
+            "id": "explore-crystals",
+            "summary": "They discover the crystals are magical memory stones",
+            "text": "{{PLAYER2_NAME}} reached out to touch one of the crystals. It was warm!\n\n\"These crystals are magical,\" {{PLAYER1_NAME}} realized. \"They're giving off light on their own!\"\n\nSuddenly, one crystal began to glow brighter. Inside it, images appeared—like a tiny movie screen! It showed a dragon teaching baby dragons how to fly.\n\n\"Those are memory crystals,\" a gentle voice said behind them. They spun around to see a purple dragon smiling at them. \"They record happy memories.\"",
+            "emoji": "💎",
+            "choices": [
+                {
+                    "text": "Ask to see more memories",
+                    "nextNodeId": "more-memories"
+                },
+                {
+                    "text": "Ask the dragon's name",
+                    "nextNodeId": "introduce"
+                }
+            ]
+        },
+        "invited-in": {
+            "id": "invited-in",
+            "summary": "Violet welcomes them to her cozy reading nook and offers cocoa",
+            "text": "{{BOTH_NAMES}} walked into the cave and found it even more amazing than they expected. The walls glittered with crystals, and comfortable cushions were scattered around a cozy reading nook.\n\nA purple dragon with reading glasses sat in the biggest cushion, holding a book.\n\n\"Welcome! I'm Violet. I don't get many visitors—the waterfall scares most people away. But you two seem brave! Would you like some hot cocoa? I just made a fresh batch!\"",
+            "emoji": "📚",
+            "choices": [
+                {
+                    "text": "Accept the hot cocoa gratefully",
+                    "nextNodeId": "cocoa-time"
+                },
+                {
+                    "text": "Ask how a dragon makes hot cocoa",
+                    "nextNodeId": "dragon-cocoa"
+                }
+            ]
+        },
+        "ask-who": {
+            "id": "ask-who",
+            "summary": "Violet reveals herself as a dragon librarian who collects forgotten stories",
+            "text": "\"Who's there?\" {{PLAYER1_NAME}} asked cautiously.\n\n\"Oh, where are my manners!\" The voice sounded embarrassed. A purple dragon head peeked out from behind the waterfall. She wore tiny reading glasses and had a kind smile.\n\n\"I'm Violet the Dragon. I'm a librarian—well, a book collector really. I keep all the stories that people have forgotten. Would you like to see?\"\n\n{{PLAYER2_NAME}}'s eyes grew wide. \"A dragon librarian?!\"",
+            "emoji": "📖",
+            "choices": [
+                {
+                    "text": "Follow Violet to see the books",
+                    "nextNodeId": "library"
+                },
+                {
+                    "text": "Ask how she became a librarian",
+                    "nextNodeId": "librarian-story"
+                }
+            ]
+        },
+        "watch-dragon": {
+            "id": "watch-dragon",
+            "summary": "They observe the dragon's treasure is books, then accidentally wake her",
+            "text": "{{BOTH_NAMES}} watched the sleeping dragon quietly. The dragon's treasure pile wasn't gold and jewels like in scary stories—it was books! Hundreds of colorful books surrounded the dragon.\n\n{{PLAYER2_NAME}} accidentally knocked a small pebble loose. It clattered down and the dragon's eyes opened.\n\n\"Oh!\" She spotted them in the window and smiled warmly. \"Hello there! Please, come in the front entrance—it's much more comfortable than that little window!\"",
+            "emoji": "💤",
+            "choices": [
+                {
+                    "text": "Climb down and use the main entrance",
+                    "nextNodeId": "invited-in"
+                }
+            ]
+        },
+        "wake-dragon": {
+            "id": "wake-dragon",
+            "summary": "They knock and the dragon excitedly invites them in for tea",
+            "text": "{{PLAYER1_NAME}} gently knocked on the rock. The dragon's eyes fluttered open, and she yawned hugely—but politely covered her mouth with a claw.\n\n\"Oh my, visitors!\" She carefully put her reading glasses on and spotted them in the window. \"How exciting! I'm Violet. Don't just stand there in that drafty window—come in through the waterfall! I'll put the kettle on!\"\n\nShe hurried off, her tail accidentally knocking over a stack of books.",
+            "emoji": "🍵",
+            "choices": [
+                {
+                    "text": "Go around to the main entrance",
+                    "nextNodeId": "invited-in"
+                }
+            ]
+        },
+        "introduce": {
+            "id": "introduce",
+            "summary": "Violet asks them to help find a healing flower for her sick owl friend",
+            "text": "\"I'm {{PLAYER1_NAME}}, and this is {{PLAYER2_NAME}},\" {{PLAYER1_NAME}} said with a small bow.\n\n\"How wonderful!\" Violet clapped her claws together. \"Such polite young adventurers! You remind me of the heroes in my favorite books.\"\n\nShe looked at them thoughtfully. \"You know, I've been looking for brave helpers. There's a magical flower that only blooms on the highest peak—it could help heal my friend, an old owl who got sick. But I'm too big to climb the narrow mountain path. Would you help me?\"",
+            "emoji": "🤝",
+            "choices": [
+                {
+                    "text": "Agree to help find the flower",
+                    "nextNodeId": "accept-quest"
+                },
+                {
+                    "text": "Ask more about the owl friend",
+                    "nextNodeId": "owl-friend"
+                }
+            ]
+        },
+        "ask-crystals": {
+            "id": "ask-crystals",
+            "summary": "Violet explains the memory stones and offers to create one together",
+            "text": "\"These crystals are memory stones,\" Violet explained proudly. \"Each one holds a happy memory from someone's life. I've collected them for three hundred years!\"\n\nShe gently tapped a large crystal with her claw. It lit up and showed two children playing in the snow, laughing and building a snowman.\n\n\"That's from a family who lived here long ago. Their great-great-grandchildren still visit sometimes.\" She smiled. \"Would you like to add your own memory?\"",
+            "emoji": "💫",
+            "choices": [
+                {
+                    "text": "Create a memory crystal together",
+                    "nextNodeId": "create-memory"
+                },
+                {
+                    "text": "Ask to see more memories first",
+                    "nextNodeId": "more-memories"
+                }
+            ]
+        },
+        "ask-lonely": {
+            "id": "ask-lonely",
+            "summary": "Violet admits to occasional loneliness and mentions her sick owl friend",
+            "text": "\"Lonely?\" Violet tilted her head. \"Well... sometimes. Dragons live a very long time, and most of my old friends have... moved on.\"\n\nShe brightened. \"But I have my books! And Oliver the Owl visits every Wednesday for tea. And now I have you two!\"\n\nHer eyes twinkled. \"Speaking of Oliver, he's been quite sick lately. I've been searching for a cure. Would you like to help me find a magical healing flower?\"",
+            "emoji": "💜",
+            "choices": [
+                {
+                    "text": "Offer to help right away",
+                    "nextNodeId": "accept-quest"
+                },
+                {
+                    "text": "Ask what kind of flower it is",
+                    "nextNodeId": "flower-info"
+                }
+            ]
+        },
+        "more-memories": {
+            "id": "more-memories",
+            "summary": "Violet shows many memory crystals and they decide to make one together",
+            "text": "Violet showed them crystal after crystal. They saw a princess's wedding, a sailor finding treasure, a child taking their first steps, and a group of friends camping under the stars.\n\n\"Every happy moment creates a little bit of magic,\" Violet explained. \"I collect them so they're never forgotten.\"\n\n{{PLAYER2_NAME}} had an idea. \"Could we make a memory crystal right now? Of meeting you?\"",
+            "emoji": "🌈",
+            "choices": [
+                {
+                    "text": "Create a memory crystal of this moment",
+                    "nextNodeId": "create-memory"
+                }
+            ]
+        },
+        "cocoa-time": {
+            "id": "cocoa-time",
+            "summary": "They enjoy cocoa and learn about Oliver the sick owl who needs help",
+            "text": "Violet carefully poured hot cocoa from a huge kettle into two small cups—just the right size for {{BOTH_NAMES}}. The cocoa was the best they'd ever tasted!\n\n\"I add a pinch of dragon cinnamon,\" Violet explained. \"It grows in my garden.\"\n\nAs they sipped their cocoa, Violet told them about her life as a book collector and her friend Oliver the Owl, who was very sick.\n\n\"There's a magical flower that could heal him,\" she said hopefully. \"But I'm too big to fetch it...\"",
+            "emoji": "☕",
+            "choices": [
+                {
+                    "text": "Volunteer to get the flower",
+                    "nextNodeId": "accept-quest"
+                },
+                {
+                    "text": "Ask to meet Oliver",
+                    "nextNodeId": "meet-oliver"
+                }
+            ]
+        },
+        "dragon-cocoa": {
+            "id": "dragon-cocoa",
+            "summary": "Violet demonstrates her gentle fire-breathing cocoa-making technique",
+            "text": "{{PLAYER1_NAME}} couldn't help but ask, \"How does a dragon make hot cocoa without burning it?\"\n\nViolet laughed—a warm, rumbling sound. \"Very carefully! I've had three hundred years of practice. The secret is gentle breaths.\" She demonstrated, and a tiny, perfect flame emerged from her nose.\n\n\"My grandmother could make toast from across the room,\" she added proudly. \"Now THAT was impressive.\"\n\nShe handed them perfectly warmed cups of cocoa. It was delicious!",
+            "emoji": "🔥",
+            "choices": [
+                {
+                    "text": "Ask about her dragon family",
+                    "nextNodeId": "dragon-family"
+                },
+                {
+                    "text": "Drink the cocoa and chat more",
+                    "nextNodeId": "cocoa-time"
+                }
+            ]
+        },
+        "library": {
+            "id": "library",
+            "summary": "They explore the massive library and find a book recording their own story",
+            "text": "Violet led them deep into the cave. The walls opened into a massive chamber filled floor-to-ceiling with books! Magical floating candles provided soft light.\n\n\"Three hundred years of collecting,\" Violet said proudly. \"Every story that was almost lost, every adventure people forgot—they're all here.\"\n\n{{PLAYER2_NAME}} spotted a book with {{PLAYER2_HIS_HER}} name on the spine! \"Is that...?\"\n\n\"Oh yes!\" Violet smiled. \"That's YOUR story—the one you're living right now. Every adventure gets recorded.\"",
+            "emoji": "📚",
+            "choices": [
+                {
+                    "text": "Ask to read your own story",
+                    "nextNodeId": "read-story"
+                },
+                {
+                    "text": "Ask how the books write themselves",
+                    "nextNodeId": "magic-books"
+                }
+            ]
+        },
+        "librarian-story": {
+            "id": "librarian-story",
+            "summary": "Violet explains how finding a forgotten book inspired her mission",
+            "text": "\"How did I become a librarian?\" Violet's eyes grew distant with memory. \"Long ago, when I was young—only fifty years old—I found a book left behind by a traveler. It was the most wonderful story about friendship and courage.\"\n\nShe smiled. \"I realized that stories are precious things. They teach us, they comfort us, they connect us. So I made it my mission to save every story I could find.\"\n\n{{PLAYER1_NAME}} nodded. \"That's really beautiful.\"",
+            "emoji": "💝",
+            "choices": [
+                {
+                    "text": "Ask to see her library",
+                    "nextNodeId": "library"
+                },
+                {
+                    "text": "Share your favorite story with her",
+                    "nextNodeId": "share-story"
+                }
+            ]
+        },
+        "accept-quest": {
+            "id": "accept-quest",
+            "summary": "They receive a magic compass and set off to find the Starlight Flower",
+            "text": "\"We'll find the flower!\" {{BOTH_NAMES}} said together.\n\nViolet's eyes filled with grateful tears. \"You wonderful children! The Starlight Flower blooms at the top of Crystal Peak. It only opens at sunset, and you must pick it with kindness in your heart.\"\n\nShe gave them a magical compass that glowed softly. \"This will guide you. Be back before dark—and be brave, but be smart!\"\n\n{{BOTH_NAMES}} set off on their quest, the compass leading the way.",
+            "emoji": "🧭",
+            "choices": [
+                {
+                    "text": "Follow the forest path",
+                    "nextNodeId": "forest-path"
+                },
+                {
+                    "text": "Take the river shortcut",
+                    "nextNodeId": "river-path"
+                }
+            ]
+        },
+        "owl-friend": {
+            "id": "owl-friend",
+            "summary": "Violet shares her 40-year friendship with Oliver and his current illness",
+            "text": "\"Oliver has been my friend for forty years,\" Violet said softly. \"He's a wise old barn owl who lives in the Great Oak. Every Wednesday, he comes for tea and we discuss books.\"\n\nHer voice quivered. \"But last month, he got very sick. He can barely fly now. The Starlight Flower could heal him, but I'm too big to climb Crystal Peak to get it.\"\n\nShe looked at them hopefully.",
+            "emoji": "🦉",
+            "choices": [
+                {
+                    "text": "Promise to help get the flower",
+                    "nextNodeId": "accept-quest"
+                }
+            ]
+        },
+        "create-memory": {
+            "id": "create-memory",
+            "summary": "GOOD ENDING: They create a memory crystal of their new friendship",
+            "text": "\"Everyone hold hands and think of something happy!\" Violet instructed.\n\n{{PLAYER1_NAME}} and {{PLAYER2_NAME}} held hands with each other, and Violet gently placed one claw on their shoulders. They all closed their eyes.\n\n{{PLAYER1_NAME}} thought about the wonder of meeting a real dragon. {{PLAYER2_NAME}} thought about having a new friend.\n\nWhen they opened their eyes, a new crystal floated before them, glowing with warm purple light. Inside, a tiny scene played: the three of them, smiling together.\n\n\"This memory will last forever,\" Violet said softly.",
+            "emoji": "💜",
+            "choices": [],
+            "isEnding": true,
+            "endingType": "good",
+            "endingText": "{{BOTH_NAMES}} visited Violet every week after that, adding new memory crystals to her collection. They had found something more valuable than treasure—a true friend.\n\nTHE END"
+        },
+        "flower-info": {
+            "id": "flower-info",
+            "summary": "Violet describes the magical Starlight Flower on Crystal Peak",
+            "text": "\"It's called the Starlight Flower,\" Violet explained. \"It blooms only at sunset on the highest peak—Crystal Peak. The petals glow like stars, and they can heal any sickness.\"\n\nShe sighed. \"The path up the mountain is too narrow for me. I've tried, but I always get stuck. If only someone smaller could help...\"\n\nShe looked at {{BOTH_NAMES}} hopefully.",
+            "emoji": "🌸",
+            "choices": [
+                {
+                    "text": "Agree to climb the mountain",
+                    "nextNodeId": "accept-quest"
+                }
+            ]
+        },
+        "meet-oliver": {
+            "id": "meet-oliver",
+            "summary": "They meet the sick owl and immediately want to help him",
+            "text": "Violet led them to a cozy corner where a great barn owl lay on a soft cushion. His feathers were ruffled and his eyes were tired, but he managed a weak smile.\n\n\"Hello, young ones,\" Oliver whispered. \"Forgive me for not standing. I'm feeling rather under the weather.\"\n\n{{PLAYER2_NAME}} felt {{PLAYER2_HIS_HER}} heart squeeze with sympathy. This poor owl needed help!\n\n\"We can find the flower to heal you!\" {{PLAYER1_NAME}} declared.",
+            "emoji": "🦉",
+            "choices": [
+                {
+                    "text": "Set off to find the Starlight Flower",
+                    "nextNodeId": "accept-quest"
+                }
+            ]
+        },
+        "dragon-family": {
+            "id": "dragon-family",
+            "summary": "Violet fondly remembers her family, especially her grandmother",
+            "text": "\"My family?\" Violet's eyes went misty. \"My parents lived far to the north. My grandmother was the most wonderful cook—she could toast marshmallows to perfection from ten feet away!\"\n\nShe chuckled. \"We dragons live very long lives. Most of my family has gone to the Great Beyond now. But that's why stories matter—they keep the ones we love alive in our memories.\"\n\nShe patted a book beside her. \"My grandmother's recipes are all in here.\"",
+            "emoji": "💕",
+            "choices": [
+                {
+                    "text": "Ask to see the recipe book",
+                    "nextNodeId": "recipes"
+                },
+                {
+                    "text": "Share a memory of your own family",
+                    "nextNodeId": "share-memory"
+                }
+            ]
+        },
+        "read-story": {
+            "id": "read-story",
+            "summary": "They watch their own story being written in real-time",
+            "text": "{{PLAYER1_NAME}} carefully opened the book. The pages were blank!\n\n\"It's still being written,\" Violet explained. \"Watch.\"\n\nAs they watched, golden words appeared on the page: '{{PLAYER1_NAME}} opened the book and gasped as words appeared before {{PLAYER1_HIS_HER}} very eyes.'\n\n\"Whoa!\" {{PLAYER2_NAME}} exclaimed.\n\n\"Your story is still happening,\" Violet said. \"The best part is—you get to choose what happens next.\"",
+            "emoji": "✍️",
+            "choices": [
+                {
+                    "text": "Ask what choices you have",
+                    "nextNodeId": "story-choices"
+                }
+            ]
+        },
+        "magic-books": {
+            "id": "magic-books",
+            "summary": "Violet explains story magic and a book starts recording their adventure",
+            "text": "\"Magic, of course!\" Violet laughed. \"When something important happens in the world, the story magic captures it. My job is just to collect and protect the books.\"\n\nShe pulled a blank book from a shelf. \"This one is empty—it's waiting for a new adventure to fill its pages.\"\n\nSuddenly, golden words began to appear on the first page: 'One sunny day, {{PLAYER1_NAME}} and {{PLAYER2_NAME}} discovered a dragon's cave...'\n\n\"Oh!\" Violet clapped. \"It's recording YOUR story!\"",
+            "emoji": "🪄",
+            "choices": [
+                {
+                    "text": "Watch your story being written",
+                    "nextNodeId": "read-story"
+                }
+            ]
+        },
+        "share-story": {
+            "id": "share-story",
+            "summary": "They share a favorite story and learn their adventure is being recorded",
+            "text": "{{PLAYER1_NAME}} told Violet about {{PLAYER1_HIS_HER}} favorite story—a tale of adventure and friendship.\n\n\"That's a wonderful story!\" Violet said, delighted. \"And now you're LIVING an adventure. One day, children will read about what YOU did today.\"\n\n{{PLAYER2_NAME}} smiled. \"Really? Our story will be in your library?\"\n\n\"It's already being written,\" Violet said, gesturing to a glowing book on a nearby shelf. \"Would you like to help me add more chapters by going on a quest?\"",
+            "emoji": "📖",
+            "choices": [
+                {
+                    "text": "Agree to go on a quest",
+                    "nextNodeId": "accept-quest"
+                }
+            ]
+        },
+        "forest-path": {
+            "id": "forest-path",
+            "summary": "They find a lost fox kit crying in the forest",
+            "text": "{{BOTH_NAMES}} followed the compass through the ancient forest. Tall trees created a green tunnel above them, and colorful birds sang in the branches.\n\nSuddenly, they heard crying. A small fox kit sat beside the path, looking lost and scared.\n\n\"Are you okay?\" {{PLAYER2_NAME}} asked gently.\n\n\"I can't find my way home,\" the kit sniffled. \"I followed a butterfly too far and got lost.\"",
+            "emoji": "🦊",
+            "choices": [
+                {
+                    "text": "Help the fox find its home first",
+                    "nextNodeId": "help-fox"
+                },
+                {
+                    "text": "Explain you're on an urgent quest",
+                    "nextNodeId": "leave-fox"
+                }
+            ]
+        },
+        "river-path": {
+            "id": "river-path",
+            "summary": "They reach a river and meet a helpful beaver offering assistance",
+            "text": "The compass led them to a rushing river. On the other side, the mountain path continued upward.\n\n\"We need to cross,\" {{PLAYER1_NAME}} said, looking at the swift water.\n\nA friendly beaver popped up nearby. \"Need help crossing? I could build you a bridge—but it might take a while. Or there's stepping stones downstream, but they're slippery!\"",
+            "emoji": "🦫",
+            "choices": [
+                {
+                    "text": "Wait for the beaver to build a bridge",
+                    "nextNodeId": "beaver-bridge"
+                },
+                {
+                    "text": "Try the stepping stones",
+                    "nextNodeId": "stepping-stones"
+                }
+            ]
+        },
+        "help-fox": {
+            "id": "help-fox",
+            "summary": "They help the fox home and receive a magical golden acorn as thanks",
+            "text": "\"We'll help you,\" {{PLAYER1_NAME}} said kindly. \"Which direction is home?\"\n\nThe little fox thought hard. \"I remember... there's a big oak tree with a hole in it!\"\n\nWorking together, they found the fox's den. The mother fox was overjoyed!\n\n\"Thank you! Please, take this as thanks.\" She gave them a small golden acorn. \"It will protect you on your journey.\"\n\nThe acorn glowed warmly in {{PLAYER2_NAME}}'s pocket as they continued toward Crystal Peak.",
+            "emoji": "🌰",
+            "choices": [
+                {
+                    "text": "Continue up the mountain",
+                    "nextNodeId": "mountain-climb"
+                }
+            ]
+        },
+        "leave-fox": {
+            "id": "leave-fox",
+            "summary": "They hesitate about leaving but reconsider helping the kit",
+            "text": "\"I'm sorry,\" {{PLAYER1_NAME}} said sadly. \"We're on an important quest. We have to help a sick owl.\"\n\nThe fox kit nodded, still sniffling. \"I... I understand.\"\n\n{{BOTH_NAMES}} continued on, but {{PLAYER2_NAME}} kept looking back. Something didn't feel right about leaving the kit alone.\n\n\"Wait,\" {{PLAYER2_NAME}} said suddenly. \"We should go back. Being kind is more important than being fast.\"",
+            "emoji": "💭",
+            "choices": [
+                {
+                    "text": "Go back and help the fox",
+                    "nextNodeId": "help-fox"
+                },
+                {
+                    "text": "Keep going—Oliver needs help now",
+                    "nextNodeId": "mountain-climb-alone"
+                }
+            ]
+        },
+        "beaver-bridge": {
+            "id": "beaver-bridge",
+            "summary": "The beaver builds a bridge and warns about the mountain mist",
+            "text": "\"I'd appreciate a bridge,\" {{PLAYER1_NAME}} said politely.\n\nThe beaver grinned and got to work. In just fifteen minutes, he'd built a sturdy little bridge!\n\n\"Thank you so much!\" {{PLAYER2_NAME}} said.\n\n\"Happy to help! By the way, you're going to Crystal Peak, right? Watch out for the mist at the top—it can make you see things that aren't there. Stay brave and stick together!\"\n\nThey crossed safely and continued climbing.",
+            "emoji": "🌉",
+            "choices": [
+                {
+                    "text": "Continue up the mountain",
+                    "nextNodeId": "mountain-climb"
+                }
+            ]
+        },
+        "stepping-stones": {
+            "id": "stepping-stones",
+            "summary": "They cross the slippery stones with a close call but make it safely",
+            "text": "They found the stepping stones—wet and slippery, just as the beaver warned.\n\n\"Careful!\" {{PLAYER1_NAME}} said, going first.\n\n{{PLAYER2_NAME}} followed close behind. Halfway across, {{PLAYER2_HIS_HER}} foot slipped! {{PLAYER1_NAME}} grabbed {{PLAYER2_HIM_HER}} just in time.\n\n\"That was close!\" They made it across, wet but safe.\n\nThe mountain path stretched upward. They were getting closer!",
+            "emoji": "🪨",
+            "choices": [
+                {
+                    "text": "Continue up the mountain",
+                    "nextNodeId": "mountain-climb"
+                }
+            ]
+        },
+        "mountain-climb": {
+            "id": "mountain-climb",
+            "summary": "Near the peak, the mist creates an illusion of treasure",
+            "text": "{{BOTH_NAMES}} climbed higher and higher. The path wound around the mountain like a ribbon. Below them, the forest looked like a green carpet.\n\nAs they neared the top, a strange mist rolled in. Through the fog, they saw a treasure chest filled with gold!\n\n\"Look at that!\" {{PLAYER1_NAME}} pointed.\n\nBut {{PLAYER2_NAME}} remembered the beaver's warning. \"Wait—the beaver said the mist shows things that aren't real. Is that really treasure?\"",
+            "emoji": "⛰️",
+            "choices": [
+                {
+                    "text": "Investigate the treasure chest",
+                    "nextNodeId": "fake-treasure"
+                },
+                {
+                    "text": "Ignore it and keep climbing",
+                    "nextNodeId": "reach-peak"
+                }
+            ]
+        },
+        "mountain-climb-alone": {
+            "id": "mountain-climb-alone",
+            "summary": "NEUTRAL ENDING: The flower crumbles because they lacked kindness",
+            "text": "{{BOTH_NAMES}} continued without helping the fox. They climbed the mountain quickly, but both felt a heaviness in their hearts.\n\nNear the top, they found the Starlight Flower. But when {{PLAYER1_NAME}} tried to pick it, the petals crumbled.\n\n\"Oh no!\" {{PLAYER2_NAME}} gasped.\n\nA voice whispered on the wind: \"The flower can only be picked by those with kindness in their hearts...\"",
+            "emoji": "💔",
+            "choices": [],
+            "isEnding": true,
+            "endingType": "neutral",
+            "endingText": "{{BOTH_NAMES}} returned to Violet empty-handed. But they learned an important lesson: being kind is never a waste of time. Next time, they would help others along the way.\n\nTHE END"
+        },
+        "fake-treasure": {
+            "id": "fake-treasure",
+            "summary": "The treasure is an illusion but they still make it to the peak in time",
+            "text": "{{PLAYER1_NAME}} reached for the treasure chest—and {{PLAYER1_HIS_HER}} hand went right through it! The chest shimmered and disappeared.\n\n\"It was just an illusion,\" {{PLAYER2_NAME}} realized.\n\nBut they had wasted precious time! The sun was getting low.\n\n\"We need to hurry!\" {{PLAYER1_NAME}} grabbed {{PLAYER2_NAME}}'s hand and they ran up the last stretch of the path.\n\nThey made it to the peak just as the sun touched the horizon!",
+            "emoji": "🌅",
+            "choices": [
+                {
+                    "text": "Look for the Starlight Flower",
+                    "nextNodeId": "reach-peak"
+                }
+            ]
+        },
+        "reach-peak": {
+            "id": "reach-peak",
+            "summary": "They find the glowing Starlight Flower at sunset and pick it successfully",
+            "text": "At the very top of Crystal Peak, just as the sun began to set, they saw it: the most beautiful flower they had ever seen. Its petals glowed with starlight, even though the stars weren't out yet.\n\n{{PLAYER1_NAME}} and {{PLAYER2_NAME}} approached slowly, thinking kind thoughts about Oliver and Violet.\n\n{{PLAYER2_NAME}} gently picked the flower. It came away easily, and its glow grew even brighter in {{PLAYER2_HIS_HER}} hands.\n\n\"We did it!\" they cheered.",
+            "emoji": "🌟",
+            "choices": [
+                {
+                    "text": "Hurry back to Violet's cave",
+                    "nextNodeId": "return-flower"
+                }
+            ]
+        },
+        "return-flower": {
+            "id": "return-flower",
+            "summary": "GOOD ENDING: Oliver is healed and they become heroes",
+            "text": "{{BOTH_NAMES}} raced back down the mountain. The magical compass led them straight to Violet's cave without any wrong turns.\n\nViolet was waiting anxiously at the entrance. When she saw the glowing flower in their hands, tears of joy rolled down her scaly cheeks.\n\n\"You did it! You wonderful, brave children!\"\n\nThey hurried to Oliver. When the Starlight Flower touched him, it dissolved into sparkling light that surrounded the old owl. Color returned to his feathers, and his eyes grew bright again.\n\n\"I feel... wonderful!\" Oliver hooted happily.",
+            "emoji": "✨",
+            "choices": [],
+            "isEnding": true,
+            "endingType": "good",
+            "endingText": "{{BOTH_NAMES}} became heroes in Violet's cave. Oliver made a full recovery and joined their Wednesday tea parties. Violet wrote their adventure into a beautiful book that she kept in the most special place in her library.\n\n\"You didn't just save Oliver,\" she told them. \"You reminded me that there are still kind, brave hearts in the world.\"\n\nAnd from that day on, {{BOTH_NAMES}} always knew that real treasure wasn't gold or jewels—it was friendship, kindness, and helping others.\n\nTHE END"
+        },
+        "recipes": {
+            "id": "recipes",
+            "summary": "GOOD ENDING: They cook together using grandmother's dragon recipes",
+            "text": "Violet showed them a old, worn book filled with dragon recipes. \"Dragon toast, flame-roasted vegetables, and of course, the famous Firebreath Fudge!\"\n\n\"Could we make something together?\" {{PLAYER1_NAME}} asked hopefully.\n\n\"What a lovely idea!\" Violet beamed. \"Let's make hot cocoa—my grandmother's special recipe.\"\n\nTogether, they measured ingredients while Violet provided carefully controlled puffs of flame. The cocoa turned out perfect!",
+            "emoji": "👨‍🍳",
+            "choices": [],
+            "isEnding": true,
+            "endingType": "good",
+            "endingText": "{{BOTH_NAMES}} spent the afternoon cooking with Violet, learning dragon recipes and sharing stories. They left with full bellies, warm hearts, and a promise to return every Saturday for cooking lessons.\n\nTHE END"
+        },
+        "share-memory": {
+            "id": "share-memory",
+            "summary": "They share a family memory and Violet offers to make it a crystal",
+            "text": "{{PLAYER2_NAME}} shared a favorite memory about {{PLAYER2_HIS_HER}} family—a time when everyone laughed together until their sides hurt.\n\nViolet listened with shining eyes. \"Family memories are the most precious of all. Would you like to turn that memory into a crystal? It will never fade, even after hundreds of years.\"\n\n\"Yes, please!\" {{BOTH_NAMES}} said together.\n\nViolet showed them how to focus on the memory while she breathed gentle magic onto a clear crystal...",
+            "emoji": "💖",
+            "choices": [
+                {
+                    "text": "Create the memory crystal",
+                    "nextNodeId": "create-memory"
+                }
+            ]
+        },
+        "story-choices": {
+            "id": "story-choices",
+            "summary": "Violet presents options: read stories, help Oliver, or explore the library",
+            "text": "\"What choices do we have?\" {{PLAYER2_NAME}} asked.\n\nViolet smiled mysteriously. \"You could stay here and read stories with me. You could help me on a quest to save my friend Oliver. Or you could simply explore my library—there are secrets hidden in many of these books.\"\n\nShe looked at them kindly. \"But remember, every choice matters. The best stories are made by those who choose with their hearts.\"",
+            "emoji": "❤️",
+            "choices": [
+                {
+                    "text": "Help save Oliver the owl",
+                    "nextNodeId": "accept-quest"
+                },
+                {
+                    "text": "Stay and explore the library",
+                    "nextNodeId": "explore-library"
+                }
+            ]
+        },
+        "explore-library": {
+            "id": "explore-library",
+            "summary": "GOOD ENDING: They spend a cozy afternoon exploring magical books",
+            "text": "{{BOTH_NAMES}} spent hours exploring Violet's incredible library. They found books that sang when opened, books with moving pictures, and even a book that told jokes!\n\nViolet served them more hot cocoa and cookies while they read together. It was the coziest, happiest afternoon either of them could remember.\n\n\"Come back anytime,\" Violet said as the sun set. \"You're always welcome here.\"",
+            "emoji": "📚",
+            "choices": [],
+            "isEnding": true,
+            "endingType": "good",
+            "endingText": "{{BOTH_NAMES}} discovered that the best adventures aren't always about slaying dragons or finding treasure. Sometimes, the best adventures are about finding a quiet place, a good book, and a new friend.\n\nTHE END"
+        }
+    }
+}

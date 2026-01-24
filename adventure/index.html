@@ -1,0 +1,355 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Adventure Stories</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <div id="app">
+        <!-- Setup Screen -->
+        <div id="setup-screen" class="screen">
+            <div class="setup-container">
+                <h1>Welcome to Adventure Stories!</h1>
+                <p class="subtitle">Before we begin, tell us about the adventurers...</p>
+
+                <div class="character-setup">
+                    <div class="character-card">
+                        <h2>First Adventurer</h2>
+                        <input type="text" id="player1-name" placeholder="Name" maxlength="20">
+                        <label class="pronoun-label">Pronouns</label>
+                        <div class="pronoun-select">
+                            <button class="pronoun-btn" data-player="1" data-pronoun="he">he/him</button>
+                            <button class="pronoun-btn" data-player="1" data-pronoun="she">she/her</button>
+                            <button class="pronoun-btn" data-player="1" data-pronoun="they">they/them</button>
+                        </div>
+                    </div>
+
+                    <div class="character-card">
+                        <h2>Second Adventurer</h2>
+                        <input type="text" id="player2-name" placeholder="Name" maxlength="20">
+                        <label class="pronoun-label">Pronouns</label>
+                        <div class="pronoun-select">
+                            <button class="pronoun-btn" data-player="2" data-pronoun="he">he/him</button>
+                            <button class="pronoun-btn" data-player="2" data-pronoun="she">she/her</button>
+                            <button class="pronoun-btn" data-player="2" data-pronoun="they">they/them</button>
+                        </div>
+                    </div>
+                </div>
+
+                <button id="start-adventure" class="primary-btn" disabled>Start Adventures!</button>
+            </div>
+        </div>
+
+        <!-- Library Screen -->
+        <div id="library-screen" class="screen hidden">
+            <header>
+                <h1>Choose Your Adventure</h1>
+                <div class="header-buttons">
+                    <button id="achievements-btn" class="icon-btn" title="Achievements">🏆</button>
+                    <button id="endings-gallery-btn" class="icon-btn" title="Endings Gallery">📚</button>
+                    <button id="parent-mode-btn" class="icon-btn" title="Parent Mode">👨‍👩‍👧‍👦</button>
+                    <button id="settings-btn" class="icon-btn" title="Settings">⚙️</button>
+                </div>
+            </header>
+
+            <div id="story-library" class="story-grid">
+                <!-- Story cards will be inserted here -->
+            </div>
+
+            <div class="library-footer">
+                <button id="create-story-btn" class="secondary-btn">✨ Create New Adventure (AI)</button>
+            </div>
+        </div>
+
+        <!-- Reader Screen -->
+        <div id="reader-screen" class="screen hidden">
+            <header class="reader-header">
+                <button id="back-to-library" class="icon-btn">← Back</button>
+                <h2 id="story-title">Story Title</h2>
+                <button id="restart-story" class="icon-btn" title="Restart">🔄</button>
+            </header>
+
+            <main class="story-content">
+                <div id="story-image-container">
+                    <div id="story-image" class="story-image"></div>
+                </div>
+
+                <div id="story-text" class="story-text">
+                    <!-- Story text appears here -->
+                </div>
+
+                <div id="choices-container" class="choices">
+                    <!-- Choice buttons appear here -->
+                </div>
+
+                <div id="ending-container" class="ending hidden">
+                    <div id="ending-badge" class="ending-badge"></div>
+                    <button id="play-again" class="primary-btn">Play Again</button>
+                    <button id="choose-another" class="secondary-btn">Choose Another Story</button>
+                </div>
+            </main>
+        </div>
+
+        <!-- Settings Modal -->
+        <div id="settings-modal" class="modal hidden">
+            <div class="modal-content">
+                <h2>Settings</h2>
+
+                <div class="settings-section">
+                    <h3>Appearance</h3>
+                    <div class="setting-row theme-toggle-row">
+                        <label>Theme:</label>
+                        <div class="theme-toggle">
+                            <button class="theme-btn" data-theme="light" title="Light Mode">
+                                <span class="theme-icon">☀️</span>
+                                <span class="theme-label">Light</span>
+                            </button>
+                            <button class="theme-btn" data-theme="dark" title="Dark Mode">
+                                <span class="theme-icon">🌙</span>
+                                <span class="theme-label">Dark</span>
+                            </button>
+                            <button class="theme-btn" data-theme="night" title="Night Mode (Sleep-friendly)">
+                                <span class="theme-icon">🌅</span>
+                                <span class="theme-label">Night</span>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="settings-section">
+                    <h3>Reading Experience</h3>
+                    <div class="setting-row toggle-row">
+                        <label>Sound Effects:</label>
+                        <button id="toggle-sound" class="toggle-btn active" title="Toggle sound effects">
+                            <span class="toggle-icon">🔊</span>
+                            <span class="toggle-label">On</span>
+                        </button>
+                    </div>
+                    <div class="setting-row toggle-row">
+                        <label>Typewriter Effect:</label>
+                        <button id="toggle-typewriter" class="toggle-btn active" title="Toggle typewriter text reveal">
+                            <span class="toggle-icon">⌨️</span>
+                            <span class="toggle-label">On</span>
+                        </button>
+                    </div>
+                    <div class="setting-row">
+                        <label for="transition-style">Page Transitions:</label>
+                        <select id="transition-style">
+                            <option value="page-turn">Page Turn</option>
+                            <option value="card-flip">Card Flip</option>
+                            <option value="swipe">Swipe</option>
+                        </select>
+                    </div>
+                </div>
+
+                <div class="settings-section">
+                    <h3>Adventurers</h3>
+                    <div class="setting-row">
+                        <label for="edit-player1-name">First Adventurer:</label>
+                        <input type="text" id="edit-player1-name" maxlength="20">
+                    </div>
+                    <div class="setting-row">
+                        <label for="edit-player2-name">Second Adventurer:</label>
+                        <input type="text" id="edit-player2-name" maxlength="20">
+                    </div>
+                </div>
+
+                <div class="settings-section">
+                    <h3>AI Generation (Optional)</h3>
+                    <p class="setting-description">Add your own API key to create custom stories</p>
+                    <div class="setting-row">
+                        <label for="api-provider">Provider:</label>
+                        <select id="api-provider">
+                            <option value="anthropic">Anthropic (Claude)</option>
+                            <option value="openai">OpenAI (GPT-4)</option>
+                        </select>
+                    </div>
+                    <div class="setting-row">
+                        <label for="api-key">API Key:</label>
+                        <input type="password" id="api-key" placeholder="sk-...">
+                    </div>
+                </div>
+
+                <div class="modal-buttons">
+                    <button id="save-settings" class="primary-btn">Save</button>
+                    <button id="cancel-settings" class="secondary-btn">Cancel</button>
+                </div>
+            </div>
+        </div>
+
+        <!-- Parent Tree View Modal -->
+        <div id="tree-view-modal" class="modal hidden">
+            <div class="modal-content tree-view-content">
+                <div class="tree-view-header">
+                    <h2 id="tree-view-title">Story Overview</h2>
+                    <button id="close-tree-view" class="icon-btn" title="Close">✕</button>
+                </div>
+
+                <div class="tree-view-controls">
+                    <label for="tree-view-story-select">Select Story:</label>
+                    <select id="tree-view-story-select">
+                        <!-- Story options populated by JS -->
+                    </select>
+                </div>
+
+                <div class="tree-view-legend">
+                    <span class="legend-item"><span class="legend-icon good">🌟</span> Good Ending</span>
+                    <span class="legend-item"><span class="legend-icon neutral">⚖️</span> Neutral Ending</span>
+                    <span class="legend-item"><span class="legend-icon bad">💔</span> Bad Ending</span>
+                </div>
+
+                <div id="tree-view-container" class="tree-view-container">
+                    <!-- Tree will be rendered here -->
+                </div>
+
+                <div class="tree-view-info">
+                    <p id="tree-view-stats">Loading story structure...</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- AI Story Creator Modal -->
+        <div id="creator-modal" class="modal hidden">
+            <div class="modal-content creator-content">
+                <h2>Create a New Adventure</h2>
+
+                <div class="creator-section">
+                    <label for="story-theme">What kind of adventure?</label>
+                    <select id="story-theme">
+                        <option value="fantasy">Fantasy (dragons, magic, castles)</option>
+                        <option value="space">Space (rockets, aliens, planets)</option>
+                        <option value="pirates">Pirates (treasure, ships, islands)</option>
+                        <option value="dinosaurs">Dinosaurs (prehistoric, time travel)</option>
+                        <option value="underwater">Underwater (ocean, mermaids, submarines)</option>
+                        <option value="superhero">Superhero (powers, saving the day)</option>
+                    </select>
+                </div>
+
+                <div class="creator-section">
+                    <label for="story-premise">Any special details? (optional)</label>
+                    <textarea id="story-premise" placeholder="e.g., The hero finds a mysterious map..."></textarea>
+                </div>
+
+                <div id="generation-progress" class="hidden">
+                    <div class="progress-bar">
+                        <div id="progress-fill" class="progress-fill"></div>
+                    </div>
+                    <p id="progress-status">Generating your adventure...</p>
+                </div>
+
+                <div class="modal-buttons">
+                    <button id="generate-story" class="primary-btn">Generate Story</button>
+                    <button id="cancel-creator" class="secondary-btn">Cancel</button>
+                </div>
+            </div>
+        </div>
+
+        <!-- Achievements Modal -->
+        <div id="achievements-modal" class="modal hidden">
+            <div class="modal-content achievements-content">
+                <button id="close-achievements" class="modal-close-btn" title="Close">✕</button>
+                <h2>🏆 Achievements</h2>
+
+                <div class="achievements-stats">
+                    <span id="achievements-count">0</span> / <span id="achievements-total">8</span> Unlocked
+                </div>
+
+                <div id="achievements-grid" class="achievements-grid">
+                    <!-- Achievement badges inserted by JS -->
+                </div>
+
+                <div class="modal-buttons">
+                    <button id="close-achievements-btn" class="secondary-btn">Close</button>
+                </div>
+            </div>
+        </div>
+
+        <!-- Endings Gallery Modal -->
+        <div id="endings-gallery-modal" class="modal hidden">
+            <div class="modal-content endings-gallery-content">
+                <button id="close-endings-gallery" class="modal-close-btn" title="Close">✕</button>
+                <h2>📚 Endings Gallery</h2>
+
+                <div class="endings-counter">
+                    <h3>Endings Collected: <span id="endings-collected-count">0</span></h3>
+                    <div class="endings-progress">
+                        <div id="endings-progress-fill" class="endings-progress-fill" style="width: 0%"></div>
+                    </div>
+                </div>
+
+                <div id="endings-gallery" class="endings-gallery">
+                    <!-- Ending cards inserted by JS -->
+                </div>
+
+                <div class="modal-buttons">
+                    <button id="close-endings-btn" class="secondary-btn">Close</button>
+                </div>
+            </div>
+        </div>
+
+        <!-- Story Info Modal -->
+        <div id="story-info-modal" class="modal hidden">
+            <div class="modal-content story-info-content">
+                <button id="close-story-info" class="modal-close-btn" title="Close">✕</button>
+
+                <div class="story-info-header">
+                    <span id="story-info-emoji" class="story-info-emoji">📚</span>
+                    <h2 id="story-info-title">Story Title</h2>
+                </div>
+
+                <p id="story-info-description" class="story-info-description">
+                    Story description goes here...
+                </p>
+
+                <div class="story-info-stats">
+                    <div class="stat-item">
+                        <span class="stat-icon">📖</span>
+                        <span class="stat-label">Story Moments</span>
+                        <span id="story-info-moments" class="stat-value">0</span>
+                    </div>
+                    <div class="stat-item">
+                        <span class="stat-icon">🏁</span>
+                        <span class="stat-label">Endings</span>
+                        <span id="story-info-endings" class="stat-value">0</span>
+                    </div>
+                    <div class="stat-item">
+                        <span class="stat-icon">⏱️</span>
+                        <span class="stat-label">Duration</span>
+                        <span id="story-info-time" class="stat-value">~10 min</span>
+                    </div>
+                    <div class="stat-item">
+                        <span class="stat-icon">👶</span>
+                        <span class="stat-label">Ages</span>
+                        <span id="story-info-age" class="stat-value">8-10</span>
+                    </div>
+                </div>
+
+                <div class="story-info-section">
+                    <h3>Themes</h3>
+                    <div id="story-info-themes" class="theme-tags">
+                        <!-- Theme tags inserted here -->
+                    </div>
+                </div>
+
+                <div class="story-info-section hidden">
+                    <h3>Content Notes</h3>
+                    <p id="story-info-notes" class="content-notes"></p>
+                </div>
+
+                <div class="modal-buttons">
+                    <button id="play-from-info" class="primary-btn">Play This Story</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="js/storage.js"></script>
+    <script src="js/variables.js"></script>
+    <script src="js/stories.js"></script>
+    <script src="js/tree-view.js"></script>
+    <script src="js/reader.js"></script>
+    <script src="js/app.js"></script>
+</body>
+</html>

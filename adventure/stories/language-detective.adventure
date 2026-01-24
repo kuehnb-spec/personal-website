@@ -1,0 +1,323 @@
+{
+  "formatVersion": "1.0",
+  "metadata": {
+    "id": "language-detective",
+    "title": "The Language Detective",
+    "subtitle": "Cracking the Code of Communication",
+    "author": "Adventure Stories",
+    "createdAt": "2025-01-23T12:00:00Z",
+    "updatedAt": "2025-01-23T12:00:00Z",
+    "ageRange": "8-10",
+    "estimatedMinutes": 20,
+    "themes": ["communication", "diversity", "puzzles", "connection"],
+    "educationalTopics": ["World languages", "Writing systems", "Etymology", "Translation and communication"],
+    "coverDescription": "A magical library with floating books in different languages, ancient scrolls, hieroglyphics, and symbols from around the world swirling in colorful patterns"
+  },
+  "storyBible": {
+    "setting": "The Tower of Tongues, a magical place where all languages are preserved and where words have the power to unlock doors and solve mysteries",
+    "tone": "Mysterious and puzzle-filled, celebrating the beauty of human communication across cultures",
+    "mainCharacters": "Two young language detectives recruited to solve a mystery that threatens worldwide communication",
+    "educationalFocus": "Different writing systems, word origins, language families, and how languages connect people across cultures"
+  },
+  "startNode": "library-arrival",
+  "nodes": {
+    "library-arrival": {
+      "id": "library-arrival",
+      "text": "The invitation arrived in seven different languages, but the message was the same in each: \"Come to the Tower of Tongues. Languages are in danger.\"\n\nNow {{BOTH_NAMES}} stand before an impossible building - a tower that seems to twist and grow as you look at it. Books fly through the air like birds, and you can hear whispers in hundreds of languages.\n\nA woman with silver hair and kind eyes greets you at the entrance. \"I am the Librarian of Languages. Thank you for coming. Someone has stolen the Universal Translator - the artifact that helps all languages connect. Without it, people around the world are finding it harder to understand each other.\"\n\nShe looks worried. \"I need language detectives to find it. Will you help?\"\n\n*Fun Fact: There are approximately 7,000 languages spoken in the world today! That's a lot of ways to say 'hello'!*",
+      "choices": [
+        {
+          "text": "\"We'll help! Where do we start?\"",
+          "nextNodeId": "accept-mission"
+        },
+        {
+          "text": "\"What exactly is the Universal Translator?\"",
+          "nextNodeId": "learn-translator"
+        },
+        {
+          "text": "\"Who would steal it?\"",
+          "nextNodeId": "learn-suspect"
+        }
+      ]
+    },
+    "learn-translator": {
+      "id": "learn-translator",
+      "text": "\"The Universal Translator,\" the Librarian explains, \"was created long ago when humans first developed language. It's a golden compass that points to the meaning behind any words.\"\n\n\"Languages seem different on the surface, but they all share the same purpose - to help people communicate ideas, feelings, and stories. The Translator shows those connections.\"\n\nShe shows you a painting of the artifact - a golden compass with symbols from many writing systems around its edge.\n\n\"Without it, the connections between languages weaken. Already, people are having more misunderstandings. If we don't find it soon, languages may stop being able to translate at all!\"\n\n*Language Families: Many languages are related! Spanish, French, and Italian all descended from Latin. English shares roots with German and Dutch.*",
+      "choices": [
+        {
+          "text": "\"We'll find it! What clues do we have?\"",
+          "nextNodeId": "accept-mission"
+        },
+        {
+          "text": "\"Who would want to stop translation?\"",
+          "nextNodeId": "learn-suspect"
+        }
+      ]
+    },
+    "learn-suspect": {
+      "id": "learn-suspect",
+      "text": "The Librarian sighs. \"I fear it was Babel, the Spirit of Confusion. He believes that separate languages keep cultures 'pure' and that translation waters down meaning.\"\n\n\"He doesn't understand that sharing languages helps us learn from each other. When ideas can cross language barriers, everyone benefits!\"\n\nShe adds, \"Babel hides in the forgotten parts of the Tower, where dead languages are stored. To find him, you'll need to decode clues in multiple languages.\"\n\n{{PLAYER2_NAME}} asks, \"What are dead languages?\"\n\n\"Languages that no one speaks anymore as their daily language, like Latin or Ancient Egyptian. They still have things to teach us, though!\"\n\n*Dead Languages: Latin is considered 'dead' but lives on in Spanish, French, Italian, Portuguese, and Romanian - the 'Romance languages'!*",
+      "choices": [
+        {
+          "text": "\"We're ready to find Babel and the Translator!\"",
+          "nextNodeId": "accept-mission"
+        }
+      ]
+    },
+    "accept-mission": {
+      "id": "accept-mission",
+      "text": "\"Wonderful!\" The Librarian hands each of you a special badge. \"These mark you as Language Detectives. They'll help you communicate in any part of the Tower.\"\n\nShe leads you to a grand hall with three doors, each labeled in different scripts:\n\n**Door of Origins** - Ancient symbols glow around the frame (Egyptian, Sumerian, Chinese)\n**Door of Roots** - Tree-like patterns show words branching (Latin, Greek, Sanskrit) \n**Door of Sounds** - Musical notes and letters dance together (Phonetics)\n\n\"Babel left clues in each section. You must gather three tokens to unlock his hiding place. Each door holds a puzzle based on how languages work.\"\n\n\"Where would you like to start, detectives?\"\n\n*Writing Systems: Humans have invented many ways to write! Alphabets (like English), characters (like Chinese), and symbols (like Egyptian hieroglyphics).*",
+      "choices": [
+        {
+          "text": "Enter the Door of Origins (ancient writing)",
+          "nextNodeId": "origins-room"
+        },
+        {
+          "text": "Enter the Door of Roots (word origins)",
+          "nextNodeId": "roots-room"
+        },
+        {
+          "text": "Enter the Door of Sounds (pronunciation)",
+          "nextNodeId": "sounds-room"
+        }
+      ]
+    },
+    "origins-room": {
+      "id": "origins-room",
+      "text": "The Door of Origins opens into a vast chamber decorated like an ancient temple. Walls are covered with hieroglyphics, cuneiform tablets, and ancient Chinese characters.\n\nA holographic guide appears - a young scribe from ancient Egypt. \"Welcome! I am Imhotep. To earn the Token of Origins, you must understand how writing began.\"\n\nHe gestures to three displays:\n\n\"Writing started as pictures. See these hieroglyphics? 🦅 means 'eagle.' Over time, pictures became symbols for sounds, not just things.\"\n\nA puzzle appears on the wall: four hieroglyphic symbols, and you must figure out what word they spell.\n\n*First Writing: The oldest writing systems are about 5,000 years old! They developed in Mesopotamia (cuneiform), Egypt (hieroglyphics), and China (Chinese characters) around the same time.*",
+      "choices": [
+        {
+          "text": "Study the hieroglyphics carefully",
+          "nextNodeId": "hieroglyphic-puzzle"
+        },
+        {
+          "text": "Ask Imhotep how to read them",
+          "nextNodeId": "learn-hieroglyphics"
+        }
+      ]
+    },
+    "learn-hieroglyphics": {
+      "id": "learn-hieroglyphics",
+      "text": "Imhotep smiles. \"A wise question! Egyptian hieroglyphics can work in three ways:\"\n\n\"First, as pictures: 🌊 might mean 'water.' Second, as sounds: a picture might represent the sound of its first letter. Third, as determinatives - silent symbols that help you know the category.\"\n\n\"For example, a picture of legs at the end means the word involves movement!\"\n\nHe shows you a key: \"Here are some sound symbols:\n- The owl 🦉 = 'M' sound\n- The reed 🌿 = 'I' sound  \n- The arm 💪 = 'AH' sound\n- The water 〰️ = 'N' sound\"\n\n\"Now, look at the puzzle and sound out the symbols!\"\n\n*The Rosetta Stone: We learned to read hieroglyphics because of the Rosetta Stone - a rock with the same text in hieroglyphics, another Egyptian script, and Greek!*",
+      "choices": [
+        {
+          "text": "Try to solve the hieroglyphic puzzle",
+          "nextNodeId": "hieroglyphic-puzzle"
+        }
+      ]
+    },
+    "hieroglyphic-puzzle": {
+      "id": "hieroglyphic-puzzle",
+      "text": "The puzzle shows four symbols: an owl, two reeds, and a water symbol.\n\n{{PLAYER1_NAME}} works through it: \"Owl is 'M'... reed is 'I'... two reeds would be... 'II' or just longer 'I'...\"\n\n{{PLAYER2_NAME}} adds: \"And water is 'N'! So... M-I-N! Min?\"\n\nImhotep shakes his head gently. \"Close! The double reed makes the 'Y' sound when together. So it's M-Y-N. And we add the 'AH' from context...\"\n\n\"MYNA!\" you both say. \"Like the bird!\"\n\n\"Correct! A talking bird - fitting for a room about language origins.\"\n\nA golden token appears - the Token of Origins, shaped like a stylus used for ancient writing.\n\n*Bird Names: Many birds are named for the sounds they make or were named in languages that reached around the world!*",
+      "choices": [
+        {
+          "text": "Explore the ancient Chinese characters too",
+          "nextNodeId": "chinese-writing"
+        },
+        {
+          "text": "Take the token and try another door",
+          "nextNodeId": "return-to-hall"
+        }
+      ]
+    },
+    "chinese-writing": {
+      "id": "chinese-writing",
+      "text": "Imhotep leads you to a wall of beautiful Chinese characters. \"Chinese writing developed differently. Instead of an alphabet, each character represents a word or idea!\"\n\nHe shows you examples:\n- 木 (mù) = tree (looks like a tree!)\n- 林 (lín) = forest (two trees!)\n- 森 (sēn) = dense forest (three trees!)\n- 日 (rì) = sun (a picture of the sun)\n- 明 (míng) = bright (sun + moon together!)\n\n\"See how they combine simple pictures to make new meanings? It's like building with blocks!\"\n\n{{PLAYER2_NAME}} is amazed. \"So Chinese speakers memorize thousands of these?\"\n\n\"About 3,000 to 4,000 for daily use, and educated people know even more. But the logic helps - once you know the building blocks!\"\n\n*Chinese Characters: There are over 50,000 Chinese characters, but most texts use only about 3,000-4,000. Many characters combine simpler parts called 'radicals' that hint at meaning!*",
+      "choices": [
+        {
+          "text": "Take the token and continue",
+          "nextNodeId": "return-to-hall"
+        }
+      ]
+    },
+    "roots-room": {
+      "id": "roots-room",
+      "text": "The Door of Roots opens into a room that looks like a forest, but instead of trees, words grow from the ground! Branches split into related words, showing how they evolved.\n\nA scholar in a Roman toga appears. \"Salve! I am Marcus, keeper of word roots. Many English words come from Latin and Greek - my languages!\"\n\nHe shows you a 'word tree' where 'port' (meaning 'carry' in Latin) branches into:\n- Transport (carry across)\n- Import (carry in)\n- Export (carry out)\n- Portable (able to be carried)\n\n\"To earn the Token of Roots, you must trace three words back to their origins!\"\n\n*Etymology: The study of where words come from! About 60% of English words have Latin or Greek roots.*",
+      "choices": [
+        {
+          "text": "Start tracing word origins",
+          "nextNodeId": "word-puzzle-1"
+        },
+        {
+          "text": "Ask Marcus about more word roots",
+          "nextNodeId": "learn-roots"
+        }
+      ]
+    },
+    "learn-roots": {
+      "id": "learn-roots",
+      "text": "Marcus enthusiastically shares more roots:\n\n\"'Scrib' or 'script' means 'write' in Latin. So describe, prescribe, and scripture all involve writing!\"\n\n\"'Phone' is Greek for 'sound.' Telephone means 'far sound,' microphone means 'small sound' (making small sounds big), and symphony means 'sounds together!'\"\n\n\"'Bio' means 'life' in Greek. Biology is the study of life, biography is the writing of a life, and antibiotic fights against living things (germs)!\"\n\n{{PLAYER1_NAME}} says, \"So if I know the root, I can figure out new words?\"\n\n\"Exactly! Knowing roots is like having a key to thousands of words.\"\n\n*Word Power: Learning common Latin and Greek roots helps you understand new vocabulary even if you've never seen the word before!*",
+      "choices": [
+        {
+          "text": "Try the word origin puzzle",
+          "nextNodeId": "word-puzzle-1"
+        }
+      ]
+    },
+    "word-puzzle-1": {
+      "id": "word-puzzle-1",
+      "text": "Marcus presents the first challenge. \"What does 'automobile' mean, based on its roots?\"\n\nHe shows you: AUTO (Greek) = self, MOBILE (Latin) = moving\n\n{{PLAYER2_NAME}} puts it together. \"Self-moving! A car moves by itself, without horses pulling it!\"\n\n\"Correct! Now try 'telephone.'\"\n\nTELE (Greek) = far, PHONE (Greek) = sound\n\n\"Far sound!\" {{PLAYER1_NAME}} answers. \"It carries sound from far away!\"\n\n\"Excellent! One more: 'geography.'\"\n\nGEO (Greek) = earth, GRAPHY (Greek) = writing/drawing\n\n*Compound Words: Many scientific and technical words combine Greek and Latin roots to describe exactly what they mean!*",
+      "choices": [
+        {
+          "text": "\"Earth-writing! Like maps and descriptions of Earth!\"",
+          "nextNodeId": "roots-success"
+        }
+      ]
+    },
+    "roots-success": {
+      "id": "roots-success",
+      "text": "\"Perfect!\" Marcus applauds. \"Geography is indeed 'earth-writing' - describing and mapping our world.\"\n\nA golden token materializes - the Token of Roots, shaped like a tree with branches.\n\n\"Before you go,\" Marcus adds, \"remember this: languages borrow from each other constantly. English has words from Latin, Greek, French, German, Arabic, Hindi, and dozens of other languages.\"\n\n\"'Pajamas' comes from Hindi, 'safari' from Arabic, 'kindergarten' from German, 'pizza' from Italian. Languages are always mixing and sharing!\"\n\n{{PLAYER2_NAME}} grins. \"Languages are like friends who share snacks!\"\n\n\"What a wonderful way to put it!\" Marcus laughs.\n\n*Loanwords: English has borrowed words from over 350 languages! It's one of the most 'word-hungry' languages in the world.*",
+      "choices": [
+        {
+          "text": "Continue to another door",
+          "nextNodeId": "return-to-hall"
+        }
+      ]
+    },
+    "sounds-room": {
+      "id": "sounds-room",
+      "text": "The Door of Sounds opens into a room that seems to vibrate with energy. Sound waves visible as colored ribbons float through the air. Letters and symbols swirl and recombine.\n\nA cheerful guide appears - she has features suggesting many different ancestries. \"Hi! I'm Luna, specialist in phonetics - the study of speech sounds!\"\n\n\"Did you know your mouth can make over 600 different sounds? But most languages only use 20-40 of them.\"\n\nShe shows a diagram of a mouth. \"To earn the Token of Sounds, you must match languages to their unique sounds!\"\n\n\"For example, English has 'TH' sounds (like 'the' or 'think') that many other languages don't have. Speakers of those languages might say 'zee' instead of 'the!'\"\n\n*Phonetics: Every language uses a different set of sounds. Some languages have clicks, tones, or sounds English speakers find very hard to pronounce!*",
+      "choices": [
+        {
+          "text": "Learn about different language sounds",
+          "nextNodeId": "learn-sounds"
+        },
+        {
+          "text": "Try the sound-matching challenge",
+          "nextNodeId": "sound-puzzle"
+        }
+      ]
+    },
+    "learn-sounds": {
+      "id": "learn-sounds",
+      "text": "Luna plays recordings of different languages:\n\n\"Listen to Mandarin Chinese!\" A musical-sounding language plays. \"Hear how the pitch goes up and down? Chinese uses TONES - the same word with different pitches means different things. 'Ma' can mean mother, horse, or scold!\"\n\n\"Now Zulu, from South Africa!\" A language with clicking sounds plays. \"Those clicks are consonants! English doesn't have them, but they're normal in Zulu.\"\n\n\"And Arabic!\" A flowing language with sounds from the throat. \"Arabic has sounds made deep in the throat that English speakers find challenging.\"\n\n{{PLAYER1_NAME}} tries to make a click sound. It comes out like a 'tsk!'\n\nLuna laughs kindly. \"Good try! It takes practice. Your brain is used to your native language's sounds.\"\n\n*Tonal Languages: In Mandarin, Vietnamese, and many African languages, the musical pitch of a word changes its meaning!*",
+      "choices": [
+        {
+          "text": "Try the sound-matching challenge",
+          "nextNodeId": "sound-puzzle"
+        }
+      ]
+    },
+    "sound-puzzle": {
+      "id": "sound-puzzle",
+      "text": "Luna presents three sound clips and three languages. \"Match each sound to its language!\"\n\nClip 1: Words with rolling 'R' sounds and flowing vowels\nClip 2: Words with rising and falling tones\nClip 3: Words with rhythmic, crisp sounds and 'EE' endings\n\nThe options are: Spanish, Japanese, and Vietnamese.\n\n{{PLAYER2_NAME}} listens carefully. \"The rolling Rs sound like how they teach Spanish in school!\"\n\n{{PLAYER1_NAME}} adds, \"The tones going up and down must be Vietnamese - Luna said some languages use pitch!\"\n\n\"And the crisp sounds with 'ee' endings might be Japanese,\" {{PLAYER2_NAME}} reasons. \"Japanese words often end in vowels!\"\n\n*Language Recognition: Each language has a unique 'melody' and rhythm. With practice, you can recognize languages even if you don't speak them!*",
+      "choices": [
+        {
+          "text": "Submit: 1-Spanish, 2-Vietnamese, 3-Japanese",
+          "nextNodeId": "sounds-success"
+        }
+      ]
+    },
+    "sounds-success": {
+      "id": "sounds-success",
+      "text": "\"Correct!\" Luna cheers. The Token of Sounds appears - a golden shape like a sound wave.\n\n\"You have good ears for language! Here's a fun fact before you go: babies can hear ALL language sounds until about 6-8 months old. Then their brains specialize for their native language.\"\n\n\"That's why young children learn new languages more easily - their brains are still flexible!\"\n\n{{PLAYER1_NAME}} says, \"So the best time to learn languages is when you're young?\"\n\n\"It helps, but you can learn at any age! Your brain just works a bit differently. Adults can use logic and patterns, while kids absorb naturally.\"\n\n*Language Learning: While children learn pronunciation more easily, adults can use their understanding of grammar and patterns to learn languages effectively too!*",
+      "choices": [
+        {
+          "text": "Continue to another door (if not done)",
+          "nextNodeId": "return-to-hall"
+        },
+        {
+          "text": "Go find Babel (if all tokens collected)",
+          "nextNodeId": "babel-door"
+        }
+      ]
+    },
+    "return-to-hall": {
+      "id": "return-to-hall",
+      "text": "You return to the grand hall. The Librarian notes your progress. \"Excellent work, detectives! You've collected tokens from:\"\n\nShe checks your badges, which glow with the tokens you've earned:\n- Token of Origins (ancient writing systems) \n- Token of Roots (word etymology)\n- Token of Sounds (phonetics)\n\nLooking at which doors you haven't visited yet, she gestures encouragingly. \"Each token teaches you something important about language. When you have all three, the path to Babel's hiding place will open.\"\n\n*Language Knowledge: Understanding origins, roots, and sounds gives you tools to learn any language more easily!*",
+      "choices": [
+        {
+          "text": "Enter the Door of Origins (if not done)",
+          "nextNodeId": "origins-room"
+        },
+        {
+          "text": "Enter the Door of Roots (if not done)",
+          "nextNodeId": "roots-room"
+        },
+        {
+          "text": "Enter the Door of Sounds (if not done)",
+          "nextNodeId": "sounds-room"
+        },
+        {
+          "text": "Open the path to Babel (if all tokens)",
+          "nextNodeId": "babel-door"
+        }
+      ]
+    },
+    "babel-door": {
+      "id": "babel-door",
+      "text": "With all three tokens, a new door appears - ancient and covered in the word 'BABEL' written in dozens of languages.\n\nThe door swings open to reveal a dark chamber. Inside, a cloaked figure holds the golden Universal Translator, which looks dim and unhappy in his grasp.\n\n\"You found me,\" Babel says in a voice that somehow sounds like static and confusion. \"But you're too late. With this Translator locked away, languages will stay separate. Pure. Untouched.\"\n\n{{PLAYER2_NAME}} steps forward bravely. \"But that's not how languages work! You showed us - they've ALWAYS borrowed from each other!\"\n\n\"Languages connect people,\" {{PLAYER1_NAME}} adds. \"That's their whole point!\"\n\nBabel pauses. \"Prove it. Prove that languages should mix.\"\n\n*The Tower of Babel: In the old story, people building a tower to heaven were punished by having their languages confused. But maybe the real lesson is that communication takes effort!*",
+      "choices": [
+        {
+          "text": "Share what you learned about word origins",
+          "nextNodeId": "persuade-babel-roots"
+        },
+        {
+          "text": "Talk about how writing systems developed",
+          "nextNodeId": "persuade-babel-origins"
+        },
+        {
+          "text": "Explain how sounds show languages are related",
+          "nextNodeId": "persuade-babel-sounds"
+        }
+      ]
+    },
+    "persuade-babel-roots": {
+      "id": "persuade-babel-roots",
+      "text": "\"English borrowed 'pajamas' from Hindi and 'kindergarten' from German,\" {{PLAYER1_NAME}} explains. \"Without borrowing, we wouldn't have pizza, safari, or even 'sugar' - that comes from Arabic!\"\n\n{{PLAYER2_NAME}} continues, \"Words travel with ideas. When people share discoveries, the words for those discoveries travel too. That's not pollution - it's connection!\"\n\nBabel's form flickers. \"But... the original meanings get lost...\"\n\n\"No - they grow! 'Phone' meant 'sound' in Greek. Now we have telephone, microphone, smartphone. The root lives on and keeps making new words!\"\n\nThe Universal Translator in Babel's hands begins to glow brighter, responding to your words about connection.\n\n*Living Language: Languages are alive - they grow, change, borrow, and create. A 'pure' language that never changed would be a dead language!*",
+      "choices": [
+        {
+          "text": "Continue convincing Babel",
+          "nextNodeId": "babel-convinced"
+        }
+      ]
+    },
+    "persuade-babel-origins": {
+      "id": "persuade-babel-origins",
+      "text": "\"Look at how writing developed!\" {{PLAYER2_NAME}} says. \"The alphabet we use came from Phoenician, which was influenced by Egyptian hieroglyphics. Every writing system built on what came before!\"\n\n{{PLAYER1_NAME}} adds, \"Chinese characters combine simple pictures to make new meanings. That's not confusion - it's creativity! Languages work together like building blocks.\"\n\nBabel's shadowy form wavers. \"But original systems were purer...\"\n\n\"Were they? Egyptian hieroglyphics changed over 3,000 years. Chinese characters have been simplified and modified for millennia. Change IS the nature of language!\"\n\nThe Universal Translator pulses with golden light, recognizing truth.\n\n*Alphabet History: Our ABC alphabet traveled from Phoenician → Greek → Roman → Modern English, each culture adapting it!*",
+      "choices": [
+        {
+          "text": "Continue convincing Babel",
+          "nextNodeId": "babel-convinced"
+        }
+      ]
+    },
+    "persuade-babel-sounds": {
+      "id": "persuade-babel-sounds",
+      "text": "\"Languages sound different, but they all use the same basic mouth mechanics!\" {{PLAYER1_NAME}} explains. \"Every human can learn to make any sound with practice.\"\n\n{{PLAYER2_NAME}} adds, \"And you know what? Babies are born able to hear ALL language sounds. Then they specialize. That means we START connected and become different - but we can always reconnect through learning!\"\n\nBabel seems troubled. \"But accents... misunderstandings...\"\n\n\"Those happen,\" {{PLAYER1_NAME}} admits. \"But misunderstanding is the START of learning, not the end. When we don't understand, we ask questions. We try harder. We CONNECT.\"\n\nThe Universal Translator shines so brightly that Babel has to shield his eyes.\n\n*Universal Communication: Despite having 7,000 languages, humans have always found ways to communicate - through gestures, pictures, and the desire to understand each other.*",
+      "choices": [
+        {
+          "text": "Watch Babel's reaction",
+          "nextNodeId": "babel-convinced"
+        }
+      ]
+    },
+    "babel-convinced": {
+      "id": "babel-convinced",
+      "text": "Babel's shadowy form begins to change. The darkness melts away, revealing... an ordinary-looking person with a tired face.\n\n\"You're right,\" Babel says quietly. \"I was so afraid of languages losing their uniqueness that I forgot what they're FOR. Communication. Connection.\"\n\nHe holds out the Universal Translator. \"I've been lonely, surrounded by so many languages but refusing to let them touch each other. That's... not protection. It's isolation.\"\n\n{{PLAYER2_NAME}} takes the Translator gently. \"Languages CAN stay unique AND connect. It's not either/or.\"\n\nBabel nods slowly. \"Could I... help at the Tower instead of hiding from it? I know so many languages. I could help preserve the ones that are fading.\"\n\n*Endangered Languages: About 40% of the world's languages are in danger of disappearing. Preserving them preserves human knowledge and culture!*",
+      "choices": [
+        {
+          "text": "\"That's a wonderful idea!\"",
+          "nextNodeId": "return-translator"
+        }
+      ]
+    },
+    "return-translator": {
+      "id": "return-translator",
+      "text": "You return to the main hall with Babel - now looking much healthier - and the Universal Translator. The Librarian gasps with joy.\n\n\"You did it! And you've brought Babel back to us!\" She embraces the former spirit. \"We've missed you.\"\n\n\"I was lost in fear,\" Babel admits. \"These young detectives showed me that languages are meant to build bridges, not walls.\"\n\nThe Librarian places the Universal Translator in its proper pedestal. Light explodes outward, flowing through the Tower, out the windows, spreading across the world.\n\n\"Communication is being restored,\" the Librarian says happily. \"And you two have learned something important about language.\"\n\n*The Power of Words: Words can divide OR unite people. The choice is in how we use them!*",
+      "choices": [
+        {
+          "text": "Ask what happens now",
+          "nextNodeId": "good-ending"
+        }
+      ]
+    },
+    "good-ending": {
+      "id": "good-ending",
+      "text": "\"You're both officially Language Detectives now,\" the Librarian announces, pinning official badges to your shirts. \"These will let you understand any language - not by magic, but by reminding you that all languages share the same purpose.\"\n\nImhotep, Marcus, and Luna appear to congratulate you.\n\n\"You learned that writing started as pictures and evolved into symbols,\" Imhotep says.\n\n\"You discovered that words have roots that connect them across languages,\" Marcus adds.\n\n\"And you heard how different sounds can express the same ideas,\" Luna finishes.\n\nBabel speaks last: \"And you taught me that being different doesn't mean being divided. Thank you.\"\n\nAs you leave the Tower, you notice you can now hear the music in how people speak - the rhythms, the patterns, the beautiful variety of human expression.",
+      "text2": "THE END\n\nCongratulations, {{BOTH_NAMES}}! You've become Language Detectives and saved worldwide communication!\n\nYou learned:\n- **Writing systems** - From pictures to alphabets, humans have always found ways to record ideas\n- **Word roots** - Many words share ancient origins that connect languages\n- **Language sounds** - Every language has its own music, but all humans can learn to hear and speak them\n- **Connection** - Languages are meant to bring people together, not keep them apart\n\nNow when you hear a foreign language, you'll know: it's not strange - it's just another way of saying the same human things. How do YOU want to say 'hello' today?\n\n*Bonjour! Hola! Konnichiwa! Marhaba! Namaste! Hallo! Ciao! Shalom! Jambo! Nǐ hǎo!*",
+      "isEnding": true,
+      "endingType": "good",
+      "endingTitle": "Master Language Detectives"
+    }
+  }
+}

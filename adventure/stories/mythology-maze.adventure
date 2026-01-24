@@ -1,0 +1,563 @@
+{
+  "formatVersion": "1.0",
+  "metadata": {
+    "id": "mythology-maze",
+    "title": "The Labyrinth of Legends",
+    "subtitle": "A Greek Mythology Adventure",
+    "author": "Adventure Stories",
+    "createdAt": "2025-01-23T12:00:00Z",
+    "updatedAt": "2025-01-23T12:00:00Z",
+    "ageRange": "8-10",
+    "estimatedMinutes": 20,
+    "themes": ["mythology", "heroes", "wisdom", "courage"],
+    "educationalTopics": ["Greek mythology", "Ancient Greek culture", "Classical literature", "Moral lessons"],
+    "coverDescription": "A magical labyrinth entrance with Greek columns, mythological creatures in the mist, and constellations forming patterns in the sky above"
+  },
+  "storyBible": {
+    "setting": "Ancient Greece, where myths are real and the gods watch from Mount Olympus",
+    "tone": "Epic and wonder-filled, with Greek mythology coming to life through encounters with legendary figures and creatures",
+    "mainCharacters": "Two young heroes chosen by the Oracle to complete a quest through the mythological world",
+    "educationalFocus": "Greek myths, gods and goddesses, legendary creatures, and the lessons these ancient stories teach"
+  },
+  "startNode": "oracle-summons",
+  "nodes": {
+    "oracle-summons": {
+      "id": "oracle-summons",
+      "text": "The morning sun rises over the white marble temple of Delphi, perched high on Mount Parnassus. {{BOTH_NAMES}} stand before the Oracle, a mysterious priestess who speaks for the god Apollo.\n\n\"Young heroes,\" the Oracle says, her voice echoing strangely, \"I have foreseen your coming. The goddess Athena's sacred owl has been stolen by a mischievous creature and hidden somewhere in the mythological realm. You must retrieve it before the next full moon, or wisdom will fade from the world.\"\n\nShe hands you a golden thread. \"This is Ariadne's thread, a gift that once helped the hero Theseus escape a labyrinth. It will guide you home when your quest is complete.\"\n\n*Fun Fact: The Oracle at Delphi was one of the most important religious sites in ancient Greece. People traveled from far away to ask the Oracle questions about their future!*",
+      "choices": [
+        {
+          "text": "Ask the Oracle which god might help us",
+          "nextNodeId": "ask-about-gods"
+        },
+        {
+          "text": "Ask about the creature that stole the owl",
+          "nextNodeId": "ask-about-thief"
+        },
+        {
+          "text": "Set off immediately toward Mount Olympus",
+          "nextNodeId": "journey-begins"
+        }
+      ]
+    },
+    "ask-about-gods": {
+      "id": "ask-about-gods",
+      "text": "\"A wise question,\" the Oracle nods. \"The twelve Olympian gods each have their own personalities and powers. Zeus rules as king of the gods with his thunderbolts. Poseidon commands the seas. Hades governs the underworld.\"\n\nShe continues, \"Athena herself is the goddess of wisdom and strategic warfare. Her rival is Ares, the god of violent war. Hermes, the messenger god with his winged sandals, might be helpful - he knows all the secret paths.\"\n\n\"And remember,\" she adds with a mysterious smile, \"the gods appreciate offerings and respect. They frown upon hubris - excessive pride. Many heroes have fallen because they thought themselves equal to the gods.\"\n\n*Greek Mythology: The Greeks believed twelve major gods lived on Mount Olympus. They were called the Olympians!*",
+      "choices": [
+        {
+          "text": "Seek out Hermes for help with the journey",
+          "nextNodeId": "find-hermes"
+        },
+        {
+          "text": "Visit Athena's temple to learn more",
+          "nextNodeId": "athena-temple"
+        },
+        {
+          "text": "Set off on your quest now",
+          "nextNodeId": "journey-begins"
+        }
+      ]
+    },
+    "ask-about-thief": {
+      "id": "ask-about-thief",
+      "text": "The Oracle's eyes seem to cloud over with visions. \"The thief is crafty and ancient - a Sphinx, the creature with a lion's body, eagle's wings, and a human head. She loves riddles more than anything.\"\n\n\"Long ago, a Sphinx guarded the city of Thebes and asked travelers a riddle. Those who answered wrong were devoured! Only the hero Oedipus solved her puzzle.\"\n\nShe leans closer. \"This Sphinx has hidden the owl somewhere in the mythological realm, protected by riddles and challenges. You will need both cleverness and courage.\"\n\n*Mythology Fact: The most famous riddle of the Sphinx was: 'What walks on four legs in the morning, two legs at noon, and three legs in the evening?' The answer is a human - crawling as a baby, walking as an adult, and using a cane in old age!*",
+      "choices": [
+        {
+          "text": "Practice solving riddles before leaving",
+          "nextNodeId": "riddle-practice"
+        },
+        {
+          "text": "Search for the Sphinx directly",
+          "nextNodeId": "journey-begins"
+        }
+      ]
+    },
+    "riddle-practice": {
+      "id": "riddle-practice",
+      "text": "A temple priest offers to help you practice. \"Riddles require thinking differently,\" he explains. \"Listen carefully to every word - the answer is always hidden in the question itself.\"\n\nHe poses a riddle: \"I have cities, but no houses live there. I have mountains, but no trees grow. I have water, but no fish swim. What am I?\"\n\n{{PLAYER1_NAME}} thinks hard. \"Cities without houses... mountains without trees...\"\n\n\"A map!\" {{PLAYER2_NAME}} exclaims. \"It's a map!\"\n\nThe priest beams. \"Excellent! You think like true heroes. Remember - myths are full of clever puzzles. The answer often isn't what it first seems.\"\n\n*Critical Thinking: Ancient Greeks valued wisdom highly. They believed clever thinking was just as heroic as physical strength!*",
+      "choices": [
+        {
+          "text": "Ask for one more practice riddle",
+          "nextNodeId": "second-riddle"
+        },
+        {
+          "text": "Feel ready and begin the quest",
+          "nextNodeId": "journey-begins"
+        }
+      ]
+    },
+    "second-riddle": {
+      "id": "second-riddle",
+      "text": "\"Very well,\" the priest says. \"Here's a trickier one: I am not alive, yet I grow. I don't have lungs, but I need air. I don't have a mouth, but water kills me. What am I?\"\n\nYou both puzzle over this one. Not alive but grows... needs air... water kills it...\n\n\"Fire!\" you both say together.\n\n\"You're ready,\" the priest nods approvingly. \"The Sphinx will find you worthy opponents. One last piece of advice: in Greek myths, things are often not what they appear. A monster might become a friend, and a friend might become a challenge.\"\n\n*Learning Point: Fire was one of the most important discoveries for early humans. The Greek myth of Prometheus tells how he stole fire from the gods to give to humanity!*",
+      "choices": [
+        {
+          "text": "Thank the priest and begin your journey",
+          "nextNodeId": "journey-begins"
+        }
+      ]
+    },
+    "find-hermes": {
+      "id": "find-hermes",
+      "text": "You decide to seek Hermes, the messenger god. Following the Oracle's directions, you climb a winding path up Mount Olympus until you reach a crossroads marked with a stone pillar.\n\nSuddenly, a young man appears in a flash of light! He has winged sandals on his feet and a winged helmet on his head. In his hand, he carries a staff with two snakes wrapped around it.\n\n\"Looking for me?\" Hermes grins mischievously. \"I am Hermes, god of travelers, thieves, and messengers. I heard about your quest - sounds entertaining!\"\n\n*Greek God Facts: Hermes' staff is called a caduceus. His winged sandals are called talaria, and they let him fly faster than the wind!*\n\n\"I'll tell you a secret,\" he whispers. \"The Sphinx has hidden the owl in the Labyrinth of Crete. But to enter, you'll need the blessing of one of the gods.\"",
+      "choices": [
+        {
+          "text": "Ask Hermes for his blessing",
+          "nextNodeId": "hermes-blessing"
+        },
+        {
+          "text": "Ask how to get to Crete",
+          "nextNodeId": "journey-to-crete"
+        }
+      ]
+    },
+    "hermes-blessing": {
+      "id": "hermes-blessing",
+      "text": "\"My blessing?\" Hermes laughs, his eyes twinkling. \"I like you two! You've got spirit. Very well - I'll give you a gift.\"\n\nHe touches your foreheads, and suddenly you feel lighter on your feet. \"I've given you the traveler's blessing. You'll never get lost on roads, and you'll always find shelter when you need it.\"\n\nHe also hands you a small vial. \"This is nectar, the drink of the gods. One sip will heal any wound. Use it wisely - there's only enough for one use.\"\n\n\"Now, to reach the Labyrinth, you must travel to the island of Crete. You can sail there or... I know a shortcut through the Underworld. It's faster but more dangerous.\"\n\n*Mythology: Nectar and ambrosia were the food and drink of the Greek gods. Mortals who consumed them were said to become immortal!*",
+      "choices": [
+        {
+          "text": "Take the safe route by ship to Crete",
+          "nextNodeId": "sail-to-crete"
+        },
+        {
+          "text": "Risk the shortcut through the Underworld",
+          "nextNodeId": "enter-underworld"
+        }
+      ]
+    },
+    "athena-temple": {
+      "id": "athena-temple",
+      "text": "You travel to Athens, the great city named after the goddess Athena. The Parthenon, her magnificent temple, sits atop the Acropolis - a hill in the center of the city.\n\nInside the temple stands a towering statue of Athena, forty feet tall, made of gold and ivory. Her grey eyes seem to watch you.\n\n\"Goddess Athena,\" {{PLAYER1_NAME}} says respectfully, \"we seek your sacred owl. A Sphinx has stolen it. Please help us.\"\n\nThe statue's eyes glow, and a voice fills your minds: \"Brave young ones. My owl, symbol of wisdom, must be returned. I shall give you gifts for your journey.\"\n\nA shield and a scroll appear before you. \"The shield shows the truth in reflections. The scroll contains one answer to any question - use it wisely.\"\n\n*Architecture: The Parthenon was built around 447-432 BCE. It's considered one of the greatest examples of ancient Greek architecture!*",
+      "choices": [
+        {
+          "text": "Ask Athena where to find the Sphinx",
+          "nextNodeId": "athena-advice"
+        },
+        {
+          "text": "Thank her and begin searching",
+          "nextNodeId": "journey-begins"
+        }
+      ]
+    },
+    "athena-advice": {
+      "id": "athena-advice",
+      "text": "\"The Sphinx dwells in the ancient Labyrinth of Crete,\" Athena's voice echoes. \"It was built by Daedalus, the greatest inventor of the age, to contain the Minotaur - a monster with a bull's head and human body.\"\n\n\"The hero Theseus defeated the Minotaur long ago, but the Labyrinth remains, full of twists, traps, and new dangers. The Sphinx now uses it as her home.\"\n\n\"Remember,\" the goddess adds, \"wisdom is not just knowledge - it is knowing when to fight and when to think. Not all monsters need to be battled. Some puzzles are solved with words, not swords.\"\n\n*The Minotaur: In mythology, King Minos of Crete kept the Minotaur in the Labyrinth and fed it human sacrifices until Theseus killed it!*",
+      "choices": [
+        {
+          "text": "Travel to the island of Crete",
+          "nextNodeId": "journey-to-crete"
+        },
+        {
+          "text": "Ask about Daedalus the inventor",
+          "nextNodeId": "learn-about-daedalus"
+        }
+      ]
+    },
+    "learn-about-daedalus": {
+      "id": "learn-about-daedalus",
+      "text": "\"Daedalus,\" Athena says with admiration, \"was my favorite mortal inventor. He created wonders that seemed like magic - living statues, mechanical servants, and the famous Labyrinth.\"\n\n\"When King Minos trapped Daedalus on Crete, he built wings from feathers and wax for himself and his son Icarus. But Icarus flew too close to the sun, the wax melted, and he fell into the sea.\"\n\n\"The lesson of Icarus is important: follow wise advice and don't let excitement make you reckless. This applies to your quest too. The Labyrinth is full of temptations and distractions.\"\n\n*The Story of Icarus: This myth teaches about the danger of ignoring warnings and being too ambitious. 'Don't fly too close to the sun' is still a saying we use today!*",
+      "choices": [
+        {
+          "text": "Keep this lesson in mind and journey to Crete",
+          "nextNodeId": "journey-to-crete"
+        }
+      ]
+    },
+    "journey-begins": {
+      "id": "journey-begins",
+      "text": "You set off from Delphi, climbing down the mountain paths. The ancient world spreads before you - olive groves, white-columned temples, and distant blue seas.\n\n\"Look!\" {{PLAYER2_NAME}} points at the sky. A magnificent chariot pulled by flaming horses streaks across the heavens - it's Helios, the sun god, driving the sun across the sky as he does every day.\n\nYou reach a fork in the road. One path leads toward the harbor and ships to Crete. The other winds toward a dark forest where, according to legend, many magical creatures dwell.\n\n*Daily Mythology: The Greeks believed Helios drove his sun chariot from east to west every day, and traveled underground at night to return to the east!*",
+      "choices": [
+        {
+          "text": "Head to the harbor to sail to Crete",
+          "nextNodeId": "journey-to-crete"
+        },
+        {
+          "text": "Explore the mysterious forest",
+          "nextNodeId": "enchanted-forest"
+        }
+      ]
+    },
+    "journey-to-crete": {
+      "id": "journey-to-crete",
+      "text": "You reach the harbor and find a ship preparing to sail to Crete. The captain, a weathered sailor, agrees to take you.\n\n\"Mind Poseidon's temper,\" he warns, looking at the sea nervously. \"The god of the ocean is unpredictable. We must make an offering before we sail.\"\n\nHe pours wine into the sea and prays. Soon, the sails catch wind, and you're off across the sparkling Aegean Sea.\n\nHalfway across, the ship lurches! Rising from the waves is a beautiful woman with a fish's tail - a nereid, one of the sea nymphs.\n\n\"Travelers!\" she calls. \"I am Thetis, mother of the hero Achilles. I sense a noble quest. How may I help?\"\n\n*Greek Mythology: Nereids were fifty sea nymph sisters who helped sailors. Thetis was the most famous - she dipped her son Achilles in the River Styx to make him invincible (except his heel, where she held him)!*",
+      "choices": [
+        {
+          "text": "Ask Thetis about the Labyrinth's dangers",
+          "nextNodeId": "thetis-warning"
+        },
+        {
+          "text": "Ask about her famous son Achilles",
+          "nextNodeId": "achilles-story"
+        },
+        {
+          "text": "Thank her and continue sailing",
+          "nextNodeId": "arrive-crete"
+        }
+      ]
+    },
+    "thetis-warning": {
+      "id": "thetis-warning",
+      "text": "Thetis's expression grows serious. \"The Labyrinth holds three trials before you can face the Sphinx. First, you'll meet the Sirens - creatures whose beautiful singing lures travelers to their doom. Cover your ears or find another way past.\"\n\n\"Second, you'll face a choice between two paths - one guarded by Scylla, a six-headed monster, and one by Charybdis, a deadly whirlpool. Neither is safe, but one is survivable.\"\n\n\"Finally, you must answer the Sphinx's riddle. Fail, and you'll be trapped in the Labyrinth forever.\"\n\nShe gives you each a seashell. \"Blow these if you're ever in danger near water. My sisters and I will come.\"\n\n*Scylla and Charybdis: This phrase 'between Scylla and Charybdis' still means choosing between two bad options. We also say 'between a rock and a hard place'!*",
+      "choices": [
+        {
+          "text": "Thank Thetis and sail onward",
+          "nextNodeId": "arrive-crete"
+        }
+      ]
+    },
+    "achilles-story": {
+      "id": "achilles-story",
+      "text": "Thetis smiles sadly. \"My son Achilles was the greatest warrior who ever lived. When he was a baby, I dipped him in the River Styx to make him invincible. But I held him by his heel, which the water never touched.\"\n\n\"He fought in the Trojan War and defeated countless enemies. But an arrow struck his heel - his only weakness - and he died.\"\n\n\"This is why we call a weakness an 'Achilles' heel,'\" she explains. \"Everyone has one. Even monsters. Even the Sphinx. Find her weakness, and you will succeed.\"\n\n{{PLAYER1_NAME}} asks, \"What was the Trojan War?\"\n\n\"A great war between Greece and Troy, fought over the beautiful Helen. Perhaps another time I'll tell you that tale!\"\n\n*Vocabulary: 'Achilles' heel' means a person's weakness. It comes directly from this Greek myth!*",
+      "choices": [
+        {
+          "text": "Ask about the Labyrinth",
+          "nextNodeId": "thetis-warning"
+        },
+        {
+          "text": "Thank her and continue to Crete",
+          "nextNodeId": "arrive-crete"
+        }
+      ]
+    },
+    "enchanted-forest": {
+      "id": "enchanted-forest",
+      "text": "The forest is dense and magical. Strange flowers glow with soft light, and you hear distant music.\n\n\"These are the woods of the nymphs,\" {{PLAYER2_NAME}} whispers. \"Nature spirits who protect the wild places.\"\n\nYou come upon a clearing where a half-man, half-horse creature plays a reed pipe. It's a centaur!\n\n\"Young travelers!\" he greets you, stopping his music. \"I am Chiron, teacher of heroes. I trained Hercules, Achilles, and many others. What brings you to my forest?\"\n\n*Centaurs: While most centaurs in Greek myths were wild and dangerous, Chiron was wise and kind. He taught medicine, music, and combat to many famous heroes!*",
+      "choices": [
+        {
+          "text": "Tell Chiron about your quest",
+          "nextNodeId": "chiron-teaches"
+        },
+        {
+          "text": "Ask about the heroes he trained",
+          "nextNodeId": "hero-stories"
+        }
+      ]
+    },
+    "chiron-teaches": {
+      "id": "chiron-teaches",
+      "text": "Chiron listens carefully to your tale. \"The Sphinx's riddles test wisdom, but her true challenge tests character. Many heroes fail because they rely only on strength.\"\n\nHe leads you to a target range. \"Let me teach you what I taught Hercules - that every problem has multiple solutions.\"\n\nHe demonstrates how to solve problems: sometimes with force, sometimes with cleverness, sometimes with kindness. \"The greatest heroes know when to use each approach.\"\n\nBefore you leave, he gives you a lyre - a stringed instrument. \"Music has power in the mythological world. Play this, and even monsters may pause to listen.\"\n\n*Hercules: The strongest hero in Greek mythology! He completed twelve 'impossible' labors, including defeating the Nemean Lion and capturing the three-headed dog Cerberus.*",
+      "choices": [
+        {
+          "text": "Continue to the harbor for Crete",
+          "nextNodeId": "journey-to-crete"
+        },
+        {
+          "text": "Ask about Hercules' labors",
+          "nextNodeId": "hercules-labors"
+        }
+      ]
+    },
+    "hero-stories": {
+      "id": "hero-stories",
+      "text": "Chiron's eyes sparkle with memories. \"Hercules was my strongest student - he could wrestle lions! But he had to learn that strength alone doesn't solve everything.\"\n\n\"Achilles was the fastest and most skilled warrior, but his pride sometimes clouded his judgment.\"\n\n\"And young Jason, who led the Argonauts to find the Golden Fleece - he succeeded because he worked with his team, not despite them.\"\n\nHe looks at both of you. \"You are two heroes working together. That is your greatest advantage. The Sphinx will try to divide you with her tricks. Stay united.\"\n\n*The Argonauts: Jason's crew of heroes who sailed on the ship Argo. They included Hercules, Orpheus (a magical musician), and Atalanta (a fierce huntress).*",
+      "choices": [
+        {
+          "text": "Promise to work together and head to Crete",
+          "nextNodeId": "journey-to-crete"
+        }
+      ]
+    },
+    "hercules-labors": {
+      "id": "hercules-labors",
+      "text": "\"The Twelve Labors!\" Chiron chuckles. \"King Eurystheus gave Hercules twelve 'impossible' tasks as punishment. But Hercules completed them all!\"\n\n\"He defeated the Nemean Lion, whose fur couldn't be pierced by weapons. He captured the Golden Hind of Artemis without harming it. He cleaned the Augean Stables - which hadn't been cleaned in thirty years - in a single day by diverting two rivers!\"\n\n\"My favorite was when he had to get the golden apples of the Hesperides. Instead of fighting, he tricked Atlas into getting them for him. Brains over brawn!\"\n\n\"Remember: when facing impossible challenges, there's always a clever solution.\"\n\n*Problem Solving: The Greeks valued 'metis' - cunning intelligence. Sometimes the smartest solution is the one no one expects!*",
+      "choices": [
+        {
+          "text": "Thank Chiron and head to Crete",
+          "nextNodeId": "journey-to-crete"
+        }
+      ]
+    },
+    "sail-to-crete": {
+      "id": "sail-to-crete",
+      "text": "With Hermes' blessing, your sea voyage is smooth. The winds favor you, and dolphins race alongside the ship - a sign of good luck from Poseidon.\n\nAs Crete appears on the horizon, you see its famous landmark: Mount Ida, where legend says baby Zeus was hidden from his father Kronos in a cave.\n\n\"There!\" the captain points to a rocky coastline. \"The entrance to the Labyrinth is in those cliffs. May the gods protect you!\"\n\nYou thank him and swim to shore. Before you stands an ancient doorway carved into the rock, decorated with maze patterns and images of the Minotaur.\n\n*Baby Zeus: The Titan Kronos ate his children because of a prophecy that one would overthrow him. Zeus' mother hid him in Crete, where he grew up to defeat Kronos and free his siblings!*",
+      "choices": [
+        {
+          "text": "Enter the Labyrinth",
+          "nextNodeId": "labyrinth-entrance"
+        }
+      ]
+    },
+    "enter-underworld": {
+      "id": "enter-underworld",
+      "text": "Hermes leads you to a dark cave. \"This entrance leads to the Underworld, the realm of Hades. Stay close and don't stray from the path.\"\n\nYou descend into darkness until you reach a vast underground river - the Styx. A hooded figure waits in a boat: Charon, the ferryman of the dead.\n\n\"Living mortals?\" Charon croaks. \"You must pay the toll - two gold coins each.\"\n\nHermes hands him the coins. \"These children are on a quest approved by the gods.\"\n\nAs you cross, you see ghostly shapes in the mist - the spirits of the dead. It's eerie but not frightening. They seem peaceful.\n\n*The River Styx: Ancient Greeks buried their dead with coins under their tongues to pay Charon. Without payment, souls had to wander for a hundred years!*",
+      "choices": [
+        {
+          "text": "Ask Charon about the Underworld",
+          "nextNodeId": "underworld-tour"
+        },
+        {
+          "text": "Hurry through quickly",
+          "nextNodeId": "underworld-exit"
+        }
+      ]
+    },
+    "underworld-tour": {
+      "id": "underworld-tour",
+      "text": "\"The Underworld has many regions,\" Charon explains in his raspy voice. \"Elysium is paradise for heroes and the virtuous. Tartarus is a pit of punishment for the wicked.\"\n\n\"Most souls go to the Asphodel Meadows - a gray, neutral place for ordinary people who did neither great good nor great evil.\"\n\nHe points to a massive three-headed dog guarding a gate. \"That's Cerberus. He lets souls in but none out. Well, except for Hercules, who borrowed him once. And Orpheus, who charmed him with music.\"\n\n{{PLAYER2_NAME}} remembers the lyre Chiron gave you. Music might be useful here...\n\n*Cerberus: The three-headed dog guards the entrance to the Underworld. His name might mean 'spotted' - so the Greeks basically named their terrifying hellhound 'Spot'!*",
+      "choices": [
+        {
+          "text": "Exit to Crete quickly",
+          "nextNodeId": "underworld-exit"
+        }
+      ]
+    },
+    "underworld-exit": {
+      "id": "underworld-exit",
+      "text": "Hermes guides you through a secret passage that spirals upward. \"This path connects to the Labyrinth of Crete. Few know it exists.\"\n\nYou climb for what feels like hours until you see light ahead. You emerge inside a massive stone corridor - you're in the Labyrinth!\n\n\"This is where I leave you,\" Hermes says. \"Remember: the Labyrinth is designed to confuse. Trust your Ariadne's thread. And don't forget - I gave you the traveler's blessing. You'll find your way.\"\n\nWith a wink and a flash, he disappears.\n\nThe corridor stretches in two directions. Strange echoes bounce off the walls.\n\n*The Labyrinth: Daedalus designed it to be so confusing that no one who entered could find their way out. Even he barely escaped from his own creation!*",
+      "choices": [
+        {
+          "text": "Go left toward a faint singing sound",
+          "nextNodeId": "siren-chamber"
+        },
+        {
+          "text": "Go right toward scratch marks on the walls",
+          "nextNodeId": "beast-corridor"
+        }
+      ]
+    },
+    "arrive-crete": {
+      "id": "arrive-crete",
+      "text": "Your ship lands on the rocky shores of Crete. The island is beautiful - olive trees, white buildings, and the massive ruins of the ancient Palace of Knossos.\n\n\"The Labyrinth entrance is below the palace,\" the captain tells you. \"King Minos built it long ago. Be careful - the maze changes, they say. Walls shift when you're not looking.\"\n\nYou climb up to the palace ruins. Sure enough, beneath a crumbling archway, you find stairs leading down into darkness. Cool air rises from below, carrying the smell of ancient stone.\n\n{{PLAYER1_NAME}} ties the Ariadne's thread to a pillar. \"This will lead us back out.\"\n\n*The Palace of Knossos: This real place in Crete was excavated in 1900! Some historians think the palace's complicated layout inspired the Labyrinth myth.*",
+      "choices": [
+        {
+          "text": "Descend into the Labyrinth",
+          "nextNodeId": "labyrinth-entrance"
+        }
+      ]
+    },
+    "labyrinth-entrance": {
+      "id": "labyrinth-entrance",
+      "text": "The Labyrinth is vast and ancient. Torches on the walls light themselves as you approach and dim after you pass. The corridors twist and turn in impossible ways.\n\nOn the walls, you see paintings depicting Greek myths - Perseus defeating Medusa, Orpheus descending to save Eurydice, Theseus battling the Minotaur.\n\n\"These stories are clues,\" {{PLAYER2_NAME}} realizes. \"They're showing us how other heroes succeeded!\"\n\nAhead, the corridor splits three ways. From one comes beautiful singing. From another, you hear something large breathing. The third is completely silent.\n\n*Hero Patterns: Greek myths often follow patterns - heroes receive magical items, face trials, and must use cleverness as much as strength!*",
+      "choices": [
+        {
+          "text": "Follow the beautiful singing",
+          "nextNodeId": "siren-chamber"
+        },
+        {
+          "text": "Investigate the breathing sound",
+          "nextNodeId": "beast-corridor"
+        },
+        {
+          "text": "Take the silent path",
+          "nextNodeId": "trap-corridor"
+        }
+      ]
+    },
+    "siren-chamber": {
+      "id": "siren-chamber",
+      "text": "You follow the singing and enter a chamber decorated with seashells and pearls. Three beautiful women sit on rocks, singing a melody so lovely that {{PLAYER1_NAME}} starts walking toward them in a daze.\n\n\"Sirens!\" {{PLAYER2_NAME}} remembers. \"Their song enchants people! We need to block our ears!\"\n\nBut the Sirens' song shifts, singing directly to {{PLAYER2_NAME}} now: \"Stay and listen... rest here forever...\"\n\nYou remember what you learned - Odysseus tied himself to his ship's mast to hear the Sirens without going to them. There must be another way past!\n\n*The Sirens: In Homer's Odyssey, the hero Odysseus had his sailors plug their ears with beeswax while he was tied to the mast, so he could hear the Sirens' song without being lured to his death.*",
+      "choices": [
+        {
+          "text": "Cover your ears and run past",
+          "nextNodeId": "run-past-sirens"
+        },
+        {
+          "text": "Play Chiron's lyre to counter their song",
+          "nextNodeId": "lyre-counter"
+        }
+      ]
+    },
+    "run-past-sirens": {
+      "id": "run-past-sirens",
+      "text": "You both press your hands over your ears and run! The Sirens' singing becomes frantic, angry that their spell isn't working.\n\nYou make it to the other side of the chamber, but the Sirens call out: \"Wait! We weren't going to hurt you. We're trapped here too, by the Sphinx's magic. If you defeat her, we'll be free.\"\n\n\"Why should we believe you?\" {{PLAYER1_NAME}} asks cautiously.\n\n\"Because we'll give you a gift. The Sphinx has a weakness - she cannot resist a riddle she's never heard. If you create a new riddle, she must try to solve it before asking hers.\"\n\nThis is valuable information!\n\n*Mythological Twist: Not all creatures in Greek myths were purely evil. Many were cursed or trapped, just trying to survive.*",
+      "choices": [
+        {
+          "text": "Thank the Sirens and continue",
+          "nextNodeId": "after-sirens"
+        }
+      ]
+    },
+    "lyre-counter": {
+      "id": "lyre-counter",
+      "text": "{{PLAYER2_NAME}} pulls out Chiron's lyre and begins to play! The magical instrument creates music so pure that it interrupts the Sirens' spell.\n\nThe Sirens stop singing, amazed. \"That lyre... it carries the blessing of Chiron himself! You must be true heroes.\"\n\nTheir demeanor changes completely. \"We apologize for trying to enchant you. The Sphinx trapped us here with her magic. We sing to lure travelers because we're so lonely.\"\n\nThey give you a pearl. \"Take this. When the Sphinx asks her riddle, hold this pearl - it will help you think clearly. And remember: the Sphinx loves riddles so much that if you ask her one she can't solve, she must answer yours first.\"\n\n*Orpheus: The greatest musician in Greek mythology could charm anyone with his lyre - even the gods of the Underworld!*",
+      "choices": [
+        {
+          "text": "Thank the Sirens and continue",
+          "nextNodeId": "after-sirens"
+        }
+      ]
+    },
+    "beast-corridor": {
+      "id": "beast-corridor",
+      "text": "You follow the breathing sounds and find a large chamber. Inside is a massive creature - not the Minotaur, but something else. It has the head of a lion, body of a goat, and tail of a serpent.\n\n\"A Chimera!\" {{PLAYER2_NAME}} gasps.\n\nThe Chimera opens its eyes. Surprisingly, it doesn't attack. \"More visitors,\" it rumbles. \"Are you here to fight or to talk?\"\n\nThe creature seems old and tired rather than aggressive.\n\n*The Chimera: This fire-breathing monster was defeated by the hero Bellerophon, who rode the winged horse Pegasus. 'Chimera' now means any creature made of different animal parts!*",
+      "choices": [
+        {
+          "text": "\"We just want to talk. We mean no harm.\"",
+          "nextNodeId": "friendly-chimera"
+        },
+        {
+          "text": "Prepare to defend yourselves",
+          "nextNodeId": "chimera-misunderstanding"
+        }
+      ]
+    },
+    "friendly-chimera": {
+      "id": "friendly-chimera",
+      "text": "The Chimera relaxes. \"Finally, children with sense. Most heroes attack first and ask questions never.\"\n\nIt explains that it guards a shortcut through the Labyrinth. \"The Sphinx moved in and made this place her home. I don't like her - too many riddles - but I stay out of her way.\"\n\n\"If you want the shortcut, you must answer one question. Not a riddle, just a question: What have you learned about Greek myths on your journey?\"\n\n{{PLAYER1_NAME}} thinks about all the stories you've heard - about wisdom, hubris, the gods, and heroes who used cleverness as much as strength.\n\n*Character Over Combat: Many Greek myths teach that understanding and respect can work better than fighting!*",
+      "choices": [
+        {
+          "text": "\"Greek myths teach that wisdom and humility are as important as strength.\"",
+          "nextNodeId": "chimera-pleased"
+        },
+        {
+          "text": "\"We learned that heroes come in many forms and work together.\"",
+          "nextNodeId": "chimera-pleased"
+        }
+      ]
+    },
+    "chimera-pleased": {
+      "id": "chimera-pleased",
+      "text": "The Chimera nods its lion head approvingly. \"Good answers. You've been paying attention to the stories, not just rushing through them.\"\n\nIt moves aside, revealing a passage. \"This leads to the Sphinx's chamber. One more warning: the Sphinx is proud. Don't just answer her riddle - outsmart her. That's the only way to truly defeat her.\"\n\nThe goat head adds, \"She's also afraid of being proven less clever than mortals. Use that.\"\n\nThe serpent tail hisses, \"And get my snacks back! She took all my mice!\"\n\nYou thank all three heads and proceed through the shortcut.\n\n*Three-Part Creatures: Greeks loved combining animals! Besides the Chimera, there was the hippocamp (horse+fish), griffin (eagle+lion), and many more.*",
+      "choices": [
+        {
+          "text": "Proceed to the Sphinx's chamber",
+          "nextNodeId": "sphinx-approach"
+        }
+      ]
+    },
+    "chimera-misunderstanding": {
+      "id": "chimera-misunderstanding",
+      "text": "You raise your defenses, and the Chimera sighs smoke from its nostrils. \"Always the same. Very well, if we must fight...\"\n\nBut before anyone attacks, {{PLAYER1_NAME}} lowers {{PLAYER1_HIS_HER}} guard. \"Wait! We don't have to fight. We're looking for the Sphinx, not trouble.\"\n\nThe Chimera pauses, surprised. \"You... stopped? Most heroes charge blindly. Perhaps you're different.\"\n\nIt settles back down. \"I'm tired of fighting. I've been down here for centuries. If you promise not to attack, I'll help you.\"\n\n*Conflict Resolution: Sometimes the bravest thing is knowing when NOT to fight!*",
+      "choices": [
+        {
+          "text": "\"We promise. Can you help us find the Sphinx?\"",
+          "nextNodeId": "friendly-chimera"
+        }
+      ]
+    },
+    "trap-corridor": {
+      "id": "trap-corridor",
+      "text": "The silent corridor seems safe, but Daedalus designed this maze with traps! Suddenly, the floor tiles start shifting!\n\n\"It's a puzzle floor!\" {{PLAYER2_NAME}} realizes. The tiles have Greek letters on them, and only some are safe to step on.\n\nYou notice the safe tiles spell out words when stepped on in order. Looking carefully, you see they spell: \"SOFIA\" - the Greek word for wisdom!\n\nCarefully, you hop from S to O to F to I to A, and reach the other side safely.\n\n*Greek Alphabet: The Greek alphabet is one of the oldest in the world! Words like 'alphabet' come from the first two Greek letters: alpha and beta.*",
+      "choices": [
+        {
+          "text": "Continue through the Labyrinth",
+          "nextNodeId": "after-sirens"
+        }
+      ]
+    },
+    "after-sirens": {
+      "id": "after-sirens",
+      "text": "The path winds deeper into the Labyrinth. You pass chambers filled with wonders - a room where water flows upward, a hall of mirrors showing different possible futures, a garden of stone flowers.\n\n\"The Labyrinth is incredible,\" {{PLAYER1_NAME}} says. \"Daedalus really was a genius.\"\n\nFinally, you reach a grand doorway carved with sphinx images. Beyond it, you sense something waiting.\n\n\"This is it,\" {{PLAYER2_NAME}} says. \"The Sphinx's chamber. Are you ready?\"\n\nYou check your items - the Ariadne's thread trailing behind you, any gifts you've collected, and most importantly, everything you've learned.\n\n*Final Challenge: In Greek myths, the greatest challenges test both mind and heart!*",
+      "choices": [
+        {
+          "text": "Enter the Sphinx's chamber",
+          "nextNodeId": "sphinx-approach"
+        }
+      ]
+    },
+    "sphinx-approach": {
+      "id": "sphinx-approach",
+      "text": "The chamber is enormous, lit by mysterious blue flames. On a raised platform sits the Sphinx - a magnificent creature with a lion's golden body, eagle's wings, and a woman's face. Athena's owl sits in a cage beside her.\n\n\"At last!\" the Sphinx purrs. \"I was wondering when someone would come for the owl. I am the Sphinx, keeper of riddles, guardian of secrets.\"\n\nShe stretches lazily. \"Here are the rules: I will ask you a riddle. Answer correctly, and you may take the owl. Answer wrong, and you remain here forever as stone statues.\"\n\nHer eyes gleam. \"Unless... you'd like to try something different?\"\n\n*The Sphinx: The most famous Sphinx is Egyptian, but the Greek Sphinx was different - more dangerous and loved riddles!*",
+      "choices": [
+        {
+          "text": "\"Ask your riddle. We're ready.\"",
+          "nextNodeId": "sphinx-riddle"
+        },
+        {
+          "text": "\"What if WE ask YOU a riddle first?\"",
+          "nextNodeId": "reverse-riddle"
+        },
+        {
+          "text": "\"What do you mean, something different?\"",
+          "nextNodeId": "sphinx-offer"
+        }
+      ]
+    },
+    "sphinx-riddle": {
+      "id": "sphinx-riddle",
+      "text": "The Sphinx smiles. \"Very well. Here is my riddle:\"\n\n\"I have keys but no locks. I have space but no room. You can enter but can't go inside. What am I?\"\n\nYou think hard. Keys but no locks... space but no room... enter but can't go inside...\n\n{{PLAYER2_NAME}} starts working through it. \"Keys could mean piano keys? No locks, so not door keys...\"\n\n{{PLAYER1_NAME}} adds, \"Space but no room - like outer space? No, wait... the space bar!\"\n\n\"A keyboard!\" you say together. \"You can press enter but can't go inside it!\"\n\n*Riddle Strategy: Break riddles into parts and think about multiple meanings of each word!*",
+      "choices": [
+        {
+          "text": "\"The answer is a keyboard!\"",
+          "nextNodeId": "sphinx-impressed"
+        }
+      ]
+    },
+    "reverse-riddle": {
+      "id": "reverse-riddle",
+      "text": "The Sphinx's eyes widen with interest. \"YOU want to riddle ME? How delightful! Very well - if your riddle stumps me, I'll answer one of yours. If I solve it, you must answer TWO of mine.\"\n\nYou remember what the Sirens said - the Sphinx can't resist a new riddle.\n\n{{PLAYER1_NAME}} and {{PLAYER2_NAME}} whisper together, then ask: \"I am something people want to have less of, but when they have less of me, they feel like they have more. What am I?\"\n\nThe Sphinx thinks... and thinks... her tail swishes impatiently.\n\n\"Problems? No... Weight? Closer... Stress!\" She frowns. \"No, that's not quite right...\"\n\n*Creating Riddles: Good riddles use contradictions - things that seem impossible until you think differently!*",
+      "choices": [
+        {
+          "text": "Wait for her to give up",
+          "nextNodeId": "sphinx-stumped"
+        }
+      ]
+    },
+    "sphinx-stumped": {
+      "id": "sphinx-stumped",
+      "text": "The Sphinx growls in frustration. \"I cannot solve it. What IS the answer?\"\n\n\"Stress,\" you say. \"When people have less stress, they feel like they have more peace, more freedom, more happiness!\"\n\nThe Sphinx looks genuinely impressed. \"Clever, clever children! It's been centuries since anyone stumped me.\"\n\nHer demeanor shifts. \"I am bound by my word. You may ask me one question, and I must answer truthfully.\"\n\nThis is your chance to either take the owl directly or learn something useful!\n\n*Mythological Rules: Magical creatures in Greek myths always kept their promises - it was part of their nature!*",
+      "choices": [
+        {
+          "text": "\"Give us Athena's owl and let us go.\"",
+          "nextNodeId": "winning-ending"
+        },
+        {
+          "text": "\"Why did you steal the owl?\"",
+          "nextNodeId": "sphinx-secret"
+        }
+      ]
+    },
+    "sphinx-offer": {
+      "id": "sphinx-offer",
+      "text": "The Sphinx leans forward conspiratorially. \"I grow tired of the same old game. Riddle, answer, statue or freedom. So boring.\"\n\n\"What if instead, we had a conversation? Tell me - what have you learned on your journey here? What do the old myths mean to you?\"\n\nShe seems genuinely curious. Maybe she's lonely, trapped in this Labyrinth for eternity.\n\n\"If your answer pleases me, I may just give you the owl. I took it because I was bored, not because I needed it.\"\n\n*Character Development: Even mythological monsters can have feelings and reasons for their actions!*",
+      "choices": [
+        {
+          "text": "Share what you've learned about Greek mythology",
+          "nextNodeId": "sphinx-conversation"
+        },
+        {
+          "text": "\"No tricks. Let's just do the riddle.\"",
+          "nextNodeId": "sphinx-riddle"
+        }
+      ]
+    },
+    "sphinx-conversation": {
+      "id": "sphinx-conversation",
+      "text": "You tell the Sphinx everything - about the Oracle's wisdom, Hermes' tricks, the Sirens' loneliness, and the Chimera's tiredness. About Chiron teaching that cleverness matters as much as strength, and about how the gods reward respect and punish pride.\n\n\"Most importantly,\" {{PLAYER2_NAME}} says, \"we learned that Greek myths aren't just old stories. They teach real lessons about being brave, being clever, and being kind.\"\n\nThe Sphinx is quiet for a long moment. When she speaks, her voice is soft.\n\n\"In three thousand years, no one has spoken to me like this. They all see a monster to defeat, not a being to understand.\"\n\nShe opens the owl's cage.\n\n*The Power of Empathy: Understanding others - even those who seem like enemies - is one of the most heroic things you can do!*",
+      "choices": [
+        {
+          "text": "Thank the Sphinx and take the owl",
+          "nextNodeId": "peaceful-ending"
+        }
+      ]
+    },
+    "sphinx-impressed": {
+      "id": "sphinx-impressed",
+      "text": "\"A keyboard!\" the Sphinx repeats, then laughs - a sound like rumbling thunder. \"Correct! I must update my riddles - that one is too old.\"\n\nShe rises and opens the owl's cage. The owl flies to {{PLAYER1_NAME}}'s shoulder, hooting gratefully.\n\n\"You've earned this victory fairly,\" the Sphinx says. \"I honor the ancient rules. The owl is yours.\"\n\nShe looks almost pleased. \"It's been refreshing to meet mortals who use their minds. Most just try to fight me. That never ends well for them.\"\n\n\"Before you go - follow your thread back, and you'll find the exit. The Labyrinth will let you leave.\"\n\n*Victory Through Wisdom: The greatest Greek heroes won through cleverness, not just strength!*",
+      "choices": [
+        {
+          "text": "Follow the thread and exit the Labyrinth",
+          "nextNodeId": "winning-ending"
+        }
+      ]
+    },
+    "sphinx-secret": {
+      "id": "sphinx-secret",
+      "text": "The Sphinx sighs deeply. \"I stole the owl because... I wanted company. The owl of wisdom was the only creature smart enough to have a real conversation with me.\"\n\n\"I've been alone in this Labyrinth for three thousand years. The Minotaur was terrible company - all he did was roar. At least the owl could discuss philosophy.\"\n\nShe looks genuinely sad. \"I know I have to return her. Athena's owl belongs with the goddess. But perhaps... you could visit sometimes? Tell me new riddles?\"\n\n{{PLAYER2_NAME}} feels sympathy for the lonely creature.\n\n*Loneliness in Myths: Many Greek monsters weren't evil - they were isolated and misunderstood!*",
+      "choices": [
+        {
+          "text": "Promise to visit and tell her new riddles",
+          "nextNodeId": "peaceful-ending"
+        },
+        {
+          "text": "Take the owl and leave",
+          "nextNodeId": "winning-ending"
+        }
+      ]
+    },
+    "peaceful-ending": {
+      "id": "peaceful-ending",
+      "text": "\"We promise to visit,\" you tell the Sphinx. \"And we'll bring new riddles from the mortal world!\"\n\nThe Sphinx beams - literally glows with happiness. \"Then take the owl, heroes. You've given me something more valuable than I expected: friendship.\"\n\nShe even guides you out of the Labyrinth herself, showing you secret passages and hidden wonders along the way.\n\nWhen you return the owl to Athena's temple, the goddess appears in a shimmer of light.\n\n\"Not only did you retrieve my owl,\" she says proudly, \"you did it with wisdom AND compassion. You befriended a creature others only feared. THAT is true heroism.\"\n\nShe blesses you both: \"May you always find clever solutions, make unexpected friends, and remember that the greatest adventures are the ones where everyone wins.\"\n\n*Lesson Learned: True wisdom means understanding others and finding solutions where everyone benefits!*",
+      "text2": "THE END\n\nYou returned Athena's owl, made a friend of the Sphinx, and proved that the best heroes use their hearts as much as their minds. The stories of {{BOTH_NAMES}} will be told for generations - the heroes who solved the Labyrinth with kindness!",
+      "isEnding": true,
+      "endingType": "good",
+      "endingTitle": "The Wisdom of Friendship"
+    },
+    "winning-ending": {
+      "id": "winning-ending",
+      "text": "Following the golden thread of Ariadne, you wind your way back through the Labyrinth. The maze that seemed so confusing before now makes sense - each turn, each passage, each challenge was preparing you for the final test.\n\nYou emerge into bright Greek sunlight, the owl perched happily on {{PLAYER2_NAME}}'s shoulder. A rainbow arcs across the sky - Iris, the messenger goddess, signaling the gods' approval.\n\nWhen you return the owl to Athens, Athena's statue glows with warmth. \"Heroes of wisdom,\" her voice fills your minds. \"You faced the Labyrinth not with swords, but with wit. You answered riddles, made allies, and showed that knowledge is the greatest weapon.\"\n\nShe grants you each a blessing: perfect memory and the ability to solve any puzzle. \"Go forth, young ones. May your adventures always lead to wisdom!\"\n\n*Hero's Journey Complete: You've learned that Greek mythology teaches timeless lessons about courage, cleverness, and character!*",
+      "text2": "THE END\n\nCongratulations, {{BOTH_NAMES}}! You navigated the Labyrinth, outsmarted the Sphinx, and returned Athena's sacred owl. Along the way, you learned about Greek gods, heroes, and the ancient wisdom that still guides us today. Your names will join the legends!",
+      "isEnding": true,
+      "endingType": "good",
+      "endingTitle": "Legendary Heroes"
+    }
+  }
+}

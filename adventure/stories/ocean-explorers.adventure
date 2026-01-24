@@ -1,0 +1,431 @@
+{
+    "formatVersion": "1.0",
+    "metadata": {
+        "id": "ocean-explorers",
+        "title": "Secrets of the Deep",
+        "author": "Adventure Stories",
+        "coverEmoji": "🐋",
+        "description": "{{BOTH_NAMES}} dive into the ocean depths to discover incredible creatures and learn the secrets of marine life.",
+        "ageRange": "8-10",
+        "estimatedMinutes": 18,
+        "themes": ["science", "marine biology", "ocean", "exploration"],
+        "contentNotes": [],
+        "startNode": "start"
+    },
+    "nodes": {
+        "start": {
+            "id": "start",
+            "summary": "Kids arrive at a marine research station and meet Dr. Marina",
+            "text": "The research vessel 'Discovery' rocks gently in the sparkling blue water. {{PLAYER1_NAME}} and {{PLAYER2_NAME}} can hardly believe they're here—winners of the Young Scientists Ocean Adventure contest!\n\nDr. Marina Chen, a marine biologist with kind eyes and salt-streaked hair, greets them on deck. 'Welcome aboard! Today, you'll see things most people only dream about. The ocean covers over 70% of our planet, but we've explored less than 20% of it. There are creatures down there we haven't even discovered yet!'\n\nShe leads them to a room filled with equipment. 'We have three expeditions planned. Each will teach you something different about ocean life. But we only have time for one deep dive today.'\n\nThrough the window, {{PLAYER1_NAME}} spots dolphins leaping in the distance. {{PLAYER2_NAME}} notices a large shape moving beneath the surface.",
+            "emoji": "🚢",
+            "choices": [
+                {
+                    "text": "Explore the coral reef ecosystem",
+                    "nextNodeId": "coral-reef"
+                },
+                {
+                    "text": "Dive to the twilight zone (200-1000m deep)",
+                    "nextNodeId": "twilight-zone"
+                },
+                {
+                    "text": "Visit the kelp forest and meet sea otters",
+                    "nextNodeId": "kelp-forest"
+                }
+            ]
+        },
+        "coral-reef": {
+            "id": "coral-reef",
+            "summary": "They learn that coral is actually alive—tiny animals called polyps",
+            "text": "The mini-submarine descends through crystal-clear water. Suddenly, color explodes everywhere—the coral reef!\n\n'People think coral is rock or plant,' Dr. Marina explains, 'but it's actually made of tiny animals called polyps. Each polyp is smaller than your fingernail, but together they build these massive structures over thousands of years.'\n\n{{PLAYER2_NAME}} presses against the window in amazement. The coral comes in every color imaginable—purple fans, orange branches, pink domes, yellow tubes.\n\n'Coral polyps have a special relationship with tiny algae that live inside them,' Dr. Marina continues. 'The algae use sunlight to make food through photosynthesis—just like plants—and share that food with the coral. In return, the coral gives the algae a safe home. We call this symbiosis—two different species helping each other survive.'\n\nA clownfish darts into a swaying anemone. 'There's another symbiosis! The clownfish is immune to the anemone's sting. It gets protection, and the anemone gets cleaned and defended.'",
+            "emoji": "🪸",
+            "choices": [
+                {
+                    "text": "Learn about coral bleaching and climate change",
+                    "nextNodeId": "coral-bleaching"
+                },
+                {
+                    "text": "Follow a sea turtle through the reef",
+                    "nextNodeId": "sea-turtle"
+                },
+                {
+                    "text": "Investigate the strange cleaning station",
+                    "nextNodeId": "cleaning-station"
+                }
+            ]
+        },
+        "twilight-zone": {
+            "id": "twilight-zone",
+            "summary": "The submarine descends to where sunlight barely reaches",
+            "text": "The submarine's lights cut through increasingly dark water. The depth gauge reads 300 meters.\n\n'Welcome to the twilight zone,' Dr. Marina says softly. 'Below 200 meters, almost no sunlight reaches. The creatures here have adapted in amazing ways.'\n\nSuddenly, lights flash outside—but not from the submarine. A jellyfish drifts past, glowing brilliant blue!\n\n'Bioluminescence!' Dr. Marina exclaims. 'Many deep-sea creatures make their own light through chemical reactions in their bodies. Some use it to attract prey, others to confuse predators, and some to communicate with each other.'\n\n{{PLAYER1_NAME}} spots something large moving in the darkness. It has enormous eyes that seem to glow.\n\n'That's a giant squid eye,' Dr. Marina whispers. 'The largest eyes in the animal kingdom—as big as dinner plates! In the darkness, every bit of light matters. Big eyes help them spot predators and prey in the faintest glow.'",
+            "emoji": "🦑",
+            "choices": [
+                {
+                    "text": "Follow the giant squid deeper",
+                    "nextNodeId": "giant-squid"
+                },
+                {
+                    "text": "Investigate the bioluminescent creatures",
+                    "nextNodeId": "bioluminescence"
+                },
+                {
+                    "text": "Discover creatures that survive without sunlight",
+                    "nextNodeId": "hydrothermal-vents"
+                }
+            ]
+        },
+        "kelp-forest": {
+            "id": "kelp-forest",
+            "summary": "They enter a towering underwater forest of kelp",
+            "text": "The submarine glides into what looks like an underwater forest. Giant kelp towers around them, swaying gently in the current. Some strands reach over 150 feet tall!\n\n'Kelp is one of the fastest-growing organisms on Earth,' Dr. Marina explains. 'It can grow up to two feet per day! And like trees in a regular forest, kelp creates an entire ecosystem. Hundreds of species depend on it for food and shelter.'\n\nA furry face pops up near the surface—a sea otter floating on its back!\n\n'Sea otters are a keystone species,' Dr. Marina says. 'That means the whole ecosystem depends on them. Watch what happens if I explain why.'\n\nShe pulls up a diagram. 'Otters eat sea urchins. Urchins eat kelp. Without otters, urchin populations explode and they devour the kelp forests, turning them into underwater deserts. When we protected sea otters from hunting, the kelp forests recovered—and so did all the fish, crabs, and other creatures that lived there.'",
+            "emoji": "🦦",
+            "choices": [
+                {
+                    "text": "Learn how otters use tools",
+                    "nextNodeId": "otter-tools"
+                },
+                {
+                    "text": "Explore the food web of the kelp forest",
+                    "nextNodeId": "food-web"
+                },
+                {
+                    "text": "Discover why kelp absorbs carbon dioxide",
+                    "nextNodeId": "kelp-climate"
+                }
+            ]
+        },
+        "coral-bleaching": {
+            "id": "coral-bleaching",
+            "summary": "They see bleached coral and learn about warming oceans",
+            "text": "Dr. Marina guides the submarine to a section of reef that looks different—the coral is white, like bones.\n\n'This is coral bleaching,' she says sadly. 'When the ocean gets too warm, the coral gets stressed and expels the colorful algae living inside it. Without the algae, the coral turns white and slowly starves.'\n\n{{PLAYER2_NAME}} looks devastated. 'Can it recover?'\n\n'Sometimes, if the water cools down quickly enough. But climate change is making the oceans warmer overall. The ocean absorbs over 90% of the extra heat trapped by greenhouse gases. Coral reefs are like the canaries in the coal mine—they warn us that something is wrong.'\n\n{{PLAYER1_NAME}} notices tiny fish swimming around the bleached coral, looking confused. 'What happens to all the animals that live here?'\n\n'Without healthy coral, they lose their homes and food sources. Coral reefs are called the rainforests of the sea—they cover less than 1% of the ocean floor but support 25% of all marine species.'",
+            "emoji": "🌡️",
+            "choices": [
+                {
+                    "text": "Learn what scientists are doing to help",
+                    "nextNodeId": "coral-restoration"
+                },
+                {
+                    "text": "Ask what kids can do to protect oceans",
+                    "nextNodeId": "protect-oceans"
+                }
+            ]
+        },
+        "sea-turtle": {
+            "id": "sea-turtle",
+            "summary": "They follow a green sea turtle and learn about its incredible life",
+            "text": "A graceful green sea turtle glides past the submarine. Dr. Marina follows at a respectful distance.\n\n'Green sea turtles can live over 80 years,' she explains. 'This one might be older than your grandparents! They've been swimming Earth's oceans for over 100 million years—they saw the dinosaurs come and go.'\n\nThe turtle heads toward a patch of seagrass and begins eating.\n\n'Greens are the only sea turtles that eat plants as adults. They're actually named for the green color of their fat, which comes from all the seagrass they eat! When they graze, they keep the seagrass healthy, like underwater lawnmowers.'\n\n{{PLAYER1_NAME}} asks, 'Where do they lay their eggs?'\n\n'On the same beach where they were born! Female turtles travel thousands of miles to return to their birth beach. Scientists think they navigate using Earth's magnetic field—like having a built-in compass. They dig a nest in the sand, lay about 100 eggs, cover them up, and return to the sea. The babies hatch about two months later and immediately crawl to the water.'",
+            "emoji": "🐢",
+            "choices": [
+                {
+                    "text": "Learn about the dangers turtles face",
+                    "nextNodeId": "turtle-dangers"
+                },
+                {
+                    "text": "Discover how temperature determines if turtles are male or female",
+                    "nextNodeId": "turtle-temperature"
+                }
+            ]
+        },
+        "cleaning-station": {
+            "id": "cleaning-station",
+            "summary": "They witness fish getting cleaned by tiny shrimp and wrasses",
+            "text": "Dr. Marina points to a busy spot on the reef where several large fish are lined up, almost like they're waiting in line.\n\n'This is a cleaning station! Watch closely.'\n\nTiny bright blue fish swim right up to a big grouper's mouth—and go inside! {{PLAYER2_NAME}} gasps, but the grouper holds perfectly still.\n\n'Those are cleaner wrasses,' Dr. Marina explains. 'They eat parasites, dead skin, and bits of food stuck in the bigger fish's scales, gills, and teeth. It's a win-win: the cleaners get a meal, and the big fish get a spa treatment.'\n\nThe grouper opens its mouth wide, and the little cleaners swim in and out, picking off tiny organisms.\n\n'The amazing part is trust. The big fish could easily eat the cleaners, but they don't—because the service is too valuable. Fish travel long distances to visit reliable cleaning stations. Some scientists think these cleaners help reduce stress in their clients!'\n\n{{PLAYER1_NAME}} laughs. 'Fish dentists!'",
+            "emoji": "🐟",
+            "choices": [
+                {
+                    "text": "Learn about the coral reef food chain",
+                    "nextNodeId": "reef-food-chain"
+                },
+                {
+                    "text": "Return to the surface to share discoveries",
+                    "nextNodeId": "surface-return"
+                }
+            ]
+        },
+        "giant-squid": {
+            "id": "giant-squid",
+            "summary": "They catch a glimpse of the legendary giant squid",
+            "text": "The submarine's lights barely penetrate the darkness at 600 meters. Then, emerging from the black—tentacles!\n\nA giant squid, longer than a school bus, drifts past the window. Its huge eyes reflect the submarine's lights like two silver moons.\n\n'Incredible!' Dr. Marina breathes. 'Giant squid were considered mythical sea monsters for centuries. Sailors called them Kraken. We didn't get clear photos of a living one until 2004!'\n\nThe squid's skin flashes with patterns—bands of color rippling across its body.\n\n'Squid communicate through color changes! They have special cells called chromatophores that can change color in milliseconds. They use them for camouflage, hunting, and talking to each other.'\n\n{{PLAYER2_NAME}} watches, mesmerized, as the giant slowly disappears back into the darkness. 'How do they survive the pressure down here?'\n\n'Their bodies don't have air spaces that can be crushed. Their cells are adapted to function under enormous pressure. Life finds a way to thrive even in the most extreme conditions.'",
+            "emoji": "🦑",
+            "choices": [
+                {
+                    "text": "Learn about the sperm whale—the squid's predator",
+                    "nextNodeId": "sperm-whale"
+                },
+                {
+                    "text": "Discover hydrothermal vents",
+                    "nextNodeId": "hydrothermal-vents"
+                }
+            ]
+        },
+        "bioluminescence": {
+            "id": "bioluminescence",
+            "summary": "They learn about the chemistry of living light",
+            "text": "Dr. Marina turns off the submarine's lights. For a moment, there's only darkness. Then, slowly, the ocean comes alive with light.\n\nBlue sparkles. Green flashes. Red pulses. It's like floating through a galaxy of stars.\n\n'About 90% of deep-sea creatures produce light,' Dr. Marina whispers. 'It's the most common form of communication in the ocean. The chemistry is beautiful—a molecule called luciferin reacts with oxygen, and the energy is released as light instead of heat.'\n\nAn anglerfish drifts past, its glowing lure dangling in front of its terrifying teeth.\n\n'The anglerfish uses its light to attract prey. Other fish see the glow, think it's something to eat, swim closer—and become dinner instead.'\n\n{{PLAYER1_NAME}} points at a squid shooting out a cloud of glowing ink. 'What's that doing?'\n\n'That's a defense! Instead of black ink like shallow squid, deep-sea squid release glowing ink to blind and confuse predators while they escape. Isn't evolution amazing?'",
+            "emoji": "✨",
+            "choices": [
+                {
+                    "text": "Learn how scientists study these creatures",
+                    "nextNodeId": "deep-sea-research"
+                },
+                {
+                    "text": "Discover hydrothermal vents",
+                    "nextNodeId": "hydrothermal-vents"
+                }
+            ]
+        },
+        "hydrothermal-vents": {
+            "id": "hydrothermal-vents",
+            "summary": "They find life thriving without sunlight at volcanic vents",
+            "text": "At 2,500 meters, the submarine approaches something extraordinary—black smoke billowing from the ocean floor.\n\n'Hydrothermal vents!' Dr. Marina exclaims. 'These are cracks in Earth's crust where super-heated water, rich in minerals, shoots up from beneath the seafloor. The water can reach 400 degrees Celsius!'\n\nBut the amazing part is the life surrounding the vents. Giant tube worms, some six feet tall, sway in the current. Ghostly white crabs scuttle over rocks. Mats of bacteria cover everything.\n\n'This changes everything we thought about life,' Dr. Marina says. 'These creatures survive without any sunlight at all. Instead, bacteria use chemicals from the vents—like hydrogen sulfide—to create energy. It's called chemosynthesis, not photosynthesis.'\n\n{{PLAYER2_NAME}}'s eyes go wide. 'So life doesn't need the sun?'\n\n'Not here! Some scientists think life on Earth might have started at places like this. And if life can exist here, maybe it exists on moons like Europa, which has a subsurface ocean and possibly volcanic vents too.'",
+            "emoji": "🌋",
+            "choices": [
+                {
+                    "text": "Ask about searching for alien life",
+                    "nextNodeId": "alien-life"
+                },
+                {
+                    "text": "Return to the surface to share discoveries",
+                    "nextNodeId": "surface-return"
+                }
+            ]
+        },
+        "otter-tools": {
+            "id": "otter-tools",
+            "summary": "They watch otters use rocks as tools to crack open shells",
+            "text": "The sea otter floats on its back, and {{PLAYER1_NAME}} notices it has a rock balanced on its chest. The otter picks up a clam and smashes it against the rock—crack! Dinner is served.\n\n'Sea otters are one of the few animals that use tools!' Dr. Marina says. 'They keep a favorite rock tucked in a pouch of skin under their armpit. Some otters use the same rock their whole lives.'\n\n{{PLAYER2_NAME}} watches another otter wrap itself in kelp before falling asleep. 'Why is it doing that?'\n\n'So it doesn't drift away while napping! Kelp anchors them in place. Otters also hold hands while sleeping in groups—called rafts—so they stay together. A raft can have over 100 otters!'\n\nThe otter finishes its clam and rolls playfully in the water. Its fur glistens.\n\n'Otter fur is the densest of any mammal—up to one million hairs per square inch! They don't have blubber like whales, so that thick fur is the only thing keeping them warm. That's why oil spills are so devastating to them—if oil mats their fur, they can freeze to death.'",
+            "emoji": "🪨",
+            "choices": [
+                {
+                    "text": "Learn about the kelp forest food web",
+                    "nextNodeId": "food-web"
+                },
+                {
+                    "text": "Ask about conservation efforts",
+                    "nextNodeId": "otter-conservation"
+                }
+            ]
+        },
+        "food-web": {
+            "id": "food-web",
+            "summary": "Dr. Marina explains how energy flows through the ecosystem",
+            "text": "Dr. Marina pulls up a holographic display showing the kelp forest food web.\n\n'Everything is connected,' she explains. 'Energy starts with the kelp, which uses sunlight to grow. Small invertebrates eat the kelp. Small fish eat those invertebrates. Bigger fish eat the small fish. Sea lions eat those fish. And orcas eat the sea lions.'\n\n{{PLAYER1_NAME}} traces the lines connecting species. 'What happens if one part disappears?'\n\n'The whole system can collapse. Remember the sea otters? When they were hunted nearly to extinction for their fur, sea urchins exploded in number and ate all the kelp. The fish that lived in the kelp disappeared. The animals that ate those fish left. Entire coastlines turned into barren rock.'\n\n'But when otters came back...'\n\n'Everything recovered! This is why we study these connections. Protecting one species often means protecting many others. Nature isn't a collection of separate things—it's a web, and every thread matters.'",
+            "emoji": "🕸️",
+            "choices": [
+                {
+                    "text": "Learn how kelp helps fight climate change",
+                    "nextNodeId": "kelp-climate"
+                },
+                {
+                    "text": "Return to the surface to share discoveries",
+                    "nextNodeId": "surface-return"
+                }
+            ]
+        },
+        "kelp-climate": {
+            "id": "kelp-climate",
+            "summary": "They learn kelp forests absorb carbon dioxide",
+            "text": "'Kelp forests are climate heroes,' Dr. Marina says. 'They absorb carbon dioxide from the water—and since the ocean absorbs CO2 from the air, that means kelp is fighting climate change.'\n\nShe shows them data on her tablet. 'Kelp grows so fast that it pulls in carbon at incredible rates. When old kelp sinks to the deep ocean floor, that carbon stays locked away for centuries. Some scientists call this the ocean's carbon pump.'\n\n{{PLAYER2_NAME}} looks at the towering kelp with new respect. 'So protecting kelp forests is like planting trees?'\n\n'Even better in some ways! Kelp grows much faster than trees. And there's more: kelp releases oxygen, creates habitat for thousands of species, and can even help reduce the acid in seawater caused by climate change.'\n\n'Can we grow more kelp?' {{PLAYER1_NAME}} asks.\n\n'Yes! Scientists are experimenting with kelp farms—growing kelp on purpose to absorb carbon and provide food. Kelp is nutritious and can be used for food, fertilizer, even biofuel. It's one of nature's superheroes.'",
+            "emoji": "🌱",
+            "choices": [
+                {
+                    "text": "Ask what kids can do to help the ocean",
+                    "nextNodeId": "protect-oceans"
+                },
+                {
+                    "text": "Return to the surface to share discoveries",
+                    "nextNodeId": "surface-return"
+                }
+            ]
+        },
+        "coral-restoration": {
+            "id": "coral-restoration",
+            "summary": "They see scientists growing coral to restore damaged reefs",
+            "text": "Dr. Marina takes them to a special area where structures underwater hold hundreds of small coral fragments.\n\n'This is a coral nursery! Scientists grow coral in protected conditions, then transplant them to damaged reefs. It's like gardening, but underwater.'\n\n{{PLAYER1_NAME}} sees tiny corals growing on ceramic tiles and plastic structures. 'How long does it take?'\n\n'Years, unfortunately. Coral grows slowly. But we're learning to speed things up. Some corals are more heat-resistant than others—we're breeding those tough ones to create reefs that can survive warming waters.'\n\nShe shows them another approach: 3D-printed reef structures. 'We design shapes that corals love to attach to, then sink them to create new foundations for reefs.'\n\n{{PLAYER2_NAME}} watches a scientist carefully attach a coral fragment. 'Is it working?'\n\n'In some places, yes! Restored reefs are coming back to life—fish are returning, the ecosystem is healing. It gives us hope. But the biggest solution is still stopping climate change so we don't have to keep rescuing reefs.'",
+            "emoji": "🧬",
+            "choices": [
+                {
+                    "text": "Ask what kids can do to help the ocean",
+                    "nextNodeId": "protect-oceans"
+                },
+                {
+                    "text": "Return to the surface to share discoveries",
+                    "nextNodeId": "surface-return"
+                }
+            ]
+        },
+        "turtle-dangers": {
+            "id": "turtle-dangers",
+            "summary": "They learn about plastic pollution and how turtles mistake bags for jellyfish",
+            "text": "The sea turtle suddenly changes direction, heading toward something floating in the water. Dr. Marina's expression darkens.\n\n'Quick, we need to intercept.' She maneuvers the submarine closer.\n\nThe turtle is approaching a plastic bag, drifting like a ghost in the current.\n\n'To a turtle, that looks exactly like a jellyfish—one of their favorite foods.' Dr. Marina uses the submarine's mechanical arm to grab the bag before the turtle can eat it. 'Plastic kills over 100,000 marine animals every year. They eat it, thinking it's food, and it blocks their digestive systems.'\n\n{{PLAYER2_NAME}} looks horrified. 'Where does it all come from?'\n\n'Us. Humans produce 400 million tons of plastic every year, and millions of tons end up in the ocean. Some breaks into tiny pieces called microplastics that are now found everywhere—in the deepest trenches, in Arctic ice, even in fish we eat.'\n\n{{PLAYER1_NAME}} watches the turtle swim away safely. 'What can we do?'",
+            "emoji": "🛍️",
+            "choices": [
+                {
+                    "text": "Learn what kids can do to help the ocean",
+                    "nextNodeId": "protect-oceans"
+                },
+                {
+                    "text": "Return to the surface to share discoveries",
+                    "nextNodeId": "surface-return"
+                }
+            ]
+        },
+        "turtle-temperature": {
+            "id": "turtle-temperature",
+            "summary": "They discover warmer sand creates more female turtles",
+            "text": "'Here's something amazing,' Dr. Marina says. 'For sea turtles, the temperature of the sand where eggs incubate determines whether babies are male or female!'\n\n{{PLAYER1_NAME}} looks confused. 'Wait, not genetics?'\n\n'Nope! Cooler sand—below about 28 degrees Celsius—produces males. Warmer sand produces females. And here's the problem: as climate change warms beaches, we're getting more and more female turtles. Some populations are now 99% female!'\n\n{{PLAYER2_NAME}} thinks about this. 'But they need males too, right?'\n\n'Exactly. Without males, there won't be any babies in future generations. Scientists are trying to help by creating shaded nesting areas to cool the sand, or even moving eggs to cooler locations.'\n\nShe watches the turtle glide gracefully through the water. 'Sea turtles survived the asteroid that killed the dinosaurs. They've lived through ice ages and continental drift. But they might not survive what humans are doing to their planet in just a few decades. That's why we study them—and why we need to protect them.'",
+            "emoji": "🌡️",
+            "choices": [
+                {
+                    "text": "Learn what kids can do to help the ocean",
+                    "nextNodeId": "protect-oceans"
+                },
+                {
+                    "text": "Return to the surface to share discoveries",
+                    "nextNodeId": "surface-return"
+                }
+            ]
+        },
+        "reef-food-chain": {
+            "id": "reef-food-chain",
+            "summary": "They witness the complex food chain of the coral reef",
+            "text": "Dr. Marina points out a drama unfolding before them. A parrotfish is biting chunks off the coral. A moray eel lurks in a crevice, watching. A barracuda circles above.\n\n'The reef is a theater of life and death,' she explains. 'Parrotfish are incredibly important—they eat algae that would otherwise smother coral. They also bite off coral, digest it, and poop it out as sand. One parrotfish can produce 200 pounds of sand per year!'\n\n{{PLAYER2_NAME}} giggles. 'So beaches are fish poop?'\n\n'A lot of tropical beach sand, yes! Now watch—' The moray eel suddenly strikes, grabbing a small fish that swam too close. 'Predators keep populations in balance. Without predators, some species would multiply out of control and eat all the resources.'\n\nA shark glides silently overhead, and smaller fish scatter.\n\n'Sharks are apex predators. They've been on Earth for 450 million years, perfecting their role. Healthy reefs need healthy shark populations. When sharks disappear, the whole food chain gets disrupted.'",
+            "emoji": "🦈",
+            "choices": [
+                {
+                    "text": "Ask about protecting sharks",
+                    "nextNodeId": "shark-protection"
+                },
+                {
+                    "text": "Return to the surface to share discoveries",
+                    "nextNodeId": "surface-return"
+                }
+            ]
+        },
+        "sperm-whale": {
+            "id": "sperm-whale",
+            "summary": "They encounter a sperm whale—a giant squid predator",
+            "text": "A massive shape moves through the darkness. It's a sperm whale—the largest toothed predator on Earth!\n\n'Sperm whales dive deeper than any other mammal—over 2,000 meters!' Dr. Marina whispers. 'They hunt giant squid in the darkness. When scientists examine sperm whales, they often find circular scars from squid suckers—evidence of epic battles in the deep.'\n\nThe whale clicks—rapid, rhythmic sounds that seem to vibrate through the submarine.\n\n'Echolocation! Whales send out clicks and listen for echoes to build a picture of their surroundings. It's like seeing with sound. Sperm whale clicks are the loudest sounds made by any animal—over 230 decibels. That's louder than a jet engine!'\n\n{{PLAYER1_NAME}} watches in awe as the whale glides past, its massive tail disappearing into the gloom.\n\n'Sperm whales can hold their breath for over an hour. Their blood and muscles hold much more oxygen than ours. Every part of their body is adapted for the deep—a masterpiece of evolution.'",
+            "emoji": "🐋",
+            "choices": [
+                {
+                    "text": "Learn how whales help fight climate change",
+                    "nextNodeId": "whale-pump"
+                },
+                {
+                    "text": "Return to the surface to share discoveries",
+                    "nextNodeId": "surface-return"
+                }
+            ]
+        },
+        "deep-sea-research": {
+            "id": "deep-sea-research",
+            "summary": "Dr. Marina explains how scientists explore the deep ocean",
+            "text": "'How do you study creatures that live in total darkness under crushing pressure?' Dr. Marina asks. 'Very carefully!'\n\nShe shows them images of different research tools. 'Remotely operated vehicles—ROVs—let us explore without risking human lives. We can send them to depths no human could survive.'\n\nShe points to special collecting jars. 'When we bring deep-sea creatures to the surface, the pressure change can be deadly for them. We use special containers that maintain pressure during the trip up.'\n\n{{PLAYER2_NAME}} looks at the glowing creatures outside. 'What have you discovered?'\n\n'New species all the time! We estimate there are millions of ocean species we haven't found yet. Just last year, we discovered fish living 8,300 meters deep—the deepest ever recorded. And some organisms near hydrothermal vents have enzymes that work in extreme heat, which has helped us develop new medical treatments and industrial processes.'\n\n'The deep ocean is like another planet,' {{PLAYER1_NAME}} says.\n\n'Exactly! Except this alien world is right here on Earth.'",
+            "emoji": "🔬",
+            "choices": [
+                {
+                    "text": "Ask about searching for alien life",
+                    "nextNodeId": "alien-life"
+                },
+                {
+                    "text": "Return to the surface to share discoveries",
+                    "nextNodeId": "surface-return"
+                }
+            ]
+        },
+        "alien-life": {
+            "id": "alien-life",
+            "summary": "They discuss how deep ocean life hints at life on other worlds",
+            "text": "'If life can survive here,' Dr. Marina says, gesturing at the volcanic vent, 'why not on other worlds?'\n\nShe pulls up an image of Europa, Jupiter's moon. 'Europa has a liquid water ocean beneath its icy surface—and possibly volcanic vents on its ocean floor. Everything we learn about life in extreme conditions on Earth helps us know where to look for life elsewhere.'\n\n{{PLAYER1_NAME}}'s imagination soars. 'So there could be giant squid on Europa?'\n\n'Probably not giant squid,' Dr. Marina laughs. 'But maybe bacteria. Maybe something stranger that we can't even imagine. Life is incredibly creative at finding ways to survive. Scientists call this astrobiology—the study of life in the universe.'\n\n{{PLAYER2_NAME}} looks at the creatures around the vent with new wonder. 'These weird animals might be related to aliens?'\n\n'In a way, they're teaching us what's possible. Every extreme place on Earth where we find life expands our understanding of where life could exist. The universe just got a lot more interesting.'",
+            "emoji": "👽",
+            "choices": [
+                {
+                    "text": "Return to the surface to share discoveries",
+                    "nextNodeId": "surface-return"
+                }
+            ]
+        },
+        "otter-conservation": {
+            "id": "otter-conservation",
+            "summary": "They learn about the comeback of sea otters from near extinction",
+            "text": "'Sea otters were almost hunted to extinction,' Dr. Marina says. 'By 1911, fewer than 2,000 were left worldwide—from an original population of up to 300,000. All for their fur.'\n\n{{PLAYER1_NAME}} watches the playful otter with sadness. 'What happened?'\n\n'International protection! Countries agreed to stop hunting them. Slowly, populations have recovered. It's one of conservation's success stories—proof that when humans decide to protect something, we can make a difference.'\n\nThe otter dives down, catches a sea urchin, and pops back up to eat it.\n\n'But they still face threats: oil spills, pollution, fishing nets they get tangled in. Conservation isn't a one-time thing—it's an ongoing commitment. That's why researchers like me keep studying them, so we can identify problems early and protect them.'\n\n{{PLAYER2_NAME}} asks, 'Are there otters near where we live?'\n\n'Maybe! Sea otters live along the Pacific coast from Alaska to California. River otters live in freshwater habitats across North America. Knowing what lives near you is the first step to protecting it.'",
+            "emoji": "🦦",
+            "choices": [
+                {
+                    "text": "Ask what kids can do to help the ocean",
+                    "nextNodeId": "protect-oceans"
+                },
+                {
+                    "text": "Return to the surface to share discoveries",
+                    "nextNodeId": "surface-return"
+                }
+            ]
+        },
+        "shark-protection": {
+            "id": "shark-protection",
+            "summary": "They learn sharks are endangered and misunderstood",
+            "text": "'Sharks have a bad reputation,' Dr. Marina says, 'but they're more afraid of us than we are of them. Humans kill about 100 million sharks every year—for their fins, for sport, or just by accident in fishing nets.'\n\n{{PLAYER1_NAME}} is shocked. '100 million?'\n\n'Meanwhile, sharks kill about 10 humans per year on average. You're more likely to be killed by a vending machine. Sharks are essential for ocean health, but many species are now endangered.'\n\nThe reef shark circles once more, then disappears.\n\n'Sharks grow slowly, mature late, and have few babies—which means populations can't recover quickly. Some species have declined by 90% in just a few decades. Without them, the fish they eat overpopulate, eat too much of what's below them on the food chain, and ecosystems collapse.'\n\n{{PLAYER2_NAME}} watches where the shark vanished. 'How do we protect them?'\n\n'Marine protected areas where fishing is banned. Laws against shark finning. Education to change people's fear into respect. Sharks have been perfecting their role for 450 million years. We need to give them a chance to keep doing it.'",
+            "emoji": "🦈",
+            "choices": [
+                {
+                    "text": "Ask what kids can do to help the ocean",
+                    "nextNodeId": "protect-oceans"
+                },
+                {
+                    "text": "Return to the surface to share discoveries",
+                    "nextNodeId": "surface-return"
+                }
+            ]
+        },
+        "whale-pump": {
+            "id": "whale-pump",
+            "summary": "They learn whales fertilize the ocean and help fight climate change",
+            "text": "'Here's something incredible,' Dr. Marina says. 'Whale poop helps fight climate change.'\n\n{{PLAYER2_NAME}} bursts out laughing. 'Seriously?'\n\n'Seriously! Whales dive deep to feed, then return to the surface to breathe and... do their business. Their waste is rich in iron and nitrogen—nutrients that tiny floating plants called phytoplankton need to grow.'\n\nShe shows them a diagram. 'Phytoplankton produce over 50% of Earth's oxygen—more than all the rainforests combined. And they absorb huge amounts of carbon dioxide. More whales means more phytoplankton means less CO2 in the atmosphere.'\n\n{{PLAYER1_NAME}} tries to process this. 'So whales are basically... ocean gardeners?'\n\n'Exactly! Scientists call it the whale pump. When whale populations were hunted down, we lost a lot of this natural fertilization. Now that some whale populations are recovering, we're seeing phytoplankton blooms return. Every whale that lives helps the whole planet breathe better.'",
+            "emoji": "💨",
+            "choices": [
+                {
+                    "text": "Ask what kids can do to help the ocean",
+                    "nextNodeId": "protect-oceans"
+                },
+                {
+                    "text": "Return to the surface to share discoveries",
+                    "nextNodeId": "surface-return"
+                }
+            ]
+        },
+        "protect-oceans": {
+            "id": "protect-oceans",
+            "summary": "Dr. Marina shares practical ways kids can help protect oceans",
+            "text": "'What can we actually do?' {{PLAYER1_NAME}} asks. 'We're just kids.'\n\nDr. Marina smiles. 'Kids can do more than you think! Here's what helps:'\n\n'Reduce plastic. Use reusable bags, bottles, and containers. Say no to straws. Every piece of plastic you don't use is one that won't end up in the ocean.'\n\n'Eat sustainable seafood. Some fishing methods hurt the ocean; others are careful. Ask where your fish comes from.'\n\n'Save energy. Climate change is the biggest threat to oceans. Turn off lights, walk or bike when you can, encourage your family to conserve.'\n\n'Learn and share. Tell your friends and family what you learned today. When people understand how amazing and important the ocean is, they want to protect it.'\n\n'And maybe,' she adds, 'one of you will become a marine biologist someday. We need more people who love the ocean fighting for it.'\n\n{{PLAYER2_NAME}} looks at the reef, the fish, the coral. 'I want to come back here someday.'",
+            "emoji": "🌊",
+            "choices": [
+                {
+                    "text": "Return to the surface and share your discoveries",
+                    "nextNodeId": "surface-return"
+                }
+            ]
+        },
+        "surface-return": {
+            "id": "surface-return",
+            "summary": "They surface to find dolphins waiting—and take the ocean explorer pledge",
+            "text": "The submarine rises through layers of blue, from dark to light. As they surface, sunlight dazzles their eyes. And there, waiting for them, is a pod of dolphins leaping alongside the boat!\n\n'They're saying goodbye,' Dr. Marina smiles. 'Or maybe hello. Dolphins are incredibly intelligent—they have complex social relationships, use tools, and might even have names for each other.'\n\nBack on the deck of the Discovery, {{BOTH_NAMES}} take deep breaths of fresh sea air. The ocean stretches to every horizon, vast and full of life.\n\n'You've seen things today that most people never will,' Dr. Marina says. 'The question is: what will you do with that knowledge?'\n\n{{PLAYER1_NAME}} looks at {{PLAYER2_NAME}}. They both know the answer.\n\n'We'll protect it,' {{PLAYER2_NAME}} says firmly. 'We'll learn more, tell others, and help however we can.'\n\nDr. Marina nods. 'Then the ocean has two new champions. Welcome to the team.'",
+            "emoji": "🐬",
+            "choices": [
+                {
+                    "text": "Take the Ocean Explorer pledge",
+                    "nextNodeId": "ending-pledge"
+                }
+            ]
+        },
+        "ending-pledge": {
+            "id": "ending-pledge",
+            "summary": "GOOD ENDING: They pledge to protect the ocean and become lifelong champions",
+            "text": "Dr. Marina presents them each with an Ocean Explorer badge. 'Raise your right hand,' she says.\n\n{{BOTH_NAMES}} stand tall as she leads them in a pledge:\n\n'I promise to protect the ocean and all its creatures. I will reduce waste, learn about marine life, and share what I know with others. I will remember that every action I take on land affects the sea. The ocean gives us oxygen, food, and wonder—and I will give it my respect and care in return.'\n\nAs the sun sets over the Pacific, painting the sky orange and pink, {{PLAYER1_NAME}} and {{PLAYER2_NAME}} know their lives have changed. The ocean isn't just a blue area on a map anymore. It's a living, breathing world full of incredible creatures and delicate connections.\n\nAnd they've promised to be its voice.\n\n'The ocean covers most of our planet,' Dr. Marina says as the Discovery heads for shore. 'But it only has a future if people care enough to save it. Today, two more people started caring. And that's how change begins.'",
+            "emoji": "🌟",
+            "isEnding": true,
+            "endingType": "good",
+            "endingTitle": "Ocean Champions",
+            "endingText": "THE END\n\nYou explored the wonders of the ocean and learned about coral reefs, deep-sea creatures, and the connections between all marine life. Remember: the ocean needs protectors, and you can be one!\n\n\"The sea, once it casts its spell, holds one in its net of wonder forever.\" — Jacques Cousteau"
+        }
+    }
+}
